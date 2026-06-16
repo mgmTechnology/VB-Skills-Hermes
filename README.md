@@ -1,16 +1,34 @@
 # VB Lotse — Skill-Plattform
 
-Zentrale Skill-Plattform fuer den Volkswohl-Bund. Enthaelt 40 VB-Skills aus dem Projektmanagement-Handbuch, Architekturvorgaben und Fachbereichs-Know-how — nutzbar in Hermes, Claude Code, IntelliJ/Junie und weiteren KI-Werkzeugen.
+Zentrale Skill-Plattform fuer den Volkswohl-Bund. Enthaelt 77 VB-Skills aus dem Projektmanagement-Handbuch, Architekturvorgaben, Webservices-Strategie und Fachbereichs-Know-how — nutzbar in Hermes, Claude Code, IntelliJ/Junie und weiteren KI-Werkzeugen.
 
 ---
 
-## Schnellstart (Hermes)
+## Welche Skills brauche ich?
+
+**Einfach den vb-lotse fragen.** In Hermes:
 
 ```
 Lade vb-lotse
 ```
 
-Der Lotse analysiert deine Aufgabe und empfehlt 1-3 passende Skills. **Nie alle 40 laden — 95% Token-Ersparnis.**
+Der Lotse fragt nach deiner Rolle und Aufgabe – und empfiehlt dir 1-3 passende Skills. **Nur diese laden. 95% Token-Ersparnis.**
+
+### Schnellauswahl per Rolle
+
+| Du bist... | Starte mit |
+|---|---|
+| Release-Verantwortlicher | `vb-release-planning` + `vb-release-finalization` |
+| BiPRO-Entwickler | `vb-bipro-analysis` + `bipro-taa-leben-webservice` |
+| Projektleitung | `vb-projektleitung` + `vb-anforderungsmanager` |
+| Architekt | `vb-it-ae-architekt` + `vb-architektur-randbedingungen` + `vb-architekturprozess` |
+| Tester / Testmanager | `vb-testmanager` + `vb-test` |
+| Fachbereich / Produkt | `vb-business-analyst` + `vb-feature-spezifikation` |
+| Fehlerdiagnose (Prod.) | `vb-webservice-diagnostics` |
+| Neuer Entwickler (Onboarding) | `vb-onboarding-webservices` |
+| Prozess analysieren/verbessern | `vb-analyse` + `vb-lean-six-sigma-black-belt` |
+
+**Faustregel:** `vb-lotse` + die 1-3 Skills fuer deine Aufgabe. Den Rest bei Bedarf nachladen.
 
 ---
 
@@ -37,64 +55,34 @@ hermes skills info vb-testmanager     # Details zu einem Skill
 
 ### 2. IntelliJ IDEA mit Junie
 
-**Voraussetzung:** Junie-Plugin installiert (Settings → Plugins → Junie)
+**Voraussetzung:** Junie-Plugin installiert
 
-**Installation:**
-```bash
-# In der Git-Bash / Terminal:
-cd C:\Dev\Github\VB Lotse
+**Die `.junie/rules.md` liegt bereits im Repo.** Zwei Wege, sie einzubinden:
 
-# 1. Junie-Regeldatei anlegen
-mkdir -p .junie
-cat > .junie/rules.md << 'EOF'
-# VB Skill-Plattform
+#### Weg A: Referenzieren (empfohlen – nichts kopieren)
 
-Du arbeitest beim Volkswohl-Bund. Bei jeder Aufgabe zuerst den Kontext analysieren,
-dann die passenden VB-Skills aus skills/ laden.
-
-## Verfuegbare Skills (40 — nie alle laden!)
-
-### Immer zuerst:
-- skills/01-rollen/vb-lotse/SKILL.md — Router, empfehlt 1-3 Skills
-
-### PM-Rollen (30):
-- skills/01-rollen/vb-projektleitung/SKILL.md
-- skills/01-rollen/vb-anforderungsmanager/SKILL.md
-- skills/01-rollen/vb-business-analyst/SKILL.md
-- skills/01-rollen/vb-testmanager/SKILL.md
-- skills/01-rollen/vb-it-ae-architekt/SKILL.md
-- ... (alle 30 Rollen in skills/01-rollen/)
-
-### Architektur (2):
-- skills/01-rollen/vb-architektur-randbedingungen/SKILL.md — VB-Architekturvorgaben
-- skills/01-rollen/vb-architektur-arc42/SKILL.md — arc42 Template
-
-## Regeln
-1. Immer mit vb-lotse starten
-2. Nur 1-3 Skills laden
-3. Keine VB-Standards erfinden — nur was in den Skills steht
-4. Bei Unsicherheit nachfragen
-5. Code-Aenderungen erst nach Bestaetigung
-6. Antworten auf Deutsch, spezifikationsgetrieben
-
-## Arbeitsweise
-- Vor jeder Aenderung: vb-lotse → Kontext → passende Skills laden
-- Waehrend der Arbeit: Skills als Referenz nutzen
-- Nach Abschluss: Ergebnisse dokumentieren
-EOF
-
-# 2. IntelliJ konfigurieren
-# Settings → Tools → Junie → Additional Context:
-#   Pfad: C:\Dev\Github\VB Lotse\
-#   Haken: "Scan subdirectories for rules"
+In IntelliJ: `Settings → Tools → Junie → Additional Context`:
+```
+Pfad: C:\Dev\Github\VB Lotse\
+☑ Subdirectories scannen
 ```
 
-**So nutzt du es in IntelliJ:**
-1. Projekt oeffnen
-2. Junie-Panel oeffnen (View → Tool Windows → Junie)
-3. Prompt starten mit: `Nutze die VB Skills. Starte mit vb-lotse. [Aufgabe]`
-4. Junie laedt automatisch die .junie/rules.md und den Lotse
-5. Lotse empfehlt 1-3 Skills, die du dann im Prompt referenzierst
+IntelliJ neu starten. Fertig – Junie liest `.junie/rules.md` und alle Skills direkt aus dem Repo.
+
+#### Weg B: Kopieren (standalone)
+
+```bash
+cp -r C:/Dev/Github/VB\ Lotse/.junie C:/Dev/Github/DEIN-PROJEKT/
+cp -r C:/Dev/Github/VB\ Lotse/skills C:/Dev/Github/DEIN-PROJEKT/
+```
+
+#### Test-Prompt
+
+In Junie eingeben:
+```
+Nutze die VB Skills. Starte mit vb-lotse.
+```
+Der Lotse empfehlt 1-3 Skills. Fertig.
 
 ---
 
@@ -218,22 +206,29 @@ C:\Dev\Github\VB Lotse\
 │       ├── Projektmanagement/      (Rollenbeschreibung, Prozesse...)
 │       └── Architektur/            (Randbedingungen, arc42...)
 │
-└── skills/                      ← 40 VB-Fachskills
-    └── 01-rollen/  40 Skills   (PM-Rollen + Architektur)
+├── skills/                      ← 77 VB-Fachskills
+│   ├── 00-prozess/  13 Skills  (vb-analyse, vb-test, vb-review...)
+│   ├── 01-rollen/   32 Skills  (PM-Rollen + Architektur)
+│   ├── 02-technik/  18 Skills  (ws-strategy, Java, Deployment...)
+│   ├── 03-governance/ 6 Skills
+│   ├── 04-standards/  4 Skills
+│   ├── 05-plattform/  6 Skills
+│   └── 06-werkzeuge/  9 Skills  (Jira, Confluence, Scrum...)
 ```
 
 ---
 
 ## Hermes-Skills (installiert)
 
-40 VB-Skills in Hermes registriert. Alle per `skill_view(name)` ladbar:
+77 VB-Skills in Hermes registriert. Alle per `skill_view(name)` ladbar:
 
 | Kategorie | Skills |
 |---|---|
-| PM-Rollen | vb-projektleitung, vb-multi-projekt-management-mpm, vb-f1er, vb-vorstand, vb-sonderfunktion, vb-fachexperten, vb-fachbereichs-koordinator, vb-fuehrungskraft-fachabteilung, vb-anforderungsmanager, vb-business-analyst, vb-it-ae-koordinator, vb-it-ae-architekt, vb-it-ae-anwendungsentwickler, vb-it-ae-testautomatisierer, vb-it-ae-fuehrungskraft, vb-it-betrieb-koordinator, vb-it-betrieb-administrator, vb-it-betrieb-produktion, vb-it-betrieb-client-service, vb-it-betrieb-change-manager, vb-it-betrieb-fuehrungskraft, vb-testmanager, vb-fehlermanager, vb-testdatenmanager, vb-tester-fachabteilung, vb-tester-it-betrieb, vb-priorunde, vb-lenkungsausschuss-la, vb-externe-mitarbeiter |
-| Architektur | vb-architektur-randbedingungen, vb-architektur-arc42 |
-| Plattform | vb-lotse, vb-skill-befueller, vb-tool-installation, vb-jira-experte, vb-lean-six-sigma-black-belt, marc-vb-profile |
-| BiPRO | bipro-taa-leben-webservice, bipro-taa-leben-einarbeitung |
+| **vb-prozess** (13) | vb-analyse, vb-anforderungen, vb-architekturprozess, vb-dokumentation, vb-feature-spezifikation, vb-projekt-initialisierung, vb-review, vb-spezifikation-verfeinern, vb-test, vb-umsetzung, vb-architektur, vb-klickjourney-test, vb-qualitaetspruefung |
+| **ws-strategy** (6) | vb-release-planning, vb-release-finalization, vb-bipro-analysis, vb-webservice-diagnostics, vb-webservice-documentation, vb-onboarding-webservices |
+| PM-Rollen (30) | vb-projektleitung, vb-multi-projekt-management-mpm, vb-f1er, vb-vorstand, vb-sonderfunktion, vb-fachexperten, vb-fachbereichs-koordinator, vb-fuehrungskraft-fachabteilung, vb-anforderungsmanager, vb-business-analyst, vb-it-ae-koordinator, vb-it-ae-architekt, vb-it-ae-anwendungsentwickler, vb-it-ae-testautomatisierer, vb-it-ae-fuehrungskraft, vb-it-betrieb-koordinator, vb-it-betrieb-administrator, vb-it-betrieb-produktion, vb-it-betrieb-client-service, vb-it-betrieb-change-manager, vb-it-betrieb-fuehrungskraft, vb-testmanager, vb-fehlermanager, vb-testdatenmanager, vb-tester-fachabteilung, vb-tester-it-betrieb, vb-priorunde, vb-lenkungsausschuss-la, vb-externe-mitarbeiter |
+| Architektur (2) | vb-architektur-randbedingungen, vb-architektur-arc42 |
+| Plattform (8) | vb-lotse, vb-skill-befueller, vb-tool-installation, vb-jira-experte, vb-lean-six-sigma-black-belt, marc-vb-profile, bipro-taa-leben-webservice, bipro-taa-leben-einarbeitung |
 
 ---
 
@@ -241,7 +236,7 @@ C:\Dev\Github\VB Lotse\
 
 | Ansatz | Token |
 |---|---|
-| Alle 40 Skills laden | ~200 KB (unmoeglich) |
+- Alle 77 Skills laden | ~350 KB (unmoeglich) |
 | Lotse + 1-3 Fach-Skills | ~10-18 KB (produktiv) |
 | **Ersparnis** | **95%** |
 
