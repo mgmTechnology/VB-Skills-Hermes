@@ -1,0 +1,840 @@
+Date: Tue, 16 Jun 2026 06:14:03 +0000 (UTC)
+Message-ID: <2079576637.13.1781590443243@38b3607502a1>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_12_818363025.1781590443243"
+
+------=_Part_12_818363025.1781590443243
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Kommunikationsplan</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Kommunikationsplan</h1>
+    <div class=3D"Section1">
+        <div class=3D"confluence-information-macro confluence-information-m=
+acro-information">
+<p class=3D"title">Kommunikation bedeutet aus dem Lateinischen hergeleitet =
+"mitteilen, gemeinsam machen, vereinigen"</p><span class=3D"aui-icon aui-ic=
+on-small aui-iconfont-info confluence-information-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p><span class=3D"legacy-color-text-blue3">Hier finden Sie eine Sammlung vo=
+n Besprechungsformaten, die e</span>ine effiziente und zielorientierte (Reg=
+el-)Kommunikation innerhalb (bspw. Projektteam) und au=C3=9Ferhalb (bspw. S=
+onderfunktionen) des Projektes f=C3=B6rdert und sicherstellt.<span class=3D=
+"legacy-color-text-blue3"> &nbsp;</span></p>
+<p><span class=3D"legacy-color-text-blue3">Bitte beachten Sie bei der Termi=
+nplanung die Guideline f=C3=BCr Besprechungen:&nbsp;<img height=3D"150" sty=
+le=3D"margin: 2px; border: 1px solid #ddd; box-sizing: border-box; vertical=
+-align: text-bottom;" src=3D"133fa26e877a6993bebfcc8bbb6d97332d46737e7fae98=
+550f4ec068b13d12d0" width=3D"150"></span></p>
+<p><br></p>
+</div>
+</div>
+<p><br></p>
+<p><br></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th scope=3D"row" class=3D"confluenceTh">Wie lautet der Name des Besprechun=
+gsformats? =F0=9F=92=A1</th>
+<th scope=3D"col" class=3D"confluenceTh">In welcher Phase des Projektes fin=
+det die Besprechung statt? =F0=9F=8F=81&nbsp;</th>
+<th scope=3D"col" class=3D"confluenceTh">VB intern / externen Dienst-leiste=
+rn</th>
+<th scope=3D"col" class=3D"confluenceTh">F=C3=BCr welche Projektgr=C3=B6=C3=
+=9Fe (S, M, L, XL)? =F0=9F=91=94</th>
+<th scope=3D"col" class=3D"confluenceTh">Bei welcher Projektdauer? =F0=9F=
+=95=A4</th>
+<th scope=3D"col" class=3D"confluenceTh">Wann ist welche Besprechung zu pla=
+nen? =F0=9F=93=86</th>
+<th scope=3D"col" class=3D"confluenceTh">In welchem Rhythmus ist die Bespre=
+chung abzuhalten? =E2=8F=B0</th>
+<th scope=3D"col" class=3D"confluenceTh">Wem geh=C3=B6rt die Besprechung? W=
+er organisiert die Einladung? =F0=9F=8E=A9</th>
+<th scope=3D"col" class=3D"confluenceTh">Wie lange sollte jede Besprechung =
+maximal dauern (i.d.R.)? =F0=9F=8E=AC</th>
+<th scope=3D"col" class=3D"confluenceTh">Welche Rollen nehmen an der Bespre=
+chung teil? =F0=9F=91=A8=E2=80=8D=F0=9F=91=A8=E2=80=8D=F0=9F=91=A7=E2=80=8D=
+=F0=9F=91=A6</th>
+<th scope=3D"col" class=3D"confluenceTh">Was ist das Ziel der Besprechung? =
+Zu welchem Zweck wird die Besprechung abgehalten? =F0=9F=8E=AF</th>
+<th scope=3D"col" class=3D"confluenceTh">In welchem Medium werden die Infor=
+mationen festgehalten, dokumentiert? =F0=9F=96=8B</th>
+</tr>
+<tr>
+<th scope=3D"row" data-highlight-colour=3D"#b3d4ff" class=3D"confluenceTh">=
+<a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/PROJ/=
+pages/39817843/Auswahl+Sonderfunktionen" data-linked-resource-id=3D"3981784=
+3" data-linked-resource-version=3D"13" data-linked-resource-type=3D"page">S=
+onderfunktion-Kick-Off</a></th>
+<td data-highlight-colour=3D"#b3d4ff" class=3D"confluenceTd"><strong>Projek=
+tidee</strong></td>
+<td data-highlight-colour=3D"#b3d4ff" class=3D"confluenceTd">VB intern</td>
+<td data-highlight-colour=3D"#b3d4ff" class=3D"confluenceTd">Alle</td>
+<td data-highlight-colour=3D"#b3d4ff" class=3D"confluenceTd">Unabh=C3=A4ngi=
+g von der Dauer</td>
+<td data-highlight-colour=3D"#b3d4ff" class=3D"confluenceTd">Zum Projektsta=
+rt</td>
+<td data-highlight-colour=3D"#b3d4ff" class=3D"confluenceTd">einmalig</td>
+<td data-highlight-colour=3D"#b3d4ff" class=3D"confluenceTd">
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39817696/Multi-Projekt-Management+MPM" data-linked-reso=
+urce-id=3D"39817696" data-linked-resource-version=3D"8" data-linked-resourc=
+e-type=3D"page">Multi-Projekt-Management (MPM)</a></p>
+<p title=3D""><br></p></td>
+<td data-highlight-colour=3D"#b3d4ff" class=3D"confluenceTd">20 Minuten</td=
+>
+<td data-highlight-colour=3D"#b3d4ff" class=3D"confluenceTd"><a href=3D"htt=
+ps://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/PROJ/pages/39818123=
+/Projektleitung" data-linked-resource-id=3D"39818123" data-linked-resource-=
+version=3D"5" data-linked-resource-type=3D"page">Projektleitung</a><br>
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39817702/Sonderfunktion" data-linked-resource-id=3D"398=
+17702" data-linked-resource-version=3D"6" data-linked-resource-type=3D"page=
+">Sonderfunktion</a></p>
+<p title=3D""><br></p></td>
+<td data-highlight-colour=3D"#b3d4ff" class=3D"confluenceTd">
+<p title=3D"">Sonderfunktionen sind in nahezu jedem Projektvorhabe zu invol=
+vieren. Diese Besprechung dient zur</p>
+<ul title=3D"">
+<li>Kurzvorstellung des Projektvorhabens,</li>
+<li>Kl=C3=A4rung von R=C3=BCckfragen&nbsp;</li>
+<li>Kl=C3=A4rung der zu bedarfsgerecht zu involvierenden Sonderfunktionen</=
+li>
+<li>Zustimmung des Projektvorhabens durch die Sonderfunktionen</li>
+</ul></td>
+<td data-highlight-colour=3D"#b3d4ff" class=3D"confluenceTd">
+<ul title=3D"">
+<li>PowerPoint</li>
+</ul></td>
+</tr>
+<tr>
+<th scope=3D"row" data-highlight-colour=3D"#abf5d1" class=3D"confluenceTh">=
+<a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/PROJ/=
+pages/39818242/Projekt-Organisation+einrichten" data-linked-resource-id=3D"=
+39818242" data-linked-resource-version=3D"11" data-linked-resource-type=3D"=
+page">Projekt-Kick-Off</a></th>
+<td data-highlight-colour=3D"#abf5d1" class=3D"confluenceTd"><strong>Projek=
+tplanung</strong></td>
+<td data-highlight-colour=3D"#abf5d1" class=3D"confluenceTd">VB intern</td>
+<td data-highlight-colour=3D"#abf5d1" class=3D"confluenceTd">Alle</td>
+<td data-highlight-colour=3D"#abf5d1" class=3D"confluenceTd">Unabh=C3=A4ngi=
+g von der Dauer</td>
+<td data-highlight-colour=3D"#abf5d1" class=3D"confluenceTd">Zum Projektsta=
+rt</td>
+<td data-highlight-colour=3D"#abf5d1" class=3D"confluenceTd">einmalig</td>
+<td data-highlight-colour=3D"#abf5d1" class=3D"confluenceTd">
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"398=
+18123" data-linked-resource-version=3D"5" data-linked-resource-type=3D"page=
+">Projektleitung</a></p></td>
+<td data-highlight-colour=3D"#abf5d1" class=3D"confluenceTd">80 Minuten</td=
+>
+<td data-highlight-colour=3D"#abf5d1" class=3D"confluenceTd">Gesamtes Proje=
+ktteam</td>
+<td data-highlight-colour=3D"#abf5d1" class=3D"confluenceTd">
+<p title=3D"">Das Ziel- und der Rahmen des Projektes werden zu Beginn kommu=
+niziert, um ein einheitliches Verst=C3=A4ndnis zu schaffen und Fragen fr=C3=
+=BChzeitig beantworten / aufnehmen zu k=C3=B6nnen.&nbsp;</p>
+<ul title=3D"">
+<li>Zielstellung</li>
+<li>Abgrenzung des Projektes</li>
+<li>Zeitlicher Rahmen</li>
+<li>Zuweisung erster Rollen</li>
+</ul></td>
+<td data-highlight-colour=3D"#abf5d1" class=3D"confluenceTd">
+<ul title=3D"">
+<li>Confluence</li>
+<li>Jira</li>
+<li>ggf. PowerPoint</li>
+</ul></td>
+</tr>
+<tr>
+<th scope=3D"row" data-highlight-colour=3D"#fff0b3" class=3D"confluenceTh">=
+JF-Weekly</th>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd"><strong>Projek=
+tdurchf=C3=BChrung</strong></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">VB intern</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Alle</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Unabh=C3=A4ngi=
+g von der Dauer</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Regelm=C3=A4=
+=C3=9Fig</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">w=C3=B6chentli=
+ch, ist dem Redebedarf sinnhaft anzupassen,&nbsp; abgestimmt mit dem Projek=
+tteam&nbsp;</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd"><a href=3D"htt=
+ps://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/PROJ/pages/39818123=
+/Projektleitung" data-linked-resource-id=3D"39818123" data-linked-resource-=
+version=3D"5" data-linked-resource-type=3D"page">Projektleitung</a></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">25 Minuten</td=
+>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Gesamtes Proje=
+ktteam</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D"">Das Weekly bietet dem gesamten Projektteam die M=C3=B6glichke=
+it, sich regelm=C3=A4=C3=9Fig auszutauschen / zu informieren =C3=BCber bspw=
+.</p>
+<ul title=3D"">
+<li>Statusupdates</li>
+<li>Kl=C3=A4rung von Fragen &amp; Zust=C3=A4ndigkeiten</li>
+<li>Austausch zum Projekt</li>
+<li>Fortschrittskontrolle</li>
+<li>Verteilen von Arbeitspaketen</li>
+<li>zu diskutierende / zu kl=C3=A4rende Themen&nbsp;</li>
+</ul></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<ul title=3D"">
+<li>Confluence</li>
+<li>Jira</li>
+</ul></td>
+</tr>
+<tr>
+<th scope=3D"row" data-highlight-colour=3D"#fff0b3" class=3D"confluenceTh">=
+<a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/PROJ/=
+pages/39818426/Kontinuierliche+berwachung+des+Projektfortschritts" data-lin=
+ked-resource-id=3D"39818426" data-linked-resource-version=3D"4" data-linked=
+-resource-type=3D"page">Leitungs-JF</a></th>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D""><strong>Projektdurchf=C3=BChrung</strong></p></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">VB intern</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Ab Gr=C3=B6=C3=
+=9Fe L</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Unabh=C3=A4ngi=
+g von der Dauer</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Regelm=C3=A4=
+=C3=9Fig</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">w=C3=B6chentli=
+ch</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"398=
+18123" data-linked-resource-version=3D"5" data-linked-resource-type=3D"page=
+">Projektleitung</a></p>
+<p title=3D""><br></p></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">25 Minuten</td=
+>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"398=
+18123" data-linked-resource-version=3D"5" data-linked-resource-type=3D"page=
+">Projektleitung</a></p>
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39818105/Fachbereichs-Koordinator" data-linked-resource=
+-id=3D"39818105" data-linked-resource-version=3D"7" data-linked-resource-ty=
+pe=3D"page">Fachbereichs-Koordinator</a></p>
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39817536/IT-AE+Koordinator" data-linked-resource-id=3D"=
+39817536" data-linked-resource-version=3D"19" data-linked-resource-type=3D"=
+page">IT-AE Koordinator</a></p>
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39818308/IT-Betrieb+Koordinator" data-linked-resource-i=
+d=3D"39818308" data-linked-resource-version=3D"5" data-linked-resource-type=
+=3D"page">IT-Betrieb Koordinator</a></p></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D"">Ein regelm=C3=A4=C3=9Figer JF zwischen Projektleitung &amp; K=
+oordination emfpiehlt sich aus folgenden Gr=C3=BCnden:</p>
+<ul title=3D"">
+<li>Sensibilit=C3=A4t der Themen</li>
+<li>Priorisierung von Themen / Anforderungen / Sachverhalten (technisch &am=
+p; fachlich)</li>
+<li>Synchronisierung der Projektarbeit</li>
+<li>Sicherstellung von Kapazit=C3=A4ten</li>
+<li>Planung n=C3=A4chster Schritte</li>
+<li>=C3=9Cberwachung des Projektfortschrittes</li>
+</ul></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<ul title=3D"">
+<li>Confluence</li>
+<li>Jira</li>
+</ul></td>
+</tr>
+<tr>
+<th scope=3D"row" data-highlight-colour=3D"#fff0b3" class=3D"confluenceTh">=
+<a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/PROJ/=
+pages/39818759/Retrospektive+Lessons+Learned" data-linked-resource-id=3D"39=
+818759" data-linked-resource-version=3D"3" data-linked-resource-type=3D"pag=
+e">iterative Retrospektive</a></th>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd"><strong>Projek=
+tdurchf=C3=BChrung</strong></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">VB intern</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Alle</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Unabh=C3=A4ngi=
+g von der Dauer</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Regelm=C3=A4=
+=C3=9Fig</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Situativ</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"398=
+18123" data-linked-resource-version=3D"5" data-linked-resource-type=3D"page=
+">Projektleitung</a></p></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">50 Minuten</td=
+>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D"">Gesamtes Projektteam</p></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D"">Es empfiehlt sich, einen Erfahrungsaustausch (Lessons Learned=
+) durchzuf=C3=BChren nach jedem abgearbeiteten Arbeitspaket, sodass die Aba=
+rbeitung weiterer Arbeitspakete optimiert werden kann.&nbsp;</p>
+<ul title=3D"">
+<li>Was lief gut?</li>
+<li>Was kann k=C3=BCnftig optimiert werden?&nbsp;</li>
+</ul></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<ul title=3D"">
+<li>Confluence</li>
+</ul></td>
+</tr>
+<tr>
+<th scope=3D"row" data-highlight-colour=3D"#fff0b3" class=3D"confluenceTh">
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39817722/Priorunde" data-linked-resource-id=3D"39817722=
+" data-linked-resource-version=3D"6" data-linked-resource-type=3D"page">Pri=
+orunde</a></p></th>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D""><strong>Projektdurchf=C3=BChrung</strong></p>
+<p title=3D""><br></p></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">VB intern</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Alle</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Unabh=C3=A4ngi=
+g von der Dauer</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Situativ / Anl=
+assbezogen</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">bei Bedarf</td=
+>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39817696/Multi-Projekt-Management+MPM" data-linked-reso=
+urce-id=3D"39817696" data-linked-resource-version=3D"8" data-linked-resourc=
+e-type=3D"page">Multi-Projekt-Management (MPM)</a></p>
+<p title=3D""><br></p></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">30 Minuten</td=
+>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39817716/Vorstand" data-linked-resource-id=3D"39817716"=
+ data-linked-resource-version=3D"8" data-linked-resource-type=3D"page">Vors=
+tand</a></p>
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39817696/Multi-Projekt-Management+MPM" data-linked-reso=
+urce-id=3D"39817696" data-linked-resource-version=3D"8" data-linked-resourc=
+e-type=3D"page">Multi-Projekt-Management (MPM)</a></p>
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"398=
+18123" data-linked-resource-version=3D"5" data-linked-resource-type=3D"page=
+">Projektleitung</a></p>
+<p title=3D""><br></p></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D"">Letzte Eskalationsstufe unter Einbeziehung des Gesamtvorstand=
+es bei</p>
+<ul title=3D"">
+<li>ausbleibendem Projektfortschritt</li>
+<li>durch zuvor nicht zu l=C3=B6sende Sachverhalte&nbsp;</li>
+<li>Grundsatzeintscheidungen</li>
+<li>fehlenden Kompetenzen (bspw. Mehrkosten)</li>
+<li>fehlende Ressourcen (Priorisierung)</li>
+</ul></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<ul title=3D"">
+<li>PowerPoint</li>
+</ul></td>
+</tr>
+<tr>
+<th scope=3D"row" data-highlight-colour=3D"#fff0b3" class=3D"confluenceTh">=
+<a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/PROJ/=
+pages/39817726/Lenkungsausschuss+LA" data-linked-resource-id=3D"39817726" d=
+ata-linked-resource-version=3D"6" data-linked-resource-type=3D"page">Lenkun=
+gsausschuss</a></th>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D""><strong>Projektdurchf=C3=BChrung</strong></p></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">VB intern</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">XL</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Unabh=C3=A4ngi=
+g von der Dauer</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Regelm=C3=A4=
+=C3=9Fig</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">monatlich</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"398=
+18123" data-linked-resource-version=3D"5" data-linked-resource-type=3D"page=
+">Projektleitung</a></p>
+<p title=3D""><br></p></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">50 Minuten</td=
+>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"398=
+18123" data-linked-resource-version=3D"5" data-linked-resource-type=3D"page=
+">Projektleitung</a></p>
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39818105/Fachbereichs-Koordinator" data-linked-resource=
+-id=3D"39818105" data-linked-resource-version=3D"7" data-linked-resource-ty=
+pe=3D"page">Fachbereichs-Koordinator</a></p>
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39817536/IT-AE+Koordinator" data-linked-resource-id=3D"=
+39817536" data-linked-resource-version=3D"19" data-linked-resource-type=3D"=
+page">IT-AE Koordinator</a></p>
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39818308/IT-Betrieb+Koordinator" data-linked-resource-i=
+d=3D"39818308" data-linked-resource-version=3D"5" data-linked-resource-type=
+=3D"page">IT-Betrieb Koordinator</a></p>
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39817716/Vorstand" data-linked-resource-id=3D"39817716"=
+ data-linked-resource-version=3D"8" data-linked-resource-type=3D"page">Vors=
+tand</a></p>
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39817708/F1er" data-linked-resource-id=3D"39817708" dat=
+a-linked-resource-version=3D"8" data-linked-resource-type=3D"page">F1er</a>=
+</p></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D"">Diese Gro=C3=9Fprojekte bed=C3=BCrfen auf Grund ihrer Tragwei=
+te einen gesonderten Kommunikationskanal, in dem alle relevanten Entscheidu=
+ngstr=C3=A4ger regelm=C3=A4=C3=9Fig</p>
+<ul title=3D"">
+<li>=C3=BCber den Projektfortschritt informiert</li>
+<li>Entscheidungen eingeholt werden</li>
+<li>die Ausrichtung des Projektes gepr=C3=BCft und entschieden wird</li>
+</ul></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<ul title=3D"">
+<li>PowerPoint</li>
+</ul></td>
+</tr>
+<tr>
+<th scope=3D"row" data-highlight-colour=3D"#fff0b3" class=3D"confluenceTh">=
+PL-Weekly</th>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D""><strong>Projektdurchf=C3=BChrung</strong></p></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Externen</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Alle&nbsp;</td=
+>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Unabh=C3=A4ngi=
+g von der Dauer</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Regelm=C3=A4=
+=C3=9Fig</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">w=C3=B6chentli=
+ch, ist dem Redebedarf sinnhaft anzupassen,&nbsp; abgestimmt mit dem Projek=
+tteam&nbsp;</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"398=
+18123" data-linked-resource-version=3D"5" data-linked-resource-type=3D"page=
+">Projektleitung</a></p></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">15 - 25 Minute=
+n</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"398=
+18123" data-linked-resource-version=3D"5" data-linked-resource-type=3D"page=
+">Projektleitung</a>&nbsp;</p>
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39818489/Externe+Mitarbeiter" data-linked-resource-id=
+=3D"39818489" data-linked-resource-version=3D"5" data-linked-resource-type=
+=3D"page">Externe Mitarbeiter</a></p>
+<p title=3D"">Optional:&nbsp;</p>
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39818105/Fachbereichs-Koordinator" data-linked-resource=
+-id=3D"39818105" data-linked-resource-version=3D"7" data-linked-resource-ty=
+pe=3D"page">Fachbereichs-Koordinator</a></p>
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39817536/IT-AE+Koordinator" data-linked-resource-id=3D"=
+39817536" data-linked-resource-version=3D"19" data-linked-resource-type=3D"=
+page">IT-AE Koordinator</a></p>
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39818308/IT-Betrieb+Koordinator" data-linked-resource-i=
+d=3D"39818308" data-linked-resource-version=3D"5" data-linked-resource-type=
+=3D"page">IT-Betrieb Koordinator</a></p>
+<p title=3D""><br></p></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D"">Ein regelm=C3=A4=C3=9Figer JF zwischen Projektleitung &amp; I=
+T-Koordination emfpiehlt sich aus folgenden Gr=C3=BCnden:</p>
+<ul title=3D"">
+<li>Priorisierung von Themen / Anforderungen / Sachverhalten (technisch &am=
+p; fachlich)</li>
+<li>Synchronisierung der Projektarbeit</li>
+<li>Sicherstellung von Kapazit=C3=A4ten</li>
+<li>Planung n=C3=A4chster Schritte</li>
+<li>=C3=9Cberwachung des Projektfortschrittes</li>
+</ul></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<ul title=3D"">
+<li>Confluence</li>
+<li>Jira</li>
+</ul></td>
+</tr>
+<tr>
+<th scope=3D"row" data-highlight-colour=3D"#fff0b3" class=3D"confluenceTh">=
+Schnittstellen-Meeting</th>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D""><strong>Projektdurchf=C3=BChrung</strong></p></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">VB intern</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Alle</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Unabh=C3=A4ngi=
+g von der Dauer</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Regelm=C3=A4=
+=C3=9Fig</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">Initial / Bei =
+Bedarf</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"398=
+18123" data-linked-resource-version=3D"5" data-linked-resource-type=3D"page=
+">Projektleitung</a></p></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">15 - 25 Minute=
+n</td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"398=
+18123" data-linked-resource-version=3D"5" data-linked-resource-type=3D"page=
+">Projektleitung</a>&nbsp;</p>
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39817536/IT-AE+Koordinator" data-linked-resource-id=3D"=
+39817536" data-linked-resource-version=3D"19" data-linked-resource-type=3D"=
+page">IT-AE Koordinator</a>&nbsp;</p>
+<p title=3D"">Know-How-Tr=C3=A4ger der anzubindenden Anwendungen / Prozessa=
+bl=C3=A4ufen</p></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<p title=3D"">Neue, weiterentwickelte Anwendungen und oder Prozessabl=C3=A4=
+ufe k=C3=B6nnen Schnittmengen aufweisen zu bestehenden Anwendungen / Prozes=
+sabl=C3=A4ufen oder Anwendungen / Prozessabl=C3=A4ufen, die ebenfalls in Pr=
+ojekten behandelt werden:</p>
+<ul title=3D"">
+<li>Input&nbsp;</li>
+<li>Verarbeitung&nbsp;</li>
+<li>Transfer</li>
+<li>Output</li>
+</ul></td>
+<td data-highlight-colour=3D"#fff0b3" class=3D"confluenceTd">
+<ul title=3D"">
+<li>Confluence</li>
+<li>Jira</li>
+</ul></td>
+</tr>
+<tr>
+<th scope=3D"row" data-highlight-colour=3D"#ffbdad" class=3D"confluenceTh">=
+<a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/PROJ/=
+pages/39818473/Projektorganisation+aufl+sen" data-linked-resource-id=3D"398=
+18473" data-linked-resource-version=3D"4" data-linked-resource-type=3D"page=
+">Projektabschluss</a></th>
+<td data-highlight-colour=3D"#ffbdad" class=3D"confluenceTd"><strong>Projek=
+tabschluss</strong></td>
+<td data-highlight-colour=3D"#ffbdad" class=3D"confluenceTd">VB intern</td>
+<td data-highlight-colour=3D"#ffbdad" class=3D"confluenceTd">Alle</td>
+<td data-highlight-colour=3D"#ffbdad" class=3D"confluenceTd">Unabh=C3=A4ngi=
+g von der Dauer</td>
+<td data-highlight-colour=3D"#ffbdad" class=3D"confluenceTd">Zum Projektend=
+e</td>
+<td data-highlight-colour=3D"#ffbdad" class=3D"confluenceTd">einmalig</td>
+<td data-highlight-colour=3D"#ffbdad" class=3D"confluenceTd">
+<p title=3D""><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wik=
+i/spaces/PROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"398=
+18123" data-linked-resource-version=3D"5" data-linked-resource-type=3D"page=
+">Projektleitung</a></p>
+<p title=3D""><br></p></td>
+<td data-highlight-colour=3D"#ffbdad" class=3D"confluenceTd">50 Minuten + g=
+gf. 80 Minuten Lesson Learned</td>
+<td data-highlight-colour=3D"#ffbdad" class=3D"confluenceTd">Gesamtes Proje=
+ktteam</td>
+<td data-highlight-colour=3D"#ffbdad" class=3D"confluenceTd">
+<p title=3D"">Gl=C3=BCckwunsch, das Projekt wird mit diesem Termin nahezu f=
+inal abgeschlossen sein.</p>
+<ul title=3D"">
+<li>Aufl=C3=B6sen des Projektteams</li>
+<li>Vorstellung und Abstimmung des zuvor erstellten Projektabschlussbericht=
+es</li>
+<li>Es empfiehlt sich, einen Erfahrungsaustausch (Lessons Learned) durchzuf=
+=C3=BChren
+<ul>
+<li>Was lief gut?</li>
+<li>Was kann k=C3=BCnftig optimiert werden?</li>
+</ul></li>
+</ul></td>
+<td data-highlight-colour=3D"#ffbdad" class=3D"confluenceTd">
+<ul title=3D"">
+<li>Confluence</li>
+<li>Jira</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_12_818363025.1781590443243
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/133fa26e877a6993bebfcc8bbb6d97332d46737e7fae98550f4ec068b13d12d0
+
+iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAMAAAAL34HQAAADAFBMVEX19fXv7+98fHzd3d19fX22
+traenp5wcHD09PTn5+d1dXWSkpLOzs6Dg4Pt7e2ioqLR0dHY2NhycnLm5uapqam5ubnHx8eLi4vB
+wcHy8vKAgICsrKytra3o6Oji4uKxsbEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAADa0/+tAAAEbUlEQVR4Xu2aDXOiOhSGD6IE/MBilWr31mX//49ap7N3re3doVDX
+ii1yc/gmalcQ3Tt7zzODk5wE8ibnkJYkAARBEARBEARBEARBEARBEISIJBqOQfO3smg7gN+QX0Xb
+mdCaLU20HUJrNY6ueyJKS7R8REsRLUfQEA1HsG2Klo9obkXLmWCi4WNKVg+pMloX4D8qq1SYHERX
+PB9ktnHFgqrUIsvwdHsLDV1pPItFF0SM4S67ihJXzCiWhIjVz4XQjt6MVXFdbT1fElFFVg0hr4xT
+1z0bVebOmhC638v9fZR7WTrhN42Wn5vGOz5U0yFwuizVD7KMi7Jq4HRZZ4FklYFklaEmWTXMCQVq
+klU3JKsMJKsMJKsMJKsM/w9Zk85ENFWiBlkdfr1dR+l1aw4qGk7kdFnr5zuYaPHakqICSDV8w54u
+CzQb5tf2GPCL8XnDv35qWGc7drExT1P4jmAeOLo33A7Wqj7nMtVVoVisfgx1jNYL75vdbUqbvsNV
+yT89scZlEP/nM9ldltEaZpYJEaufi512Rs00Fgw2ypcgO9WPoI7YgtVwpbd6QbMva0vjSSjcrX4E
+NcQW57GrBE7QdgLFfxTLLkZJr5SsHlLPaNXOHyTLLzWNaxUivpKsxrto+Yj3Sk2IhiOQgzJbUX6V
+OegP2rgjCIIgCIIgCIIgLoUlGopYv6ih5Nds2IFTOBbAiFlJLv2qZrhUDDBmYHEYu8ktPCZYouED
+jLQNXWoDmG3GWEcHaEsHv5jd/ixJprJ60Uk1twcwm802bfm09TNp1U+SBtgAzqC9eW94wNPTfL08
+6+ywXCpr4+NGhOZvwlxg49e8MWBsEO9PdNnQwoGMhwx/RzgABzZTukHarSf0g/fNDvzwnNcwXsW0
+PvPbP2HqEwvYZ274MraSezJu0elKL2pRMno8IJgp6b3b2O9m7MTwB39NZuoGhoq1694RU1Mbi9cr
+1OkN9yb3bpS1+O0mhs44TFiFh2RnA130uYSniyzMzm/uwXsEV/+Bub77vuNUp8VN04VoRqaLbnhb
+RCd0jgXwbK4A0uUunT99xP1rh4m0dkgma8nMx+7bkqdmAJM1fAOQ+z8n8JXL7azZnj2AF359WWNv
+RBb9nU7AjD/z77xBxQsVh4l8SYFhA26HkIzlFJ3YmU4knrXCwc47UeW/LIldrBEnE0tElMnOMeIz
+Myfiq36HrYQJq/CQ3LLbpjX9EQV8inw/D0f3sWXzmISv2Kc5vgNh54pbO3lmCI46IqcbeeFgtZOl
+sXV8ZYmMnCz3eqEkr+jEWGDra73rhPll+4EPpHrF5civU93EpTTj5S/tepxNlVbuyjPAV4+Nr3Wz
+iSHzD3bU4pfLI93lI2mEicIthUVKdxIdp+PD/33V5FGmSd5b7HT7/UWBrf1qQbBeeA6e43zoP22X
+9r6TpkVcwLbtpecMfZzF7mP72OGWB/6coeM40WR+Ufb/8bFyxh1qOTz8CwoBu+eN3kOVlWaCIAiC
+IAiCIAiCIAjinPwLhCT3iDNYNFcAAAAASUVORK5CYII=
+------=_Part_12_818363025.1781590443243--

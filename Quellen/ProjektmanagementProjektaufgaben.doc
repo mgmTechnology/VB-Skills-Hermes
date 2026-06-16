@@ -1,0 +1,3780 @@
+Date: Tue, 16 Jun 2026 06:13:05 +0000 (UTC)
+Message-ID: <1157449139.11.1781590385756@38b3607502a1>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_10_1954464171.1781590385756"
+
+------=_Part_10_1954464171.1781590385756
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Projektaufgaben</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Projektaufgaben</h1>
+    <div class=3D"Section1">
+        <p></p>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817460/Erl+uterung+Projektaufgabensteckbrief" data-linked-resou=
+rce-id=3D"39817460" data-linked-resource-version=3D"9" data-linked-resource=
+-type=3D"page">Erl=C3=A4uterung Projektaufgabensteckbrief</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<blockquote>
+Eine kurze, pr=C3=A4gnante Beschreibung der Aufgabe im Projekt.
+</blockquote></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<blockquote>
+Welche Vorbedingungen zur Durchf=C3=BChrung der Aufgabe m=C3=BCssen erf=C3=
+=BCllt sein?
+</blockquote></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<blockquote>
+<p>Wie wird die Aufgabendurchf=C3=BChrung dokumentiert?</p>
+<p>Wo erfolgt die Dokumentation?</p>
+</blockquote></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<blockquote>
+<p>Welche Werkzeuge werden f=C3=BCr die Durchf=C3=BChrung der Aufgabe verwe=
+ndet? Dabei sollen nur die relevanten Werkzeuge genannt werden.</p>
+</blockquote></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<blockquote>
+Welche Rollen interagieren bei der Durchf=C3=BChrung der Aufgabe?
+</blockquote></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<blockquote>
+<p>Was sind die Ergebnisse nach der Durchf=C3=BChrung der Aufgabe?&nbsp;</p=
+>
+<p>Wo sind sie zu finden?</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817792/Erste+Idee+Impuls" data-linked-resource-id=3D"39817792" =
+data-linked-resource-version=3D"10" data-linked-resource-type=3D"page">(Ers=
+te) Idee / Impuls</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p>Es entsteht ein Handlungsbedarf</p>
+<ul>
+<li>intern (bspw. durch einen Mitarbeitenden des VBs) oder</li>
+<li>durch externe Einfl=C3=BCsse (bspw. regulatorische Anforderungen).</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<p>Themen, die zu einer Projektidee f=C3=BChren k=C3=B6nnen, sind beispiels=
+weise:</p>
+<ul>
+<li>Steigerung der Kundenzufriedenheit</li>
+<li>Erweiterung der Produktpalette</li>
+<li>Innovation</li>
+<li>Regulatorik / Verordnung</li>
+<li>Optimierungen / Weiterentwicklungen von Systemen, Prozessen und Abl=C3=
+=A4ufen</li>
+<li>Digitalisierung</li>
+<li>Automatisierung</li>
+<li>wirtschaftliches Wachstum</li>
+<li>Kostensenkung</li>
+<li>etc.&nbsp;</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<p>Erste Vorformulierung der Vision / des Handlungsbedarfes</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Confluence</li>
+<li>PowerPoint</li>
+<li>Handschriftlich</li>
+<li>Outlook</li>
+<li>Word</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<p>Ideen / Impulsgeber, bspw.:</p>
+<ul>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/x/i0eLE" rel=3D"nofollow">Vorstand</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/x/gkeLE" rel=3D"nofollow">F1er</a></li>
+<li>Direkte F=C3=BChrungskraft</li>
+<li>Mitarbeitende</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Ein grobes Zielbild, welches durch die Umsetzung der Idee erreicht werde=
+n soll (Vision).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817799/Steckbrief" data-linked-resource-id=3D"39817799" data-li=
+nked-resource-version=3D"9" data-linked-resource-type=3D"page">Steckbrief</=
+a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">Die (erste) Idee / Impuls wird grob umschrieben<=
+/td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<p>Die (erste) Idee / Impuls</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<p>Stichpunktartiges sammeln erster Ideen / Brainstorming</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>PowerPoint</li>
+<li>Confluence</li>
+<li>Word</li>
+<li>Outlook</li>
+<li>Handschriftlich</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"39818123" dat=
+a-linked-resource-version=3D"5" data-linked-resource-type=3D"page">Projektl=
+eitung</a></li>
+<li>Impulsgeber</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Eine grobe, stichpunktartige Umschreibung der Idee</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817804/Grobe+Bewertung" data-linked-resource-id=3D"39817804" da=
+ta-linked-resource-version=3D"9" data-linked-resource-type=3D"page">Grobe B=
+ewertung</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">Interdiszplin=C3=A4re Vorstellung und Erstbewert=
+ung der Umsetzung</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<p>Erstellter Steckbrief / Grobumschreibung der Idee</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Kurzvorstellung des zuvor erstellten Steckbriefes</li>
+<li>R=C3=BCckmeldungen der beteiligten Personen zur Machbarkeit und dem Nut=
+zen</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Confluence</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Die Erstbewertung erfolgt bei IT-Projekten durch eine <a href=3D"https:=
+//volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/PROJ/pages/39817548/IT=
+-AE+F+hrungskraft" data-linked-resource-id=3D"39817548" data-linked-resourc=
+e-version=3D"9" data-linked-resource-type=3D"page">IT-AE</a>- und <a href=
+=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/PROJ/pages/3=
+9818313/IT-Betrieb+F+hrungskraft" data-linked-resource-id=3D"39818313" data=
+-linked-resource-version=3D"3" data-linked-resource-type=3D"page">IT-Betrie=
+b</a>-Abteilungsleitung</li>
+<li>Eine fachliche Erstbewertung erfolgt durch <a href=3D"https://volkswohl=
+-bund-sandbox-2.atlassian.net/wiki/spaces/PROJ/pages/39818094/Fachexperten"=
+ data-linked-resource-id=3D"39818094" data-linked-resource-version=3D"4" da=
+ta-linked-resource-type=3D"page">Fachexperten</a> der involvierten / ben=C3=
+=B6tigten Fachbereiche&nbsp;</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Die Machbarkeit und der Nutzen der Idee ist bewertet und wird weiter ver=
+folgt.&nbsp; &nbsp; &nbsp;</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817808/Projektaufwand+-Team+bekannt+Fast+Lane" data-linked-reso=
+urce-id=3D"39817808" data-linked-resource-version=3D"9" data-linked-resourc=
+e-type=3D"page">Projektaufwand &amp; -Team bekannt (Fast Lane)</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p>Dieser Prozesschritt dient ausschlie=C3=9Flich f=C3=BCr wiederkehrende P=
+rojekte wie</p>
+<ul>
+<li>Riester- &amp; Basisbescheinungen</li>
+<li>Vertriebssoftware Leben</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Kopiervorlage in PPM Pro vorhanden</li>
+<li>Das Vorhaben wird mindestens 1x j=C3=A4hrlich wiederholt / neu aufgeset=
+zt</li>
+<li>S=C3=A4mtliche Parameter sind aus Vorprojekten nahezu vollumf=C3=A4ngli=
+ch bekannt, wie
+<ul>
+<li>Personalbedarf</li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39816270/4.+Projektbeteiligte" data-linked-resource-id=3D"3981627=
+0" data-linked-resource-version=3D"43" data-linked-resource-type=3D"page">I=
+nformationen f=C3=BCr </a><a href=3D"https://volkswohl-bund-sandbox-2.atlas=
+sian.net/wiki/spaces/PROJ/pages/39817702/Sonderfunktion" data-linked-resour=
+ce-id=3D"39817702" data-linked-resource-version=3D"6" data-linked-resource-=
+type=3D"page">Sonderfunktionen</a></li>
+<li>zeitlicher Horizont</li>
+</ul></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<p>Erstellen einer Projektanmeldung</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd"><a class=3D"external-link" href=3D"https://volks=
+wohl-bund.ppmpro.com/home.pa#%5BT1%2CM640%5D" rel=3D"nofollow">PPM Pro</a><=
+/td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Die <a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spac=
+es/PROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"39818123"=
+ data-linked-resource-version=3D"5" data-linked-resource-type=3D"page">Proj=
+ektleitung</a> erstellt die Projekanmeldung in PPM Pro</li>
+<li>Zuvor bedarf es einer Absprache mit dem zust=C3=A4ndigen <a href=3D"htt=
+ps://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/PROJ/pages/39817708=
+/F1er" data-linked-resource-id=3D"39817708" data-linked-resource-version=3D=
+"8" data-linked-resource-type=3D"page">F1er</a> sowie dem <a href=3D"https:=
+//volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/PROJ/pages/39817696/Mu=
+lti-Projekt-Management+MPM" data-linked-resource-id=3D"39817696" data-linke=
+d-resource-version=3D"8" data-linked-resource-type=3D"page">MPM</a>&nbsp;</=
+li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Projektanmeldung in PPM Pro</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817812/Formulierung+der+Problembeschreibung+Zielstellung" data-=
+linked-resource-id=3D"39817812" data-linked-resource-version=3D"14" data-li=
+nked-resource-type=3D"page">Formulierung der Problembeschreibung &amp; Ziel=
+stellung</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p>Detaillierte Beschreibung des Projektvorhabens:</p>
+<ul>
+<li>Was ist der Anlass der Idee? Was ist der Ausl=C3=B6ser der Idee? Wie ge=
+staltet sich der Status Quo?</li>
+<li>Welches Ziel verfolgt die Idee? Welche Mehrwerte werden geschaffen?&nbs=
+p;&nbsp;</li>
+<li>Optional:
+<ul>
+<li>Was ist nicht Bestandteil des Projektes (Out of Scope)?</li>
+<li>Welche Meilensteine wird es geben?</li>
+<li>Welche Risiken liegen vor?</li>
+<li>Welche Abh=C3=A4ngigkeiten gibt es?</li>
+<li>Kosten-Nutzen-Betrachtung</li>
+</ul></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<p>Die grobe Bewertung des Steckbriefes wurde als machbar bewertet, weist e=
+inen Nutzen auf und wird weiterverfolgt.&nbsp;</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<p>Erstellen einer Projektanmeldung in PPM Pro</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd"><a class=3D"external-link" href=3D"https://volks=
+wohl-bund.ppmpro.com/home.pa#%5BT1%2CM640%5D" rel=3D"nofollow">PPM Pro</a><=
+/td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Die <a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spac=
+es/PROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"39818123"=
+ data-linked-resource-version=3D"5" data-linked-resource-type=3D"page">Proj=
+ektleitung</a> =C3=BCbernimmt die Ausformulierung und kann dabei unterst=C3=
+=BCtzt werden von&nbsp;
+<ul>
+<li>dem Ideengeber</li>
+<li>der eigenen F=C3=BChrungskraft</li>
+</ul></li>
+<li>&nbsp;Es empfiehlt sich die <a href=3D"https://volkswohl-bund-sandbox-2=
+.atlassian.net/wiki/spaces/PROJ/pages/39817548/IT-AE+F+hrungskraft" data-li=
+nked-resource-id=3D"39817548" data-linked-resource-version=3D"9" data-linke=
+d-resource-type=3D"page">IT-AE</a>-F=C3=BChrungskraft &amp; <a href=3D"http=
+s://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/PROJ/pages/39818313/=
+IT-Betrieb+F+hrungskraft" data-linked-resource-id=3D"39818313" data-linked-=
+resource-version=3D"3" data-linked-resource-type=3D"page">IT-Betrieb</a>-F=
+=C3=BChrungskraft an der Ausformulierung zu beteiligen</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Ausformulierte Problem- &amp; Zielbeschreibung sowie Abgrenzung von Inha=
+lten</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817682/Zuweisung+IT-AE+und+IT-Betrieb+Koordination" data-linked=
+-resource-id=3D"39817682" data-linked-resource-version=3D"5" data-linked-re=
+source-type=3D"page">Zuweisung IT-AE und IT-Betrieb Koordination</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">Festlegung des <a href=3D"https://volkswohl-bund=
+-sandbox-2.atlassian.net/wiki/spaces/PROJ/pages/39817536/IT-AE+Koordinator"=
+ data-linked-resource-id=3D"39817536" data-linked-resource-version=3D"19" d=
+ata-linked-resource-type=3D"page">IT-AE Koordinators</a> und des<a href=3D"=
+https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/PROJ/pages/39818=
+308/IT-Betrieb+Koordinator" data-linked-resource-id=3D"39818308" data-linke=
+d-resource-version=3D"5" data-linked-resource-type=3D"page"> IT-Betrieb Koo=
+rdinators </a> zur weiteren Koordination der IT im Projekt.</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<p>Formulierung der Problembeschreibung und Zielsetzung ist erfolgt. Eine e=
+rste Vorstellung der technischen Umsetzung ist entwickelt worden.</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<p>Eintragung in der Projektanfrage in PPM Pro</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">PPM Pro</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817548/IT-AE+F+hrungskraft" data-linked-resource-id=3D"39817548=
+" data-linked-resource-version=3D"9" data-linked-resource-type=3D"page">IT-=
+AE F=C3=BChrungskraft</a>, in dessen Zust=C3=A4ndigkeitsbereich das Projekt=
+ f=C3=A4llt. Ggf. muss der Zust=C3=A4ndigkeitsbereich mit mehreren IT-AE F=
+=C3=BChrungskr=C3=A4ften abgekl=C3=A4rt werden.</li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818313/IT-Betrieb+F+hrungskraft" data-linked-resource-id=3D"398=
+18313" data-linked-resource-version=3D"3" data-linked-resource-type=3D"page=
+">IT-Betrieb F=C3=BChrungskraft</a>,&nbsp;in dessen Zust=C3=A4ndigkeitsbere=
+ich das Projekt f=C3=A4llt. Ggf. muss der Zust=C3=A4ndigkeitsbereich mit me=
+hreren IT-Betrieb F=C3=BChrungskr=C3=A4ften abgekl=C3=A4rt werden.</li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"39818123" dat=
+a-linked-resource-version=3D"5" data-linked-resource-type=3D"page">Projektl=
+eitung </a>wird durch die IT-AE F=C3=BChrungskraft und die IT-Betrieb F=C3=
+=BChrungskraft informiert.</li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817536/IT-AE+Koordinator" data-linked-resource-id=3D"39817536" =
+data-linked-resource-version=3D"19" data-linked-resource-type=3D"page">IT-A=
+E Koordinator</a> wird durch die IT-AE F=C3=BChrungskraft informiert.</li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818308/IT-Betrieb+Koordinator" data-linked-resource-id=3D"39818=
+308" data-linked-resource-version=3D"5" data-linked-resource-type=3D"page">=
+IT-Betrieb Koordinator</a> wird durch die IT-Betrieb F=C3=BChrungskraft inf=
+ormiert.</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Der IT-AE und der IT-Betrieb Koordinator ist in PPM Pro eingetragen word=
+en. Die <a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spac=
+es/PROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"39818123"=
+ data-linked-resource-version=3D"5" data-linked-resource-type=3D"page">Proj=
+ektleitung</a>, <a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/w=
+iki/spaces/PROJ/pages/39817536/IT-AE+Koordinator" data-linked-resource-id=
+=3D"39817536" data-linked-resource-version=3D"19" data-linked-resource-type=
+=3D"page">IT-AE Koordinator</a> und der <a href=3D"https://volkswohl-bund-s=
+andbox-2.atlassian.net/wiki/spaces/PROJ/pages/39818308/IT-Betrieb+Koordinat=
+or" data-linked-resource-id=3D"39818308" data-linked-resource-version=3D"5"=
+ data-linked-resource-type=3D"page">IT-Betrieb Koordinator</a> sind informi=
+ert.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817730/Bestimmung+der+Projektgr+e" data-linked-resource-id=3D"3=
+9817730" data-linked-resource-version=3D"6" data-linked-resource-type=3D"pa=
+ge">Bestimmung der Projektgr=C3=B6=C3=9Fe</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">Zur Einordnung der Aufw=C3=A4nde wird der gesamt=
+e Aufwand f=C3=BCr die Umsetzung des Projekts grob gesch=C3=A4tzt. Als Skal=
+a werden dazu T-Shirt-Gr=C3=B6=C3=9Fen genutzt.</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<p><span class=3D"legacy-color-text-blue3">Formulierung der Problembeschrei=
+bung und Zielsetzung ist erfolgt. Eine erste Vorstellung der technischen Um=
+setzung ist entwickelt worden.</span></p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<p>Die T-Shirt-Gr=C3=B6=C3=9Fe wird bei der Projektanmeldung in PPM Pro erf=
+asst.</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">PPM Pro</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"39818123" dat=
+a-linked-resource-version=3D"5" data-linked-resource-type=3D"page">Projektl=
+eitung</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818105/Fachbereichs-Koordinator" data-linked-resource-id=3D"398=
+18105" data-linked-resource-version=3D"7" data-linked-resource-type=3D"page=
+">Fachbereichs-Koordinator</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817536/IT-AE+Koordinator" data-linked-resource-id=3D"39817536" =
+data-linked-resource-version=3D"19" data-linked-resource-type=3D"page">IT-A=
+E Koordinator</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818308/IT-Betrieb+Koordinator" data-linked-resource-id=3D"39818=
+308" data-linked-resource-version=3D"5" data-linked-resource-type=3D"page">=
+IT-Betrieb Koordinator</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Grobe Einordnung des Projektaufwands anhand der T-Shirt Gr=C3=B6=C3=9Fe.=
+</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818040/Aufwandssch+tzung+-+Planungsphase" data-linked-resource-=
+id=3D"39818040" data-linked-resource-version=3D"4" data-linked-resource-typ=
+e=3D"page">Aufwandssch=C3=A4tzung - Planungsphase</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">Die Aufw=C3=A4nde f=C3=BCr die Projektplanungsph=
+ase werden gesch=C3=A4tzt.</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<p><span class=3D"legacy-color-text-blue3">Formulierung der Problembeschrei=
+bung und Zielsetzung ist erfolgt. Eine erste Vorstellung der technischen Um=
+setzung ist entwickelt worden.</span></p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<p>Die Aufw=C3=A4nde f=C3=BCr die Projektplanungsphase werden in Confluence=
+ dokumentiert und in PPM Pro hinterlegt und eingeplant.</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Confluence</li>
+<li>PPM Pro</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+84729828/Projektleitung" rel=3D"nofollow" style=3D"">Projektleitung</a></li=
+>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+84729743/Fachbereichs-Koordinator" rel=3D"nofollow" style=3D"">Fachbereichs=
+-Koordinator</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+77559616/IT-AE+Koordinator" rel=3D"nofollow" style=3D"">IT-AE Koordinator</=
+a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+88196837/IT-Betrieb+Koordinator" rel=3D"nofollow" style=3D"">IT-Betrieb Koo=
+rdinator</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Aufwandsch=C3=A4tzung f=C3=BCr die Projektplanungsphase</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818140/Grobe+Terminierung" data-linked-resource-id=3D"39818140"=
+ data-linked-resource-version=3D"12" data-linked-resource-type=3D"page">Gro=
+be Terminierung</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped relative-table confluenceTable" style=3D"width: 56.=
+8132%;">
+<colgroup>
+<col style=3D"width: 18.4016%;">
+<col style=3D"width: 81.6535%;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p><span class=3D"legacy-color-text-blue3">Die grobe Terminierung </span>f=
+=C3=BCr die Projektplanungsphase sowie das Gesamtprojekt werden ermittelt:<=
+/p>
+<ul>
+<li>Gibt es feste Endtermine (z. B. durch Regulatorik, Abschaltung von Hard=
+ware, bekannte Zieltermine)?</li>
+<li>Sind bereits Engp=C3=A4sse der Ressourcen oder Abh=C3=A4ngigkeiten zu a=
+nderen Themen vorab bekannt?</li>
+<li>Zeitlichen Puffer f=C3=BCr Unw=C3=A4gbarkeiten einplanen</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<p><span class=3D"legacy-color-text-blue3">Formulierung der Problembeschrei=
+bung und Zielsetzung ist erfolgt. Eine erste Vorstellung der technischen Um=
+setzung ist entwickelt worden.</span> Eine grobe Aufwandssch=C3=A4tzung f=
+=C3=BCr die Planungsphase liegt vor.</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<p><span class=3D"legacy-color-text-blue3">Die grobe Terminierung </span>f=
+=C3=BCr die Projektplanungsphase sowie das Gesamtprojekt werden in Confluen=
+ce dokumentiert und in PPM Pro hinterlegt und eingeplant.</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Confluence</li>
+<li>PPM Pro</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+84729828/Projektleitung" rel=3D"nofollow">Projektleitung</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+84729743/Fachbereichs-Koordinator" rel=3D"nofollow">Fachbereichs-Koordinato=
+r</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+77559616/IT-AE+Koordinator" rel=3D"nofollow">IT-AE Koordinator</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+88196837/IT-Betrieb+Koordinator" rel=3D"nofollow">IT-Betrieb Koordinator</a=
+></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p><span class=3D"legacy-color-text-blue3">Grobe Terminierung </span>f=C3=
+=BCr die Projektplanungsphase sowie das Gesamtprojekt</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817852/Make+or+Buy" data-linked-resource-id=3D"39817852" data-l=
+inked-resource-version=3D"8" data-linked-resource-type=3D"page">Make or Buy=
+</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p>Kl=C3=A4rung einer VB-internen Umsetzung vs. der Hinzunahme Externer (Di=
+enstleister, Anbieter, Hersteller, Beratung)</p>
+<ul>
+<li>Know-How / Expertise</li>
+<li>Verf=C3=BCgbare Kapazit=C3=A4ten&nbsp;</li>
+<li>Kosten-Nutzen</li>
+<li>Zeitliche Taktung&nbsp;</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<p>Die Grobplanung der Projektidee ist abgeschlossen</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Bewertung der Grobplanung</li>
+<li>Entscheidungsfindung Make or Buy</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a class=3D"external-link" href=3D"https://volkswohl-bund.ppmpro.com/ho=
+me.pa#%5BT1%2CM640%5D" rel=3D"nofollow">PPM Pro</a></li>
+<li>Confluence</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+84729828/Projektleitung" rel=3D"nofollow">Projektleitung</a></li>
+<li>F=C3=BChrungskraft</li>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/x/gkeLE" rel=3D"nofollow">F1er</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817548/IT-AE+F+hrungskraft" data-linked-resource-id=3D"39817548=
+" data-linked-resource-version=3D"9" data-linked-resource-type=3D"page">IT-=
+AE F=C3=BChrungskraft</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818313/IT-Betrieb+F+hrungskraft" data-linked-resource-id=3D"398=
+18313" data-linked-resource-version=3D"3" data-linked-resource-type=3D"page=
+">IT-Betrieb F=C3=BChrungskraft</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/x/i0eLE" rel=3D"nofollow">Vorstand</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+84729743/Fachbereichs-Koordinator" rel=3D"nofollow">Fachbereichs-Koordinato=
+r</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+77559616/IT-AE+Koordinator" rel=3D"nofollow">IT-AE Koordinator</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+88196837/IT-Betrieb+Koordinator" rel=3D"nofollow">IT-Betrieb Koordinator</a=
+></li>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/x/dkeLE" rel=3D"nofollow">Sonderfunktion (Strategischer Einkauf)</a=
+></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Abgestimmte Umsetzungsstrategie des Projektes</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817843/Auswahl+Sonderfunktionen" data-linked-resource-id=3D"398=
+17843" data-linked-resource-version=3D"13" data-linked-resource-type=3D"pag=
+e">Auswahl Sonderfunktionen</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p>Auswahl der zu beteiligenden Sonderfunktionen zu Beginn der Projektanmel=
+dung in einem "Kick-Off Sonderfunktionen".</p>
+<ul>
+<li>In welchen Phase des Projektes sind Sonderfunktionen zu involvieren?
+<ul>
+<li>Projektanmeldung</li>
+<li>Projektdurchf=C3=BChrung</li>
+<li>Change Request</li>
+<li>Projektabschluss</li>
+</ul></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Problembeschreibung und Zielstellung</li>
+<li>Projektgr=C3=B6=C3=9Fe bekannt</li>
+<li>Grobterminierung (Start- und Endtermin)</li>
+<li>Abgestimmte Zust=C3=A4ndigkeit IT-AE-Koordination</li>
+<li>Abgestimmte Zust=C3=A4ndigkeit IT-Betrieb-Koordination</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<p>Erstellen einer PowerPoint-Pr=C3=A4sentation</p>
+<ul>
+<li>Kurzvorstellung des Projektvorhabens</li>
+<li>Einsch=C3=A4tzung durch die Projektleitung, welche Sonderfunktionen zu =
+involvieren sind</li>
+<li>Vorabinformation an Testmanagement &amp; IT-Betrieb</li>
+</ul>
+<p>Nach erfolgter Zustimmung ist die Pr=C3=A4sentation in der Projektanmeld=
+ung in PPM Pro abzulegen.</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>PowerPoint</li>
+<li>Confluence</li>
+<li><a class=3D"external-link" href=3D"https://volkswohl-bund.ppmpro.com/ho=
+me.pa#%5BT1%2CM640%5D" rel=3D"nofollow">PPM Pro</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Erstellung der Pr=C3=A4sentation durch Projektleitung, ggf.&nbsp;Zuarbe=
+it durch Informationsgeber wie <a class=3D"external-link" href=3D"https://c=
+onfluence-cpy.ad.volkswohl-bund.de/x/QDmLE" rel=3D"nofollow">IT-AE-Koordina=
+tion</a></li>
+<li>Hilfestellung, Terminorganisation und Moderation durch <a class=3D"exte=
+rnal-link" href=3D"https://confluence-cpy.ad.volkswohl-bund.de/x/XEeLE" rel=
+=3D"nofollow">MPM</a></li>
+<li>S=C3=A4mtliche <a class=3D"external-link" href=3D"https://confluence-cp=
+y.ad.volkswohl-bund.de/x/dkeLE" rel=3D"nofollow">Sonderfunktionen</a></li>
+<li>informativ f=C3=BCr Testmanagement &amp; IT-Betrieb</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>zu involvierende Sonderfunktionen im weiteren Projektverlauf</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817881/Genehmigung+Projektidee" data-linked-resource-id=3D"3981=
+7881" data-linked-resource-version=3D"7" data-linked-resource-type=3D"page"=
+>Genehmigung Projektidee</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p>Genehmigung der Projektidee einleiten und einholen</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Fertiggestellte Projektidee</li>
+<li>Zustimmung Sonderfunktionen</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Protokollierung von offenen und bereits get=C3=A4tigten Genehmigungen /=
+ Zustimmungen&nbsp;</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd"><a class=3D"external-link" href=3D"https://volks=
+wohl-bund.ppmpro.com/home.pa#%5BT1%2CM640%5D" rel=3D"nofollow">PPM Pro</a><=
+/td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"39818123" dat=
+a-linked-resource-version=3D"5" data-linked-resource-type=3D"page">Projektl=
+eitung</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817548/IT-AE+F+hrungskraft" data-linked-resource-id=3D"39817548=
+" data-linked-resource-version=3D"9" data-linked-resource-type=3D"page">IT-=
+AE-Abteilungsleitung</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818313/IT-Betrieb+F+hrungskraft" data-linked-resource-id=3D"398=
+18313" data-linked-resource-version=3D"3" data-linked-resource-type=3D"page=
+">IT-Betrieb-Abteilungsleitung</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/x/gkeLE" rel=3D"nofollow">F1er</a></li>
+<li>ggf. <a class=3D"external-link" href=3D"https://confluence-cpy.ad.volks=
+wohl-bund.de/x/i0eLE" rel=3D"nofollow"> Vorstand </a>(-smitglied) (Planungs=
+phase &gt; 50 PT)</li>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/x/dkeLE" rel=3D"nofollow">Sonderfunktion</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/x/XEeLE" rel=3D"nofollow">MPM</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Final genehmigte Projektidee</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818242/Projekt-Organisation+einrichten" data-linked-resource-id=
+=3D"39818242" data-linked-resource-version=3D"11" data-linked-resource-type=
+=3D"page">Projekt-Organisation einrichten</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p>Die Projekt-Organisation wird eingerichtet (inkl. Team, Kommunikation, P=
+rojektmodell, Dokumentation, Regulatorik).</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh"><span class=3D"legacy-color-text-blue3">Vorbedin=
+gung</span></th>
+<td class=3D"confluenceTd">Phase "Projektidee" ist abgeschlossen und es geh=
+t in die Phase "Projektplanungsphase".</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">Einrichten eines Confluence-Bereich &amp; Erstel=
+lung eines Jira-Boards. Festhalten der Projekt-Organisation in Confluence.<=
+/td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Confluence</li>
+<li>Jira</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Organisation: <a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net=
+/wiki/spaces/PROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D=
+"39818123" data-linked-resource-version=3D"5" data-linked-resource-type=3D"=
+page">Projektleitung</a></li>
+<li>Alle</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Die Organisation des Projektes ist f=C3=BCr alle Projektteilnehmer klar =
+und transparent.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818860/Projektstrukturplan+erstellen" data-linked-resource-id=
+=3D"39818860" data-linked-resource-version=3D"7" data-linked-resource-type=
+=3D"page">Projektstrukturplan erstellen</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped relative-table confluenceTable" style=3D"width: 94.=
+5424%;">
+<colgroup>
+<col style=3D"width: 9.33489%;">
+<col style=3D"width: 90.6651%;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p><span class=3D"legacy-color-text-gray2"><span class=3D"legacy-color-text=
+-blue3"><span class=3D"legacy-color-text-blue3">Der Projektstrukturplan die=
+nt dazu eine vollst=C3=A4ndige =C3=9Cbersicht =C3=BCber das<span>&nbsp;</sp=
+an></span>Projekt<span class=3D"legacy-color-text-blue3"><span>&nbsp;</span=
+>zu bekommen und so seinen Leistungsumfang (Scope) festzulegen.</span></spa=
+n></span></p>
+<p><span class=3D"legacy-color-text-gray2"><span class=3D"legacy-color-text=
+-blue3">Der Projektstrukturplan bildet dabei ALLE Aufgaben eines Projekts i=
+n einer hierarchischen Darstellung ab. Er unterteilt das Projekt in Teilpro=
+jekte, Arbeitspakete und Aufgaben, und erm=C3=B6glicht so einen klaren =C3=
+=9Cberblick dar=C3=BCber was zu tun ist, ohne dabei zeitliche Abfolgen zu b=
+er=C3=BCcksichtigen. Wichtig ist, dass der Projektstrukturplan wirklich all=
+e Aufgaben im Projekt abdeckt, z.B. auch die Aufgaben Rund um das Projektma=
+nagement, den Rollout, Schulungen, etc.</span></span></p>
+<p><span class=3D"legacy-color-text-gray2"><span class=3D"legacy-color-text=
+-blue3">Der Projektstrukturplan ist die Grundlage f=C3=BCr alle weiteren Pl=
+anungen, wie z.B. die Termin- und Ablaufplanung, die Ressourceneinplanung u=
+nd die Kostenplanung. Daher wird der Projektstrukturplan gerne auch als =E2=
+=80=9EPlan der Pl=C3=A4ne=E2=80=9C bezeichnet.</span></span></p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh"><span class=3D"legacy-color-text-blue3">Vorbedin=
+gung</span></th>
+<td class=3D"confluenceTd">Phase "Projektidee" ist abgeschlossen und es geh=
+t in die Phase "Projektplanungsphase".</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">Projektstrukturplan in Confluence</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Confluence</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Organisation: <a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net=
+/wiki/spaces/PROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D=
+"39818123" data-linked-resource-version=3D"5" data-linked-resource-type=3D"=
+page">Projektleitung</a></li>
+<li>Alle</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Alle Arbeitspakete des Projektes sind definiert und f=C3=BCr alle Projek=
+tteilnehmer klar und transparent.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817848/Kommunikationsplan+einrichten" data-linked-resource-id=
+=3D"39817848" data-linked-resource-version=3D"9" data-linked-resource-type=
+=3D"page">Kommunikationsplan einrichten</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p>Sichten, bewerten, ausw=C3=A4hlen und organisieren von regelm=C3=A4=C3=
+=9Figen Meetings / JF</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Vogehensmodell (Wasserfall / SCRUM / Hybrid) gekl=C3=A4rt</li>
+<li>Projektorganisation wurde zusammengestellt
+<ul>
+<li>Ben=C3=B6tigte Rollen</li>
+<li>Ben=C3=B6tigte Personen</li>
+</ul></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<p>Erstellen von (Regel-) Terminen</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Outlook</li>
+<li>Teams</li>
+<li>Webex</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+84729828/Projektleitung" rel=3D"nofollow" style=3D"">Projektleitung</a></li=
+>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+84729743/Fachbereichs-Koordinator" rel=3D"nofollow" style=3D"">Fachbereichs=
+-Koordinator</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+77559616/IT-AE+Koordinator" rel=3D"nofollow" style=3D"">IT-AE Koordinator</=
+a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+88196837/IT-Betrieb+Koordinator" rel=3D"nofollow" style=3D"">IT-Betrieb Koo=
+rdinator</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818489/Externe+Mitarbeiter" data-linked-resource-id=3D"39818489=
+" data-linked-resource-version=3D"5" data-linked-resource-type=3D"page">Ext=
+erne Mitarbeiter</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Projektintere Regelkommunikation organisiert</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818226/Anforderungen+priorisieren" data-linked-resource-id=3D"3=
+9818226" data-linked-resource-version=3D"9" data-linked-resource-type=3D"pa=
+ge">Anforderungen priorisieren</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p>Sowohl funktionale als auch nicht-funktionale Anforderungen werden nach =
+ihrer Relevanz und Dringlichkeit priorisiert.</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh"><span class=3D"legacy-color-text-blue3">Vorbedin=
+gung</span></th>
+<td class=3D"confluenceTd">F=C3=BCr eine erste, wesentliche Priorisierung s=
+ind die Anforderungen im Pflichtenheft beschrieben. <br><br>
+Nach der Detailierung der Anforderungen und der Erstellung des technischen =
+Konzepts&nbsp;k=C3=B6nnen sich andere Priorit=C3=A4ten ergeben. Dar=C3=BCbe=
+r hinaus ist eine regelm=C3=A4=C3=9Fige Verifizierung bzw. Neubewertung der=
+ Priorisierung sinnvoll.</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<p>Im jeweiligen Jira-Ticket der Anforderung wird die Priorit=C3=A4t festge=
+legt.&nbsp;</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Jira</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><span class=3D"legacy-color-text-blue3"><a href=3D"https://volkswohl-bu=
+nd-sandbox-2.atlassian.net/wiki/spaces/PROJ/pages/39818105/Fachbereichs-Koo=
+rdinator" data-linked-resource-id=3D"39818105" data-linked-resource-version=
+=3D"7" data-linked-resource-type=3D"page">Fachbereichs-Koordinator&nbsp;</a=
+></span></li>
+<li><span class=3D"legacy-color-text-blue3"><a href=3D"https://volkswohl-bu=
+nd-sandbox-2.atlassian.net/wiki/spaces/PROJ/pages/39818015/Anforderungsmana=
+ger" data-linked-resource-id=3D"39818015" data-linked-resource-version=3D"7=
+" data-linked-resource-type=3D"page">Anforderungsmanager</a></span></li>
+<li><span class=3D"legacy-color-text-blue3"><a href=3D"https://volkswohl-bu=
+nd-sandbox-2.atlassian.net/wiki/spaces/PROJ/pages/39817637/Testmanager" dat=
+a-linked-resource-id=3D"39817637" data-linked-resource-version=3D"5" data-l=
+inked-resource-type=3D"page">Testmanager</a></span></li>
+<li><span class=3D"legacy-color-text-blue3"><a href=3D"https://volkswohl-bu=
+nd-sandbox-2.atlassian.net/wiki/spaces/PROJ/pages/39817536/IT-AE+Koordinato=
+r" data-linked-resource-id=3D"39817536" data-linked-resource-version=3D"19"=
+ data-linked-resource-type=3D"page">IT-AE Koordinator</a></span></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Je Jira-Ticket eine Priorit=C3=A4t.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817645/Technisches+Konzept+erstellen" data-linked-resource-id=
+=3D"39817645" data-linked-resource-version=3D"4" data-linked-resource-type=
+=3D"page">Technisches Konzept erstellen</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p>Anhand der Anforderungen wird ein technisches Konzepts zur effizienten E=
+rf=C3=BCllung der Anforderungen entworfen.</p>
+<p>Dies beinhaltet eine IT-Architektur, Schnittstellenkonzepte, Systemkompo=
+nenten, Datenbanken, Server etc.</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Alle Anforderungen sind erfasst</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Das technische Konzept wird in Confluence dokumentiert.</li>
+<li>Die Arbeitspakete werden als Jira-Tickets (meist auf Epic-Ebene) erfass=
+t und dokumentiert.</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Confluence</li>
+<li>Jira</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/display/OR/IT-AE+Koordinator" rel=3D"nofollow">IT-AE Koordinator &n=
+bsp;</a><span>&nbsp;</span>&nbsp;</li>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/display/OR/IT-AE+Anwendungsentwickler" rel=3D"nofollow">IT-AE Anwen=
+dungsentwickler</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/display/OR/IT-AE+Architekt" rel=3D"nofollow">IT-AE Architekt</a></l=
+i>
+<li><a class=3D"external-link" href=3D"https://volkswohl-bund-sandbox-2.atl=
+assian.nethttps://confluence-cpy.ad.volkswohl-bund.de/pages/viewpage.action=
+?pageId=3D277559775" rel=3D"nofollow">IT-AE F=C3=BChrungskraft</a>&nbsp; &n=
+bsp;</li>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/display/OR/IT-AE+Testmanager" rel=3D"nofollow">IT-AE Testmanager</a=
+></li>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/display/OR/IT-AE+Testautomatisierer" rel=3D"nofollow">IT-AE Testaut=
+omatisierer</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818114/Business+Analyst" data-linked-resource-id=3D"39818114" d=
+ata-linked-resource-version=3D"6" data-linked-resource-type=3D"page">Busine=
+ss Analyst</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Technisches Konzept</li>
+<li>Arbeitspakte in Form von Jira-Tickets</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818479/Testplanung" data-linked-resource-id=3D"39818479" data-l=
+inked-resource-version=3D"5" data-linked-resource-type=3D"page">Testplanung=
+</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p style=3D"text-align: left;">Im Zuge der Testplanung werden alle Aufgaben=
+ genannt, die zur Vorbereitung der Testaktivit=C3=A4ten in einem Projekt be=
+n=C3=B6tigt werden.</p>
+<p style=3D"text-align: left;">Relevant ist das Testmanagement ab dem Zeitp=
+unkt, wo beschlossen wurde, dass eine Idee umgesetzt werden soll hinzugezog=
+en wird. Hei=C3=9Ft vor der Erstellung eines Projektantrags muss das Testma=
+nagement dabei sein.</p>
+<p style=3D"text-align: left;"><br></p>
+<ul style=3D"text-align: left;">
+<ul>
+<li><span>Aufwandssch=C3=A4tzung f=C3=BCr die Arbeitspakete</span></li>
+<li><span>Erstellung eines Testkonzepts auf Basis der Anforderungen</span><=
+/li>
+<li><span>Abstimmung eines Testvorgehens</span></li>
+</ul>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<ul style=3D"text-align: left;">
+<li><span>Fachliche Anforderungen sind erstellt</span></li>
+<li><span>Projektzeitplan / Projektplan</span></li>
+<li><span>Technische Konzeption ist vorhanden</span></li>
+<li><span>Nicht funktionale Anforderungen sind vorhanden</span></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><span>Testkonzept</span></li>
+<li><span>Projektplan mit Ber=C3=BCcksichtigung der Testaufw=C3=A4nde</span=
+></li>
+<li><span>Ggf. weiter Konzepte z.B. Performance-Testing-Konzept</span></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Confluence</li>
+<li>Jira</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><span>Testmanager</span></li>
+<li><span>Fehlermanager</span></li>
+<li><span>Testdatenmanager</span></li>
+<li><span>Tester Fachabteilung</span></li>
+<li><span>Test IT-Betrieb</span></li>
+<li><span>Projektleitung</span></li>
+<li><span>IT-Verwantwortlicher</span></li>
+<li><span>Fachabteilung</span></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><span>Testkonzept</span></li>
+<li><span>Projektplan mit Ber=C3=BCcksichtigung der Testaufw=C3=A4nde</span=
+></li>
+<li><span>Verbindliches abgestimmtes Testvorgehen mit allen beteiligten/rel=
+evanten Personen</span></li>
+<li><span>Testdatenkonzept</span></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818568/Projekteintrag+Sonderfunktionen" data-linked-resource-id=
+=3D"39818568" data-linked-resource-version=3D"2" data-linked-resource-type=
+=3D"page">Projekteintrag Sonderfunktionen</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p>Informationsbereitstellung von sonderfunktionsrelevanter Informationen</=
+p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Der zuvor im "Kick-Off-Sonderfunktionen" abgestimmten relevanten Sonder=
+funktionen</li>
+<li>Details zu technischen und fachlichen Projektinhalten liegen vor</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<p>Erstellen von Projekteintr=C3=A4gen, der zu involvierenden Sonderfunktio=
+nen</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a class=3D"external-link" href=3D"https://volkswohl-bund.ppmpro.com/ho=
+me.pa#%5BT1%2CM640%5D" rel=3D"nofollow">PPM Pro</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Erstellung durch Projektleitung, ggf.&nbsp;Zuarbeit durch Informationsg=
+eber wie <a class=3D"external-link" href=3D"https://confluence-cpy.ad.volks=
+wohl-bund.de/x/QDmLE" rel=3D"nofollow">IT-AE-Koordination</a></li>
+<li>Hilfestellung, Terminorganisation und Moderation durch <a class=3D"exte=
+rnal-link" href=3D"https://confluence-cpy.ad.volkswohl-bund.de/x/XEeLE" rel=
+=3D"nofollow">MPM</a></li>
+<li>zu involvierende <a class=3D"external-link" href=3D"https://confluence-=
+cpy.ad.volkswohl-bund.de/x/dkeLE" rel=3D"nofollow">Sonderfunktionen</a></li=
+>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Bereitstellung sonderfunktionsrelevanter Informationen f=C3=BCr den wei=
+teren Projektverlauf</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818198/Aufwandssch+tzung+Fachabteilungen" data-linked-resource-=
+id=3D"39818198" data-linked-resource-version=3D"5" data-linked-resource-typ=
+e=3D"page">Aufwandssch=C3=A4tzung Fachabteilungen</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p>Anhand der Anforderungen wird der Aufwand f=C3=BCr den Fachbereich bzw. =
+die Fachbereiche gesch=C3=A4tzt. Die geplante technische Umsetzung kann ebe=
+nfalls einen Einfluss auf die Aufw=C3=A4nde in den Fachbereichen haben (z.B=
+. k=C3=B6nnen Abteilungen bei Alternative A betroffen sein, bei Alternative=
+ B nicht).</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Alle Anforderungen sind erfasst</li>
+<li>Technisches Konzept ist erstellt</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Die Aufwandsermittlung erfolgt in tabellarischer Form in Confluence.</l=
+i>
+<li>In den Projektdetails in PPM Pro werden die Aufw=C3=A4nde eingetragen.<=
+/li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Confluence</li>
+<li>PPM Pro</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818105/Fachbereichs-Koordinator" data-linked-resource-id=3D"398=
+18105" data-linked-resource-version=3D"7" data-linked-resource-type=3D"page=
+">Fachbereichs-Koordinator</a>&nbsp;&nbsp;</li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818015/Anforderungsmanager" data-linked-resource-id=3D"39818015=
+" data-linked-resource-version=3D"7" data-linked-resource-type=3D"page">Anf=
+orderungsmanager</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818094/Fachexperten" data-linked-resource-id=3D"39818094" data-=
+linked-resource-version=3D"4" data-linked-resource-type=3D"page">Fachexpert=
+en</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817763/Tester+Fachabteilung" data-linked-resource-id=3D"3981776=
+3" data-linked-resource-version=3D"3" data-linked-resource-type=3D"page">Te=
+ster Fachabteilung</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818114/Business+Analyst" data-linked-resource-id=3D"39818114" d=
+ata-linked-resource-version=3D"6" data-linked-resource-type=3D"page">Busine=
+ss Analyst</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818028/F+hrungskraft+Fachabteilung" data-linked-resource-id=3D"=
+39818028" data-linked-resource-version=3D"3" data-linked-resource-type=3D"p=
+age">F=C3=BChrungskraft Fachbereich</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Tabellarische Aufwandsermittlung f=C3=BCr den Fachbereich in Confluence=
+.</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817470/Aufwandssch+tzung+IT-AE" data-linked-resource-id=3D"3981=
+7470" data-linked-resource-version=3D"12" data-linked-resource-type=3D"page=
+">Aufwandssch=C3=A4tzung IT-AE</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">Anhand der Anforderungen und des technischen Kon=
+zepts wird der Aufwand und die notwendigen Skills f=C3=BCr die Umsetzung du=
+rch die IT-AE gesch=C3=A4tzt.</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Alle Anforderungen sind erfasst</li>
+<li>Das technische Konzept ist erstellt</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Die Aufwandsermittlung erfolgt in tabellarischer Form in Confluence.</l=
+i>
+<li>Erg=C3=A4nzend k=C3=B6nnen die Aufw=C3=A4nde in die zugrundeliegenden J=
+ira-Tickets (meist auf Epic-Ebene) eingetragen werden.</li>
+<li>In den Projektdetails in PPM Pro werden die Aufw=C3=A4nde eingetragen.<=
+/li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Confluence</li>
+<li>Jira</li>
+<li>PPM Pro</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817536/IT-AE+Koordinator" data-linked-resource-id=3D"39817536" =
+data-linked-resource-version=3D"19" data-linked-resource-type=3D"page">IT-A=
+E Koordinator &nbsp;</a> &nbsp;</li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817596/IT-AE+Anwendungsentwickler" data-linked-resource-id=3D"3=
+9817596" data-linked-resource-version=3D"6" data-linked-resource-type=3D"pa=
+ge">IT-AE Anwendungsentwickler</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817610/IT-AE+Architekt" data-linked-resource-id=3D"39817610" da=
+ta-linked-resource-version=3D"6" data-linked-resource-type=3D"page">IT-AE A=
+rchitekt</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817548/IT-AE+F+hrungskraft" data-linked-resource-id=3D"39817548=
+" data-linked-resource-version=3D"9" data-linked-resource-type=3D"page">IT-=
+AE F=C3=BChrungskraft</a>&nbsp; &nbsp;</li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817637/Testmanager" data-linked-resource-id=3D"39817637" data-l=
+inked-resource-version=3D"5" data-linked-resource-type=3D"page">Testmanager=
+</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817631/IT-AE+Testautomatisierer" data-linked-resource-id=3D"398=
+17631" data-linked-resource-version=3D"3" data-linked-resource-type=3D"page=
+">IT-AE Testautomatisierer</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Tabellarische Aufwandsermittlung in Confluence</li>
+<li>Jira-Epics entsprechend der identifizierten Arbeitspakete</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39819118/Aufwandssch+tzung+Testmanagement" data-linked-resource-i=
+d=3D"39819118" data-linked-resource-version=3D"1" data-linked-resource-type=
+=3D"page">Aufwandssch=C3=A4tzung Testmanagement</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td data-highlight-colour=3D"#ff8f73" class=3D"confluenceTd">
+<p title=3D"">Anhand der Anforderungen und des technischen Konzepts wird de=
+r Aufwand und die notwendigen Skills f=C3=BCr die Umsetzung durch die IT-AE=
+ gesch=C3=A4tzt.</p>
+<p title=3D""><br></p>
+<p title=3D""><strong title=3D"">ENTWURF / IN AUSARBEITUNG</strong></p></td=
+>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Alle Anforderungen sind erfasst</li>
+<li>Das technische Konzept ist erstellt</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Die Aufwandsermittlung erfolgt in tabellarischer Form in Confluence.</l=
+i>
+<li>Erg=C3=A4nzend k=C3=B6nnen die Aufw=C3=A4nde in die zugrundeliegenden J=
+ira-Tickets (meist auf Epic-Ebene) eingetragen werden.</li>
+<li>In den Projektdetails in PPM Pro werden die Aufw=C3=A4nde eingetragen.<=
+/li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Confluence</li>
+<li>Jira</li>
+<li>PPM Pro</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817536/IT-AE+Koordinator" data-linked-resource-id=3D"39817536" =
+data-linked-resource-version=3D"19" data-linked-resource-type=3D"page">IT-A=
+E Koordinator &nbsp;</a> &nbsp;</li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817596/IT-AE+Anwendungsentwickler" data-linked-resource-id=3D"3=
+9817596" data-linked-resource-version=3D"6" data-linked-resource-type=3D"pa=
+ge">IT-AE Anwendungsentwickler</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817610/IT-AE+Architekt" data-linked-resource-id=3D"39817610" da=
+ta-linked-resource-version=3D"6" data-linked-resource-type=3D"page">IT-AE A=
+rchitekt</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817548/IT-AE+F+hrungskraft" data-linked-resource-id=3D"39817548=
+" data-linked-resource-version=3D"9" data-linked-resource-type=3D"page">IT-=
+AE F=C3=BChrungskraft</a>&nbsp; &nbsp;</li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817637/Testmanager" data-linked-resource-id=3D"39817637" data-l=
+inked-resource-version=3D"5" data-linked-resource-type=3D"page">Testmanager=
+</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817631/IT-AE+Testautomatisierer" data-linked-resource-id=3D"398=
+17631" data-linked-resource-version=3D"3" data-linked-resource-type=3D"page=
+">IT-AE Testautomatisierer</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Tabellarische Aufwandsermittlung in Confluence</li>
+<li>Jira-Epics entsprechend der identifizierten Arbeitspakete</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818352/Aufwandssch+tzung+IT-Betrieb" data-linked-resource-id=3D=
+"39818352" data-linked-resource-version=3D"3" data-linked-resource-type=3D"=
+page">Aufwandssch=C3=A4tzung IT-Betrieb</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">=
+Anhand der Anforderungen und des technischen Konzepts wird der Aufwand und =
+die notwendigen Skills f=C3=BCr die Umsetzung durch den IT-Betrieb gesch=C3=
+=A4tzt.</td>
+</tr>
+<tr>
+<th scope=3D"row" class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">
+<ul>
+<li>&nbsp;Alle Anforderungen sind erfasst</li>
+<li>Das technische Konzept ist erstellt</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<ul style=3D"text-align: left;">
+<li>Die Aufwandsermittlung erfolgt in tabellarischer Form in Confluence.</l=
+i>
+<li>Erg=C3=A4nzend k=C3=B6nnen die Aufw=C3=A4nde in die zugrundeliegenden J=
+ira-Tickets (meist auf Epic-Ebene) eingetragen werden.</li>
+<li>In den Projektdetails in PPM Pro werden die Aufw=C3=A4nde eingetragen.<=
+/li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul style=3D"text-align: left;">
+<li>Confluence</li>
+<li>Jira</li>
+<li>PPM Pro</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818308/IT-Betrieb+Koordinator" data-linked-resource-id=3D"39818=
+308" data-linked-resource-version=3D"5" data-linked-resource-type=3D"page">=
+IT-Betrieb Koordinator</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818313/IT-Betrieb+F+hrungskraft" data-linked-resource-id=3D"398=
+18313" data-linked-resource-version=3D"3" data-linked-resource-type=3D"page=
+">IT-Betrieb F=C3=BChrungskraft</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817766/Tester+IT-Betrieb" data-linked-resource-id=3D"39817766" =
+data-linked-resource-version=3D"3" data-linked-resource-type=3D"page">Teste=
+r-IT-Betrieb</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<ul style=3D"text-align: left;">
+<li>Tabellarische Aufwandsermittlung in Confluence</li>
+<li>Jira-Epics entsprechend der identifizierten Arbeitspakete</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818219/Personalausstattung+Fachabteilung+vornehmen" data-linked=
+-resource-id=3D"39818219" data-linked-resource-version=3D"3" data-linked-re=
+source-type=3D"page">Personalausstattung Fachabteilung vornehmen</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">Die Personalausstattung f=C3=BCr die gesch=C3=A4=
+tzten Aufw=C3=A4nde und Arbeitspakete wird zusammen mit den zust=C3=A4ndige=
+n Fachbereichs-F=C3=BChrungskr=C3=A4ften erarbeitet. Dabei werden sowohl di=
+e notwendigen Skills der Mitarbeitenden zur Umsetzung ber=C3=BCcksichtigt, =
+als auch die Auslastung der Mitarbeitenden.</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<p>Die Aufw=C3=A4nde f=C3=BCr die Projektplanungsphase wurden gesch=C3=A4tz=
+t.</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<p>Personalausstattung in PPM Pro</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>PPM Pro</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818105/Fachbereichs-Koordinator" data-linked-resource-id=3D"398=
+18105" data-linked-resource-version=3D"7" data-linked-resource-type=3D"page=
+">Fachbereichs-Koordinator</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818028/F+hrungskraft+Fachabteilung" data-linked-resource-id=3D"=
+39818028" data-linked-resource-version=3D"3" data-linked-resource-type=3D"p=
+age">F=C3=BChrungskraft-Fachabteilung</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Personalausstattung f=C3=BCr die Fachabteilung in PPM Pro</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818056/Personalausstattung+IT-AE+vornehmen" data-linked-resourc=
+e-id=3D"39818056" data-linked-resource-version=3D"6" data-linked-resource-t=
+ype=3D"page">Personalausstattung IT-AE vornehmen</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">Die Personalausstattung f=C3=BCr die gesch=C3=A4=
+tzten Aufw=C3=A4nde und Arbeitspakete wird zusammen mit den zust=C3=A4ndige=
+n&nbsp;<a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/space=
+s/PROJ/pages/39817548/IT-AE+F+hrungskraft" data-linked-resource-id=3D"39817=
+548" data-linked-resource-version=3D"9" data-linked-resource-type=3D"page">=
+IT-AE F=C3=BChrungskr=C3=A4ften</a> erarbeitet. Dabei werden sowohl die not=
+wendigen Skills der Mitarbeitenden zur Umsetzung ber=C3=BCcksichtigt, als a=
+uch die Auslastung der Mitarbeitenden.</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<p>Die Aufw=C3=A4nde f=C3=BCr die Projektplanungsphase wurden gesch=C3=A4tz=
+t.</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<p>Personalausstattung in PPM Pro</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>PPM Pro</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817536/IT-AE+Koordinator" data-linked-resource-id=3D"39817536" =
+data-linked-resource-version=3D"19" data-linked-resource-type=3D"page">IT-A=
+E Koordinator</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817548/IT-AE+F+hrungskraft" data-linked-resource-id=3D"39817548=
+" data-linked-resource-version=3D"9" data-linked-resource-type=3D"page">IT-=
+AE F=C3=BChrungskraft</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817637/Testmanager" data-linked-resource-id=3D"39817637" data-l=
+inked-resource-version=3D"5" data-linked-resource-type=3D"page">Testmanager=
+</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Personalausstattung in PPM Pro</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39819121/Personalausstattung+Testmanagement+vornehmen" data-linke=
+d-resource-id=3D"39819121" data-linked-resource-version=3D"1" data-linked-r=
+esource-type=3D"page">Personalausstattung Testmanagement vornehmen</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td data-highlight-colour=3D"#ff8f73" class=3D"confluenceTd">
+<p title=3D"">Die Personalausstattung f=C3=BCr die gesch=C3=A4tzten Aufw=C3=
+=A4nde und Arbeitspakete wird zusammen mit den zust=C3=A4ndigen&nbsp;<a hre=
+f=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/PROJ/pages/=
+39817548/IT-AE+F+hrungskraft" data-linked-resource-id=3D"39817548" data-lin=
+ked-resource-version=3D"9" data-linked-resource-type=3D"page">IT-AE F=C3=BC=
+hrungskr=C3=A4ften</a> erarbeitet. Dabei werden sowohl die notwendigen Skil=
+ls der Mitarbeitenden zur Umsetzung ber=C3=BCcksichtigt, als auch die Ausla=
+stung der Mitarbeitenden.</p>
+<p title=3D""><br></p>
+<p title=3D""><strong title=3D"">ENTWURF / IN AUSARBEITUNG</strong></p></td=
+>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<p>Die Aufw=C3=A4nde f=C3=BCr die Projektplanungsphase wurden gesch=C3=A4tz=
+t.</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<p>Personalausstattung in PPM Pro</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>PPM Pro</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817536/IT-AE+Koordinator" data-linked-resource-id=3D"39817536" =
+data-linked-resource-version=3D"19" data-linked-resource-type=3D"page">IT-A=
+E Koordinator</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817548/IT-AE+F+hrungskraft" data-linked-resource-id=3D"39817548=
+" data-linked-resource-version=3D"9" data-linked-resource-type=3D"page">IT-=
+AE F=C3=BChrungskraft</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817637/Testmanager" data-linked-resource-id=3D"39817637" data-l=
+inked-resource-version=3D"5" data-linked-resource-type=3D"page">Testmanager=
+</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Personalausstattung in PPM Pro</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818357/Personalausstattung+IT-Betrieb+vornehmen" data-linked-re=
+source-id=3D"39818357" data-linked-resource-version=3D"3" data-linked-resou=
+rce-type=3D"page">Personalausstattung IT-Betrieb vornehmen</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">Die Personalausstattung f=C3=BCr die gesch=C3=A4=
+tzten Aufw=C3=A4nde und Arbeitspakete wird zusammen mit den zust=C3=A4ndige=
+n IT-Betriebs-F=C3=BChrungskr=C3=A4ften erarbeitet. Dabei werden sowohl die=
+ notwendigen Skills der Mitarbeitenden zur Umsetzung ber=C3=BCcksichtigt, a=
+ls auch die Auslastung der Mitarbeitenden.</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<p>Die Aufw=C3=A4nde f=C3=BCr die Projektplanungsphase wurden gesch=C3=A4tz=
+t.</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<p>Personalausstattung in PPM Pro</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>PPM Pro</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818308/IT-Betrieb+Koordinator" data-linked-resource-id=3D"39818=
+308" data-linked-resource-version=3D"5" data-linked-resource-type=3D"page">=
+IT-Betrieb-Koordinator</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818313/IT-Betrieb+F+hrungskraft" data-linked-resource-id=3D"398=
+18313" data-linked-resource-version=3D"3" data-linked-resource-type=3D"page=
+">IT-Betrieb-F=C3=BChrungskraft</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Personalausstattung f=C3=BCr den IT-Betrieb in PPM Pro</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818153/Terminplan+erstellen" data-linked-resource-id=3D"3981815=
+3" data-linked-resource-version=3D"6" data-linked-resource-type=3D"page">Te=
+rminplan erstellen</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped relative-table confluenceTable" style=3D"width: 53.=
+4951%;">
+<colgroup>
+<col style=3D"width: 12.312%;">
+<col style=3D"width: 87.6463%;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p>Der detaillierte Terminplan des Projektes wird erstellt.</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<p>Der grobe Terminplan (feste Zeitpunkte, grobe Abh=C3=A4ngigkeiten, zeitl=
+icher Puffer) wird durch die neuen Erkenntnisse aus der Projektplanungsphas=
+e angereichert.</p>
+<ul>
+<li>Aufwandssch=C3=A4tzung IT-Betrieb</li>
+<li>Aufwandssch=C3=A4tzung IT-AE</li>
+<li>Aufwandssch=C3=A4tzung Fachbereich</li>
+<li>jeweils in Bezug auf die tats=C3=A4chliche Personalausstattung (welche =
+Abh=C3=A4ngigkeiten ergeben sich zu anderen Themen, in denen die konkreten =
+Personen mitarbeiten?)</li>
+<li>Fachliche Anforderungen und Priorisierung: K=C3=B6nnen Teilthemen vorge=
+zogen werden? Gibt es Meilensteine?</li>
+<li>Testkonzept um Testphase einplanen zu k=C3=B6nnen</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<p><span class=3D"legacy-color-text-blue3">Die grobe Terminierung </span>f=
+=C3=BCr die Projektplanungsphase sowie das Gesamtprojekt werden in Confluen=
+ce dokumentiert und in PPM Pro hinterlegt und eingeplant.</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Confluence</li>
+<li>PPM Pro</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"39818123" dat=
+a-linked-resource-version=3D"5" data-linked-resource-type=3D"page">Projektl=
+eitung</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818105/Fachbereichs-Koordinator" data-linked-resource-id=3D"398=
+18105" data-linked-resource-version=3D"7" data-linked-resource-type=3D"page=
+">Fachbereichs-Koordinator</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817536/IT-AE+Koordinator" data-linked-resource-id=3D"39817536" =
+data-linked-resource-version=3D"19" data-linked-resource-type=3D"page">IT-A=
+E Koordinator</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818308/IT-Betrieb+Koordinator" data-linked-resource-id=3D"39818=
+308" data-linked-resource-version=3D"5" data-linked-resource-type=3D"page">=
+IT-Betrieb Koordinator</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817726/Lenkungsausschuss+LA" data-linked-resource-id=3D"3981772=
+6" data-linked-resource-version=3D"6" data-linked-resource-type=3D"page">Le=
+nkungsausschuss (LA)</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Detaillierte Terminplan des Projektes &amp; transparente Kommunikation a=
+n alle Projektbeteiligten.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817888/Genehmigung+Projektvorlage" data-linked-resource-id=3D"3=
+9817888" data-linked-resource-version=3D"8" data-linked-resource-type=3D"pa=
+ge">Genehmigung Projektvorlage</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p>Genehmigung der Projektvorlage einleiten und einholen</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Fertiggestellte Projektvorlage
+<ul>
+<li>Aufwandssch=C3=A4tzung &amp; Personalausstattung</li>
+<li>Projekteintr=C3=A4ge f=C3=BCr Sonderfunktionen</li>
+<li>Terminierung</li>
+</ul></li>
+<li>Erstellte Konzepte / Anforderungen
+<ul>
+<li>Technisch</li>
+<li>Fachlich</li>
+<li>Testing</li>
+</ul></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Vollst=C3=A4ndig finalisiertes Projektvorhaben</li>
+<li>Besonderheit Vertriebsprojekte:
+<ul>
+<li>Die genaue Aufwandssch=C3=A4tzung und Personalausstattung der IT kann
+<ul>
+<li>bei Kapazit=C3=A4tsengp=C3=A4ssen</li>
+<li>durch einen <a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/w=
+iki/spaces/PROJ/pages/39816406/3.+Change+Request" data-linked-resource-id=
+=3D"39816406" data-linked-resource-version=3D"4" data-linked-resource-type=
+=3D"page">Change Request</a></li>
+<li>nachgereicht werden</li>
+</ul></li>
+<li>Sicherstellung der Handlungsschnelligkeit zur St=C3=A4rkung der Wettbew=
+erbsf=C3=A4higkeit&nbsp;&nbsp;</li>
+</ul></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd"><a class=3D"external-link" href=3D"https://volks=
+wohl-bund.ppmpro.com/home.pa#%5BT1%2CM640%5D" rel=3D"nofollow">PPM Pro</a><=
+/td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818123/Projektleitung" data-linked-resource-id=3D"39818123" dat=
+a-linked-resource-version=3D"5" data-linked-resource-type=3D"page">Projektl=
+eitung</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817548/IT-AE+F+hrungskraft" data-linked-resource-id=3D"39817548=
+" data-linked-resource-version=3D"9" data-linked-resource-type=3D"page">IT-=
+AE-F=C3=BChrungskraft</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818313/IT-Betrieb+F+hrungskraft" data-linked-resource-id=3D"398=
+18313" data-linked-resource-version=3D"3" data-linked-resource-type=3D"page=
+">IT-Betrieb-F=C3=BChrungskraft</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/x/gkeLE" rel=3D"nofollow">F1er</a></li>
+<li>ggf. <a class=3D"external-link" href=3D"https://confluence-cpy.ad.volks=
+wohl-bund.de/x/kUeLE" rel=3D"nofollow"> Priorunde </a>(T-Shirt-Sizing ab M-=
+ &amp; alle Regulatorikprojekte)</li>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/x/dkeLE" rel=3D"nofollow">Sonderfunktion</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/x/XEeLE" rel=3D"nofollow">MPM</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Final genehmigte Projektvorlage</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818068/Anforderungen+detaillieren" data-linked-resource-id=3D"3=
+9818068" data-linked-resource-version=3D"7" data-linked-resource-type=3D"pa=
+ge">Anforderungen detaillieren</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">Die Anforderungen, funktionale, aber auch nicht-=
+funktionale, werden im Detail spezifiziert, so dass keine Fragen mehr offen=
+ bleiben. <span class=3D"inline-comment-marker" data-ref=3D"9c51d805-cbca-4=
+8d0-b672-3474f7b2ecf5">D. h. die </span><a class=3D"external-link" href=3D"=
+https://confluence-cpy.ad.volkswohl-bund.de/spaces/OR/pages/284729625/Anfor=
+derungen+detaillieren#Anforderungendetaillieren-DefinitonofReady" rel=3D"no=
+follow">Definiton of Ready</a><span class=3D"inline-comment-marker" data-re=
+f=3D"9c51d805-cbca-48d0-b672-3474f7b2ecf5"> wird erf=C3=BCllt.</span></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">Die Anforderungen sind im Pflichtenheft beschrie=
+ben und es ist ein entsprechendes <a href=3D"https://volkswohl-bund-sandbox=
+-2.atlassian.net/wiki/spaces/PROJ/pages/39817645/Technisches+Konzept+erstel=
+len" data-linked-resource-id=3D"39817645" data-linked-resource-version=3D"4=
+" data-linked-resource-type=3D"page">technisches Konzept</a> erstellt worde=
+n.</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<p>Jede Anforderung wird mit einem Jira-Ticket beschrieben. Die gesamte Dok=
+umentation der Bearbeitung der Anforderung erfolgt in Jira.</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Jira</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><span class=3D"legacy-color-text-blue3"><a href=3D"https://volkswohl-bu=
+nd-sandbox-2.atlassian.net/wiki/spaces/PROJ/pages/39818105/Fachbereichs-Koo=
+rdinator" data-linked-resource-id=3D"39818105" data-linked-resource-version=
+=3D"7" data-linked-resource-type=3D"page">Fachbereichs-Koordinator&nbsp;</a=
+></span></li>
+<li><span class=3D"legacy-color-text-blue3"><a href=3D"https://volkswohl-bu=
+nd-sandbox-2.atlassian.net/wiki/spaces/PROJ/pages/39818015/Anforderungsmana=
+ger" data-linked-resource-id=3D"39818015" data-linked-resource-version=3D"7=
+" data-linked-resource-type=3D"page">Anforderungsmanager</a></span></li>
+<li><span class=3D"legacy-color-text-blue3"><a href=3D"https://volkswohl-bu=
+nd-sandbox-2.atlassian.net/wiki/spaces/PROJ/pages/39817637/Testmanager" dat=
+a-linked-resource-id=3D"39817637" data-linked-resource-version=3D"5" data-l=
+inked-resource-type=3D"page">Testmanager</a></span></li>
+<li><span class=3D"legacy-color-text-blue3"><a href=3D"https://volkswohl-bu=
+nd-sandbox-2.atlassian.net/wiki/spaces/PROJ/pages/39817536/IT-AE+Koordinato=
+r" data-linked-resource-id=3D"39817536" data-linked-resource-version=3D"19"=
+ data-linked-resource-type=3D"page">IT-AE Koordinator</a></span></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Je Anforderung ein Jira-Ticket.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818080/Anforderung+umsetzen" data-linked-resource-id=3D"3981808=
+0" data-linked-resource-version=3D"4" data-linked-resource-type=3D"page">An=
+forderung umsetzen</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">Implementierung und Unit-Test der als Jira-Ticke=
+t beschriebenen Anforderung.</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">Die Anforderungen wurden <a href=3D"https://volk=
+swohl-bund-sandbox-2.atlassian.net/wiki/spaces/PROJ/pages/39818068/Anforder=
+ungen+detaillieren" data-linked-resource-id=3D"39818068" data-linked-resour=
+ce-version=3D"7" data-linked-resource-type=3D"page"> detailliert </a>beschr=
+ieben, validiert und priorisiert.</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">Die Dokumentation der Arbeiten, aber auch der Te=
+stergebnisse erfolgt in Jira.</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Jira</li>
+<li>VB Entwicklungsumgebung</li>
+<li>VB Testumgebung</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/display/OR/IT-AE+Koordinator" rel=3D"nofollow">IT-AE Koordinator &n=
+bsp;</a><span>&nbsp;</span>&nbsp;</li>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/display/OR/IT-AE+Anwendungsentwickler" rel=3D"nofollow">IT-AE Anwen=
+dungsentwickler</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/display/OR/IT-AE+Architekt" rel=3D"nofollow">IT-AE Architekt</a></l=
+i>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/display/OR/IT-AE+Testmanager" rel=3D"nofollow">IT-AE Testmanager</a=
+></li>
+<li><a class=3D"external-link" href=3D"https://confluence-cpy.ad.volkswohl-=
+bund.de/display/OR/IT-AE+Testautomatisierer" rel=3D"nofollow">IT-AE Testaut=
+omatisierer</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818114/Business+Analyst" data-linked-resource-id=3D"39818114" d=
+ata-linked-resource-version=3D"6" data-linked-resource-type=3D"page">Busine=
+ss Analyst</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Die Anforderung ist umgesetzt und vom Auftraggeber abgenommen.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818426/Kontinuierliche+berwachung+des+Projektfortschritts" data=
+-linked-resource-id=3D"39818426" data-linked-resource-version=3D"4" data-li=
+nked-resource-type=3D"page">Kontinuierliche =C3=9Cberwachung des Projektfor=
+tschritts</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<thead>
+<tr>
+<th style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">=
+Die kontinuierliche =C3=9Cberwachung des Projektfortschritts gew=C3=A4hrlei=
+stet, dass das Projekt im Rahmen von Zeit, Kosten und Qualit=C3=A4t bleibt.=
+ <br>
+Fortschritte werden regelm=C3=A4=C3=9Fig analysiert und Abweichungen fr=C3=
+=BChzeitig erkannt um Gegenma=C3=9Fnahmen einzuleiten.</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">=
+Der Projekt-Terminplan mit entsprechenden Metriken (Meilensteine, Ziele, KP=
+Is, etc.) ist definiert.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818200/ber+Projektfortschritt+informieren+Statusbericht" data-l=
+inked-resource-id=3D"39818200" data-linked-resource-version=3D"6" data-link=
+ed-resource-type=3D"page">=C3=9Cber Projektfortschritt informieren (Statusb=
+ericht)</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd"><span class=3D"legacy-color-text-blue3">Ein Stat=
+usbericht gibt den aktuellen Stand eines Projektes wider und wird von der P=
+rojektleitung <em>monatlich</em> 14 Tage vor jeder <a href=3D"https://volks=
+wohl-bund-sandbox-2.atlassian.net/wiki/spaces/PROJ/overview" data-linked-re=
+source-id=3D"39813122" data-linked-resource-version=3D"135" data-linked-res=
+ource-type=3D"page">Prio.-Runde</a> erstellt.&nbsp;<br>
+Der Statusbericht dient als Grundlage f=C3=BCr s=C3=A4mtliche Besprechungsr=
+unden rund um das Thema Projektmanagement.</span></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">Absprache mit den Koordinatoren hinsichtlich des=
+ aktuellen Projektstands.</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">Der Statusbericht wird in PPM Pro erstellt und d=
+okumentiert.</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>PPM Pro</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+84729828/Projektleitung" rel=3D"nofollow">Projektleitung</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+84729743/Fachbereichs-Koordinator" rel=3D"nofollow">Fachbereichs-Koordinato=
+r</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+77559616/IT-AE+Koordinator" rel=3D"nofollow">IT-AE Koordinator</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+88196837/IT-Betrieb+Koordinator" rel=3D"nofollow">IT-Betrieb Koordinator</a=
+></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817722/Priorunde" data-linked-resource-id=3D"39817722" data-lin=
+ked-resource-version=3D"6" data-linked-resource-type=3D"page">Priorunde</a>=
+</li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817696/Multi-Projekt-Management+MPM" data-linked-resource-id=3D=
+"39817696" data-linked-resource-version=3D"8" data-linked-resource-type=3D"=
+page">Multi-Projekt-Management (MPM)</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817702/Sonderfunktion" data-linked-resource-id=3D"39817702" dat=
+a-linked-resource-version=3D"6" data-linked-resource-type=3D"page">Sonderfu=
+nktion</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Der erstellte Statusbericht fasst den aktuellen Stand des Projekts zusam=
+men und dient als Entscheidungsgrundlage f=C3=BCr das weitere Vorgehen.<br>
+Die Ergebnisse sind in PPM Pro hinterlegt und k=C3=B6nnen dort von den bete=
+iligten Rollen eingesehen werden.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818432/Projektfortschritt+steuern" data-linked-resource-id=3D"3=
+9818432" data-linked-resource-version=3D"4" data-linked-resource-type=3D"pa=
+ge">Projektfortschritt steuern</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable" style=3D"text-align: left;">
+<thead>
+<tr>
+<th style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">=
+Das Steuern des Projektfortschritts umfasst die aktiven Ma=C3=9Fnahmen zur =
+Anpassung und Korrektur des Projektverlaufs, um sicherzustellen, dass die g=
+eplanten Ziele eingehalten werden. <br>
+Dabei wird auf Abweichungen reagiert und Entscheidungen zur Anpassung von R=
+essourcen, Zeitpl=C3=A4nen oder Zielen getroffen</td>
+</tr>
+</thead>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818977/Teststeuerung+und+-+berwachung" data-linked-resource-id=
+=3D"39818977" data-linked-resource-version=3D"2" data-linked-resource-type=
+=3D"page">Teststeuerung und -=C3=BCberwachung</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable" style=3D"text-align: left;">
+<thead>
+<tr>
+<th style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">=
+<span class=3D"legacy-color-text-blue3">Aktive Steuerung der geplanten Test=
+aktivit=C3=A4ten. Die Aufgabe ist =C3=A4hnlich die eines in der Theorie vor=
+handenen Projektmanagers . Die Aufgabe sorgt daf=C3=BCr, dass die Testaktiv=
+it=C3=A4ten reibungslos und nach Plan durchgef=C3=BChrt werden k=C3=B6nnen.=
+ Die Ergebnisse der Testaktivit=C3=A4ten liefern Aufschluss =C3=BCber m=C3=
+=B6gliche Anpassungen im Projekt und dienen dazu zuk=C3=BCnftige Aufgaben z=
+u steuern.</span></td>
+</tr>
+</thead>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818484/Testdurchf+hrung+Analyse+Entwurf+Realisierung+Ausf+hrung=
+" data-linked-resource-id=3D"39818484" data-linked-resource-version=3D"6" d=
+ata-linked-resource-type=3D"page">Testdurchf=C3=BChrung (Analyse, Entwurf, =
+Realisierung, Ausf=C3=BChrung)</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">
+<p>S=C3=A4mtliche Aktivit=C3=A4ten die im Rahmen rund um das eigentliche "T=
+esting" ausgef=C3=BChrt werden. Zu den Aufgaben geh=C3=B6ren unter anderem:=
+</p>
+<ul>
+<li><span>Anforderungsanalyse, Testfallerstellung mittels Testentwurfsverfa=
+hren, Testdatenerhebung, Erstellung von abstrakten und konkreten Testf=C3=
+=A4llen</span></li>
+<li><span>Priorisierung der Testf=C3=A4lle, Vorbereitung der Testumgebung, =
+Testvorbedingungen erf=C3=BCllen (technische und prozessuale Bedingungen)</=
+span></li>
+<li><span>Ausf=C3=BChrung von Tests, Protokollierung der Ergebnisse, Fehler=
+berichte erstellen, Fehleranalyse</span></li>
+</ul>
+<p><br></p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><span>(unabh=C3=A4ngige) Testumgebung vorhanden</span></li>
+<li><span>Testdaten / Ansprechpartner f=C3=BCr Testdaten vorhanden</span></=
+li>
+<li><span>Akzeptanzkriterien vorhanden</span></li>
+<li><span>Funktionale Anforderungen vorhanden</span></li>
+<li><span>Nicht funktionale Anforderungen vorhanden</span></li>
+<li><span>Fachliche Prozesse vorhanden</span></li>
+<li><span>Testbedingungen</span></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><span>Testf=C3=A4lle</span></li>
+<li><span>Testberichte / Reports</span></li>
+<li><span>Fehlerf=C3=A4lle</span></li>
+<li><span>Konkrete Testdaten</span></li>
+<li><span>Ggf. Anpassung der Anforderungen</span></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><span>Confluence</span></li>
+<li><span>Jira</span></li>
+<li><span>Xray</span></li>
+<li><span>Weitere Tools</span></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><span>Testmanager</span></li>
+<li><span>Fehlermanager</span></li>
+<li><span>Testdatenmanager</span></li>
+<li><span>Tester Fachabteilung</span></li>
+<li><span>Test IT-Betrieb</span></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Testdurchf=C3=BChrungsberichte</li>
+<li>Testdaten</li>
+<li>Testf=C3=A4lle</li>
+<li>Angepasste Anforderungen</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818162/Situative+Eskalation" data-linked-resource-id=3D"3981816=
+2" data-linked-resource-version=3D"6" data-linked-resource-type=3D"page">Si=
+tuative Eskalation</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped relative-table confluenceTable" style=3D"width: 53.=
+4951%;">
+<colgroup>
+<col style=3D"width: 12.312%;">
+<col style=3D"width: 87.6463%;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p>Bestimmte kritische Situationen im Projekt erfordern eine kurzfristige A=
+nalyse und Eskalation, um mit geeigneten Ma=C3=9Fnahmen gegensteuern zu k=
+=C3=B6nnen.</p>
+<p>Die Bezeichnung "situativ" zeigt schon, dass diese Ereignisse nicht plan=
+bar sind und sehr vielschichtig sein k=C3=B6nnen, z.B.:</p>
+<ul>
+<li>Ausfall Schl=C3=BCsselfunktion im Projekt (u.a. K=C3=BCndigung, Krankhe=
+it, Abzug h=C3=B6her priorisiertes Projekt)</li>
+<li>Technische Probleme (u.a. Verf=C3=BCgbarkeiten Arbeitsumgebung, n=C3=B6=
+tige Aktualisierungen, technische H=C3=BCrden bei der Umsetzung)</li>
+<li>Fachliche Probleme (u.a. Themenfeld untersch=C3=A4tzt oder vergessen)</=
+li>
+<li>Zus=C3=A4tzliche Kosten (u.a. Zukauf Tool notwendig)</li>
+<li>Gr=C3=B6=C3=9Fere Unstimmigkeiten im Projektteam</li>
+<li>Sch=C3=A4tzungenauigkeiten (PLAN-IST-Abweichung)</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<p>Kann zu jedem Zeitpunkt im Projektverlauf auftreten.</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<p>Je nach Situation:</p>
+<ul>
+<li>Kl=C3=A4rung innerhalb des Fachbereichs, der IT-AE oder IT-Betrieb m=C3=
+=B6glich?</li>
+<li>Kl=C3=A4rung innerhalb des Gesamtprojektes m=C3=B6glich?</li>
+</ul>
+<p>=E2=86=92 Nein: Pr=C3=A4sentation des Sachverhaltes an den Lenkungsaussc=
+huss bzw. die Stakeholder des Projektes und gemeinsame Entscheidungs-/L=C3=
+=B6sungsfindung</p>
+<p>=E2=86=92 Dokumentation und transparente Information =C3=BCber die notwe=
+ndigen Anpassungen in Confluence und PPMPro:</p>
+<p>&nbsp; &nbsp; z.B. Zeitplan, Aufw=C3=A4nde, Personalausstattung, Kosten,=
+ Parken oder gar Einstellen des Projektes</p>
+<p>=E2=86=92 Falls n=C3=B6tig: Change Request in PPMPro.</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Confluence</li>
+<li>PPM Pro</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+84729828/Projektleitung" rel=3D"nofollow" style=3D"">Projektleitung</a></li=
+>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+84729743/Fachbereichs-Koordinator" rel=3D"nofollow" style=3D"">Fachbereichs=
+-Koordinator</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+77559616/IT-AE+Koordinator" rel=3D"nofollow" style=3D"">IT-AE Koordinator</=
+a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+88196837/IT-Betrieb+Koordinator" rel=3D"nofollow" style=3D"">IT-Betrieb Koo=
+rdinator</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817726/Lenkungsausschuss+LA" data-linked-resource-id=3D"3981772=
+6" data-linked-resource-version=3D"6" data-linked-resource-type=3D"page">Le=
+nkungsausschuss</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817722/Priorunde" data-linked-resource-id=3D"39817722" data-lin=
+ked-resource-version=3D"6" data-linked-resource-type=3D"page">Priorunde</a>=
+</li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817716/Vorstand" data-linked-resource-id=3D"39817716" data-link=
+ed-resource-version=3D"8" data-linked-resource-type=3D"page">Vorstand</a></=
+li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Analyse und Aufbereitung der kritischen Situation, gemeinsame L=C3=B6sun=
+gsfindung und transparente Kommunikation =C3=BCber die konkreten Auswirkung=
+en.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817857/Risiko+berwachung" data-linked-resource-id=3D"39817857" =
+data-linked-resource-version=3D"8" data-linked-resource-type=3D"page">Risik=
+o=C3=BCberwachung</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p>Monitoring von Projektrisiken</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<p>Projektfortschritt =C3=BCberwachen</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Sichten der Projektrisiken (Projekteintrag "Risikomanagement")</li>
+<li>Regelm=C3=A4=C3=9Fige Bewertung der Risiken</li>
+<li>ggf. Anpassungen der bestehenden Risiken</li>
+<li>ggf. Hinzunahme neuer Risiken</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd"><a class=3D"external-link" href=3D"https://volks=
+wohl-bund.ppmpro.com/home.pa#%5BT1%2CM640%5D" rel=3D"nofollow">PPM Pro</a><=
+/td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+84729828/Projektleitung" rel=3D"nofollow" style=3D"">Projektleitung</a></li=
+>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+84729743/Fachbereichs-Koordinator" rel=3D"nofollow" style=3D"">Fachbereichs=
+-Koordinator</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+77559616/IT-AE+Koordinator" rel=3D"nofollow" style=3D"">IT-AE Koordinator</=
+a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+88196837/IT-Betrieb+Koordinator" rel=3D"nofollow" style=3D"">IT-Betrieb Koo=
+rdinator</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/PROJ/pages=
+/201012754/4.+Projektbeteiligte#id-4.Projektbeteiligte-Risikomanagement" re=
+l=3D"nofollow">Sonderfunktion (Risikomanagement)</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<p>Aktuelle und belastbare Risikoeinsch=C3=A4tzung &amp; -bewertung</p></td=
+>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818759/Retrospektive+Lessons+Learned" data-linked-resource-id=
+=3D"39818759" data-linked-resource-version=3D"3" data-linked-resource-type=
+=3D"page">Retrospektive / Lessons Learned</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p>Unter einer<span>&nbsp;</span>Retrospektive, kurz auch Retro, versteht m=
+an ein Meeting, in dem das Projektteam mehr =C3=BCber die Verbesserung der =
+Prozesse und der Zusammenarbeit spricht als =C3=BCber die t=C3=A4gliche Arb=
+eitsroutine.</p>
+<p>Konkret werden in einem Retrospektive-Meeting folgende Fragen besprochen=
+:</p>
+<ul>
+<li>
+<p>Wie k=C3=B6nnen wir die Zusammenarbeit im Team effizienter / effektiver =
+gestalten?</p></li>
+<li>
+<p>An welchen Stellen k=C3=B6nnen unsere Prozesse noch weiter optimiert wer=
+den?</p></li>
+<li>
+<p>Haben wir die angesprochenen Punkte vom letzten Meeting umgesetzt? Wenn =
+nein, warum nicht?</p></li>
+</ul>
+<p>Ein Retrospektive-Meeting bietet die Chance, sich untereinander auszutau=
+schen. So kann sich jedes einzelne Teammitglied und auch das Team als Ganze=
+s kontinuierlich verbessern und immer bessere Ergebnisse liefern.</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">Die Fertigstellung eines (Teil-) Produktes / ein=
+es Arbeitspaketes ist erfolgt.</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Confluence</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Confluence</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul style=3D"text-align: left;">
+<li>Das gesamte Projektteam</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">Ggf. =C3=9Cberarbeitung des Projektvorgehens.</t=
+d>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818984/Testmanagement+Freigabeempfehlung" data-linked-resource-=
+id=3D"39818984" data-linked-resource-version=3D"2" data-linked-resource-typ=
+e=3D"page">Testmanagement Freigabeempfehlung</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">
+<p>Nach der Durchf=C3=BChrung der Tests, werden die Ergebnisse analysiert u=
+nd ggf. mit manuellen oder automatisierten Tests nachgesteuert. Gepr=C3=BCf=
+t werden muss auch, welche Testf=C3=A4lle automatisiert werden m=C3=BCssen/=
+sollten. Zum Abschluss geh=C3=B6rt unter anderem die Dokumentation der Abna=
+hme. Zudem m=C3=BCssen diverse Berichte erstellt werden.</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">
+<ul style=3D"text-align: left;">
+<li><span>Durchgef=C3=BChrte Testf=C3=A4lle</span></li>
+<li><span>Testkonzept</span></li>
+<li><span>Berichte</span></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><span>Testabschlussberichte</span></li>
+<li><span>Freigabedokumente</span></li>
+<li><span>=C3=9Cbergabe an den Betrieb</span></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li><span>Confluence</span></li>
+<li><span>Jira</span></li>
+<li><span>Xray</span></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul style=3D"text-align: left;">
+<li><span><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/sp=
+aces/PROJ/pages/39817637/Testmanager" data-linked-resource-id=3D"39817637" =
+data-linked-resource-version=3D"5" data-linked-resource-type=3D"page">Testm=
+anager</a></span></li>
+<li><span><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/sp=
+aces/PROJ/pages/39817757/Fehlermanager" data-linked-resource-id=3D"39817757=
+" data-linked-resource-version=3D"2" data-linked-resource-type=3D"page">Feh=
+lermanager</a></span></li>
+<li><span><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/sp=
+aces/PROJ/pages/39817760/Testdatenmanager" data-linked-resource-id=3D"39817=
+760" data-linked-resource-version=3D"1" data-linked-resource-type=3D"page">=
+Testdatenmanager</a></span></li>
+<li><span><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/sp=
+aces/PROJ/pages/39817763/Tester+Fachabteilung" data-linked-resource-id=3D"3=
+9817763" data-linked-resource-version=3D"3" data-linked-resource-type=3D"pa=
+ge">Tester Fachabteilung</a></span></li>
+<li><span><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/sp=
+aces/PROJ/pages/39817766/Tester+IT-Betrieb" data-linked-resource-id=3D"3981=
+7766" data-linked-resource-version=3D"3" data-linked-resource-type=3D"page"=
+>Tester IT-Betrieb</a></span></li>
+<li><span><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/sp=
+aces/PROJ/pages/39818015/Anforderungsmanager" data-linked-resource-id=3D"39=
+818015" data-linked-resource-version=3D"7" data-linked-resource-type=3D"pag=
+e">Anforderungsmanager</a></span></li>
+<li><span><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/sp=
+aces/SER/pages/45253550/IT-Betrieb+Koordinator" data-linked-resource-id=3D"=
+45253550" data-linked-resource-version=3D"1" data-linked-resource-type=3D"p=
+age">IT-Betrieb Koordinator</a></span></li>
+<li><span><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/sp=
+aces/SER/pages/45253556/IT-AE+Koordinator" data-linked-resource-id=3D"45253=
+556" data-linked-resource-version=3D"1" data-linked-resource-type=3D"page">=
+IT-AE Koordinator</a></span></li>
+<li><span><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/sp=
+aces/SER/pages/45253538/Fachbereichs-Koordinator" data-linked-resource-id=
+=3D"45253538" data-linked-resource-version=3D"1" data-linked-resource-type=
+=3D"page">Fachbereichs-Koordinator</a></span></li>
+<li><span><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/sp=
+aces/SER/pages/45253534/Projektleitung" data-linked-resource-id=3D"45253534=
+" data-linked-resource-version=3D"1" data-linked-resource-type=3D"page">Pro=
+jektleitung</a></span></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">
+<ul style=3D"text-align: left;">
+<li><span>Abgenommene Software</span></li>
+<li><span>Testabschlussbericht</span></li>
+<li>Testdatenabschlussbericht</li>
+<li>Technischer und fachlicher Abnahmebericht</li>
+<li>Dokumentation der Freigabe und der =C3=9Cbergabe in die Produktion</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818185/Freigabe" data-linked-resource-id=3D"39818185" data-link=
+ed-resource-version=3D"9" data-linked-resource-type=3D"page">Freigabe</a></=
+h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p>Durchf=C3=BChrung eines Freigabeverfahrens nach Abschluss des Projekts, =
+um sicherzustellen, dass alle Anforderungen erf=C3=BCllt/getestet sind und =
+die Software bereit f=C3=BCr den Einsatz ist. Wichtig, im Projektverlauf ka=
+nn es zu mehreren Freigaben kommen (Stichwort: iterativ)</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">Abnahme aller durchgef=C3=BChrten Tests (z.B. Un=
+it Tests, Integrationstests, Abnahmetests) und Abschluss der Dokumentation.=
+ Das System muss frei von kritischen Fehlern sein.</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Jira-Tickets</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>E-Mail</li>
+<li>Jira, Confluence</li>
+<li><a class=3D"external-link" href=3D"http://vbnet10.intern.volkswohl-bund=
+.de/freigabe/index.xhtml" rel=3D"nofollow">Freigabeverwaltung</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul style=3D"text-align: left;">
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+84729828/Projektleitung" rel=3D"nofollow" style=3D"">Projektleitung</a></li=
+>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+84729743/Fachbereichs-Koordinator" rel=3D"nofollow" style=3D"">Fachbereichs=
+-Koordinator</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+77559616/IT-AE+Koordinator" rel=3D"nofollow" style=3D"">IT-AE Koordinator</=
+a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+88196837/IT-Betrieb+Koordinator" rel=3D"nofollow" style=3D"">IT-Betrieb Koo=
+rdinator</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817763/Tester+Fachabteilung" data-linked-resource-id=3D"3981776=
+3" data-linked-resource-version=3D"3" data-linked-resource-type=3D"page">Te=
+ster Fachabteilung</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818015/Anforderungsmanager" data-linked-resource-id=3D"39818015=
+" data-linked-resource-version=3D"7" data-linked-resource-type=3D"page">Anf=
+orderungsmanager</a>&nbsp;</li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817637/Testmanager" data-linked-resource-id=3D"39817637" data-l=
+inked-resource-version=3D"5" data-linked-resource-type=3D"page">Testmanager=
+</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817631/IT-AE+Testautomatisierer" data-linked-resource-id=3D"398=
+17631" data-linked-resource-version=3D"3" data-linked-resource-type=3D"page=
+">IT-AE-Testautomatisierer&nbsp;</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817757/Fehlermanager" data-linked-resource-id=3D"39817757" data=
+-linked-resource-version=3D"2" data-linked-resource-type=3D"page">Fehlerman=
+ager </a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817760/Testdatenmanager" data-linked-resource-id=3D"39817760" d=
+ata-linked-resource-version=3D"1" data-linked-resource-type=3D"page">Testda=
+tenmanager </a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817766/Tester+IT-Betrieb" data-linked-resource-id=3D"39817766" =
+data-linked-resource-version=3D"3" data-linked-resource-type=3D"page">Teste=
+r IT-Betrieb</a>&nbsp;</li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817726/Lenkungsausschuss+LA" data-linked-resource-id=3D"3981772=
+6" data-linked-resource-version=3D"6" data-linked-resource-type=3D"page">Le=
+nkungsausschuss </a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">Freigabeverwaltung, Jira, Confluence</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818455/bergabe+Produktion" data-linked-resource-id=3D"39818455"=
+ data-linked-resource-version=3D"3" data-linked-resource-type=3D"page">=C3=
+=9Cbergabe / Produktion</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p>Das fertige Produkt, die fertige Anwendung wird zur Produktivnahme =C3=
+=BCbergeben. S=C3=A4mtliche Anforderungen, die keinen Bezug zur =C3=9Cberga=
+be / Produktion haben, sind bereits abgearbeitet worden.</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">Die Freigabe zur Produktivnahme ist erfolgt.</td=
+>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Jira-Tickets</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Jira</li>
+<li>Confluence</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul style=3D"text-align: left;">
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+84729828/Projektleitung" rel=3D"nofollow">Projektleitung</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+84729743/Fachbereichs-Koordinator" rel=3D"nofollow">Fachbereichs-Koordinato=
+r</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+77559616/IT-AE+Koordinator" rel=3D"nofollow">IT-AE Koordinator</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+88196837/IT-Betrieb+Koordinator" rel=3D"nofollow">IT-Betrieb Koordinator</a=
+></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">Die Inbetriebnahme / Ver=C3=B6ffentlichung ist e=
+rfolgt.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818459/Abschluss+einreichen+Genehmigung" data-linked-resource-i=
+d=3D"39818459" data-linked-resource-version=3D"12" data-linked-resource-typ=
+e=3D"page">Abschluss einreichen &amp; Genehmigung</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<p>Ein Projektabschlussbericht wird in Zusammenarbeit mit dem Projektteam e=
+rstellt, sodass der formale Abschluss eingeleitet und durch die beteiligten=
+ Rollen genehmigt werden kann.</p>
+<ul>
+<li>Es empfiehlt sich ein Lessons Learned durchzuf=C3=BChren, aus denen Erk=
+enntnisse f=C3=BCr Folgeprojekte gezogen und mit anderen geteilt werden k=
+=C3=B6nnen.
+<ul>
+<li>Was lief gut im Projektverlauf?</li>
+<li>Wo sind Potenziale f=C3=BCr k=C3=BCnftige Projekte?</li>
+</ul></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">Die Inbetriebnahme / Ver=C3=B6ffentlichung ist e=
+rfolgt.</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Jira-Tickets</li>
+<li>PPM Pro - Abschlussbericht</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>PPM Pro</li>
+<li>Jira</li>
+<li>Confluence</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<ul style=3D"text-align: left;">
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+84729828/Projektleitung" rel=3D"nofollow">Projektleitung</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+84729743/Fachbereichs-Koordinator" rel=3D"nofollow">Fachbereichs-Koordinato=
+r</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+77559616/IT-AE+Koordinator" rel=3D"nofollow">IT-AE Koordinator</a></li>
+<li><a class=3D"external-link" href=3D"https://confluence/spaces/OR/pages/2=
+88196837/IT-Betrieb+Koordinator" rel=3D"nofollow">IT-Betrieb Koordinator</a=
+></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818313/IT-Betrieb+F+hrungskraft" data-linked-resource-id=3D"398=
+18313" data-linked-resource-version=3D"3" data-linked-resource-type=3D"page=
+">IT-Betrieb-F=C3=BChrungskraft</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817548/IT-AE+F+hrungskraft" data-linked-resource-id=3D"39817548=
+" data-linked-resource-version=3D"9" data-linked-resource-type=3D"page">IT-=
+AE-F=C3=BChrungskraft</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817696/Multi-Projekt-Management+MPM" data-linked-resource-id=3D=
+"39817696" data-linked-resource-version=3D"8" data-linked-resource-type=3D"=
+page">MPM</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817702/Sonderfunktion" data-linked-resource-id=3D"39817702" dat=
+a-linked-resource-version=3D"6" data-linked-resource-type=3D"page">Sonderfu=
+nktion</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817708/F1er" data-linked-resource-id=3D"39817708" data-linked-r=
+esource-version=3D"8" data-linked-resource-type=3D"page">F1er</a></li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817722/Priorunde" data-linked-resource-id=3D"39817722" data-lin=
+ked-resource-version=3D"6" data-linked-resource-type=3D"page">Priorunde</a>=
+</li>
+<li><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39817726/Lenkungsausschuss+LA" data-linked-resource-id=3D"3981772=
+6" data-linked-resource-version=3D"6" data-linked-resource-type=3D"page">Le=
+nkungsausschuss (LA)</a></li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">Der Projektabschluss wurde genehmigt.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1><a href=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki/spaces/P=
+ROJ/pages/39818473/Projektorganisation+aufl+sen" data-linked-resource-id=3D=
+"39818473" data-linked-resource-version=3D"4" data-linked-resource-type=3D"=
+page">Projektorganisation aufl=C3=B6sen</a></h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Kurzbeschreibung</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Das Projekt wurde abgeschlossen und das gesamte Projektteam wird dar=C3=
+=BCber informiert und anschlie=C3=9Fend aufgel=C3=B6st.</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Vorbedingung</p></th>
+<td class=3D"confluenceTd">Genehmigter Projektabschluss</td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Dokumentation</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>Remote</li>
+<li>Pr=C3=A4senz</li>
+<li>Hybrid&nbsp;</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Werkzeuge</p></th>
+<td class=3D"confluenceTd">
+<ul>
+<li>PowerPoint</li>
+<li>Confluence</li>
+<li>Jira</li>
+<li>Outlook</li>
+</ul></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beteiligte Rollen</p></th>
+<td class=3D"confluenceTd">
+<p>Das gesamte Projektteam</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p>Ergebnisse</p></th>
+<td class=3D"confluenceTd">Das Projektteam wurde aufgl=C3=B6st, alle Regelt=
+ermine / JFs wurden abgesagt&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_10_1954464171.1781590385756--

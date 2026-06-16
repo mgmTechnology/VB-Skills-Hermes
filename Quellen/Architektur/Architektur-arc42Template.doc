@@ -1,0 +1,1374 @@
+Date: Tue, 16 Jun 2026 06:23:17 +0000 (UTC)
+Message-ID: <648462587.19.1781590997395@c7c787e591ef>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_18_411642218.1781590997394"
+
+------=_Part_18_411642218.1781590997394
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>arc42 Template mit Erl=C3=A4uterung</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>arc42 Template mit Erl=C3=A4uterung</h1>
+    <div class=3D"Section1">
+        <div class=3D"panel" style=3D"border-color: red;border-style: dashe=
+d;border-width: 1px;">
+<div class=3D"panelHeader" style=3D"border-bottom-width: 1px;border-bottom-=
+style: dashed;border-bottom-color: red;">
+<b>Hinweis</b>
+</div>
+<div class=3D"panelContent">
+<p><br></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th scope=3D"col" class=3D"confluenceTh">
+<div class=3D"content-wrapper">
+<p><span class=3D"confluence-embedded-file-wrapper confluence-embedded-manu=
+al-size"><img class=3D"confluence-embedded-image confluence-thumbnail" heig=
+ht=3D"100" loading=3D"lazy" src=3D"4fc3d6e7f2bdacc9e0aa2419d774c0f63c7d5c39=
+15ae9a7908e68a6c7861e1cb" data-image-src=3D"https://volkswohl-bund-sandbox-=
+2.atlassian.net/wiki/download/attachments/26411843/warnung-symbol.jpg?versi=
+on=3D1&amp;modificationDate=3D1751371554187&amp;cacheVersion=3D1&amp;api=3D=
+v2" data-unresolved-comment-count=3D"0" data-linked-resource-id=3D"26412744=
+" data-linked-resource-version=3D"1" data-linked-resource-type=3D"attachmen=
+t" data-linked-resource-default-alias=3D"warnung-symbol.jpg" data-base-url=
+=3D"https://volkswohl-bund-sandbox-2.atlassian.net/wiki" data-linked-resour=
+ce-content-type=3D"image/jpeg" data-linked-resource-container-id=3D"2641184=
+3" data-linked-resource-container-version=3D"5" data-media-id=3D"94f42a73-2=
+685-4af7-9208-f22fcc73464b" data-media-type=3D"file" width=3D"100"></span><=
+/p>
+</div></th>
+<th scope=3D"col" class=3D"confluenceTh"><span class=3D"legacy-color-text-b=
+lue3">Das arc42-Template ist als Vorlage nach dem Bausteinprinzip konzipier=
+t. Es m=C3=BCssen immer nur diejenigen Abschnitte =C3=BCbernommen werden, d=
+ie f=C3=BCr das Projekt relevant sind. Unpassende und =C3=BCberfl=C3=BCssig=
+e Abschnitte k=C3=B6nnen entfernt werden.</span></th>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p><strong>
+<style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1781590997185 {padding: 0px;}
+div.rbtoc1781590997185 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1781590997185 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></strong></p>
+<div class=3D"toc-macro rbtoc1781590997185">
+<strong>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-1.Einf=C3=BChrungundZiele"=
+>1. Einf=C3=BChrung und Ziele</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-1.1.Aufgabenstellung">1.1.=
+ Aufgabenstellung</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-1.2.Qualit=C3=A4tsziele">1=
+.2. Qualit=C3=A4tsziele</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-1.3.Stakeholder">1.3. Stak=
+eholder</a></li>
+</ul></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-2.Randbedingungen">2. Rand=
+bedingungen</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-3.Kontextabgrenzung">3. Ko=
+ntextabgrenzung</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-3.1.FachlicherKontext">3.1=
+. Fachlicher Kontext</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-3.2.TechnischerKontext">3.=
+2. Technischer Kontext</a></li>
+</ul></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-4.L=C3=B6sungsstrategie">4=
+. L=C3=B6sungsstrategie</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-5.Bausteinsicht">5. Bauste=
+insicht</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-5.1.WhiteboxGesamtsystem">=
+5.1. Whitebox Gesamtsystem</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-5.1.1.<NameBlackbox1>">5.1=
+.1. &lt;Name Blackbox 1&gt;</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-5.1.2.<NameBlackbox2>">5.1=
+.2. &lt;Name Blackbox 2&gt;</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-5.1.3.<NameBlackboxn>">5.1=
+.3. &lt;Name Blackbox n&gt;</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-5.1.4.<NameSchnittstelle1>=
+">5.1.4. &lt;Name Schnittstelle 1&gt;</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-5.1.5.<NameSchnittstellem>=
+">5.1.5. &lt;Name Schnittstelle m&gt;</a></li>
+</ul></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-5.2.Ebene2">5.2. Ebene 2</=
+a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-5.2.1.Whitebox<Baustein1>"=
+>5.2.1. Whitebox &lt;Baustein 1&gt;</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-5.2.2.Whitebox<Baustein2>"=
+>5.2.2. Whitebox &lt;Baustein 2&gt;</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-5.2.3.Whitebox<Bausteinm>"=
+>5.2.3. Whitebox &lt;Baustein m&gt;</a></li>
+</ul></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-5.3.Ebene3">5.3. Ebene 3</=
+a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-5.3.1.Whitebox<_Bausteinx.=
+1_>">5.3.1. Whitebox &lt;_Baustein x.1_&gt;</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-5.3.2.Whitebox<_Bausteinx.=
+2_>">5.3.2. Whitebox &lt;_Baustein x.2_&gt;</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-5.3.3.Whitebox<_Bausteiny.=
+1_>">5.3.3. Whitebox &lt;_Baustein y.1_&gt;</a></li>
+</ul></li>
+</ul></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-6.Laufzeitsicht">6. Laufze=
+itsicht</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-6.1.<BezeichnungLaufzeitsz=
+enario1>">6.1. &lt;Bezeichnung Laufzeitszenario 1&gt;</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-6.2.<BezeichnungLaufzeitsz=
+enario2>">6.2. &lt;Bezeichnung Laufzeitszenario 2&gt;</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-6.3.<BezeichnungLaufzeitsz=
+enarion>">6.3. &lt;Bezeichnung Laufzeitszenario n&gt;</a></li>
+</ul></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-7.Verteilungssicht">7. Ver=
+teilungssicht</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-7.1.InfrastrukturEbene1">7=
+.1. Infrastruktur Ebene 1</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-7.2.InfrastrukturEbene2">7=
+.2. Infrastruktur Ebene 2</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-7.2.1.<Infrastrukturelemen=
+t1>">7.2.1. &lt;Infrastrukturelement 1&gt;</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-7.2.2.<Infrastrukturelemen=
+t2>">7.2.2. &lt;Infrastrukturelement 2&gt;</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-7.2.3.<Infrastrukturelemen=
+tn>">7.2.3. &lt;Infrastrukturelement n&gt;</a></li>
+</ul></li>
+</ul></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-8.QuerschnittlicheKonzepte=
+">8. Querschnittliche Konzepte</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-8.1.<Konzept1>">8.1. &lt;K=
+onzept 1&gt;</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-8.2.<Konzept2>">8.2. &lt;K=
+onzept 2&gt;</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-8.3.<Konzeptn>">8.3. &lt;K=
+onzept n&gt;</a></li>
+</ul></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-9.Architekturentscheidunge=
+n">9. Architekturentscheidungen</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-10.Qualit=C3=A4tsanforderu=
+ngen">10. Qualit=C3=A4tsanforderungen</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-10.1.Qualit=C3=A4tsbaum">1=
+0.1. Qualit=C3=A4tsbaum</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-10.2.Qualit=C3=A4tsszenari=
+en">10.2. Qualit=C3=A4tsszenarien</a></li>
+</ul></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-11.RisikenundtechnischeSch=
+ulden">11. Risiken und technische Schulden</a></li>
+<li><a href=3D"#arc42TemplatemitErl=C3=A4uterung-12.Glossar">12. Glossar</a=
+></li>
+</ul></strong>
+</div>
+<p></p>
+<hr>
+<p><br></p>
+<p><strong>=C3=9Cber arc42</strong></p>
+<p>arc42, das Template zur Dokumentation von Software- und Systemarchitektu=
+ren.</p>
+<p>Template Version 8.2 DE. (basiert auf AsciiDoc Version), Januar 2023</p>
+<p>Created, maintained and =C2=A9 by Dr. Peter Hruschka, Dr. Gernot Starke =
+and contributors. Siehe<span>&nbsp;</span><a class=3D"external-link" href=
+=3D"https://arc42.org" rel=3D"nofollow" style=3D"text-decoration: underline=
+;">https://arc42.org</a>.</p>
+<hr>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<tbody>
+<tr>
+<td style=3D"text-align: center;" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd">
+<p>Diese Version des Templates enth=C3=A4lt Hilfen und Erl=C3=A4uterungen. =
+Sie dient der Einarbeitung in arc42 sowie dem Verst=C3=A4ndnis der Konzepte=
+. F=C3=BCr die Dokumentation eigener System verwenden Sie besser die<span>&=
+nbsp;</span><em>plain</em><span>&nbsp;</span>Version.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"arc42TemplatemitErl=C3=A4uterung-1.Einf=C3=BChrungundZiele">1. Ei=
+nf=C3=BChrung und Ziele</h2>
+<p>Beschreibt die wesentlichen Anforderungen und treibenden Kr=C3=A4fte, di=
+e bei der Umsetzung der Softwarearchitektur und Entwicklung des Systems ber=
+=C3=BCcksichtigt werden m=C3=BCssen.</p>
+<p>Dazu geh=C3=B6ren:</p>
+<ul>
+<li>
+<p>zugrunde liegende Gesch=C3=A4ftsziele,</p></li>
+<li>
+<p>wesentliche Aufgabenstellungen,</p></li>
+<li>
+<p>wesentliche funktionale Anforderungen,</p></li>
+<li>
+<p>Qualit=C3=A4tsziele f=C3=BCr die Architektur und</p></li>
+<li>
+<p>relevante Stakeholder und deren Erwartungshaltung.</p></li>
+</ul>
+<h3 id=3D"arc42TemplatemitErl=C3=A4uterung-1.1.Aufgabenstellung">1.1. Aufga=
+benstellung</h3>
+<p style=3D"text-align: left;">Inhalt</p>
+<p>Kurzbeschreibung der fachlichen Aufgabenstellung, treibenden Kr=C3=A4fte=
+, Extrakt (oder Abstract) der Anforderungen. Verweis auf (hoffentlich vorli=
+egende) Anforderungsdokumente (mit Versionsbezeichnungen und Ablageorten).<=
+br>
+Motivation</p>
+<p>Aus Sicht der sp=C3=A4teren Nutzung ist die Unterst=C3=BCtzung einer fac=
+hlichen Aufgabe oder Verbesserung der Qualit=C3=A4t der eigentliche Beweggr=
+und, ein neues System zu schaffen oder ein bestehendes zu modifizieren.<br>
+Form</p>
+<p>Kurze textuelle Beschreibung, eventuell in tabellarischer Use-Case Form.=
+ Sofern vorhanden, sollte die Aufgabenstellung Verweise auf die entsprechen=
+den Anforderungsdokumente enthalten.</p>
+<p>Halten Sie diese Ausz=C3=BCge so knapp wie m=C3=B6glich und w=C3=A4gen S=
+ie Lesbarkeit und Redundanzfreiheit gegeneinander ab.</p>
+<p>Siehe<span>&nbsp;</span><a class=3D"external-link" href=3D"https://docs.=
+arc42.org/section-1/" rel=3D"nofollow" style=3D"text-decoration: underline;=
+">Anforderungen und Ziele</a><span>&nbsp;</span>in der online-Dokumentation=
+ (auf Englisch!).</p>
+<h3 id=3D"arc42TemplatemitErl=C3=A4uterung-1.2.Qualit=C3=A4tsziele">1.2. Qu=
+alit=C3=A4tsziele</h3>
+<p><br>
+Inhalt</p>
+<p>Die Top-3 bis Top-5 der Qualit=C3=A4tsanforderungen f=C3=BCr die Archite=
+ktur, deren Erf=C3=BCllung oder Einhaltung den ma=C3=9Fgeblichen Stakeholde=
+rn besonders wichtig sind. Gemeint sind hier wirklich Qualit=C3=A4tsziele, =
+die nicht unbedingt mit den Zielen des Projekts =C3=BCbereinstimmen. Beacht=
+en Sie den Unterschied.</p>
+<p>Hier ein =C3=9Cberblick m=C3=B6glicher Themen (basierend auf dem ISO 250=
+10 Standard):<br><span class=3D"confluence-embedded-file-wrapper"><img clas=
+s=3D"confluence-embedded-image confluence-external-resource" alt=3D"Kategor=
+ien von Qualit=C3=A4tsanforderungen" src=3D"https://confluence-cpy.ad.volks=
+wohl-bund.de/images/01_2_iso-25010-topics-DE.drawio.png" data-image-src=3D"=
+https://confluence-cpy.ad.volkswohl-bund.de/images/01_2_iso-25010-topics-DE=
+.drawio.png" loading=3D"lazy"></span><br>
+Motivation</p>
+<p>Weil Qualit=C3=A4tsziele grundlegende Architekturentscheidungen oft ma=
+=C3=9Fgeblich beeinflussen, sollten Sie die f=C3=BCr Ihre Stakeholder relev=
+anten Qualit=C3=A4tsziele kennen, m=C3=B6glichst konkret und operationalisi=
+erbar.<br>
+Form</p>
+<p>Tabellarische Darstellung der Qualit=C3=A4tsziele mit m=C3=B6glichst kon=
+kreten Szenarien, geordnet nach Priorit=C3=A4ten.</p>
+<h3 id=3D"arc42TemplatemitErl=C3=A4uterung-1.3.Stakeholder">1.3. Stakeholde=
+r</h3>
+<p><br>
+Inhalt</p>
+<p>Expliziter =C3=9Cberblick =C3=BCber die Stakeholder des Systems =E2=80=
+=93 =C3=BCber alle Personen, Rollen oder Organisationen =E2=80=93, die</p>
+<ul>
+<li>
+<p>die Architektur kennen sollten oder</p></li>
+<li>
+<p>von der Architektur =C3=BCberzeugt werden m=C3=BCssen,</p></li>
+<li>
+<p>mit der Architektur oder dem Code arbeiten (z.B. Schnittstellen nutzen),=
+</p></li>
+<li>
+<p>die Dokumentation der Architektur f=C3=BCr ihre eigene Arbeit ben=C3=B6t=
+igen,</p></li>
+<li>
+<p>Entscheidungen =C3=BCber das System und dessen Entwicklung treffen.</p><=
+/li>
+</ul>
+<p><br>
+Motivation</p>
+<p>Sie sollten die Projektbeteiligten und -betroffenen kennen, sonst erlebe=
+n Sie sp=C3=A4ter im Entwicklungsprozess =C3=9Cberraschungen. Diese Stakeho=
+lder bestimmen unter anderem Umfang und Detaillierungsgrad der von Ihnen zu=
+ leistenden Arbeit und Ergebnisse.<br>
+Form</p>
+<p>Tabelle mit Rollen- oder Personennamen, sowie deren Erwartungshaltung be=
+z=C3=BCglich der Architektur und deren Dokumentation.</p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col style=3D"width: 241.0px;">
+<col style=3D"width: 241.0px;">
+<col style=3D"width: 482.0px;">
+</colgroup>
+<thead>
+<tr>
+<th style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTh">=
+Rolle</th>
+<th style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTh">=
+Kontakt</th>
+<th style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTh">=
+Erwartungshaltung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">
+<p class=3D"tableblock"><em>&lt;Rolle-1&gt;</em></p></td>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">
+<p class=3D"tableblock"><em>&lt;Kontakt-1&gt;</em></p></td>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">
+<p class=3D"tableblock"><em>&lt;Erwartung-1&gt;</em></p></td>
+</tr>
+<tr>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">
+<p class=3D"tableblock"><em>&lt;Rolle-2&gt;</em></p></td>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">
+<p class=3D"tableblock"><em>&lt;Kontakt-2&gt;</em></p></td>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">
+<p class=3D"tableblock"><em>&lt;Erwartung-2&gt;</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"arc42TemplatemitErl=C3=A4uterung-2.Randbedingungen">2. Randbeding=
+ungen</h2>
+<p style=3D"text-align: left;">Inhalt</p>
+<p>Randbedingungen und Vorgaben, die ihre Freiheiten bez=C3=BCglich Entwurf=
+, Implementierung oder Ihres Entwicklungsprozesses einschr=C3=A4nken. Diese=
+ Randbedingungen gelten manchmal organisations- oder firmenweit =C3=BCber d=
+ie Grenzen einzelner Systeme hinweg.<br>
+Motivation</p>
+<p>F=C3=BCr eine tragf=C3=A4hige Architektur sollten Sie genau wissen, wo I=
+hre Freiheitsgrade bez=C3=BCglich der Entwurfsentscheidungen liegen und wo =
+Sie Randbedingungen beachten m=C3=BCssen. Sie k=C3=B6nnen Randbedingungen v=
+ielleicht noch verhandeln, zun=C3=A4chst sind sie aber da.<br>
+Form</p>
+<p>Einfache Tabellen der Randbedingungen mit Erl=C3=A4uterungen. Bei Bedarf=
+ unterscheiden Sie technische, organisatorische und politische Randbedingun=
+gen oder =C3=BCbergreifende Konventionen (beispielsweise Programmier- oder =
+Versionierungsrichtlinien, Dokumentations- oder Namenskonvention).</p>
+<p>Siehe<span>&nbsp;</span><a class=3D"external-link" href=3D"https://docs.=
+arc42.org/section-2/" rel=3D"nofollow" style=3D"text-decoration: underline;=
+">Randbedingungen</a><span>&nbsp;</span>in der online-Dokumentation (auf En=
+glisch!).</p>
+<h2 id=3D"arc42TemplatemitErl=C3=A4uterung-3.Kontextabgrenzung">3. Kontexta=
+bgrenzung</h2>
+<p style=3D"text-align: left;">Inhalt</p>
+<p>Die Kontextabgrenzung grenzt das System gegen alle Kommunikationspartner=
+ (Nachbarsysteme und Benutzerrollen) ab. Sie legt damit die externen Schnit=
+tstellen fest und zeigt damit auch die Verantwortlichkeit (scope) Ihres Sys=
+tems: Welche Verantwortung tr=C3=A4gt das System und welche Verantwortung =
+=C3=BCbernehmen die Nachbarsysteme?</p>
+<p>Differenzieren Sie fachlichen (Ein- und Ausgaben) und technischen Kontex=
+t (Kan=C3=A4le, Protokolle, Hardware), falls n=C3=B6tig.<br>
+Motivation</p>
+<p>Die fachlichen und technischen Schnittstellen zur Kommunikation geh=C3=
+=B6ren zu den kritischsten Aspekten eines Systems. Stellen Sie sicher, dass=
+ Sie diese komplett verstanden haben.<br>
+Form</p>
+<p>Verschiedene Optionen:</p>
+<ul>
+<li>
+<p>Diverse Kontextdiagramme</p></li>
+<li>
+<p>Listen von Kommunikationsbeziehungen mit deren Schnittstellen</p></li>
+</ul>
+<p>Siehe<span>&nbsp;</span><a class=3D"external-link" href=3D"https://docs.=
+arc42.org/section-3/" rel=3D"nofollow" style=3D"text-decoration: underline;=
+">Kontextabgrenzung</a><span>&nbsp;</span>in der online-Dokumentation (auf =
+Englisch!).</p>
+<h3 id=3D"arc42TemplatemitErl=C3=A4uterung-3.1.FachlicherKontext">3.1. Fach=
+licher Kontext</h3>
+<p><br>
+Inhalt</p>
+<p>Festlegung<span>&nbsp;</span><strong>aller</strong><span>&nbsp;</span>Ko=
+mmunikationsbeziehungen (Nutzer, IT-Systeme, =E2=80=A6) mit Erkl=C3=A4rung =
+der fachlichen Ein- und Ausgabedaten oder Schnittstellen. Zus=C3=A4tzlich (=
+bei Bedarf) fachliche Datenformate oder Protokolle der Kommunikation mit de=
+n Nachbarsystemen.<br>
+Motivation</p>
+<p>Alle Beteiligten m=C3=BCssen verstehen, welche fachlichen Informationen =
+mit der Umwelt ausgetauscht werden.<br>
+Form</p>
+<p>Alle Diagrammarten, die das System als Blackbox darstellen und die fachl=
+ichen Schnittstellen zu den Nachbarsystemen beschreiben.</p>
+<p>Alternativ oder erg=C3=A4nzend k=C3=B6nnen Sie eine Tabelle verwenden. D=
+er Titel gibt den Namen Ihres Systems wieder; die drei Spalten sind: Kommun=
+ikationsbeziehung, Eingabe, Ausgabe.</p>
+<p><strong>&lt;Diagramm und/oder Tabelle&gt;</strong></p>
+<p><strong>&lt;optional: Erl=C3=A4uterung der externen fachlichen Schnittst=
+ellen&gt;</strong></p>
+<h3 id=3D"arc42TemplatemitErl=C3=A4uterung-3.2.TechnischerKontext">3.2. Tec=
+hnischer Kontext</h3>
+<p><br>
+Inhalt</p>
+<p>Technische Schnittstellen (Kan=C3=A4le, =C3=9Cbertragungsmedien) zwische=
+n dem System und seiner Umwelt. Zus=C3=A4tzlich eine Erkl=C3=A4rung (<em>ma=
+pping</em>), welche fachlichen Ein- und Ausgaben =C3=BCber welche technisch=
+en Kan=C3=A4le flie=C3=9Fen.<br>
+Motivation</p>
+<p>Viele Stakeholder treffen Architekturentscheidungen auf Basis der techni=
+schen Schnittstellen des Systems zu seinem Kontext.</p>
+<p>Insbesondere bei der Entwicklung von Infrastruktur oder Hardware sind di=
+ese technischen Schnittstellen durchaus entscheidend.<br>
+Form</p>
+<p>Beispielsweise UML Deployment-Diagramme mit den Kan=C3=A4len zu Nachbars=
+ystemen, begleitet von einer Tabelle, die Kan=C3=A4le auf Ein-/Ausgaben abb=
+ildet.</p>
+<p><strong>&lt;Diagramm oder Tabelle&gt;</strong></p>
+<p><strong>&lt;optional: Erl=C3=A4uterung der externen technischen Schnitts=
+tellen&gt;</strong></p>
+<p><strong>&lt;Mapping fachliche auf technische Schnittstellen&gt;</strong>=
+</p>
+<h2 id=3D"arc42TemplatemitErl=C3=A4uterung-4.L=C3=B6sungsstrategie">4. L=C3=
+=B6sungsstrategie</h2>
+<p style=3D"text-align: left;">Inhalt</p>
+<p>Kurzer =C3=9Cberblick =C3=BCber die grundlegenden Entscheidungen und L=
+=C3=B6sungsans=C3=A4tze, die Entwurf und Implementierung des Systems pr=C3=
+=A4gen. Hierzu geh=C3=B6ren:</p>
+<ul>
+<li>
+<p>Technologieentscheidungen</p></li>
+<li>
+<p>Entscheidungen =C3=BCber die Top-Level-Zerlegung des Systems, beispielsw=
+eise die Verwendung gesamthaft pr=C3=A4gender Entwurfs- oder Architekturmus=
+ter,</p></li>
+<li>
+<p>Entscheidungen zur Erreichung der wichtigsten Qualit=C3=A4tsanforderunge=
+n sowie</p></li>
+<li>
+<p>relevante organisatorische Entscheidungen, beispielsweise f=C3=BCr besti=
+mmte Entwicklungsprozesse oder Delegation bestimmter Aufgaben an andere Sta=
+keholder.</p></li>
+</ul>
+<p><br>
+Motivation</p>
+<p>Diese wichtigen Entscheidungen bilden wesentliche =E2=80=9EEckpfeiler=E2=
+=80=9C der Architektur. Von ihnen h=C3=A4ngen viele weitere Entscheidungen =
+oder Implementierungsregeln ab.<br>
+Form</p>
+<p>Fassen Sie die zentralen Entwurfsentscheidungen<span>&nbsp;</span><stron=
+g>kurz</strong><span>&nbsp;</span>zusammen. Motivieren Sie, ausgehend von A=
+ufgabenstellung, Qualit=C3=A4tszielen und Randbedingungen, was Sie entschie=
+den haben und warum Sie so entschieden haben. Vermeiden Sie redundante Besc=
+hreibungen und verweisen Sie eher auf weitere Ausf=C3=BChrungen in Folgeabs=
+chnitten.</p>
+<p>Siehe<span>&nbsp;</span><a class=3D"external-link" href=3D"https://docs.=
+arc42.org/section-4/" rel=3D"nofollow" style=3D"text-decoration: underline;=
+">L=C3=B6sungsstrategie</a><span>&nbsp;</span>in der online-Dokumentation (=
+auf Englisch!).</p>
+<h2 id=3D"arc42TemplatemitErl=C3=A4uterung-5.Bausteinsicht">5. Bausteinsich=
+t</h2>
+<p style=3D"text-align: left;">Inhalt</p>
+<p>Die Bausteinsicht zeigt die statische Zerlegung des Systems in Bausteine=
+ (Module, Komponenten, Subsysteme, Klassen, Schnittstellen, Pakete, Bibliot=
+heken, Frameworks, Schichten, Partitionen, Tiers, Funktionen, Makros, Opera=
+tionen, Datenstrukturen, =E2=80=A6) sowie deren Abh=C3=A4ngigkeiten (Bezieh=
+ungen, Assoziationen, =E2=80=A6)</p>
+<p>Diese Sicht sollte in jeder Architekturdokumentation vorhanden sein. In =
+der Analogie zum Hausbau bildet die Bausteinsicht den<span>&nbsp;</span><em=
+>Grundrissplan</em>.<br>
+Motivation</p>
+<p>Behalten Sie den =C3=9Cberblick =C3=BCber den Quellcode, indem Sie die s=
+tatische Struktur des Systems durch Abstraktion verst=C3=A4ndlich machen.</=
+p>
+<p>Damit erm=C3=B6glichen Sie Kommunikation auf abstrakterer Ebene, ohne zu=
+ viele Implementierungsdetails offenlegen zu m=C3=BCssen.<br>
+Form</p>
+<p>Die Bausteinsicht ist eine hierarchische Sammlung von Blackboxen und Whi=
+teboxen (siehe Abbildung unten) und deren Beschreibungen.<br><span class=3D=
+"confluence-embedded-file-wrapper"><img class=3D"confluence-embedded-image =
+confluence-external-resource" alt=3D"Hierarchie in der Bausteinsicht" src=
+=3D"https://confluence-cpy.ad.volkswohl-bund.de/images/05_building_blocks-D=
+E.png" data-image-src=3D"https://confluence-cpy.ad.volkswohl-bund.de/images=
+/05_building_blocks-DE.png" loading=3D"lazy"></span></p>
+<p><strong>Ebene 1</strong><span>&nbsp;</span>ist die Whitebox-Beschreibung=
+ des Gesamtsystems, zusammen mit Blackbox-Beschreibungen der darin enthalte=
+nen Bausteine.</p>
+<p><strong>Ebene 2</strong><span>&nbsp;</span>zoomt in einige Bausteine der=
+ Ebene 1 hinein. Sie enth=C3=A4lt somit die Whitebox-Beschreibungen ausgew=
+=C3=A4hlter Bausteine der Ebene 1, jeweils zusammen mit Blackbox-Beschreibu=
+ngen darin enthaltener Bausteine.</p>
+<p><strong>Ebene 3</strong><span>&nbsp;</span>zoomt in einige Bausteine der=
+ Ebene 2 hinein, usw.</p>
+<p>Siehe<span>&nbsp;</span><a class=3D"external-link" href=3D"https://docs.=
+arc42.org/section-5/" rel=3D"nofollow" style=3D"text-decoration: underline;=
+">Bausteinsicht</a><span>&nbsp;</span>in der online-Dokumentation (auf Engl=
+isch!).</p>
+<h3 id=3D"arc42TemplatemitErl=C3=A4uterung-5.1.WhiteboxGesamtsystem">5.1. W=
+hitebox Gesamtsystem</h3>
+<p>An dieser Stelle beschreiben Sie die Zerlegung des Gesamtsystems anhand =
+des nachfolgenden Whitebox-Templates. Dieses enth=C3=A4lt:</p>
+<ul>
+<li>
+<p>Ein =C3=9Cbersichtsdiagramm</p></li>
+<li>
+<p>die Begr=C3=BCndung dieser Zerlegung</p></li>
+<li>
+<p>Blackbox-Beschreibungen der hier enthaltenen Bausteine. Daf=C3=BCr haben=
+ Sie verschiedene Optionen:</p>
+<ul>
+<li>
+<p>in<span>&nbsp;</span><em>einer</em><span>&nbsp;</span>Tabelle, gibt eine=
+n kurzen und pragmatischen =C3=9Cberblick =C3=BCber die enthaltenen Baustei=
+ne sowie deren Schnittstellen.</p></li>
+<li>
+<p>als Liste von Blackbox-Beschreibungen der Bausteine, gem=C3=A4=C3=9F dem=
+ Blackbox-Template (siehe unten). Diese Liste k=C3=B6nnen Sie, je nach Werk=
+zeug, etwa in Form von Unterkapiteln (Text), Unter-Seiten (Wiki) oder gesch=
+achtelten Elementen (Modellierungswerkzeug) darstellen.</p></li>
+</ul></li>
+<li>
+<p>(optional:) wichtige Schnittstellen, die nicht bereits im Blackbox-Templ=
+ate eines der Bausteine erl=C3=A4utert werden, aber f=C3=BCr das Verst=C3=
+=A4ndnis der Whitebox von zentraler Bedeutung sind. Aufgrund der vielf=C3=
+=A4ltigen M=C3=B6glichkeiten oder Auspr=C3=A4gungen von Schnittstellen gebe=
+n wir hierzu kein weiteres Template vor. Im schlimmsten Fall m=C3=BCssen Si=
+e Syntax, Semantik, Protokolle, Fehlerverhalten, Restriktionen, Versionen, =
+Qualit=C3=A4tseigenschaften, notwendige Kompatibilit=C3=A4ten und vieles me=
+hr spezifizieren oder beschreiben. Im besten Fall kommen Sie mit Beispielen=
+ oder einfachen Signaturen zurecht.</p></li>
+</ul>
+<p><em><strong>&lt;=C3=9Cbersichtsdiagramm&gt;</strong></em></p>
+<p>Begr=C3=BCndung&lt;Erl=C3=A4uternder Text&gt;Enthaltene Bausteine&lt;Bes=
+chreibung der enthaltenen Bausteine (Blackboxen)&gt;Wichtige Schnittstellen=
+&lt;Beschreibung wichtiger Schnittstellen&gt;</p>
+<p>Hier folgen jetzt Erl=C3=A4uterungen zu Blackboxen der Ebene 1.</p>
+<p>Falls Sie die tabellarische Beschreibung w=C3=A4hlen, so werden Blackbox=
+en darin nur mit Name und Verantwortung nach folgendem Muster beschrieben:<=
+/p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col style=3D"width: 76.5938px;">
+<col style=3D"width: 107.266px;">
+</colgroup>
+<thead>
+<tr>
+<th style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTh">=
+<strong>Name</strong></th>
+<th style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTh">=
+<strong>Verantwortung</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">
+<p class=3D"tableblock"><em>&lt;Blackbox 1&gt;</em></p></td>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">
+<p class=3D"tableblock">&nbsp;<em>&lt;Text&gt;</em></p></td>
+</tr>
+<tr>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">
+<p class=3D"tableblock"><em>&lt;Blackbox 2&gt;</em></p></td>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">
+<p class=3D"tableblock">&nbsp;<em>&lt;Text&gt;</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Falls Sie die ausf=C3=BChrliche Liste von Blackbox-Beschreibungen w=C3=
+=A4hlen, beschreiben Sie jede wichtige Blackbox in einem eigenen Blackbox-T=
+emplate. Dessen =C3=9Cberschrift ist jeweils der Namen dieser Blackbox.</p>
+<h4 id=3D"arc42TemplatemitErl=C3=A4uterung-5.1.1.<NameBlackbox1>">5.1.1. &l=
+t;Name Blackbox 1&gt;</h4>
+<p>Beschreiben Sie die &lt;Blackbox 1&gt; anhand des folgenden Blackbox-Tem=
+plates:</p>
+<ul>
+<li>
+<p>Zweck/Verantwortung</p></li>
+<li>
+<p>Schnittstelle(n), sofern diese nicht als eigenst=C3=A4ndige Beschreibung=
+en herausgezogen sind. Hierzu geh=C3=B6ren eventuell auch Qualit=C3=A4ts- u=
+nd Leistungsmerkmale dieser Schnittstelle.</p></li>
+<li>
+<p>(Optional) Qualit=C3=A4ts-/Leistungsmerkmale der Blackbox, beispielsweis=
+e Verf=C3=BCgbarkeit, Laufzeitverhalten o. =C3=84.</p></li>
+<li>
+<p>(Optional) Ablageort/Datei(en)</p></li>
+<li>
+<p>(Optional) Erf=C3=BCllte Anforderungen, falls Sie Traceability zu Anford=
+erungen ben=C3=B6tigen.</p></li>
+<li>
+<p>(Optional) Offene Punkte/Probleme/Risiken</p></li>
+</ul>
+<p><em>&lt;Zweck/Verantwortung&gt;</em></p>
+<p><em>&lt;Schnittstelle(n)&gt;</em></p>
+<p><em>&lt;(Optional) Qualit=C3=A4ts-/Leistungsmerkmale&gt;</em></p>
+<p><em>&lt;(Optional) Ablageort/Datei(en)&gt;</em></p>
+<p><em>&lt;(Optional) Erf=C3=BCllte Anforderungen&gt;</em></p>
+<p><em>&lt;(optional) Offene Punkte/Probleme/Risiken&gt;</em></p>
+<h4 id=3D"arc42TemplatemitErl=C3=A4uterung-5.1.2.<NameBlackbox2>">5.1.2. &l=
+t;Name Blackbox 2&gt;</h4>
+<p><em>&lt;Blackbox-Template&gt;</em></p>
+<h4 id=3D"arc42TemplatemitErl=C3=A4uterung-5.1.3.<NameBlackboxn>">5.1.3. &l=
+t;Name Blackbox n&gt;</h4>
+<p><em>&lt;Blackbox-Template&gt;</em></p>
+<h4 id=3D"arc42TemplatemitErl=C3=A4uterung-5.1.4.<NameSchnittstelle1>">5.1.=
+4. &lt;Name Schnittstelle 1&gt;</h4>
+<p>=E2=80=A6</p>
+<h4 id=3D"arc42TemplatemitErl=C3=A4uterung-5.1.5.<NameSchnittstellem>">5.1.=
+5. &lt;Name Schnittstelle m&gt;</h4>
+<p><br></p>
+<h3 id=3D"arc42TemplatemitErl=C3=A4uterung-5.2.Ebene2">5.2. Ebene 2</h3>
+<p>Beschreiben Sie den inneren Aufbau (einiger) Bausteine aus Ebene 1 als W=
+hitebox.</p>
+<p>Welche Bausteine Ihres Systems Sie hier beschreiben, m=C3=BCssen Sie sel=
+bst entscheiden. Bitte stellen Sie dabei Relevanz vor Vollst=C3=A4ndigkeit.=
+ Skizzieren Sie wichtige, =C3=BCberraschende, riskante, komplexe oder beson=
+ders volatile Bausteine. Normale, einfache oder standardisierte Teile sollt=
+en Sie weglassen.</p>
+<h4 id=3D"arc42TemplatemitErl=C3=A4uterung-5.2.1.Whitebox<Baustein1>">5.2.1=
+. Whitebox<span>&nbsp;</span><em>&lt;Baustein 1&gt;</em></h4>
+<p>=E2=80=A6zeigt das Innenleben von<span>&nbsp;</span><em>Baustein 1</em>.=
+</p>
+<p><em>&lt;Whitebox-Template&gt;</em></p>
+<h4 id=3D"arc42TemplatemitErl=C3=A4uterung-5.2.2.Whitebox<Baustein2>">5.2.2=
+. Whitebox<span>&nbsp;</span><em>&lt;Baustein 2&gt;</em></h4>
+<p><em>&lt;Whitebox-Template&gt;</em></p>
+<p>=E2=80=A6</p>
+<h4 id=3D"arc42TemplatemitErl=C3=A4uterung-5.2.3.Whitebox<Bausteinm>">5.2.3=
+. Whitebox<span>&nbsp;</span><em>&lt;Baustein m&gt;</em></h4>
+<p><em>&lt;Whitebox-Template&gt;</em></p>
+<h3 id=3D"arc42TemplatemitErl=C3=A4uterung-5.3.Ebene3">5.3. Ebene 3</h3>
+<p>Beschreiben Sie den inneren Aufbau (einiger) Bausteine aus Ebene 2 als W=
+hitebox.</p>
+<p>Bei tieferen Gliederungen der Architektur kopieren Sie diesen Teil von a=
+rc42 f=C3=BCr die weiteren Ebenen.</p>
+<h4 id=3D"arc42TemplatemitErl=C3=A4uterung-5.3.1.Whitebox<_Bausteinx.1_>">5=
+.3.1. Whitebox &lt;_Baustein x.1_&gt;</h4>
+<p>=E2=80=A6zeigt das Innenleben von<span>&nbsp;</span><em>Baustein x.1</em=
+>.</p>
+<p><em>&lt;Whitebox-Template&gt;</em></p>
+<h4 id=3D"arc42TemplatemitErl=C3=A4uterung-5.3.2.Whitebox<_Bausteinx.2_>">5=
+.3.2. Whitebox &lt;_Baustein x.2_&gt;</h4>
+<p><em>&lt;Whitebox-Template&gt;</em></p>
+<h4 id=3D"arc42TemplatemitErl=C3=A4uterung-5.3.3.Whitebox<_Bausteiny.1_>">5=
+.3.3. Whitebox &lt;_Baustein y.1_&gt;</h4>
+<p><em>&lt;Whitebox-Template&gt;</em></p>
+<h2 id=3D"arc42TemplatemitErl=C3=A4uterung-6.Laufzeitsicht">6. Laufzeitsich=
+t</h2>
+<p style=3D"text-align: left;">Inhalt</p>
+<p>Diese Sicht erkl=C3=A4rt konkrete Abl=C3=A4ufe und Beziehungen zwischen =
+Bausteinen in Form von Szenarien aus den folgenden Bereichen:</p>
+<ul>
+<li>
+<p>Wichtige Abl=C3=A4ufe oder<span>&nbsp;</span><em>Features</em>: Wie f=C3=
+=BChren die Bausteine der Architektur die wichtigsten Abl=C3=A4ufe durch?</=
+p></li>
+<li>
+<p>Interaktionen an kritischen externen Schnittstellen: Wie arbeiten Bauste=
+ine mit Nutzern und Nachbarsystemen zusammen?</p></li>
+<li>
+<p>Betrieb und Administration: Inbetriebnahme, Start, Stop.</p></li>
+<li>
+<p>Fehler- und Ausnahmeszenarien</p></li>
+</ul>
+<p>Anmerkung: Das Kriterium f=C3=BCr die Auswahl der m=C3=B6glichen Szenari=
+en (d.h. Abl=C3=A4ufe) des Systems ist deren Architekturrelevanz. Es geht n=
+icht darum, m=C3=B6glichst viele Abl=C3=A4ufe darzustellen, sondern eine an=
+gemessene Auswahl zu dokumentieren.<br>
+Motivation</p>
+<p>Sie sollten verstehen, wie (Instanzen von) Bausteine(n) Ihres Systems ih=
+re jeweiligen Aufgaben erf=C3=BCllen und zur Laufzeit miteinander kommunizi=
+eren.</p>
+<p>Nutzen Sie diese Szenarien in der Dokumentation haupts=C3=A4chlich f=C3=
+=BCr eine verst=C3=A4ndlichere Kommunikation mit denjenigen Stakeholdern, d=
+ie die statischen Modelle (z.B. Bausteinsicht, Verteilungssicht) weniger ve=
+rst=C3=A4ndlich finden.<br>
+Form</p>
+<p>F=C3=BCr die Beschreibung von Szenarien gibt es zahlreiche Ausdrucksm=C3=
+=B6glichkeiten. Nutzen Sie beispielsweise:</p>
+<ul>
+<li>
+<p>Nummerierte Schrittfolgen oder Aufz=C3=A4hlungen in Umgangssprache</p></=
+li>
+<li>
+<p>Aktivit=C3=A4ts- oder Flussdiagramme</p></li>
+<li>
+<p>Sequenzdiagramme</p></li>
+<li>
+<p>BPMN (Gesch=C3=A4ftsprozessmodell und -notation) oder EPKs (Ereignis-Pro=
+zessketten)</p></li>
+<li>
+<p>Zustandsautomaten</p></li>
+<li>
+<p>=E2=80=A6</p></li>
+</ul>
+<p>Siehe<span>&nbsp;</span><a class=3D"external-link" href=3D"https://docs.=
+arc42.org/section-6/" rel=3D"nofollow" style=3D"text-decoration: underline;=
+">Laufzeitsicht</a><span>&nbsp;</span>in der online-Dokumentation (auf Engl=
+isch!).</p>
+<h3 id=3D"arc42TemplatemitErl=C3=A4uterung-6.1.<BezeichnungLaufzeitszenario=
+1>">6.1.<span>&nbsp;</span><em>&lt;Bezeichnung Laufzeitszenario 1&gt;</em><=
+/h3>
+<ul>
+<li>
+<p>&lt;hier Laufzeitdiagramm oder Ablaufbeschreibung einf=C3=BCgen&gt;</p><=
+/li>
+<li>
+<p>&lt;hier Besonderheiten bei dem Zusammenspiel der Bausteine in diesem Sz=
+enario erl=C3=A4utern&gt;</p></li>
+</ul>
+<h3 id=3D"arc42TemplatemitErl=C3=A4uterung-6.2.<BezeichnungLaufzeitszenario=
+2>">6.2.<span>&nbsp;</span><em>&lt;Bezeichnung Laufzeitszenario 2&gt;</em><=
+/h3>
+<p>=E2=80=A6</p>
+<h3 id=3D"arc42TemplatemitErl=C3=A4uterung-6.3.<BezeichnungLaufzeitszenario=
+n>">6.3.<span>&nbsp;</span><em>&lt;Bezeichnung Laufzeitszenario n&gt;</em><=
+/h3>
+<p>=E2=80=A6</p>
+<h2 id=3D"arc42TemplatemitErl=C3=A4uterung-7.Verteilungssicht">7. Verteilun=
+gssicht</h2>
+<p style=3D"text-align: left;">Inhalt</p>
+<p>Die Verteilungssicht beschreibt:</p>
+<ol class=3D"arabic">
+<li>
+<p>die technische Infrastruktur, auf der Ihr System ausgef=C3=BChrt wird, m=
+it Infrastrukturelementen wie Standorten, Umgebungen, Rechnern, Prozessoren=
+, Kan=C3=A4len und Netztopologien sowie sonstigen Bestandteilen, und</p></l=
+i>
+<li>
+<p>die Abbildung von (Software-)Bausteinen auf diese Infrastruktur.</p></li=
+>
+</ol>
+<p>H=C3=A4ufig laufen Systeme in unterschiedlichen Umgebungen, beispielswei=
+se Entwicklung-/Test- oder Produktionsumgebungen. In solchen F=C3=A4llen so=
+llten Sie alle relevanten Umgebungen aufzeigen.</p>
+<p>Nutzen Sie die Verteilungssicht insbesondere dann, wenn Ihre Software au=
+f mehr als einem Rechner, Prozessor, Server oder Container abl=C3=A4uft ode=
+r Sie Ihre Hardware sogar selbst konstruieren.</p>
+<p>Aus Softwaresicht gen=C3=BCgt es, auf die Aspekte zu achten, die f=C3=BC=
+r die Softwareverteilung relevant sind. Insbesondere bei der Hardwareentwic=
+klung kann es notwendig sein, die Infrastruktur mit beliebigen Details zu b=
+eschreiben.<br>
+Motivation</p>
+<p>Software l=C3=A4uft nicht ohne Infrastruktur. Diese zugrundeliegende Inf=
+rastruktur beeinflusst Ihr System und/oder querschnittliche L=C3=B6sungskon=
+zepte, daher m=C3=BCssen Sie diese Infrastruktur kennen.<br>
+Form</p>
+<p>Das oberste Verteilungsdiagramm k=C3=B6nnte bereits in Ihrem technischen=
+ Kontext enthalten sein, mit Ihrer Infrastruktur als EINE Blackbox. Jetzt z=
+oomen Sie in diese Infrastruktur mit weiteren Verteilungsdiagrammen hinein:=
+</p>
+<ul>
+<li>
+<p>Die UML stellt mit Verteilungsdiagrammen (Deployment diagrams) eine Diag=
+rammart zur Verf=C3=BCgung, um diese Sicht auszudr=C3=BCcken. Nutzen Sie di=
+ese, evtl. auch geschachtelt, wenn Ihre Verteilungsstruktur es verlangt.</p=
+></li>
+<li>
+<p>Falls Ihre Infrastruktur-Stakeholder andere Diagrammarten bevorzugen, di=
+e beispielsweise Prozessoren und Kan=C3=A4le zeigen, sind diese hier ebenfa=
+lls einsetzbar.</p></li>
+</ul>
+<p>Siehe<span>&nbsp;</span><a class=3D"external-link" href=3D"https://docs.=
+arc42.org/section-7/" rel=3D"nofollow" style=3D"text-decoration: underline;=
+">Verteilungssicht</a><span>&nbsp;</span>in der online-Dokumentation (auf E=
+nglisch!).</p>
+<h3 id=3D"arc42TemplatemitErl=C3=A4uterung-7.1.InfrastrukturEbene1">7.1. In=
+frastruktur Ebene 1</h3>
+<p>An dieser Stelle beschreiben Sie (als Kombination von Diagrammen mit Tab=
+ellen oder Texten):</p>
+<ul>
+<li>
+<p>die Verteilung des Gesamtsystems auf mehrere Standorte, Umgebungen, Rech=
+ner, Prozessoren o. =C3=84., sowie die physischen Verbindungskan=C3=A4le zw=
+ischen diesen,</p></li>
+<li>
+<p>wichtige Begr=C3=BCndungen f=C3=BCr diese Verteilungsstruktur,</p></li>
+<li>
+<p>Qualit=C3=A4ts- und/oder Leistungsmerkmale dieser Infrastruktur,</p></li=
+>
+<li>
+<p>Zuordnung von Softwareartefakten zu Bestandteilen der Infrastruktur</p><=
+/li>
+</ul>
+<p>F=C3=BCr mehrere Umgebungen oder alternative Deployments kopieren Sie di=
+esen Teil von arc42 f=C3=BCr alle wichtigen Umgebungen/Varianten.</p>
+<p><em><strong>&lt;=C3=9Cbersichtsdiagramm&gt;</strong></em></p>
+<p>Begr=C3=BCndung&lt;Erl=C3=A4uternder Text&gt;Qualit=C3=A4ts- und/oder Le=
+istungsmerkmale&lt;Erl=C3=A4uternder Text&gt;Zuordnung von Bausteinen zu In=
+frastruktur&lt;Beschreibung der Zuordnung&gt;</p>
+<h3 id=3D"arc42TemplatemitErl=C3=A4uterung-7.2.InfrastrukturEbene2">7.2. In=
+frastruktur Ebene 2</h3>
+<p>An dieser Stelle k=C3=B6nnen Sie den inneren Aufbau (einiger) Infrastruk=
+turelemente aus Ebene 1 beschreiben.</p>
+<p>F=C3=BCr jedes Infrastrukturelement kopieren Sie die Struktur aus Ebene =
+1.</p>
+<h4 id=3D"arc42TemplatemitErl=C3=A4uterung-7.2.1.<Infrastrukturelement1>">7=
+.2.1.<span>&nbsp;</span><em>&lt;Infrastrukturelement 1&gt;</em></h4>
+<p><em>&lt;Diagramm + Erl=C3=A4uterungen&gt;</em></p>
+<h4 id=3D"arc42TemplatemitErl=C3=A4uterung-7.2.2.<Infrastrukturelement2>">7=
+.2.2.<span>&nbsp;</span><em>&lt;Infrastrukturelement 2&gt;</em></h4>
+<p><em>&lt;Diagramm + Erl=C3=A4uterungen&gt;</em></p>
+<p>=E2=80=A6</p>
+<h4 id=3D"arc42TemplatemitErl=C3=A4uterung-7.2.3.<Infrastrukturelementn>">7=
+.2.3.<span>&nbsp;</span><em>&lt;Infrastrukturelement n&gt;</em></h4>
+<p><em>&lt;Diagramm + Erl=C3=A4uterungen&gt;</em></p>
+<h2 id=3D"arc42TemplatemitErl=C3=A4uterung-8.QuerschnittlicheKonzepte">8. Q=
+uerschnittliche Konzepte</h2>
+<p style=3D"text-align: left;">Inhalt</p>
+<p>Dieser Abschnitt beschreibt =C3=BCbergreifende, prinzipielle Regelungen =
+und L=C3=B6sungsans=C3=A4tze, die an mehreren Stellen (=3D<em>querschnittli=
+ch</em>) relevant sind.</p>
+<p>Solche Konzepte betreffen oft mehrere Bausteine. Dazu k=C3=B6nnen vieler=
+lei Themen geh=C3=B6ren, beispielsweise:</p>
+<ul>
+<li>
+<p>Modelle, insbesondere fachliche Modelle</p></li>
+<li>
+<p>Architektur- oder Entwurfsmuster</p></li>
+<li>
+<p>Regeln f=C3=BCr den konkreten Einsatz von Technologien</p></li>
+<li>
+<p>prinzipielle =E2=80=94 meist technische =E2=80=94 Festlegungen =C3=BCber=
+greifender Art</p></li>
+<li>
+<p>Implementierungsregeln</p></li>
+</ul>
+<p><br>
+Motivation</p>
+<p>Konzepte bilden die Grundlage f=C3=BCr<span>&nbsp;</span><em>konzeptione=
+lle Integrit=C3=A4t</em><span>&nbsp;</span>(Konsistenz, Homogenit=C3=A4t) d=
+er Architektur und damit eine wesentliche Grundlage f=C3=BCr die innere Qua=
+lit=C3=A4t Ihrer Systeme.</p>
+<p>Manche dieser Themen lassen sich nur schwer als Baustein in der Architek=
+tur unterbringen (z.B. das Thema =E2=80=9ESicherheit=E2=80=9C).<br>
+Form</p>
+<p>Kann vielf=C3=A4ltig sein:</p>
+<ul>
+<li>
+<p>Konzeptpapiere mit beliebiger Gliederung,</p></li>
+<li>
+<p>=C3=BCbergreifende Modelle/Szenarien mit Notationen, die Sie auch in den=
+ Architektursichten nutzen,</p></li>
+<li>
+<p>beispielhafte Implementierung speziell f=C3=BCr technische Konzepte,</p>=
+</li>
+<li>
+<p>Verweise auf =E2=80=9E=C3=BCbliche=E2=80=9C Nutzung von Standard-Framewo=
+rks (beispielsweise die Nutzung von Hibernate als Object/Relational Mapper)=
+.</p></li>
+</ul>
+<p><br>
+Struktur</p>
+<p>Eine m=C3=B6gliche (nicht aber notwendige!) Untergliederung dieses Absch=
+nittes k=C3=B6nnte wie folgt aussehen (wobei die Zuordnung von Themen zu de=
+n Gruppen nicht immer eindeutig ist):</p>
+<ul>
+<li>
+<p>Fachliche Konzepte</p></li>
+<li>
+<p>User Experience (UX)</p></li>
+<li>
+<p>Sicherheitskonzepte (Safety und Security)</p></li>
+<li>
+<p>Architektur- und Entwurfsmuster</p></li>
+<li>
+<p>Unter-der-Haube</p></li>
+<li>
+<p>Entwicklungskonzepte</p></li>
+<li>
+<p>Betriebskonzepte</p></li>
+</ul>
+<p><br><span class=3D"confluence-embedded-file-wrapper"><img class=3D"confl=
+uence-embedded-image confluence-external-resource" alt=3D"Possible topics f=
+or crosscutting concepts" src=3D"https://confluence-cpy.ad.volkswohl-bund.d=
+e/images/08-concepts-DE.drawio.png" data-image-src=3D"https://confluence-cp=
+y.ad.volkswohl-bund.de/images/08-concepts-DE.drawio.png" loading=3D"lazy"><=
+/span></p>
+<p>Siehe<span>&nbsp;</span><a class=3D"external-link" href=3D"https://docs.=
+arc42.org/section-8/" rel=3D"nofollow" style=3D"text-decoration: underline;=
+">Querschnittliche Konzepte</a><span>&nbsp;</span>in der online-Dokumentati=
+on (auf Englisch).</p>
+<h3 id=3D"arc42TemplatemitErl=C3=A4uterung-8.1.<Konzept1>">8.1.<span>&nbsp;=
+</span><em>&lt;Konzept 1&gt;</em></h3>
+<p><em>&lt;Erkl=C3=A4rung&gt;</em></p>
+<h3 id=3D"arc42TemplatemitErl=C3=A4uterung-8.2.<Konzept2>">8.2.<span>&nbsp;=
+</span><em>&lt;Konzept 2&gt;</em></h3>
+<p><em>&lt;Erkl=C3=A4rung&gt;</em></p>
+<p>=E2=80=A6</p>
+<h3 id=3D"arc42TemplatemitErl=C3=A4uterung-8.3.<Konzeptn>">8.3.<span>&nbsp;=
+</span><em>&lt;Konzept n&gt;</em></h3>
+<p><em>&lt;Erkl=C3=A4rung&gt;</em></p>
+<h2 id=3D"arc42TemplatemitErl=C3=A4uterung-9.Architekturentscheidungen">9. =
+Architekturentscheidungen</h2>
+<p style=3D"text-align: left;">Inhalt</p>
+<p>Wichtige, teure, gro=C3=9Fe oder riskante Architektur- oder Entwurfsents=
+cheidungen inklusive der jeweiligen Begr=C3=BCndungen. Mit "Entscheidungen"=
+ meinen wir hier die Auswahl einer von mehreren Alternativen unter vorgegeb=
+enen Kriterien.</p>
+<p>W=C3=A4gen Sie ab, inwiefern Sie Entscheidungen hier zentral beschreiben=
+, oder wo eine lokale Beschreibung (z.B. in der Whitebox-Sicht von Baustein=
+en) sinnvoller ist. Vermeiden Sie Redundanz. Verweisen Sie evtl. auf Abschn=
+itt 4, wo schon grundlegende strategische Entscheidungen beschrieben wurden=
+.<br>
+Motivation</p>
+<p>Stakeholder des Systems sollten wichtige Entscheidungen verstehen und na=
+chvollziehen k=C3=B6nnen.<br>
+Form</p>
+<p>Verschiedene M=C3=B6glichkeiten:</p>
+<ul>
+<li>
+<p>ADR (<a class=3D"external-link" href=3D"https://cognitect.com/blog/2011/=
+11/15/documenting-architecture-decisions" rel=3D"nofollow" style=3D"text-de=
+coration: underline;">Documenting Architecture Decisions</a>) f=C3=BCr jede=
+ wichtige Entscheidung</p></li>
+<li>
+<p>Liste oder Tabelle, nach Wichtigkeit und Tragweite der Entscheidungen ge=
+ordnet</p></li>
+<li>
+<p>ausf=C3=BChrlicher in Form einzelner Unterkapitel je Entscheidung</p></l=
+i>
+</ul>
+<p>Siehe<span>&nbsp;</span><a class=3D"external-link" href=3D"https://docs.=
+arc42.org/section-9/" rel=3D"nofollow" style=3D"text-decoration: underline;=
+">Architekturentscheidungen</a><span>&nbsp;</span>in der arc42 Dokumentatio=
+n (auf Englisch!). Dort finden Sie Links und Beispiele zum Thema ADR.</p>
+<h2 id=3D"arc42TemplatemitErl=C3=A4uterung-10.Qualit=C3=A4tsanforderungen">=
+10. Qualit=C3=A4tsanforderungen</h2>
+<p style=3D"text-align: left;">Inhalt</p>
+<p>Dieser Abschnitt enth=C3=A4lt m=C3=B6glichst alle Qualit=C3=A4tsanforder=
+ungen als Qualit=C3=A4tsbaum mit Szenarien. Die wichtigsten davon haben Sie=
+ bereits in Abschnitt 1.2 (Qualit=C3=A4tsziele) hervorgehoben.</p>
+<p>Nehmen Sie hier auch Qualit=C3=A4tsanforderungen geringerer Priorit=C3=
+=A4t auf, deren Nichteinhaltung oder -erreichung geringe Risiken birgt.<br>
+Motivation</p>
+<p>Weil Qualit=C3=A4tsanforderungen die Architekturentscheidungen oft ma=C3=
+=9Fgeblich beeinflussen, sollten Sie die f=C3=BCr Ihre Stakeholder relevant=
+en Qualit=C3=A4tsanforderungen kennen, m=C3=B6glichst konkret und operation=
+alisiert.<br>
+Weiterf=C3=BChrende Informationen</p>
+<p>Siehe<span>&nbsp;</span><a class=3D"external-link" href=3D"https://docs.=
+arc42.org/section-10/" rel=3D"nofollow" style=3D"text-decoration: underline=
+;">Qualit=C3=A4tsanforderungen</a><span>&nbsp;</span>in der online-Dokument=
+ation (auf Englisch!).</p>
+<h3 id=3D"arc42TemplatemitErl=C3=A4uterung-10.1.Qualit=C3=A4tsbaum">10.1. Q=
+ualit=C3=A4tsbaum</h3>
+<p><br>
+Inhalt</p>
+<p>Der Qualit=C3=A4tsbaum (=C3=A0 la ATAM) mit Qualit=C3=A4tsszenarien an d=
+en Bl=C3=A4ttern.<br>
+Motivation</p>
+<p>Die mit Priorit=C3=A4ten versehene Baumstruktur gibt =C3=9Cberblick =C3=
+=BCber die =E2=80=94 oftmals zahlreichen =E2=80=94 Qualit=C3=A4tsanforderun=
+gen.<br>
+Form</p>
+<ul>
+<li>
+<p>Baumartige Verfeinerung des Begriffes =E2=80=9EQualit=C3=A4t=E2=80=9C, m=
+it =E2=80=9EQualit=C3=A4t=E2=80=9C oder =E2=80=9EN=C3=BCtzlichkeit=E2=80=9C=
+ als Wurzel.</p></li>
+<li>
+<p>Mindmap mit Qualit=C3=A4tsoberbegriffen als Hauptzweige</p></li>
+</ul>
+<p>In jedem Fall sollten Sie hier Verweise auf die Qualit=C3=A4tsszenarien =
+des folgenden Abschnittes aufnehmen.</p>
+<h3 id=3D"arc42TemplatemitErl=C3=A4uterung-10.2.Qualit=C3=A4tsszenarien">10=
+.2. Qualit=C3=A4tsszenarien</h3>
+<p><br>
+Inhalt</p>
+<p>Konkretisierung der (in der Praxis oftmals vagen oder impliziten) Qualit=
+=C3=A4tsanforderungen durch (Qualit=C3=A4ts-)Szenarien.</p>
+<p>Diese Szenarien beschreiben, was beim Eintreffen eines Stimulus auf ein =
+System in bestimmten Situationen geschieht.</p>
+<p>Wesentlich sind zwei Arten von Szenarien:</p>
+<ul>
+<li>
+<p>Nutzungsszenarien (auch bekannt als Anwendungs- oder Anwendungsfallszena=
+rien) beschreiben, wie das System zur Laufzeit auf einen bestimmten Ausl=C3=
+=B6ser reagieren soll. Hierunter fallen auch Szenarien zur Beschreibung von=
+ Effizienz oder Performance. Beispiel: Das System beantwortet eine Benutzer=
+anfrage innerhalb einer Sekunde.</p></li>
+<li>
+<p>=C3=84nderungsszenarien beschreiben eine Modifikation des Systems oder s=
+einer unmittelbaren Umgebung. Beispiel: Eine zus=C3=A4tzliche Funktionalit=
+=C3=A4t wird implementiert oder die Anforderung an ein Qualit=C3=A4tsmerkma=
+l =C3=A4ndert sich.</p></li>
+</ul>
+<p><br>
+Motivation</p>
+<p>Szenarien operationalisieren Qualit=C3=A4tsanforderungen und machen dere=
+n Erf=C3=BCllung mess- oder entscheidbar.</p>
+<p>Insbesondere wenn Sie die Qualit=C3=A4t Ihrer Architektur mit Methoden w=
+ie ATAM =C3=BCberpr=C3=BCfen wollen, bed=C3=BCrfen die in Abschnitt 1.2 gen=
+annten Qualit=C3=A4tsziele einer weiteren Pr=C3=A4zisierung bis auf die Ebe=
+ne von diskutierbaren und nachpr=C3=BCfbaren Szenarien.<br>
+Form</p>
+<p>Entweder tabellarisch oder als Freitext.</p>
+<h2 id=3D"arc42TemplatemitErl=C3=A4uterung-11.RisikenundtechnischeSchulden"=
+>11. Risiken und technische Schulden</h2>
+<p style=3D"text-align: left;">Inhalt</p>
+<p>Eine nach Priorit=C3=A4ten geordnete Liste der erkannten Architekturrisi=
+ken und/oder technischen Schulden.<br>
+Motivation</p>
+<blockquote>
+Risikomanagement ist Projektmanagement f=C3=BCr Erwachsene.
+</blockquote>
+<p><br><cite>Atlantic Systems Guild</cite>=E2=80=94 Tim Lister</p>
+<p>Unter diesem Motto sollten Sie Architekturrisiken und/oder technische Sc=
+hulden gezielt ermitteln, bewerten und Ihren Management-Stakeholdern (z.B. =
+Projektleitung, Product-Owner) transparent machen.<br>
+Form</p>
+<p>Liste oder Tabelle von Risiken und/oder technischen Schulden, eventuell =
+mit vorgeschlagenen Ma=C3=9Fnahmen zur Risikovermeidung, Risikominimierung =
+oder dem Abbau der technischen Schulden.</p>
+<p>Siehe<span>&nbsp;</span><a class=3D"external-link" href=3D"https://docs.=
+arc42.org/section-11/" rel=3D"nofollow" style=3D"text-decoration: underline=
+;">Risiken und technische Schulden</a><span>&nbsp;</span>in der online-Doku=
+mentation (auf Englisch!).</p>
+<h2 id=3D"arc42TemplatemitErl=C3=A4uterung-12.Glossar">12. Glossar</h2>
+<p style=3D"text-align: left;">Inhalt</p>
+<p>Die wesentlichen fachlichen und technischen Begriffe, die Stakeholder im=
+ Zusammenhang mit dem System verwenden.</p>
+<p>Nutzen Sie das Glossar ebenfalls als =C3=9Cbersetzungsreferenz, falls Si=
+e in mehrsprachigen Teams arbeiten.<br>
+Motivation</p>
+<p>Sie sollten relevante Begriffe klar definieren, so dass alle Beteiligten=
+</p>
+<ul>
+<li>
+<p>diese Begriffe identisch verstehen, und</p></li>
+<li>
+<p>vermeiden, mehrere Begriffe f=C3=BCr die gleiche Sache zu haben.</p></li=
+>
+</ul>
+<p>Zweispaltige Tabelle mit &lt;Begriff&gt; und &lt;Definition&gt;.</p>
+<p>Eventuell weitere Spalten mit =C3=9Cbersetzungen, falls notwendig.</p>
+<p>Siehe<span>&nbsp;</span><a class=3D"external-link" href=3D"https://docs.=
+arc42.org/section-12/" rel=3D"nofollow" style=3D"text-decoration: underline=
+;">Glossar</a><span>&nbsp;</span>in der online-Dokumentation (auf Englisch!=
+).</p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col style=3D"width: 321.656px;">
+<col style=3D"width: 643.344px;">
+</colgroup>
+<thead>
+<tr>
+<th style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTh">=
+Begriff</th>
+<th style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTh">=
+Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">
+<p class=3D"tableblock"><em>&lt;Begriff-1&gt;</em></p></td>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">
+<p class=3D"tableblock"><em>&lt;Definition-1&gt;</em></p></td>
+</tr>
+<tr>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">
+<p class=3D"tableblock"><em>&lt;Begriff-2</em></p></td>
+<td style=3D"text-align: left;vertical-align: top;" class=3D"confluenceTd">
+<p class=3D"tableblock"><em>&lt;Definition-2&gt;</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_18_411642218.1781590997394
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/4fc3d6e7f2bdacc9e0aa2419d774c0f63c7d5c3915ae9a7908e68a6c7861e1cb
+
+/9j/4AAQSkZJRgABAgAAAQABAAD/wAARCABkAGQDAREAAhEBAxEB/9sAQwAIBgYHBgUIBwcHCQkI
+CgwUDQwLCwwZEhMPFB0aHx4dGhwcICQuJyAiLCMcHCg3KSwwMTQ0NB8nOT04MjwuMzQy/9sAQwEJ
+CQkMCwwYDQ0YMiEcITIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy
+MjIyMjIy/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+gAo
+A4/wv45sPEsktlLA9hqtvK8UtjcH58KxBZP74yOf7vftk2Bq519G4JWDFAtAzQAUAGRQFwouO4UA
+LQAUAFABQAUAeT+PfDUFjr1trHmXNpp1zKDcTWq/PbXYXEU2eSu/5UO3bllTO7NRMqNhH+IetR6d
+HpN5Gmnaw8bSNqd0gSAW69ZlQ8mT/pl2brxxRBjcTzS61/SUvAtt4e0u5hlY7LrV1d7i5bvK7f7T
+Goczrhgmyb7en/QpeF/+/T//ABVZOozrjlqaIX1m2jnWFvCvhdXbb/ywl2/N935t3s1P2jMll93Y
+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
+------=_Part_18_411642218.1781590997394--
