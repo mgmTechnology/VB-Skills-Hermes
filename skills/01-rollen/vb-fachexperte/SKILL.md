@@ -1,59 +1,33 @@
+---
+name: vb-fachexperte
+description: Unterstützt die Rolle Fachexperte bei Einbringen und Strukturieren von Fachwissen, IST-Wissen, fachlichen Fallstricken und fachlicher Sinnhaftigkeit.
+---
+
 # vb-fachexperte
 
-## Zweck
+## Ziel
+Unterstützt die Rolle Fachexperte bei: Einbringen und Strukturieren von Fachwissen, IST-Wissen, fachlichen Fallstricken und fachlicher Sinnhaftigkeit. Verwenden, wenn Aufgaben, Entscheidungen, Informationen oder Dokumentation aus Sicht dieser Rolle strukturiert werden sollen.
 
-Unterstützt die Rolle **Fachexperte** bei: Einbringen und Strukturieren von Fachwissen, IST-Wissen, fachlichen Fallstricken und fachlicher Sinnhaftigkeit.
+## Vorgehen
+- Rollenkontext klären.
+- Ziel und erwartetes Ergebnis bestimmen.
+- Aufgaben, Verantwortungen und Abgrenzungen beachten.
+- Informationen, Abhängigkeiten und Unterstützungsbedarf sammeln.
+- Ergebnis strukturiert ausarbeiten.
+- Offene Fragen und Eskalationspunkte markieren.
 
-## Wann verwenden?
+Typische Ausgaben: strukturierte Rollenunterstützung, Checkliste, offene Fragen, Risiken und Abhängigkeiten, Dokumentationsentwurf.
 
-Verwenden, wenn Aufgaben, Entscheidungen, Informationen oder Dokumentation aus Sicht der Rolle **Fachexperte** strukturiert werden sollen.
+## Regeln / Qualitätskriterien
+- Rollenabgrenzung beachten.
+- Keine Verantwortung der Rolle verändern.
+- Keine Entscheidungen vorwegnehmen.
+- Offene Punkte sichtbar machen.
+- Keine verbindlichen Entscheidungen treffen.
+- Keine nicht belegten Standards erfinden.
+- Fehlende Informationen als offene Fragen markieren.
 
-## Typische Eingaben
-
-- Rollen- oder Projektkontext
-- Ziel
-- vorhandene Informationen
-- gewünschtes Ergebnis
-- offene Fragen
-
-## Vorgehensmodell
-
-1. Rollenkontext klären.
-2. Ziel und erwartetes Ergebnis bestimmen.
-3. Aufgaben, Verantwortungen und Abgrenzungen beachten.
-4. Informationen, Abhängigkeiten und Unterstützungsbedarf sammeln.
-5. Ergebnis strukturiert ausarbeiten.
-6. offene Fragen und Eskalationspunkte markieren.
-
-## Typische Ausgaben
-
-- strukturierte Rollenunterstützung
-- Checkliste
-- offene Fragen
-- Risiken und Abhängigkeiten
-- Dokumentationsentwurf
-
-## Qualitätskriterien
-
-- Rollenabgrenzung beachten
-- keine Verantwortung der Rolle verändern
-- keine Entscheidungen vorwegnehmen
-- offene Punkte sichtbar machen
-
-## Grenzen / Nicht-Aufgaben
-
-- keine verbindlichen Entscheidungen treffen
-- keine nicht belegten Standards erfinden
-- fehlende Informationen als offene Fragen markieren
-
-## Übergaben an andere Skills
-
+## Ressourcen
 - Prozessklärung: vb-lotse
 - Dokumentation: vb-dokumentation
 - Review: vb-review
-
-## Beispielprompts
-
-```text
-Bitte unterstütze mich mit diesem Skill und frage zuerst die fehlenden Informationen ab.
-```

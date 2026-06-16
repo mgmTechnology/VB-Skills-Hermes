@@ -1,0 +1,3147 @@
+<!DOCTYPE html>
+
+<html lang="de-DE">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Konsolidierte technische Dokumentation zur BiPRO TAA Leben Schnittstelle und zum VBL WebService." name="description"/>
+<title>BiPRO TAA Leben
+WebService - Konsolidierte technische Dokumentation</title>
+<style>
+:root{--bg:#f7f8fa;--paper:#fff;--ink:#182433;--muted:#5d6a78;--accent:#194d70;--accent2:#2d739c;--line:#d7dee5;--warn:#fff5db;--code:#f2f5f8;--sidebar:#152b3d}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.58 "Segoe UI",Arial,sans-serif}
+a{color:var(--accent2);text-decoration:none}a:hover{text-decoration:underline}
+.layout{display:grid;grid-template-columns:320px minmax(0,1fr);min-height:100vh}
+nav{position:sticky;top:0;height:100vh;overflow:auto;background:var(--sidebar);color:#e5edf3;padding:28px 22px}
+nav .brand{font-size:19px;font-weight:650;line-height:1.3;margin-bottom:6px;color:#fff}nav .meta{font-size:12px;color:#aac0d1;margin-bottom:24px}
+nav ul{list-style:none;padding:0;margin:0} nav li{margin:3px 0}nav li ul{padding-left:13px;margin:3px 0 9px;border-left:1px solid #365166} nav a{display:block;padding:4px 6px;color:#dae5ee;font-size:13px;line-height:1.32;border-radius:6px} nav a:hover{background:#243e52;text-decoration:none;color:#fff}
+main{min-width:0;padding:34px 5.5vw 70px} article{max-width:1100px;margin:0 auto;background:var(--paper);padding:54px 62px 74px;border:1px solid #e2e8ee;box-shadow:0 3px 18px rgba(25,45,58,.06)}
+header.hero{padding:0 0 32px;margin-bottom:32px;border-bottom:3px solid var(--accent)} h1.title{font-size:2.55rem;color:var(--accent);letter-spacing:-.03em;line-height:1.12;margin:0 0 12px} .subtitle{font-size:1.2rem;color:var(--muted);margin-bottom:16px}.docinfo{font-size:.9rem;color:var(--muted)}
+h1{font-size:2rem;line-height:1.22;color:var(--accent);margin-top:2.7rem;padding-top:.4rem;border-bottom:1px solid var(--line);padding-bottom:.36rem}h2{font-size:1.42rem;color:var(--accent2);margin-top:2.15rem;line-height:1.28}h3{font-size:1.14rem;color:#334d61;margin-top:1.6rem}p{margin:.7rem 0 1rem}strong{font-weight:650}
+table{width:100%;border-collapse:collapse;margin:1.1rem 0 1.8rem;font-size:.94rem;display:block;overflow-x:auto}thead th{background:#eef4f7;color:#173e58;text-align:left;font-weight:650}th,td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;min-width:130px}tbody tr:nth-child(even){background:#fbfcfd}
+pre{background:var(--code);border:1px solid var(--line);border-radius:7px;padding:14px 16px;overflow:auto;font-size:.9rem;line-height:1.43}code{font-family:"Cascadia Code","Consolas",monospace;font-size:.91em;background:#f0f3f5;padding:.12rem .26rem;border-radius:3px}pre code{background:none;padding:0}
+blockquote{border-left:4px solid var(--accent2);background:#f3f7fa;margin:1.25rem 0;padding:12px 18px;color:#365064}
+.diagram{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px 14px 12px;margin:1.45rem 0 2rem;overflow-x:auto}.diagram figcaption{text-align:center;color:var(--muted);font-size:.88rem;margin:10px 12px 4px}.mermaid{min-width:700px;text-align:center}
+#TOC{display:none}.status-note{background:var(--warn)}
+footer.pagefooter{max-width:1100px;margin:25px auto 0;color:var(--muted);font-size:.86rem;text-align:right}
+@media (max-width:980px){.layout{display:block} nav{position:relative;height:auto}main{padding:20px 10px}article{padding:32px 20px}.mermaid{min-width:0}}
+@media print{nav{display:none}.layout{display:block}main{padding:0}article{border:none;box-shadow:none;max-width:none;padding:0}a{color:inherit}.diagram{break-inside:avoid}}
+</style>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.15.0/dist/mermaid.esm.min.mjs';
+mermaid.initialize({startOnLoad:true, theme:'neutral', securityLevel:'loose', flowchart:{htmlLabels:true, curve:'basis'}, sequence:{useMaxWidth:true, mirrorActors:false}});
+/* data-anchorfix: Mermaid rendert async (startOnLoad). Gerenderte Diagramme
+   verschieben das Layout, sodass ein initialer Anker-Sprung das Ziel verfehlt.
+   Daher: nach dem Laden mehrfach erneut zum URL-Anker springen, bis das Layout
+   stabil ist. Timing-tolerant gegenüber CDN-/Renderverzögerung. */
+(function(){
+  function jump(){
+    if(!location.hash) return;
+    var el=document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if(el){ el.scrollIntoView({block:'start'}); }
+  }
+  // Mehrfaches Nachspringen, deckt verschiedene Render-/Ladezeitpunkte ab.
+  var delays=[300,800,1500,2500,4000];
+  function schedule(){ delays.forEach(function(d){ setTimeout(jump, d); }); }
+  if(document.readyState==='complete'){ schedule(); }
+  else { window.addEventListener('load', schedule); }
+  // Klick auf einen reinen Hash-Link innerhalb der Seite ebenfalls korrigieren.
+  window.addEventListener('hashchange', function(){ setTimeout(jump,60); });
+})();
+</script>
+</head>
+<body>
+<div class="layout">
+<nav aria-label="Inhaltsverzeichnis">
+<div class="brand">BiPRO TAA Leben WebService</div>
+<div class="meta">Konsolidierte technische Dokumentation<br/>Arbeitsstand: 01.06.2026</div>
+<ul>
+<li><a href="#dokumentstatus-und-leseführung" id="toc-dokumentstatus-und-leseführung">0. Dokumentstatus und
+Leseführung</a>
+<ul>
+<li><a href="#zweck-dieses-dokuments" id="toc-zweck-dieses-dokuments">0.1 Zweck dieses Dokuments</a></li>
+<li><a href="#aussageklassen" id="toc-aussageklassen">0.2
+Aussageklassen</a></li>
+<li><a href="#quellenbasis" id="toc-quellenbasis">0.3
+Quellenbasis</a></li>
+</ul></li>
+<li><a href="#zusammenfassung-für-den-einstieg" id="toc-zusammenfassung-für-den-einstieg">1. Zusammenfassung für den
+Einstieg</a>
+<ul>
+<li><a href="#worum-es-bei-der-schnittstelle-geht" id="toc-worum-es-bei-der-schnittstelle-geht">1.1 Worum es bei der
+Schnittstelle geht</a></li>
+<li><a href="#marken-und-schnittstellen" id="toc-marken-und-schnittstellen">1.2 Marken und
+Schnittstellen</a></li>
+<li><a href="#kernprinzip-des-datenflusses" id="toc-kernprinzip-des-datenflusses">1.3 Kernprinzip des
+Datenflusses</a></li>
+<li><a href="#technisches-gesamtbild" id="toc-technisches-gesamtbild">1.4 Technisches Gesamtbild</a></li>
+</ul></li>
+<li><a href="#fachlicher-kontext-und-bipro-operationen" id="toc-fachlicher-kontext-und-bipro-operationen">2. Fachlicher Kontext
+und BiPRO-Operationen</a>
+<ul>
+<li><a href="#operationen-im-überblick" id="toc-operationen-im-überblick">2.1 Operationen im Überblick</a></li>
+<li><a href="#typische-fachliche-abläufe" id="toc-typische-fachliche-abläufe">2.2 Typische fachliche
+Abläufe</a></li>
+<li><a href="#versionierung-und-releases" id="toc-versionierung-und-releases">2.3 Versionierung und
+Releases</a></li>
+</ul></li>
+<li><a href="#systemlandschaft-und-architektur" id="toc-systemlandschaft-und-architektur">3. Systemlandschaft und
+Architektur</a>
+<ul>
+<li><a href="#beteiligte-komponenten" id="toc-beteiligte-komponenten">3.1 Beteiligte Komponenten</a></li>
+<li><a href="#architekturschichten-im-webservice" id="toc-architekturschichten-im-webservice">3.2 Architekturschichten im
+Webservice</a></li>
+<li><a href="#technologie-stack-dokumentierte-und-beobachtete-aussagen" id="toc-technologie-stack-dokumentierte-und-beobachtete-aussagen">3.3
+Technologie-Stack: dokumentierte und beobachtete Aussagen</a></li>
+</ul></li>
+<li><a href="#dynamischer-ablauf-eines-requests" id="toc-dynamischer-ablauf-eines-requests">4. Dynamischer Ablauf eines
+Requests</a>
+<ul>
+<li><a href="#beobachtete-sequenz" id="toc-beobachtete-sequenz">4.1
+Beobachtete Sequenz</a></li>
+<li><a href="#ablauf-nach-phasen-und-abhängigkeiten" id="toc-ablauf-nach-phasen-und-abhängigkeiten">4.2 Ablauf nach Phasen
+und Abhängigkeiten</a></li>
+<li><a href="#phasenpipeline-im-quellcode" id="toc-phasenpipeline-im-quellcode">4.3 Phasenpipeline im
+Quellcode</a></li>
+<!-- NAV-ANM-DONE -->
+<li><a href="#implementierungsmodell-jax-ws-provider" id="toc-implementierungsmodell-jax-ws-provider">4.3.1 Implementierungsmodell (Provider)</a></li>
+<li><a href="#phasen-framework-taa-v246-mapping" id="toc-phasen-framework-taa-v246-mapping">4.3.2 Phasen-Framework</a></li>
+<li><a href="#einordnung-des-trace-typs" id="toc-einordnung-des-trace-typs">4.4 Einordnung des
+Trace-Typs</a></li>
+</ul></li>
+<li><a href="#wsdl-xsd-namespaces-und-vb-erweiterungen" id="toc-wsdl-xsd-namespaces-und-vb-erweiterungen">5. WSDL, XSD,
+Namespaces und VB-Erweiterungen</a>
+<ul>
+<li><a href="#standard-und-vu-erweiterung" id="toc-standard-und-vu-erweiterung">5.1 Standard und
+VU-Erweiterung</a></li>
+<li><a href="#relevante-schema--und-wsdl-dateien" id="toc-relevante-schema--und-wsdl-dateien">5.2 Relevante Schema- und
+WSDL-Dateien</a></li>
+<li><a href="#namespace-landkarte" id="toc-namespace-landkarte">5.3
+Namespace-Landkarte</a></li>
+<li><a href="#aufbau-eines-fachlichen-requests" id="toc-aufbau-eines-fachlichen-requests">5.4 Aufbau eines fachlichen
+Requests</a></li>
+<li><a href="#reihenfolge-konkrete-typen-und-validierung" id="toc-reihenfolge-konkrete-typen-und-validierung">5.5 Reihenfolge,
+konkrete Typen und Validierung</a></li>
+<li><a href="#encoding-einschränkungen" id="toc-encoding-einschränkungen">5.6 Encoding-Einschränkungen</a></li>
+</ul></li>
+<li><a href="#projekt--und-modulstruktur-in-mono-elsa" id="toc-projekt--und-modulstruktur-in-mono-elsa">6. Projekt- und
+Modulstruktur in <code>mono-elsa</code></a>
+<ul>
+<li><a href="#repository-und-grundstruktur" id="toc-repository-und-grundstruktur">6.1 Repository und
+Grundstruktur</a></li>
+<li><a href="#module-des-bipro-adapters" id="toc-module-des-bipro-adapters">6.2 Module des
+BiPRO-Adapters</a></li>
+<li><a href="#frameworkmodule-mapping-und-konverter" id="toc-frameworkmodule-mapping-und-konverter">6.2.1 Framework-Module</a></li>
+<li><a href="#internes-modell-elsa" id="toc-internes-modell-elsa">6.3
+Internes Modell (<code>elsa</code>)</a></li>
+<li><a href="#tarifrechner-und-phaseninfrastruktur" id="toc-tarifrechner-und-phaseninfrastruktur">6.4 Tarifrechner und
+Phaseninfrastruktur</a></li>
+</ul></li>
+<li><a href="#mapping-und-konverter-als-herzstück-der-umsetzung" id="toc-mapping-und-konverter-als-herzstück-der-umsetzung">7. Mapping
+und Konverter als Herzstück der Umsetzung</a>
+<ul>
+<li><a href="#warum-xsd-allein-nicht-genügt" id="toc-warum-xsd-allein-nicht-genügt">7.1 Warum XSD allein nicht
+genügt</a></li>
+<li><a href="#kategorien-der-mapping-regeln" id="toc-kategorien-der-mapping-regeln">7.2 Kategorien der
+Mapping-Regeln</a></li>
+<li><a href="#regelformat-und-begriffliche-bereinigung" id="toc-regelformat-und-begriffliche-bereinigung">7.3 Regelformat und
+begriffliche Bereinigung</a></li>
+<li><a href="#beispiel-einer-einfachen-eingaberegel" id="toc-beispiel-einer-einfachen-eingaberegel">7.4 Beispiel einer
+einfachen Eingaberegel</a></li>
+<li><a href="#beispiel-eines-bedingten-regelsatzes" id="toc-beispiel-eines-bedingten-regelsatzes">7.5 Beispiel eines
+bedingten Regelsatzes</a></li>
+<li><a href="#ausgabe-mapping-und-erzeugung-von-erweiterungsobjekten" id="toc-ausgabe-mapping-und-erzeugung-von-erweiterungsobjekten">7.6
+Ausgabe-Mapping und Erzeugung von Erweiterungsobjekten</a></li>
+<li><a href="#konverter" id="toc-konverter">7.7 Konverter</a></li>
+</ul></li>
+<li><a href="#converter-transformer-technisch" id="toc-converter-transformer-technisch">7.8 Converter/Transformer (Code)</a></li>
+<li><a href="#tests-und-qualitätssicherung" id="toc-tests-und-qualitätssicherung">8. Tests und
+Qualitätssicherung</a>
+<ul>
+<li><a href="#teststrategie" id="toc-teststrategie">8.1
+Teststrategie</a></li>
+<li><a href="#pfade-und-testressourcen" id="toc-pfade-und-testressourcen">8.2 Pfade und Testressourcen</a></li>
+<li><a href="#inhalt-einer-roundtrip-prüfung" id="toc-inhalt-einer-roundtrip-prüfung">8.3 Inhalt einer
+Roundtrip-Prüfung</a></li>
+<li><a href="#datum-und-versicherungsbeginn-in-tests" id="toc-datum-und-versicherungsbeginn-in-tests">8.4 Datum und
+Versicherungsbeginn in Tests</a></li>
+<li><a href="#tests-für-schema--und-encoding-risiken" id="toc-tests-für-schema--und-encoding-risiken">8.5 Tests für Schema-
+und Encoding-Risiken</a></li>
+</ul></li>
+<li><a href="#datenhaltung-externe-services-und-monitoring" id="toc-datenhaltung-externe-services-und-monitoring">9. Datenhaltung,
+externe Services und Monitoring</a>
+<ul>
+<li><a href="#externe-systeme-und-datenquellen" id="toc-externe-systeme-und-datenquellen">9.1 Externe Systeme und
+Datenquellen</a></li>
+<li><a href="#reporting-tabelle-tarifrechnerleben" id="toc-reporting-tabelle-tarifrechnerleben">9.2 Reporting-Tabelle
+<code>tarifrechnerLeben</code></a></li>
+<li><a href="#versionsabfrage-wsversion" id="toc-versionsabfrage-wsversion">9.2.1 Versionsabfrage (/wsversion)</a></li>
+<li><a href="#monitoring--und-diagnosekette" id="toc-monitoring--und-diagnosekette">9.3 Monitoring- und
+Diagnosekette</a></li>
+</ul></li>
+<li><a href="#security--und-authentifizierungskontext" id="toc-security--und-authentifizierungskontext">10. Security- und
+Authentifizierungskontext</a>
+<ul>
+<li><a href="#zwei-beobachtete-beziehungsweise-dokumentierte-authentifizierungsaspekte" id="toc-zwei-beobachtete-beziehungsweise-dokumentierte-authentifizierungsaspekte">10.1
+Zwei beobachtete beziehungsweise dokumentierte
+Authentifizierungsaspekte</a></li>
+<li><a href="#authentifizierung-code-sicht" id="toc-authentifizierung-code-sicht">10.1.1 Authentifizierung (Code)</a></li>
+<li><a href="#offene-zuordnung" id="toc-offene-zuordnung">10.2 Offene
+Zuordnung</a></li>
+</ul></li>
+<li><a href="#dokumenten--e-antrags--und-identifikationsbezug" id="toc-dokumenten--e-antrags--und-identifikationsbezug">11.
+Dokumenten-, E-Antrags- und Identifikationsbezug</a>
+<ul>
+<li><a href="#dokumentenfluss" id="toc-dokumentenfluss">11.1
+Dokumentenfluss</a></li>
+<li><a href="#frühere-integrationsfragestellung-eid-dokumente" id="toc-frühere-integrationsfragestellung-eid-dokumente">11.2 Frühere
+Integrationsfragestellung: eID-Dokumente</a></li>
+</ul></li>
+<li><a href="#konkrete-entwickleranleitungen" id="toc-konkrete-entwickleranleitungen">12. Konkrete
+Entwickleranleitungen</a>
+<ul>
+<li><a href="#anleitung-a-neues-extern-befüllbares-attribut-implementieren" id="toc-anleitung-a-neues-extern-befüllbares-attribut-implementieren">12.1
+Anleitung A: Neues extern befüllbares Attribut implementieren</a></li>
+<li><a href="#anleitung-b-neuen-konverter-erstellen" id="toc-anleitung-b-neuen-konverter-erstellen">12.2 Anleitung B: Neuen
+Konverter erstellen</a></li>
+<li><a href="#anleitung-c-roundtrip-test-für-eine-mappingänderung-anlegen" id="toc-anleitung-c-roundtrip-test-für-eine-mappingänderung-anlegen">12.3
+Anleitung C: Roundtrip-Test für eine Mappingänderung anlegen</a></li>
+<li><a href="#anleitung-d-schema-validierungsfehler-im-xml-analysieren" id="toc-anleitung-d-schema-validierungsfehler-im-xml-analysieren">12.4
+Anleitung D: Schema-Validierungsfehler im XML analysieren</a></li>
+<li><a href="#anleitung-e-request-laufzeit-und-produktionsfehler-diagnostizieren" id="toc-anleitung-e-request-laufzeit-und-produktionsfehler-diagnostizieren">12.5
+Anleitung E: Request-Laufzeit und Produktionsfehler
+diagnostizieren</a></li>
+<li><a href="#anleitung-f-dokumentation-technisch-aktualisieren" id="toc-anleitung-f-dokumentation-technisch-aktualisieren">12.6
+Anleitung F: Dokumentation technisch aktualisieren</a></li>
+</ul></li>
+<li><a href="#setup--und-entwicklungsumgebung-gesicherte-basis-und-prüfbedarf" id="toc-setup--und-entwicklungsumgebung-gesicherte-basis-und-prüfbedarf">13.
+Setup- und Entwicklungsumgebung: gesicherte Basis und Prüfbedarf</a>
+<ul>
+<li><a href="#dokumentierter-einstieg" id="toc-dokumentierter-einstieg">13.1 Dokumentierter Einstieg</a></li>
+<li><a href="#nicht-unbesehen-zu-übernehmender-startbefehl" id="toc-nicht-unbesehen-zu-übernehmender-startbefehl">13.2 Nicht
+unbesehen zu übernehmender Startbefehl</a></li>
+<li><a href="#bekannte-endpunkt--und-umgebungsreferenzen" id="toc-bekannte-endpunkt--und-umgebungsreferenzen">13.3 Bekannte
+Endpunkt- und Umgebungsreferenzen</a></li>
+</ul></li>
+<li><a href="#dokumentations--und-veröffentlichungskonzept" id="toc-dokumentations--und-veröffentlichungskonzept">14.
+Dokumentations- und Veröffentlichungskonzept</a>
+<ul>
+<li><a href="#bestehende-dokumentationsbausteine" id="toc-bestehende-dokumentationsbausteine">14.1 Bestehende
+Dokumentationsbausteine</a></li>
+<li><a href="#struktur-der-html-online-dokumentation" id="toc-struktur-der-html-online-dokumentation">14.2 Struktur der
+HTML-Online-Dokumentation</a></li>
+<li><a href="#automatisierbare-ergänzungen" id="toc-automatisierbare-ergänzungen">14.3 Automatisierbare
+Ergänzungen</a></li>
+</ul></li>
+<li><a href="#quellenübergreifende-erkenntnisse" id="toc-quellenübergreifende-erkenntnisse">15. Quellenübergreifende
+Erkenntnisse</a>
+<ul>
+<li><a href="#gesicherte-kernaussagen" id="toc-gesicherte-kernaussagen">15.1 Gesicherte Kernaussagen</a></li>
+<li><a href="#wesentliche-zusammenhänge-die-in-einzelartikeln-leicht-verloren-gehen" id="toc-wesentliche-zusammenhänge-die-in-einzelartikeln-leicht-verloren-gehen">15.2
+Wesentliche Zusammenhänge, die in Einzelartikeln leicht verloren
+gehen</a></li>
+</ul></li>
+<li><a href="#kritische-anmerkungen-fehlende-informationen-und-klärungsbedarf" id="toc-kritische-anmerkungen-fehlende-informationen-und-klärungsbedarf">16.
+Kritische Anmerkungen, fehlende Informationen und Klärungsbedarf</a>
+<ul>
+<li><a href="#kritische-diskrepanzen" id="toc-kritische-diskrepanzen">16.1 Kritische Diskrepanzen</a></li>
+<li><a href="#fehlende-oder-noch-nicht-belastbar-bestätigte-technische-informationen" id="toc-fehlende-oder-noch-nicht-belastbar-bestätigte-technische-informationen">16.2
+Fehlende oder noch nicht belastbar bestätigte technische
+Informationen</a></li>
+<li><a href="#technische-risiken" id="toc-technische-risiken">16.3
+Technische Risiken</a></li>
+<li><a href="#priorisierte-maßnahmen" id="toc-priorisierte-maßnahmen">16.4 Priorisierte Maßnahmen</a></li>
+</ul></li>
+<li><a href="#anhang" id="toc-anhang">17. Anhang</a>
+<ul>
+<li><a href="#kompakte-checkliste-änderung-an-einem-feld" id="toc-kompakte-checkliste-änderung-an-einem-feld">17.1 Kompakte
+Checkliste: Änderung an einem Feld</a></li>
+<li><a href="#kompakte-checkliste-fehleranalyse" id="toc-kompakte-checkliste-fehleranalyse">17.2 Kompakte Checkliste:
+Fehleranalyse</a></li>
+<li><a href="#abkürzungen-und-begriffe" id="toc-abkürzungen-und-begriffe">17.3 Abkürzungen und Begriffe</a></li>
+<li><a href="#dokumentationshinweis" id="toc-dokumentationshinweis">17.4
+Dokumentationshinweis</a></li>
+</ul></li>
+</ul>
+</nav>
+<main>
+<article>
+<header class="hero"><h1 class="title">BiPRO TAA Leben
+WebService</h1><div class="subtitle">Konsolidierte technische
+Dokumentation, Entwicklerleitfaden und
+Prüfbericht</div><div class="docinfo">Konsolidierte Fassung - Stand: 01.06.2026</div></header>
+<h1 id="dokumentstatus-und-leseführung">0. Dokumentstatus und
+Leseführung</h1>
+<h2 id="zweck-dieses-dokuments">0.1 Zweck dieses Dokuments</h2>
+<p>Dieses Dokument konsolidiert die bislang bereitgestellten
+Informationen zur BiPRO-TAA-Leben-Schnittstelle, insbesondere zum
+VBL-Webservice, zu DOL/VBL, zur internen Umsetzung in
+<code>mono-elsa</code>, zum Request-Durchlauf, zu Mapping, Konvertern,
+Tests sowie zu Betrieb und Monitoring. Die Ausgangsdokumentation ist
+eine historisch gewachsene Sammlung von Artikeln und enthält teilweise
+Wiederholungen, unterschiedliche Detailstufen und möglicherweise
+veraltete Aussagen. Deshalb trennt diese konsolidierte Fassung
+ausdrücklich zwischen beschriebenem Fachkonzept, beobachteter
+Laufzeitrealität und noch zu verifizierenden Angaben.</p>
+<p>Die Dokumentation richtet sich an:</p>
+<ul>
+<li>Entwicklerinnen und Entwickler, die Änderungen an
+BiPRO-Schnittstelle, VB-Erweiterungen, Mapping oder Tests umsetzen;</li>
+<li>technische Verantwortliche, die Architektur, Abhängigkeiten und
+Laufzeitverhalten nachvollziehen müssen;</li>
+<li>Personen, die Fehlerfälle anhand von Request, Mapping, Berechnung,
+Response und Monitoring einordnen;</li>
+<li>künftige Pflegepersonen einer online veröffentlichbaren technischen
+Dokumentation.</li>
+</ul>
+<h2 id="aussageklassen">0.2 Aussageklassen</h2>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Kennzeichnung</th>
+<th>Bedeutung</th>
+<th>Umgang in dieser Dokumentation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Belegt</strong></td>
+<td>Durch bereitgestellte Dokumentation, Diagramm, Trace oder konkret
+genannte Artefakte gestützt.</td>
+<td>Als technische Grundlage verwendbar.</td>
+</tr>
+<tr class="even">
+<td><strong>Plausibel / konsistent</strong></td>
+<td>Mehrere Informationen passen zusammen, ohne dass die aktuelle
+Produktionskonfiguration vollständig geprüft wurde.</td>
+<td>Für Verständnis nutzbar, bei Änderungen nochmals prüfen.</td>
+</tr>
+<tr class="odd">
+<td><strong>Zu verifizieren</strong></td>
+<td>Angabe ist relevant, aber Quelle, Aktualität oder exakte Ausprägung
+ist nicht abschließend bestätigt.</td>
+<td>Vor verbindlicher Umsetzung im Code oder Betrieb verifizieren.</td>
+</tr>
+<tr class="even">
+<td><strong>Diskrepanz</strong></td>
+<td>Dokumentationsstände oder beobachtete Informationen widersprechen
+sich.</td>
+<td>Nicht unkritisch übernehmen; im Kapitel 16 auflösen.</td>
+</tr>
+<tr class="odd">
+<td><strong>Empfehlung</strong></td>
+<td>Aus dem konsolidierten Bild abgeleitete Maßnahme.</td>
+<td>Entscheidung durch verantwortliche Stelle erforderlich.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="quellenbasis">0.3 Quellenbasis</h2>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quelle</th>
+<th>Beitrag zur Konsolidierung</th>
+<th>Einordnung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>bipro-einarbeitung.docx</code></td>
+<td>BiPRO-Grundlagen, TAA-Endpunkte, VU-Erweiterungen, XSD/Namespaces,
+Projektmodule, Mapping, Konverter, Roundtrip-Tests, Setup-Hinweise,
+Request-Aufbau</td>
+<td>Historisch gewachsene Onboarding- und Fachdokumentation; Aussagen
+nach Aktualität zu prüfen</td>
+</tr>
+<tr class="even">
+<td><code>bipro_uebersicht_konsolidiert.md</code></td>
+<td>Zusammenführung von Dokumentation, Kibana-/APM-Trace und lokalem
+Server-Log; Architektur-, Laufzeit-, Service- und Datenbankbezug</td>
+<td>Voranalyse; Grundlage für die hier ausgearbeitete Struktur</td>
+</tr>
+<tr class="odd">
+<td><code>bipro_request_flow.mermaid</code> / bereitgestellte
+Flussgrafik</td>
+<td>Visualisierung eines beobachteten Requests über VBL-WS, IAM,
+Rechenkern und Logging-DB</td>
+<td>Dynamischer Ist-Blick eines Requests; Operationstyp nicht
+vollständig bewiesen</td>
+</tr>
+<tr class="even">
+<td><code>elsa_architektur_komponenten.mermaid</code> / bereitgestellte
+Architekturgrafik</td>
+<td>Komponentenmodell von Web/Transport, BiPRO-Adapter, ELSA-Phasen,
+Infrastruktur und externen Systemen</td>
+<td>Architekturübersicht auf Basis vorhandener Analyse</td>
+</tr>
+<tr class="odd">
+<td>Bereits zuvor bereitgestellte technische Informationen</td>
+<td>WSDL-/Umgebungsendpunkte, Prozessketten-Validierung,
+Datenbank-/Grafana-Kontext, Modell- und Mappingdetails</td>
+<td>Als Ergänzung aufgenommen und als solche gekennzeichnet</td>
+</tr>
+</tbody>
+</table>
+<h1 id="zusammenfassung-für-den-einstieg">1. Zusammenfassung für den
+Einstieg</h1>
+<h2 id="worum-es-bei-der-schnittstelle-geht">1.1 Worum es bei der
+Schnittstelle geht</h2>
+<p>Die BiPRO-TAA-Leben-Schnittstelle stellt Versicherungs- und
+Vertriebspartnern standardisierte SOAP-Operationen zur Verfügung, um
+Vorgänge in der Lebensversicherung abzuwickeln. <strong>TAA</strong>
+steht in diesem Kontext für <strong>Tarifierung, Angebot und
+Antrag</strong>. Grundlage ist <strong>BiPRO RClassic Release
+2.4.6</strong>, ergänzt um unternehmensspezifische Erweiterungen,
+sogenannte <strong>VU-Erweiterungen</strong>.</p>
+<p>Die Standardschnittstelle kann die fachlichen Besonderheiten der
+Produkte nicht vollständig ausdrücken. Deshalb enthalten die
+XML-Nachrichten neben BiPRO-Datenstrukturen zusätzliche VB-spezifische
+Erweiterungen, insbesondere für Leben-Produkte und markenspezifische
+Produktmengen.</p>
+<h2 id="marken-und-schnittstellen">1.2 Marken und Schnittstellen</h2>
+<p>Der betrachtete Kontext umfasst zwei Marken der Volkswohl Bund
+Versicherungen:</p>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Marke</th>
+<th>Bedeutung</th>
+<th>Technische Einordnung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>VBL</strong></td>
+<td>Volkswohl Bund Leben</td>
+<td>Eigener Webservice und eigene Produkt-XSD</td>
+</tr>
+<tr class="even">
+<td><strong>DOL</strong></td>
+<td>Die Dortmunder</td>
+<td>Eigener Webservice und eigene Produkt-XSD</td>
+</tr>
+</tbody>
+</table>
+<p>Nach der bereitgestellten Dokumentation gibt es je Marke eine Web-UI
+und einen BiPRO-Webservice. Die Leben-Verarbeitung beruht auf
+gemeinsamer Codebasis. Der wesentliche markenspezifische Unterschied
+liegt in der Produktmenge, die über <code>vb-vbl-1.12.xsd</code>
+beziehungsweise <code>vb-dol-1.12.xsd</code> festgelegt wird. Gemeinsame
+Leben-Erweiterungen werden in <code>vb-leben-1.12.xsd</code>
+definiert.</p>
+<h2 id="kernprinzip-des-datenflusses">1.3 Kernprinzip des
+Datenflusses</h2>
+<p>Die Schnittstelle ist nicht lediglich ein XML-Endpunkt. Ein Request
+wird validiert, in das interne ELSA-/VB-Modell gemappt, fachlich
+verarbeitet beziehungsweise berechnet und anschließend wieder in eine
+BiPRO-Response überführt.</p>
+<p><strong>Konzeptioneller Kernfluss:</strong></p>
+<p><code>BiPRO-Request -&gt; Eingabe-Mapping -&gt; VB-/ELSA-Modell -&gt; Berechnung und Phasen -&gt; Ausgabe-Mapping -&gt; BiPRO-Response</code></p>
+<p>Dabei gilt:</p>
+<ul>
+<li>Eine <strong>XSD-Erweiterung</strong> macht ein neues XML-Attribut
+zunächst lediglich schema-valide.</li>
+<li><strong>Mapping-Regeln</strong> sorgen dafür, dass der Wert
+tatsächlich ins interne Modell oder zurück in die Response gelangt.</li>
+<li><strong>Konverter</strong> werden benötigt, wenn sich Werte oder
+Datentypen zwischen BiPRO und VB-Modell unterscheiden.</li>
+<li><strong>Roundtrip-Tests</strong> prüfen, dass Ein- und
+Ausgabe-Mapping fachlich zusammenpassen.</li>
+</ul>
+<h2 id="technisches-gesamtbild">1.4 Technisches Gesamtbild</h2>
+<p>Der analysierte VBL-Request erreicht den SOAP-Webservice
+<code>VBLService_2.4.6.1.12</code>, wird in einer Phasenpipeline
+verarbeitet, greift für Security-Context-Prüfungen auf
+<code>iam-api-security-contexts</code> und für Berechnungen auf
+<code>rechenkern-ws-prod</code> zu und schreibt am Ende
+Logging-/Reportingdaten in
+<code>tarifrechner_prod.tarifrechnerLeben</code>.</p>
+<figure class="diagram">
+<div class="mermaid">
+flowchart TB
+    Client["`**BiPRO-Konsument**
+(Makler-/Vertriebssystem)`"]
+
+    subgraph WS["vsl-ws-vbl-a — BiPRO TAA Leben WebService (SOAP)"]
+        direction TB
+        Web["`**Web/Transport**
+TarifrechnerService (JAX-WS)
+TarifrechnerHolder · ContextListener
+CrossOriginFilter · ReportListener`"]
+        Bipro["`**BiPRO-Adapter** (de.vb.bipro.taa)
+VBLWebServiceTarifrechner v246112
+TAALebenWebServiceTarifrechner · TAATarifrechner
+TAALebenConverter + JXPath
+Mapping-Regeln (Regeldefinitionen.xml)`"]
+        Phasen["`**ELSA-Phasen-Pipeline** (*.durchlaufe)
+Vorverarbeitung · Validierung
+EingabeUnmarshallen · Import · BerechnungLeben
+ExportJava · Abgleich · ExportXML`"]
+        Dienste["`**Infrastruktur** (de.vb.dienste / de.vb.commons)
+Dienstfabrik · DienstContainer
+JavaDB/Derby · ValidationUtils · VersionUtils`"]
+    end
+
+    Traefik["`Traefik
+(Reverse Proxy)`"]
+    IAM["`iam-api-security-contexts
+(REST · Axon / Event-Sourcing)`"]
+    RK["`rechenkern-ws-prod (REST)
+LebenrechnerController.getResult`"]
+
+    DBavb[("`avb — Derby RO
+TabArt/TabKen/TabImpl…`")]
+    DBelsa[("elsa2db — Derby RO")]
+    DBavis[("AVIS.* — PBEW/PVDF")]
+    DBtr[("`tarifrechner_prod
+tarifrechnerLeben`")]
+    DBiam[("iam_api_prod")]
+
+    Client -->|"SOAP POST VBLService_2.4.6.1.12"| Web
+    Web --> Bipro --> Phasen
+    Dienste -. unterstützt .-> Phasen
+    Dienste -. unterstützt .-> Bipro
+
+    Phasen -->|"SecurityContextAuthentication"| Traefik
+    Traefik --> IAM --> DBiam
+    Phasen -->|"rechner-rest-client POST /api/rechner/quote"| RK
+    RK --> DBavb
+    Phasen --> DBelsa
+    Phasen -->|ExportJava| DBavis
+    Phasen -->|"INSERT (Ende)"| DBtr
+
+    classDef ext fill:#e3f2fd,stroke:#1565c0,color:#0d47a1;
+    classDef db fill:#f1f8e9,stroke:#558b2f,color:#33691e;
+    class Traefik,IAM,RK ext;
+    class DBavb,DBelsa,DBavis,DBtr,DBiam db;
+</div>
+<figcaption>
+Systemarchitektur des BiPRO-TAA-Leben-Webservice auf Basis der
+bereitgestellten Analyse.
+</figcaption>
+</figure>
+<h1 id="fachlicher-kontext-und-bipro-operationen">2. Fachlicher Kontext
+und BiPRO-Operationen</h1>
+<h2 id="operationen-im-überblick">2.1 Operationen im Überblick</h2>
+<table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Operation</th>
+<th>Fachlicher Zweck</th>
+<th>Dokumentenbezug</th>
+<th>Authentifizierung / Besonderheit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>getQuote</code></td>
+<td>Schnelle Tarifierung für Vergleichsdarstellungen</td>
+<td>Im Normalfall kein PDF</td>
+<td>Für schnelle Vergleichsantwort ausgelegt</td>
+</tr>
+<tr class="even">
+<td><code>getOffer</code></td>
+<td>Vollständiges Angebot bzw. Versorgungsvorschlag</td>
+<td>Im Normalfall mit PDF</td>
+<td>Liefert kundenfähige Angebotsdaten</td>
+</tr>
+<tr class="odd">
+<td><code>getOrder</code></td>
+<td>Prüfung eines Antrags und der Antragsregeln</td>
+<td>Antragskontext</td>
+<td>Voraussetzung für anschließende Einreichung</td>
+</tr>
+<tr class="even">
+<td><code>setOrder</code></td>
+<td>Einreichung eines PDF in den E-Antragsbereich; wenig XML, manuelle
+Prüfung</td>
+<td>PDF zentral</td>
+<td>STS-Token für Partnerauthentifizierung beschrieben</td>
+</tr>
+<tr class="odd">
+<td><code>setOrderQualified</code></td>
+<td>Qualifizierte Einreichung mit Prüfung von PDF-/XML-Konsistenz und
+Vollständigkeit</td>
+<td>PDF und XML werden gegeneinander geprüft</td>
+<td>STS-Token; laut Dokumentation kaum genutzt</td>
+</tr>
+<tr class="even">
+<td><code>getFile</code></td>
+<td>Abruf von Dateien/PDFs</td>
+<td>Dateinachladung</td>
+<td>Im Tagesgeschäft nachrangig eingeordnet</td>
+</tr>
+<tr class="odd">
+<td><code>getOfferQuestions</code></td>
+<td>Ermittlung notwendiger Eingabefragen für ein Angebot</td>
+<td>Fragekatalog</td>
+<td>Unterstützende Operation</td>
+</tr>
+<tr class="even">
+<td><code>getOrderQuestions</code></td>
+<td>Ermittlung der Risikofragen für den Antrag</td>
+<td>Risikofragen</td>
+<td>Unterstützende Operation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="typische-fachliche-abläufe">2.2 Typische fachliche Abläufe</h2>
+<figure class="diagram">
+<div class="mermaid">
+flowchart LR
+    Q["Fragen / benötigte Angaben"] --&gt; QU["getQuote&lt;br/&gt;Schnelle Berechnung"]
+    Q --&gt; OF["getOffer&lt;br/&gt;Angebot + PDF"]
+    OF --&gt; FI["getFile&lt;br/&gt;PDF nachladen"]
+    OQ["getOrderQuestions&lt;br/&gt;Risikofragen"] --&gt; OR["getOrder&lt;br/&gt;Antragsprüfung"]
+    OR --&gt; SO["setOrder&lt;br/&gt;Einreichung, manuelle Prüfung&lt;br/&gt;STS-Token"]
+    OR --&gt; SQ["setOrderQualified&lt;br/&gt;Qualifizierte Einreichung&lt;br/&gt;STS-Token"]
+
+</div>
+<figcaption>
+Fachliche Operationsgruppen und typische Übergänge; konkrete
+Partnerjourneys sind releasebezogen zu prüfen.
+</figcaption>
+</figure>
+<p>Die Onboarding-Dokumentation beschreibt vor allem folgende
+Abläufe:</p>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Zweck</th>
+<th>Ablauf</th>
+<th>Erläuterung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Vergleich / schnelle Berechnung</td>
+<td><code>getOfferQuestions -&gt; getQuote</code></td>
+<td>Benötigte Angaben ermitteln und anschließend schnell
+tarifieren.</td>
+</tr>
+<tr class="even">
+<td>Angebot</td>
+<td><code>getOfferQuestions -&gt; getOffer -&gt; getFile</code></td>
+<td>Angebotsdaten erzeugen und gegebenenfalls PDF nachladen.</td>
+</tr>
+<tr class="odd">
+<td>Antrag und Einreichung</td>
+<td><code>getOrderQuestions -&gt; getOrder -&gt; setOrder</code></td>
+<td>Antragsdaten/Risikofragen, Prüfung und anschließend Einreichung mit
+Authentifizierung.</td>
+</tr>
+</tbody>
+</table>
+<p>In früheren Arbeiten zur Validierung einer Prozesskette wurde zudem
+die Folge
+<code>getOffer -&gt; getQuote -&gt; getOrder -&gt; setOrder</code> als
+zu prüfende beziehungsweise zu korrigierende Abfolge thematisiert. Diese
+Angabe ist inhaltlich nicht zwingend ein Widerspruch: Sie kann sich auf
+eine konkrete Test- oder Integrationsjourney beziehen, während die
+Onboarding-Dokumentation Operationstypen und unterstützende
+Questions-Calls beschreibt. <strong>Zu verifizieren ist, welche
+Reihenfolge für die derzeit geltenden Integrationsbeispiele und
+Partnerprozesse verbindlich ist.</strong></p>
+<h2 id="versionierung-und-releases">2.3 Versionierung und Releases</h2>
+<p>Die Ausgangsdokumentation beschreibt eine halbjährliche
+Aktualisierung der BiPRO-Schnittstelle, typischerweise zum Jahresanfang
+und im Juni. Vor einem neuen Release werde eine Beta-Version zu Test-
+und Integrationszwecken bereitgestellt; nach dem Release bleibe die
+ältere Version übergangsweise verfügbar.</p>
+<p>Für die betrachtete Version werden insbesondere folgende Bezeichner
+verwendet:</p>
+<ul>
+<li><code>VBLService_2.4.6.1.12</code></li>
+<li><code>DOLService_2.4.6.1.12</code></li>
+<li>Namespace-/XSD-Suffix <code>1.12</code></li>
+<li>Modulkennung <code>v246112</code></li>
+</ul>
+<p><strong>Prüfhinweis:</strong> In älteren Textpassagen oder Testpfaden
+erscheinen teilweise abweichende Schreibweisen, etwa
+<code>v246113</code> oder verkürzte Dateinamen ohne <code>.1.</code>.
+Vor Übernahme in Build-, Deployment- oder Testanleitungen sind die
+tatsächlich im aktuellen Branch vorhandenen Modul- und
+Versionsbezeichner maßgeblich.</p>
+<h1 id="systemlandschaft-und-architektur">3. Systemlandschaft und
+Architektur</h1>
+<h2 id="beteiligte-komponenten">3.1 Beteiligte Komponenten</h2>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Bereich</th>
+<th>Komponente / Beispiel</th>
+<th>Verantwortung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Externer Aufrufer</td>
+<td>BiPRO-Konsument, Makler- oder Vertriebssystem</td>
+<td>Sendet SOAP-/BiPRO-Request und verarbeitet Response</td>
+</tr>
+<tr class="even">
+<td>SOAP-Endpunkt</td>
+<td><code>vsl-ws-vbl-a</code>, <code>VBLService_2.4.6.1.12</code></td>
+<td>Annahme und Orchestrierung von BiPRO-TAA-Requests</td>
+</tr>
+<tr class="odd">
+<td>Web-/Transport-Schicht</td>
+<td><code>TarifrechnerService</code>, JAX-WS</td>
+<td>SOAP-Nachricht entgegennehmen und in Verarbeitungsstruktur
+überführen</td>
+</tr>
+<tr class="even">
+<td>BiPRO-Adapter</td>
+<td><code>VBLWebServiceTarifrechner</code>,
+<code>TAALebenWebServiceTarifrechner</code>, Mapping, Konverter</td>
+<td>Übersetzung zwischen BiPRO und internem ELSA-Modell</td>
+</tr>
+<tr class="odd">
+<td>Phasen-/Fachverarbeitung</td>
+<td><code>TarifrechnerBasis</code>, Phasenklassen</td>
+<td>Validierung, Import, Berechnung, Export, Response-Vorbereitung</td>
+</tr>
+<tr class="even">
+<td>Security-Kontext</td>
+<td><code>iam-api-security-contexts</code> über Traefik</td>
+<td>Validierung eines Service-/Security-Contexts im beobachteten
+Ablauf</td>
+</tr>
+<tr class="odd">
+<td>Rechenkern</td>
+<td><code>rechenkern-ws-prod</code>,
+<code>POST /api/rechner/quote</code></td>
+<td>Tarifberechnung / Berechnungsergebnis</td>
+</tr>
+<tr class="even">
+<td>Datenhaltung und Logging</td>
+<td><code>avb</code>, <code>elsa2db</code>, <code>AVIS.*</code>,
+<code>iam_api_prod</code>, <code>tarifrechner_prod</code></td>
+<td>Tabellen-/Stammdaten, IAM-Kontext, Reporting/Monitoring</td>
+</tr>
+<tr class="odd">
+<td>E-Antrag</td>
+<td>E-Antrag-Service über PDF-Client</td>
+<td>Einreichung bei <code>setOrder</code> beziehungsweise
+<code>setOrderQualified</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="architekturschichten-im-webservice">3.2 Architekturschichten im
+Webservice</h2>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Schicht</th>
+<th>Genannte Klassen / Bausteine</th>
+<th>Funktion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Web/Transport</td>
+<td><code>TarifrechnerService.invoke(SOAPMessage)</code>,
+<code>TarifrechnerHolder</code>,
+<code>TarifrechnerContextListener</code>,
+<code>CrossOriginFilter</code>, <code>ReportListener</code></td>
+<td>Technische Annahme und Kontextbildung für den SOAP-Request</td>
+</tr>
+<tr class="even">
+<td>BiPRO-Adapter</td>
+<td><code>VBLWebServiceTarifrechner</code>,
+<code>TAALebenWebServiceTarifrechner</code>,
+<code>TAATarifrechner</code>, <code>TAALebenConverter</code>,
+<code>JXPathContextFactoryElsaImpl</code></td>
+<td>BiPRO-spezifische Operation, Mapping und Werteumsetzung</td>
+</tr>
+<tr class="odd">
+<td>ELSA-Phasenpipeline</td>
+<td><code>TarifrechnerBasis</code>, <code>Validierung</code>,
+<code>KomponentenkontextFactory</code>, Phasen mit
+<code>*.durchlaufe</code></td>
+<td>Sequenzielle Verarbeitung der Anfrage</td>
+</tr>
+<tr class="even">
+<td>Berechnung</td>
+<td><code>RechenserverLeben.berechneKomponente</code>,
+<code>LebenAngebot.rechne</code>, REST-Client zum Rechenkern</td>
+<td>Fachliche Tarif-/Prämienberechnung</td>
+</tr>
+<tr class="odd">
+<td>Infrastruktur</td>
+<td><code>Dienstfabrik</code>, <code>DienstContainer</code>,
+<code>LebenszyklusVerwaltung</code>, <code>TypFabrik</code>,
+<code>JavaDB</code>, <code>ValidationUtils</code>,
+<code>VersionUtils</code>, <code>ReportEngine</code></td>
+<td>Querschnittsdienste, DB-Zugriff, Validierung und Reporting</td>
+</tr>
+</tbody>
+</table>
+<h2 id="technologie-stack-dokumentierte-und-beobachtete-aussagen">3.3
+Technologie-Stack: dokumentierte und beobachtete Aussagen</h2>
+<table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Thema</th>
+<th>Aus Onboarding-/Projekttext</th>
+<th>Aus Trace-/Loganalyse oder früherer Arbeitsinformation</th>
+<th>Bewertung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Build</td>
+<td>Maven; <code>mvn clean install</code></td>
+<td>Maven/Monorepo <code>mono-elsa</code></td>
+<td>Konsistent</td>
+</tr>
+<tr class="even">
+<td>Lokaler Start</td>
+<td><code>mvn spring-boot:run</code></td>
+<td>Jetty über Maven-Plugin, SOAP/JAX-WS-Kontext und Port 8082 wurden
+beobachtet</td>
+<td><strong>Diskrepanz / prüfen</strong></td>
+</tr>
+<tr class="odd">
+<td>Java-Version</td>
+<td>JDK 11 oder höher empfohlen</td>
+<td>Laufzeitanalyse nannte Java 8; späterer Entwicklungsstand nannte JDK
+21 für <code>mono-elsa</code></td>
+<td><strong>Diskrepanz / Release-bezogen prüfen</strong></td>
+</tr>
+<tr class="even">
+<td>Webservice-Technik</td>
+<td>Nicht durchgehend präzisiert</td>
+<td>SOAP/JAX-WS, Metro, Jetty 9.4.54 wurden genannt</td>
+<td>Plausibel, deploymentbezogen prüfen</td>
+</tr>
+<tr class="odd">
+<td>XML-/Mapping-Verarbeitung</td>
+<td>XML-Mapping-Regeln und Konverter</td>
+<td>JAXB und Apache JXPath wurden im Laufzeitkontext identifiziert</td>
+<td>Konsistent</td>
+</tr>
+<tr class="even">
+<td>Monitoring</td>
+<td>In Ausgangsdokumentation kaum konkretisiert</td>
+<td>OpenTelemetry/Elastic APM/Kibana und Reporting-Tabelle genannt</td>
+<td>Ergänzung aus Laufzeitsicht</td>
+</tr>
+<tr class="odd">
+<td>Routing</td>
+<td>Nicht im Onboarding erläutert</td>
+<td>Traefik vor IAM-Service im Trace</td>
+<td>Ergänzung aus Laufzeitsicht</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Konsequenz für Entwickleranleitungen:</strong> Es darf nicht
+pauschal vorausgesetzt werden, dass der aktuelle Webservice als
+Spring-Boot-Anwendung gestartet wird oder dass eine bestimmte
+Java-Version für alle Branches und Umgebungen gilt. Die verbindliche
+Build- und Run-Anleitung muss aus <code>pom.xml</code>, CI-Konfiguration
+und dem aktuell eingesetzten Runtime-Container abgeleitet werden.</p>
+<h1 id="dynamischer-ablauf-eines-requests">4. Dynamischer Ablauf eines
+Requests</h1>
+<h2 id="beobachtete-sequenz">4.1 Beobachtete Sequenz</h2>
+<p>Das bereitgestellte Request-Diagramm stellt einen erfolgreichen
+Request über den VBL-Webservice dar. Ein BiPRO-Konsument sendet eine
+SOAP-Anfrage an <code>VBLService_2.4.6.1.12</code>. Nach Vorverarbeitung
+und Eingangsvalidierung erfolgt eine Security-Context-Prüfung gegen den
+IAM-Service. Anschließend werden XML-Daten in das interne Format
+überführt, der fachliche Import und die Berechnung angestoßen, das
+Ergebnis wieder in BiPRO-XML exportiert und ein Logging-Eintrag
+geschrieben.</p>
+<figure class="diagram">
+<div class="mermaid">
+sequenceDiagram
+    autonumber
+    participant C as BiPRO-Konsument
+    participant VBL as vsl-ws-vbl-a&lt;br/&gt;(VBLWebService.invoke)
+    participant IAM as iam-api-security-contexts&lt;br/&gt;(via Traefik)
+    participant RK as rechenkern-ws-prod&lt;br/&gt;(Tarifrechner)
+    participant DB as tarifrechner_prod DB
+
+    C-&gt;&gt;VBL: POST .../bipro/VBLService_2.4.6.1.12 (BiPRO-XML)
+    Note over VBL: Vorverarbeitung · BiproReportingPhase&lt;br/&gt;ValidierungErfassung (~12 ms)
+
+    VBL-&gt;&gt;IAM: GET /security-ctx · validateServiceToken
+    Note over IAM: SecurityContextRepository&lt;br/&gt;Axon Event-Store (DomainEventEntry)
+    IAM--&gt;&gt;VBL: Security Context (107 ms)
+
+    Note over VBL: EingabeUnmarshallen&lt;br/&gt;BiPRO-XML → internes Format
+    Note over VBL: Import.durchlaufe (178 ms)
+
+    VBL-&gt;&gt;RK: POST /api/rechner/quote
+    Note over RK: LebenrechnerController.getResult&lt;br/&gt;liest avb.* (TabArt, TabKen, TabImpl, ...)
+    RK--&gt;&gt;VBL: Berechnungsergebnis (131 ms)
+
+    Note over VBL: ImportLebenAntragsdaten · ExportJava&lt;br/&gt;(AVIS.PBEW/PVDF) · Abgleich (67 ms)
+    Note over VBL: ExportXML (internes Format → BiPRO-XML)&lt;br/&gt;SOAPVorbereitung · LoggingXML
+
+    VBL-&gt;&gt;DB: INSERT tarifrechner_prod.tarifrechnerLeben
+    VBL--&gt;&gt;C: HTTP 200 · BiPRO-Response
+
+    Note over C,DB: Gesamt: 751 ms
+
+</div>
+<figcaption>
+Beobachteter Request-Ablauf eines VBL-BiPRO-Aufrufs mit externen
+Services und Laufzeiten.
+</figcaption>
+</figure>
+<h2 id="ablauf-nach-phasen-und-abhängigkeiten">4.2 Ablauf nach Phasen
+und Abhängigkeiten</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 30%"/>
+<col style="width: 23%"/>
+<col style="width: 23%"/>
+<col style="width: 23%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Schritt</th>
+<th>Phase / Interaktion</th>
+<th>Inhalt</th>
+<th>Beobachtete Dauer / Hinweis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>HTTP/SOAP Request an VBL-Webservice</td>
+<td><code>POST .../bipro/VBLService_2.4.6.1.12</code> mit BiPRO-XML</td>
+<td>Einstieg des externen Konsumenten</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Vorverarbeitung, BiPRO-Reporting, ValidierungErfassung</td>
+<td>Eingangsprüfung, BiPRO-Konformität und Vorbereitung</td>
+<td>ca. 12 ms</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Security-Context-Authentifizierung</td>
+<td><code>GET /security-ctx</code>, <code>validateServiceToken</code>
+über Traefik zum IAM-Service</td>
+<td>ca. 107 ms</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>EingabeUnmarshallen</td>
+<td>BiPRO-XML wird in internes Format / ELSA-relevante Objekte
+überführt</td>
+<td>Im Trace wenige Millisekunden</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Import</td>
+<td>Aufbereitung der Eingabedaten für fachliche Verarbeitung</td>
+<td>ca. 178 ms</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>BerechnungLeben / Rechenkern</td>
+<td>REST-Aufruf <code>POST /api/rechner/quote</code>; Rechenkern liest
+unter anderem <code>avb.*</code></td>
+<td>Response des Rechenkerns ca. 131 ms; gesamte Berechnungsphase in
+Voranalyse größer eingeordnet</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>ImportLebenAntragsdaten / ExportJava / Abgleich</td>
+<td>Verarbeitung von Berechnungsergebnissen und gegebenenfalls
+AVIS-Bezug</td>
+<td>ca. 67 ms für den markierten Teil</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>ExportXML / SOAPVorbereitung / LoggingXML</td>
+<td>Internes Ergebnis wird zur BiPRO-Response</td>
+<td>technische Ausgabephase</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>INSERT Reporting-DB</td>
+<td>Schreiben in <code>tarifrechner_prod.tarifrechnerLeben</code></td>
+<td>Persistierung am Ende</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td>HTTP 200 Response</td>
+<td>BiPRO-Response an Konsumenten</td>
+<td>Gesamtlaufzeit des gezeigten Requests: ca. 751 ms</td>
+</tr>
+</tbody>
+</table>
+<h2 id="phasenpipeline-im-quellcode">4.3 Phasenpipeline im
+Quellcode</h2>
+<p>Die Ausgangsdokumentation ordnet den SOAP-Einstieg der Methode</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb3-1"><a aria-hidden="true" href="#cb3-1" tabindex="-1"></a><span class="kw">public</span> <span class="dt">final</span> <span class="bu">SOAPMessage</span> <span class="fu">invoke</span><span class="op">(</span><span class="dt">final</span> <span class="bu">SOAPMessage</span> request<span class="op">)</span> <span class="kw">throws</span> <span class="bu">WebServiceException</span></span></code></pre></div>
+<p>in <code>TarifrechnerService.java</code> zu. Die Weiterverarbeitung
+erfolgt über die Basisklassen und Phasen. Genannt werden
+insbesondere:</p>
+<ul>
+<li><code>tarifrechner/tarifrechner-webservice-support/.../TarifrechnerService.java</code></li>
+<li><code>tarifrechner/tarifrechner-phasen/.../TarifrechnerBasis.java</code></li>
+<li><code>bipro-taa/taa-v246-mapping/.../phasen</code></li>
+<li><code>bipro-taa/taa-v246-webservice-support/.../phasen</code></li>
+<li><code>bipro-taa/taa-leben-v246112-webservice/.../TAALebenWebServiceTarifrechner.java</code></li>
+</ul>
+<p>Die Reihenfolge der Leben-Phasen wird in
+<code>TAALebenWebServiceTarifrechner</code> festgelegt. Jede Phase
+verwendet eine Methode der Form:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb4-1"><a aria-hidden="true" href="#cb4-1" tabindex="-1"></a><span class="fu">verarbeite</span><span class="op">(</span><span class="dt">final</span> <span class="bu">Source</span> anfrageDokument<span class="op">)</span></span></code></pre></div>
+<p>Relevante Aussagen aus der Dokumentation:</p>
+<ul>
+<li><code>VorverarbeitungBiPRO</code> prüft die BiPRO-Konformität und
+wandelt XML in ein DOM-Objekt.</li>
+<li>Nicht jede Operation muss fachlich alle Phasen gleich nutzen.</li>
+<li>Im positiven Fall endet ein Durchlauf mit der Phase
+<code>EAntragsprüfung</code>.</li>
+<li>Das erfolgreiche Durchlaufen einer Phase wird über
+<code>anfrage.report(PHASE, name);</code> dokumentiert.</li>
+<li><code>TAALebenEAntrag</code> enthält insbesondere für
+<code>setOrder</code> und <code>setOrderQualified</code> relevante
+Logik.</li>
+</ul>
+<!-- ANM-PROVIDER -->
+<h2 id="implementierungsmodell-jax-ws-provider">4.3.1 Implementierungsmodell: JAX-WS-Provider statt expliziter Operationsmethoden</h2>
+<p>Ein für das Onboarding zentraler Punkt, der in der fachlichen
+Ausgangsdokumentation nicht ausdrücklich hervorgehoben wird, betrifft die
+Art der Implementierung. Die fachlichen Operationen <code>getQuote</code>,
+<code>getOffer</code> und <code>getOrder</code> sind <strong>nicht</strong> als
+gleichnamige Java-Methoden in den Webservice-Klassen
+(<code>VBLWebService</code>, <code>DOLWebService</code>) zu finden. Wer dort
+nach <code>getOffer(...)</code> sucht, sucht vergeblich.</p>
+<p><strong>Code-Beleg:</strong> Die Webservices implementieren das Interface
+<code>javax.xml.ws.Provider&lt;SOAPMessage&gt;</code> (siehe
+<code>de.vb.elsa.tarifrechner.web.TarifrechnerService</code>). Die gesamte
+Verarbeitung läuft generisch über die eine Methode
+<code>invoke(SOAPMessage)</code>. Die Zuordnung des konkreten Request-Typs
+zum internen Prozess erfolgt nicht über Methodennamen, sondern datengetrieben
+über das <code>LebenWSDTO</code> und die dort hinterlegten unterstützten
+Klassen (siehe <code>BiPROLebenWebServiceKonstanten</code>).</p>
+<table>
+<thead><tr class="header"><th>Erwartung aus der fachlichen Doku</th><th>Tatsächliche Implementierung</th><th>Einordnung</th></tr></thead>
+<tbody>
+<tr class="odd"><td>Eine Methode je Operation (<code>getQuote</code>, <code>getOffer</code> …)</td><td>Eine generische Methode <code>invoke(SOAPMessage)</code> aus <code>Provider&lt;SOAPMessage&gt;</code></td><td>Belegt (Quellcode)</td></tr>
+<tr class="even"><td>Operation aus Methodennamen ableitbar</td><td>Request-Typ wird über <code>LebenWSDTO</code> / <code>BiPROLebenWebServiceKonstanten</code> bestimmt</td><td>Belegt (Quellcode)</td></tr>
+<tr class="odd"><td>Verzweigung im Service-Code</td><td>Sequenzielle Abarbeitung über das Phasen-Modell</td><td>Belegt (Quellcode)</td></tr>
+</tbody>
+</table>
+<p>Diese Abstraktion ist die wesentliche Hürde beim Einstieg in den Code:
+Der Weg führt von <code>TarifrechnerService.invoke</code> nicht zu einer
+Operationsmethode, sondern in die Vererbungs- und Phasenkette.</p>
+
+<h3 id="klassenhierarchie-webservices">Klassenhierarchie der Webservices</h3>
+<p>Die markenspezifischen Webservices (<code>VBLWebService</code>,
+<code>DOLWebService</code>) bauen auf dem generischen
+<code>Provider</code>-Modell und einer mehrstufigen Tarifrechner-Basis auf.
+<code>TarifrechnerBasis</code> stellt mit <code>verarbeite(Source)</code> sowie
+den abstrakten Methoden <code>getProzessPhasen()</code> und
+<code>getAbschlussPhasen()</code> das Gerüst bereit; die Leben-Spezialisierung
+legt die konkrete Phasenfolge fest.</p>
+<figure class="diagram">
+<div class="mermaid">
+classDiagram
+    class Provider~SOAPMessage~ {
+        &lt;&lt;interface&gt;&gt;
+        +invoke(SOAPMessage) SOAPMessage
+    }
+    class TarifrechnerService {
+        +invoke(SOAPMessage) SOAPMessage
+        #setWebServiceContext(WebServiceContext)
+    }
+    class VBLWebService {
+        +VBLWebService()
+    }
+    class DOLWebService {
+        +DOLWebService()
+    }
+    class TarifrechnerBasis~DTO~ {
+        +verarbeite(Source) Source
+        #getProzessPhasen()* Iterable
+        #getAbschlussPhasen()* Iterable
+    }
+    class TAATarifrechner~DTO~ {
+        #environment TAAServiceEnvironment
+    }
+    class TAALebenWebServiceTarifrechner {
+        +TAALebenWebServiceTarifrechner(TAAServiceEnvironment)
+    }
+    Provider &lt;|.. TarifrechnerService
+    TarifrechnerService --> TarifrechnerBasis : nutzt
+    TarifrechnerService &lt;|-- VBLWebService
+    TarifrechnerService &lt;|-- DOLWebService
+    TarifrechnerBasis &lt;|-- TAATarifrechner
+    TAATarifrechner &lt;|-- TAALebenTarifrechnerBasis
+    TAALebenTarifrechnerBasis &lt;|-- TAALebenWebServiceTarifrechner
+</div>
+<figcaption>Klassenhierarchie: vom generischen JAX-WS-<code>Provider</code> über die Tarifrechner-Basis zur Leben-spezifischen Phasensteuerung (Quelle: Code-Anmerkungen).</figcaption>
+</figure>
+
+<h3 id="request-verarbeitung-sequenz">Request-Verarbeitung im Provider-Modell</h3>
+<p>Der folgende Ablauf zeigt die generische Verarbeitung: Der Service
+extrahiert die Payload als <code>Source</code>, übergibt an
+<code>verarbeite(Source)</code>, woraufhin das DTO initialisiert und die
+Prozess- sowie Abschlussphasen sequenziell ausgeführt werden.</p>
+<figure class="diagram">
+<div class="mermaid">
+sequenceDiagram
+    participant Client
+    participant Service as VBLWebService (Provider)
+    participant TR as TAALebenWebServiceTarifrechner
+    participant DTO as LebenWSDTO
+    participant Phase as Phasen (z.B. Import, Berechnung)
+    Client->>Service: SOAP Request (getQuote, getOffer, ...)
+    Service->>Service: Extrahiere Payload (Source)
+    Service->>TR: verarbeite(Source)
+    TR->>DTO: initialisiere(Source)
+    loop Verarbeitungs-Phasen
+        TR->>Phase: ausfuehren(DTO)
+        Phase->>DTO: lese/schreibe Daten
+    end
+    loop Abschluss-Phasen
+        TR->>Phase: ausfuehren(DTO)
+        Note right of Phase: z.B. SOAPVorbereitung
+    end
+    TR-->>Service: Ergebnis (Source/XML)
+    Service-->>Client: SOAP Response
+</div>
+<figcaption>Sequenz der generischen <code>invoke</code>-Verarbeitung über das Phasen-Modell (Quelle: Code-Anmerkungen).</figcaption>
+</figure>
+
+<h3 id="dto-hierarchie">DTO-Hierarchie als Datendrehscheibe</h3>
+<p>Die Phasen kommunizieren nicht direkt, sondern über ein gemeinsames DTO.
+Dieses kapselt sowohl den Zugriff auf das BiPRO-XML (per XPath) als auch das
+interne ELSA-Modell. <code>LebenWSDTO</code> ergänzt die fachliche Kette um
+den Web-/Sicherheitskontext (Remote-Adresse, <code>SecurityContextData</code>,
+<code>SCT</code>-URI).</p>
+<figure class="diagram">
+<div class="mermaid">
+classDiagram
+    class PhasenDTO {
+        +getAnfrage() Source
+        +getErgebnis() Source
+    }
+    class BiPRODTO~Angebot~ {
+        +getXPathProcessor()
+        +getRequestTyp() Class
+    }
+    class LebenDTO {
+        +getAngebot() LebenAngebot
+    }
+    class LebenWSDTO {
+        +getRemoteAddress() InetAddress
+        +getSecurityContext() SecurityContextData
+        +getSct() URI
+    }
+    PhasenDTO &lt;|-- BiPRODTO
+    BiPRODTO &lt;|-- LebenDTO
+    LebenDTO &lt;|-- LebenWSDTO
+    LebenWSDTO ..> WebDTO : implementiert
+</div>
+<figcaption>DTO-Hierarchie: <code>PhasenDTO</code> → <code>BiPRODTO</code> → <code>LebenDTO</code> → <code>LebenWSDTO</code> (Quelle: Code-Anmerkungen).</figcaption>
+</figure>
+
+<h3 id="phasen-framework-taa-v246-mapping">Phasen-Framework im Modul <code>taa-v246-mapping</code></h3>
+<p>Das Framework für Prozesssteuerung und Mapping ist im Modul
+<code>taa-v246-mapping</code> definiert und durchgängig über Interfaces
+entkoppelt. Die Verarbeitung ist nicht monolithisch, sondern auf viele kleine,
+spezialisierte <code>Phase</code>- und <code>Converter</code>-Klassen verteilt.</p>
+<table>
+<thead><tr class="header"><th>Baustein</th><th>Rolle</th><th>Zentrale Methode</th></tr></thead>
+<tbody>
+<tr class="odd"><td><code>Phase&lt;DTO&gt;</code></td><td>Basis-Interface für alle Verarbeitungsschritte</td><td><code>ausfuehren(DTO)</code></td></tr>
+<tr class="even"><td><code>MappingPhase</code></td><td>Wendet die XPath-basierten Mapping-Regeln an, um zwischen BiPRO-Request und internem Modell zu transformieren</td><td><code>wendeRegelnAn(...)</code></td></tr>
+<tr class="odd"><td><code>Import</code></td><td>Erweitert <code>MappingPhase</code>; liest BiPRO-Daten in das ELSA-Modell (<code>Angebot</code>) und behandelt z. B. <code>RegelException</code></td><td><code>durchlaufe(DTO)</code></td></tr>
+<tr class="even"><td><code>TAAServiceEnvironment</code></td><td>Zugriff auf die Infrastruktur</td><td><code>getLebenszyklusManager()</code>, <code>getXPathProcessorFactory()</code>, <code>getJAXBSupport()</code></td></tr>
+</tbody>
+</table>
+<p>Die Leben-spezifische Ausprägung dieser Phasen liegt in
+<code>taa-leben-v246112-service</code>: <code>TAALebenTarifrechnerBasis</code>
+bildet das Grundgerüst, Phasen wie <code>BerechnungLeben</code> und
+<code>ExportLeben</code> führen die Rechenkern-Aufrufe aus bzw. transformieren
+das ELSA-Ergebnis zurück in das BiPRO-Zielformat.</p>
+<blockquote>
+<p><strong>Einordnung (Belegt, Quellcode):</strong> Der im Trace sichtbare
+Span <code>*.durchlaufe</code> entspricht damit unmittelbar der
+<code>durchlaufe(DTO)</code>-Methode der Phasen. Trace-Beobachtung und
+Code-Struktur greifen an dieser Stelle exakt ineinander.</p>
+</blockquote>
+<!-- /ANM-PROVIDER -->
+<h2 id="einordnung-des-trace-typs">4.4 Einordnung des Trace-Typs</h2>
+<p>Die in der Sequenz sichtbaren Berechnungs-, Import-, Export- und
+Reporting-Schritte passen zu einem Berechnungs- oder Angebotsvorgang.
+Aus den bereitgestellten Trace-Ausschnitten ist jedoch nicht
+abschließend nachweisbar, ob der konkrete Aufruf <code>getQuote</code>
+oder <code>getOffer</code> war. Ein PDF- beziehungsweise Dokumentenpfad
+könnte für die Unterscheidung entscheidend sein. Diese Zuordnung ist
+deshalb als <strong>zu verifizieren</strong> zu kennzeichnen.</p>
+<h1 id="wsdl-xsd-namespaces-und-vb-erweiterungen">5. WSDL, XSD,
+Namespaces und VB-Erweiterungen</h1>
+<h2 id="standard-und-vu-erweiterung">5.1 Standard und
+VU-Erweiterung</h2>
+<p>Die Schnittstelle basiert auf dem BiPRO-Standardmodell. Da
+produktspezifische Ausprägungen nicht vollständig im allgemeinen
+Standard enthalten sind, verwendet VB Erweiterungspunkte im Schema. In
+XML-Strukturen werden diese regelmäßig als
+<code>basis:Erweiterung</code> mit einem konkreten <code>xsi:type</code>
+realisiert.</p>
+<p>Beispielhaftes Prinzip:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb5-1"><a aria-hidden="true" href="#cb5-1" tabindex="-1"></a>&lt;<span class="kw">basis:Erweiterung</span><span class="ot"> xsi:type=</span><span class="st">"vb-leben:CT_AntragErweiterung"</span>&gt;</span>
+<span id="cb5-2"><a aria-hidden="true" href="#cb5-2" tabindex="-1"></a>  &lt;<span class="kw">vb-leben:PolitischExponiertePerson</span>&gt;false&lt;/<span class="kw">vb-leben:PolitischExponiertePerson</span>&gt;</span>
+<span id="cb5-3"><a aria-hidden="true" href="#cb5-3" tabindex="-1"></a>&lt;/<span class="kw">basis:Erweiterung</span>&gt;</span></code></pre></div>
+<p>Die konkrete zulässige Struktur folgt dabei aus der VB-spezifischen
+XSD, nicht aus dem allgemeinen BiPRO-Basisschema allein.</p>
+<h2 id="relevante-schema--und-wsdl-dateien">5.2 Relevante Schema- und
+WSDL-Dateien</h2>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Datei / Typ</th>
+<th>Rolle</th>
+<th>Wirkung einer Änderung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>VBLService-2.4.6.1.12.wsdl</code></td>
+<td>Servicebeschreibung für VBL</td>
+<td>Definiert Operationen und Nachrichtenbindung für VBL</td>
+</tr>
+<tr class="even">
+<td><code>DOLService-2.4.6.1.12.wsdl</code></td>
+<td>Servicebeschreibung für DOL</td>
+<td>Definiert Operationen und Nachrichtenbindung für DOL</td>
+</tr>
+<tr class="odd">
+<td><code>vb-leben-1.12.xsd</code></td>
+<td>Gemeinsame Leben-Erweiterungen</td>
+<td>Änderungen wirken grundsätzlich für VBL und DOL</td>
+</tr>
+<tr class="even">
+<td><code>vb-vbl-1.12.xsd</code></td>
+<td>VBL-spezifische Produktdefinitionen</td>
+<td>Änderungen betreffen VBL-Produktmenge oder VBL-spezifische
+Strukturen</td>
+</tr>
+<tr class="odd">
+<td><code>vb-dol-1.12.xsd</code></td>
+<td>DOL-spezifische Produktdefinitionen</td>
+<td>Änderungen betreffen DOL-Produktmenge oder DOL-spezifische
+Strukturen</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Zentrale Regel:</strong> Eine Änderung der XSD erlaubt
+beziehungsweise validiert ein Feld in der XML-Struktur. Sie
+implementiert noch nicht, was der Webservice fachlich mit diesem Feld
+macht.</p>
+<h2 id="namespace-landkarte">5.3 Namespace-Landkarte</h2>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Prefix</th>
+<th>Namespace / Typ</th>
+<th>Bedeutung im Request oder in der Response</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>nachr</code></td>
+<td>BiPRO Nachrichten</td>
+<td>Technischer Rahmen, BiPRO-Version, Status- und Prozessdaten</td>
+</tr>
+<tr class="even">
+<td><code>tarif</code></td>
+<td>BiPRO Versicherung/Tarifierung</td>
+<td>TAA-Prozessobjekte wie <code>getQuote</code>, <code>getOffer</code>,
+<code>getOrder</code>, <code>Antrag</code>,
+<code>Verkaufsprodukt</code></td>
+</tr>
+<tr class="odd">
+<td><code>gevo</code></td>
+<td>BiPRO Geschäftsvorgang</td>
+<td>Übergreifende Vorgangsdaten, etwa Vermittlerdaten</td>
+</tr>
+<tr class="even">
+<td><code>pm-leben</code></td>
+<td>BiPRO Produktmodell Leben</td>
+<td>Lebenspezifische Produkttypen wie Renten- oder Zulagendaten</td>
+</tr>
+<tr class="odd">
+<td><code>partner</code></td>
+<td>BiPRO Partner</td>
+<td>Natürliche und juristische Personen sowie Identifikatoren</td>
+</tr>
+<tr class="even">
+<td><code>allg</code></td>
+<td>BiPRO Allgemein</td>
+<td>Wiederverwendbare Typen wie Geldwerte, Zeiträume und Adressen</td>
+</tr>
+<tr class="odd">
+<td><code>basis</code></td>
+<td>BiPRO Basis</td>
+<td>Basistypen und der Erweiterungsplatzhalter
+<code>basis:Erweiterung</code></td>
+</tr>
+<tr class="even">
+<td><code>vb-leben</code></td>
+<td><code>urn:de:vb:bipro:taa:leben:1.12</code></td>
+<td>Gemeinsame VB-Erweiterungen für Leben</td>
+</tr>
+<tr class="odd">
+<td><code>vb-vbl</code> / <code>vbl</code></td>
+<td><code>urn:de:vb:bipro:taa:vbl:1.12</code></td>
+<td>VBL-spezifische Erweiterungen</td>
+</tr>
+<tr class="even">
+<td><code>vbl-partner</code></td>
+<td>VB-Tarifrechner/Partner</td>
+<td>Anbieterspezifische Wertebereiche, etwa Berufsbezeichnungen</td>
+</tr>
+<tr class="odd">
+<td><code>vbl-fonds</code></td>
+<td>VBL-Fonds-Definitionen</td>
+<td>Zusätzliche anbieterspezifische Fondsdaten, soweit im jeweiligen
+Schema verwendet</td>
+</tr>
+</tbody>
+</table>
+<h2 id="aufbau-eines-fachlichen-requests">5.4 Aufbau eines fachlichen
+Requests</h2>
+<p>Die Ausgangsdokumentation erläutert anhand eines
+<code>getOrder</code>-/SRO-Beispiels die XML-Struktur. Zusammengefasst
+ergibt sich folgende Hierarchie:</p>
+<ol type="1">
+<li>Die Operation, beispielsweise <code>&lt;tarif:getOrder&gt;</code>,
+enthält einen <code>&lt;tarif:Request&gt;</code>-Container.</li>
+<li>Der Request enthält die technische BiPRO-Version über
+<code>&lt;nachr:BiPROVersion&gt;</code>.</li>
+<li>Der fachliche Inhalt wird in <code>&lt;tarif:Antrag&gt;</code>
+aufgebaut.</li>
+<li>Innerhalb des Antrags liegen unter anderem:
+<ul>
+<li>VB-Erweiterung des Antrags (<code>basis:Erweiterung</code> mit
+<code>xsi:type</code>),</li>
+<li>Vermittlerdaten (<code>gevo:Vermittler</code>),</li>
+<li>Partnerdaten (<code>tarif:Partner</code> mit konkretem
+<code>xsi:type</code>),</li>
+<li>Rollen wie Versicherungsnehmer und Beitragszahler,</li>
+<li>Verkaufsprodukt.</li>
+</ul></li>
+<li>Das Verkaufsprodukt enthält ein Produkt, das im Lebensbereich über
+einen konkreten Typ wie <code>pm-leben:CT_Produkt</code> spezifiziert
+wird.</li>
+<li>Innerhalb des Produkts folgen Erweiterung, Beitrag, Elementarprodukt
+und gegebenenfalls sparten- oder tarifbezogene Daten wie
+<code>ZulagenDaten</code>.</li>
+</ol>
+<h2 id="reihenfolge-konkrete-typen-und-validierung">5.5 Reihenfolge,
+konkrete Typen und Validierung</h2>
+<p>Bei XSD-Sequenzen ist die Elementreihenfolge verbindlich. Die
+historische Dokumentation weist darauf hin, dass ein erheblicher Anteil
+an Validierungsfehlern aus vertauschten XML-Knoten resultiert. Praktisch
+sind für Entwickler insbesondere folgende Regeln wichtig:</p>
+<ul>
+<li>Bei <code>&lt;xsd:sequence&gt;</code> muss die im Schema definierte
+Reihenfolge eingehalten werden.</li>
+<li>Ein optionales Element ist durch <code>minOccurs="0"</code>
+erkennbar.</li>
+<li>Mehrfach vorkommende Elemente sind durch
+<code>maxOccurs="unbounded"</code> oder einen entsprechenden Wert
+erkennbar.</li>
+<li>Abstrakte Typen erfordern in XML häufig eine konkrete Spezifikation
+über <code>xsi:type</code>, beispielsweise für natürliche oder
+juristische Personen.</li>
+<li>Für <code>basis:Erweiterung</code> muss der konkrete VB-Typ aus dem
+XML mit der richtigen anbieterspezifischen XSD korreliert werden.</li>
+</ul>
+<h2 id="encoding-einschränkungen">5.6 Encoding-Einschränkungen</h2>
+<p>Die Ausgangsdokumentation enthält den Hinweis, dass UTF-8 im
+Webservice nicht beliebig unterstützt werde. Als Gründe werden
+Einschränkungen des Großrechners sowie des verwendeten PDF-Fonts
+genannt. Diese Aussage ist für Schnittstellenkonsumenten und Testdaten
+besonders relevant, muss für den aktuellen Systemstand jedoch technisch
+verifiziert werden:</p>
+<ul>
+<li>Welche Zeichenmenge wird aktuell akzeptiert und korrekt
+verarbeitet?</li>
+<li>Gilt die Einschränkung für XML-Eingang, Berechnung,
+Dokumentgenerierung oder nur für bestimmte PDF-Ausgaben?</li>
+<li>Gibt es automatisierte Tests für Umlaute, Sonderzeichen und
+nicht-lateinische Zeichen?</li>
+</ul>
+<h1 id="projekt--und-modulstruktur-in-mono-elsa">6. Projekt- und
+Modulstruktur in <code>mono-elsa</code></h1>
+<h2 id="repository-und-grundstruktur">6.1 Repository und
+Grundstruktur</h2>
+<p>Die Dokumentation nennt das Repository:</p>
+<pre class="text"><code>gitlab.ad.volkswohl-bund.de:vb/software/vertriebssoftware/leben/mono-elsa.git</code></pre>
+<p>Als lokaler Beispielpfad wird genannt:</p>
+<pre class="text"><code>C:\Daten\git\mono-elsa</code></pre>
+<p>Die technische Umsetzung verteilt sich im Wesentlichen auf die
+Bereiche <code>bipro-taa</code>, <code>elsa</code> und
+<code>tarifrechner</code>.</p>
+<h2 id="module-des-bipro-adapters">6.2 Module des BiPRO-Adapters</h2>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Modul</th>
+<th>Verantwortungsbereich</th>
+<th>Typische Änderungsanlässe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>taa-leben-v246112-schnittstelle</code></td>
+<td>WSDL und XSD; Generierung der Java-Datenklassen aus den
+Schemaartefakten</td>
+<td>Neues Feld oder neue Erweiterungsstruktur; Anpassung der
+Produktdefinition</td>
+</tr>
+<tr class="even">
+<td><code>taa-leben-v246112-service</code></td>
+<td>Mapping-Regeln und Roundtrip-Tests</td>
+<td>Neues oder geändertes fachliches Mapping</td>
+</tr>
+<tr class="odd">
+<td><code>taa-leben-v246112-konverter</code></td>
+<td>Leben-spezifische Datentyp- und Werte-Konverter</td>
+<td>Abweichende Codes/Werte zwischen BiPRO und VB-Modell</td>
+</tr>
+<tr class="even">
+<td><code>taa-leben-v246112-webservice</code></td>
+<td>Leben-Webservice-Implementierung und Phasenreihenfolge</td>
+<td>Prozesslogik, Operationen, Phasenablauf</td>
+</tr>
+<tr class="odd">
+<td><code>taa-leben-v246112-webclient</code></td>
+<td>Webservice-Client</td>
+<td>Aufruf-/Integrationsbedarf</td>
+</tr>
+<tr class="even">
+<td><code>taa-leben-risikofrage(n)</code></td>
+<td>Manuell gepflegte Risikofragen, unter anderem
+<code>risikofragen.xml</code></td>
+<td>Neue oder geänderte Risikofragen</td>
+</tr>
+<tr class="odd">
+<td><code>taa-v246112-eantrag-pdf-client</code></td>
+<td>PDF-Einreichung an E-Antrag-Service</td>
+<td>Einreichungsprozess und Dokumentübertragung</td>
+</tr>
+<tr class="even">
+<td><code>taa-v246112-konfiguration</code></td>
+<td>Konfiguration der Webservices</td>
+<td>Umgebungs-/Servicekonfiguration</td>
+</tr>
+<tr class="odd">
+<td><code>taa-v246112-konverter</code> /
+<code>taa-v246112-mapping</code></td>
+<td>Spartenübergreifende Aspekte, etwa Partner-/Grundstrukturen</td>
+<td>Änderungen, die nicht nur Leben betreffen</td>
+</tr>
+<tr class="even">
+<td><code>taa-v246112-webservice-support</code></td>
+<td>Webservice-Unterstützung; in der Dokumentation dem
+PDF-/Einreichungskontext zugeordnet</td>
+<td>Technische Unterstützung, Zuordnung nochmals prüfen</td>
+</tr>
+</tbody>
+</table>
+<!-- ANM-MODULE -->
+<h2 id="frameworkmodule-mapping-und-konverter">6.2.1 Framework-Module für Phasen, Mapping und Konvertierung</h2>
+<p>Neben den oben gelisteten Leben-Modulen stellen drei spartenübergreifende
+Module das technische Fundament der Verarbeitung bereit. Ihre Kenntnis
+erleichtert das Verständnis, an welcher Stelle generische Mechanik endet und
+fachspezifische Leben-Logik beginnt.</p>
+<table>
+<thead><tr class="header"><th>Modul</th><th>Aufgabe</th><th>Wesentliche Bausteine</th></tr></thead>
+<tbody>
+<tr class="odd"><td><code>taa-v246-mapping</code></td><td>Framework für Prozesssteuerung und Mapping (Kern der Verarbeitung)</td><td><code>Phase&lt;DTO&gt;</code>, <code>MappingPhase</code>, <code>Import</code>, <code>TAAServiceEnvironment</code></td></tr>
+<tr class="even"><td><code>taa-v246-konverter</code></td><td>Technische Konvertierung von Datentypen und Zugriff auf XML-/Modellstrukturen</td><td><code>ElsaXPathProcessor</code>, <code>STConverter&lt;A,B&gt;</code>, <code>MeldungConverter</code></td></tr>
+<tr class="odd"><td><code>taa-v246-konfiguration</code></td><td>Konfigurationsparameter und Ressourcenpfade für die BiPRO-Services</td><td>(Konfigurationsartefakte)</td></tr>
+</tbody>
+</table>
+<p>Das durchgängige Muster in all diesen Modulen ist die <strong>Entkopplung
+über Interfaces</strong> in Verbindung mit <strong>phasenbasierter,
+sequenzieller Verarbeitung</strong>. Diese Struktur erklärt, warum sich die
+Fachlogik über viele kleine, spezialisierte Klassen verteilt statt in wenigen
+großen Service-Klassen zu liegen.</p>
+<!-- /ANM-MODULE -->
+<h2 id="internes-modell-elsa">6.3 Internes Modell
+(<code>elsa</code>)</h2>
+<p>Das interne Produktmodell wird im Modul <code>elsa-model-kern</code>
+verortet. Elementarprodukt-Klassen tragen nach den bisherigen
+Informationen das Präfix <code>Ep</code>, beispielsweise:</p>
+<ul>
+<li><code>EpBUZ</code></li>
+<li><code>EpFGR</code></li>
+<li>weitere Tarif-/Produktausprägungen wie <code>EpRente</code>,
+<code>EpAufgeschobeneRente</code>,
+<code>EpArbeitskraftabsicherung</code> beziehungsweise konkretisierte
+Tarifklassen.</li>
+</ul>
+<p>Ein aus früheren Arbeitsständen bekannter wichtiger Modellgrundsatz
+lautet:</p>
+<ul>
+<li>Attribute, die extern über die Schnittstelle befüllbar sein sollen,
+werden über <code>@Property</code> deklariert, typischerweise mit
+Kardinalitäten wie <code>@Property(min = 0)</code>.</li>
+<li>Die Deklaration und Kardinalität bestimmen die Modellverfügbarkeit;
+für externe Verarbeitung müssen passende Mapping-Regeln existieren.</li>
+<li>Nach früher bereitgestellter Information kann auch die
+Deklarationsreihenfolge bei der Ausgabe-/Request-Struktur relevant sein;
+dieser Punkt sollte gegen die aktuelle Serialisierung geprüft
+werden.</li>
+</ul>
+<p>Beispiel aus der Ausgangsdokumentation:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb8-1"><a aria-hidden="true" href="#cb8-1" tabindex="-1"></a><span class="at">@Property</span><span class="op">(</span>min <span class="op">=</span> <span class="dv">0</span><span class="op">)</span></span>
+<span id="cb8-2"><a aria-hidden="true" href="#cb8-2" tabindex="-1"></a><span class="kw">private</span> ZusatzBUZDynamik dynamik<span class="op">;</span></span></code></pre></div>
+<h2 id="tarifrechner-und-phaseninfrastruktur">6.4 Tarifrechner und
+Phaseninfrastruktur</h2>
+<table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Modul / Bereich</th>
+<th>Verantwortung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>tarifrechner-webservice-support</code></td>
+<td>SOAP-Einstieg über <code>TarifrechnerService</code></td>
+</tr>
+<tr class="even">
+<td><code>tarifrechner-phasen</code></td>
+<td>Basis der phasenorientierten Verarbeitung und Umwandlung des
+Requests in interne Verarbeitungsobjekte</td>
+</tr>
+<tr class="odd">
+<td>Externer Rechenkern</td>
+<td>Berechnung über REST-Aufruf, im beobachteten Ablauf
+<code>/api/rechner/quote</code></td>
+</tr>
+</tbody>
+</table>
+<h1 id="mapping-und-konverter-als-herzstück-der-umsetzung">7. Mapping
+und Konverter als Herzstück der Umsetzung</h1>
+<h2 id="warum-xsd-allein-nicht-genügt">7.1 Warum XSD allein nicht
+genügt</h2>
+<p>Das Ergänzen einer VB-Erweiterung in einer XSD bewirkt, dass ein
+Request den neuen XML-Knoten ohne Schemafehler enthalten darf. Ohne
+Mapping bleibt dieser Wert fachlich wirkungslos: Er wird nicht in das
+interne Modell übernommen, beeinflusst keine Berechnung und erscheint
+nicht automatisch in der Response.</p>
+<p>Die Umsetzung eines neuen externen Feldes muss daher regelmäßig
+mindestens vier Ebenen beachten:</p>
+<ol type="1">
+<li>internes Modell,</li>
+<li>XSD-/Schnittstellenstruktur,</li>
+<li>Eingabe- und gegebenenfalls Ausgabe-Mapping,</li>
+<li>Testabsicherung.</li>
+</ol>
+<p>Ein Konverter kommt hinzu, wenn die Werte- oder Typwelt nicht direkt
+kompatibel ist.</p>
+<h2 id="kategorien-der-mapping-regeln">7.2 Kategorien der
+Mapping-Regeln</h2>
+<table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Kategorie</th>
+<th>Transformationsrichtung</th>
+<th>Ordnerstruktur orientiert sich an</th>
+<th>Typischer Zweck</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Eingabe-Regeln</td>
+<td>BiPRO-Request -&gt; VB-/ELSA-Modell</td>
+<td>internem ELSA-Modell</td>
+<td>Eingangsdaten für Berechnung und fachliche Regeln verfügbar
+machen</td>
+</tr>
+<tr class="even">
+<td>Ausgabe-Regeln</td>
+<td>VB-/ELSA-Modell -&gt; BiPRO-Response</td>
+<td>BiPRO-Modell</td>
+<td>Berechnungsergebnis und fachliche Ausgaben zurückliefern</td>
+</tr>
+<tr class="odd">
+<td>Ausgabe-Erfassung</td>
+<td>Angebotsprogramm -&gt; BiPRO-Ausgabe</td>
+<td>Sonderkontext der Erfassung</td>
+<td>Export aus dem Angebotsprogramm; nicht für jeden Standardablauf
+relevant</td>
+</tr>
+</tbody>
+</table>
+<p>Die Regeln liegen nach Dokumentationsstand unter:</p>
+<pre class="text"><code>bipro-taa/taa-leben-v246112-service/src/main/resources/
+de/vb/bipro/taa/leben/v246112/mapping/regeln</code></pre>
+<h2 id="regelformat-und-begriffliche-bereinigung">7.3 Regelformat und
+begriffliche Bereinigung</h2>
+<p>An einer Stelle bezeichnet die alte Dokumentation die Regeln als „in
+XSL geschrieben“. Die dargestellten Beispiele sind jedoch
+XML-Regeldateien mit Elementen wie <code>&lt;r:regel&gt;</code>,
+<code>&lt;r:regelsatz&gt;</code>, <code>&lt;r:quelle&gt;</code>,
+<code>&lt;r:ziel&gt;</code> und <code>&lt;r:kontext&gt;</code>. In der
+Laufzeitanalyse wurde zudem JXPath identifiziert. Daher ist die
+technisch präzisere Bezeichnung:</p>
+<blockquote>
+<p>XML-basiertes Mapping-Regelwerk mit Pfadauswertung beziehungsweise
+Kontextlogik, nicht pauschal XSLT-Transformation.</p>
+</blockquote>
+<p>Ob intern einzelne unterstützende XSL-/XSLT-Artefakte existieren, ist
+davon getrennt zu prüfen.</p>
+<h2 id="beispiel-einer-einfachen-eingaberegel">7.4 Beispiel einer
+einfachen Eingaberegel</h2>
+<div class="sourceCode" id="cb10"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb10-1"><a aria-hidden="true" href="#cb10-1" tabindex="-1"></a>&lt;<span class="kw">r:regel</span><span class="ot"> id=</span><span class="st">"autoGarantieerhoehung"</span>&gt;</span>
+<span id="cb10-2"><a aria-hidden="true" href="#cb10-2" tabindex="-1"></a>  &lt;<span class="kw">r:quelle</span>&gt;erweiterung/autoGarantieerhoehung&lt;/<span class="kw">r:quelle</span>&gt;</span>
+<span id="cb10-3"><a aria-hidden="true" href="#cb10-3" tabindex="-1"></a>  &lt;<span class="kw">r:ziel</span>&gt;flagAutomatischeGarantieerhoehung&lt;/<span class="kw">r:ziel</span>&gt;</span>
+<span id="cb10-4"><a aria-hidden="true" href="#cb10-4" tabindex="-1"></a>&lt;/<span class="kw">r:regel</span>&gt;</span></code></pre></div>
+<p>Bedeutung: Ein Wert aus einer BiPRO-/VB-Erweiterung wird auf das
+interne Modellattribut <code>flagAutomatischeGarantieerhoehung</code>
+übertragen.</p>
+<h2 id="beispiel-eines-bedingten-regelsatzes">7.5 Beispiel eines
+bedingten Regelsatzes</h2>
+<div class="sourceCode" id="cb11"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb11-1"><a aria-hidden="true" href="#cb11-1" tabindex="-1"></a>&lt;<span class="kw">r:regelsatz</span><span class="ot"> id=</span><span class="st">"Ablaufgarantie-Regeln"</span>&gt;</span>
+<span id="cb11-2"><a aria-hidden="true" href="#cb11-2" tabindex="-1"></a>  &lt;<span class="kw">r:kontext</span>&gt;</span>
+<span id="cb11-3"><a aria-hidden="true" href="#cb11-3" tabindex="-1"></a>    &lt;<span class="kw">r:quellKontext</span>&gt;erweiterung/ablaufgarantie&lt;/<span class="kw">r:quellKontext</span>&gt;</span>
+<span id="cb11-4"><a aria-hidden="true" href="#cb11-4" tabindex="-1"></a>  &lt;/<span class="kw">r:kontext</span>&gt;</span>
+<span id="cb11-5"><a aria-hidden="true" href="#cb11-5" tabindex="-1"></a>  &lt;<span class="kw">r:regel</span><span class="ot"> id=</span><span class="st">"vorgabeartAblaufgarantie"</span>&gt;</span>
+<span id="cb11-6"><a aria-hidden="true" href="#cb11-6" tabindex="-1"></a>    &lt;<span class="kw">r:quelle</span>&gt;art&lt;/<span class="kw">r:quelle</span>&gt;</span>
+<span id="cb11-7"><a aria-hidden="true" href="#cb11-7" tabindex="-1"></a>    &lt;<span class="kw">r:ziel</span>&gt;vorgabeartAblaufgarantie&lt;/<span class="kw">r:ziel</span>&gt;</span>
+<span id="cb11-8"><a aria-hidden="true" href="#cb11-8" tabindex="-1"></a>  &lt;/<span class="kw">r:regel</span>&gt;</span>
+<span id="cb11-9"><a aria-hidden="true" href="#cb11-9" tabindex="-1"></a>  &lt;<span class="kw">r:regel</span><span class="ot"> id=</span><span class="st">"ablaufgarantie"</span>&gt;</span>
+<span id="cb11-10"><a aria-hidden="true" href="#cb11-10" tabindex="-1"></a>    &lt;<span class="kw">r:quelle</span>&gt;garantiehoehe&lt;/<span class="kw">r:quelle</span>&gt;</span>
+<span id="cb11-11"><a aria-hidden="true" href="#cb11-11" tabindex="-1"></a>    &lt;<span class="kw">r:ziel</span>&gt;ablaufgarantie&lt;/<span class="kw">r:ziel</span>&gt;</span>
+<span id="cb11-12"><a aria-hidden="true" href="#cb11-12" tabindex="-1"></a>  &lt;/<span class="kw">r:regel</span>&gt;</span>
+<span id="cb11-13"><a aria-hidden="true" href="#cb11-13" tabindex="-1"></a>&lt;/<span class="kw">r:regelsatz</span>&gt;</span></code></pre></div>
+<p>Bedeutung: Nur innerhalb eines vorhandenen beziehungsweise relevanten
+Ablaufgarantie-Kontexts werden die enthaltenen Werte auf die zugehörigen
+Modellattribute umgesetzt.</p>
+<p>Aus einem früheren Arbeitsstand wurde zusätzlich ein Beispiel
+genannt, bei dem die Quelle beziehungsweise der Kontext für
+<code>flagAblaufmanagement</code> über einen Ausdruck mit Prüfung von
+<code>anzahlJahre/value &gt; 0</code> oder
+<code>anzahlMonate/value &gt; 0</code> eingeschränkt wird. Dies
+bestätigt, dass die Mappinglogik nicht nur einfache Feldzuordnung,
+sondern auch konditionale Regeln enthält.</p>
+<h2 id="ausgabe-mapping-und-erzeugung-von-erweiterungsobjekten">7.6
+Ausgabe-Mapping und Erzeugung von Erweiterungsobjekten</h2>
+<p>Für die Response genügt es nicht, lediglich einzelne Zielwerte zu
+setzen. Gegebenenfalls muss zunächst die korrekte Erweiterungsstruktur
+erzeugt werden. Das in der Ausgangsdokumentation gezeigte Prinzip
+ist:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb12-1"><a aria-hidden="true" href="#cb12-1" tabindex="-1"></a>&lt;<span class="kw">r:regel</span><span class="ot"> id=</span><span class="st">"ErzeugeRenteErweiterung"</span><span class="ot"> xsi:type=</span><span class="st">"b:ElementErzeugungAusgabeRegel"</span>&gt;</span>
+<span id="cb12-2"><a aria-hidden="true" href="#cb12-2" tabindex="-1"></a>  &lt;<span class="kw">r:quelle</span><span class="ot"> relativ=</span><span class="st">"false"</span>&gt;'true'&lt;/<span class="kw">r:quelle</span>&gt;</span>
+<span id="cb12-3"><a aria-hidden="true" href="#cb12-3" tabindex="-1"></a>  &lt;<span class="kw">r:ziel</span>&gt;erweiterung&lt;/<span class="kw">r:ziel</span>&gt;</span>
+<span id="cb12-4"><a aria-hidden="true" href="#cb12-4" tabindex="-1"></a>  &lt;<span class="kw">b:type</span>&gt;${schema.vb.leben.paketname}.CT_RenteErweiterung&lt;/<span class="kw">b:type</span>&gt;</span>
+<span id="cb12-5"><a aria-hidden="true" href="#cb12-5" tabindex="-1"></a>&lt;/<span class="kw">r:regel</span>&gt;</span></code></pre></div>
+<p>Erst innerhalb dieser erzeugten Struktur können dann fachliche
+Ausgabewerte wie <code>autoGarantieerhoehung</code> oder weitere
+Rentenerweiterungswerte zurückgemappt werden.</p>
+<h2 id="konverter">7.7 Konverter</h2>
+<p>Konverter lösen Werte- und Typunterschiede zwischen BiPRO-Definition
+und internem VB-Modell. Als Beispiel wird die Stellung im Beruf
+genannt:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Fachbedeutung</th>
+<th>BiPRO-Ausprägung</th>
+<th>VB-Modell-Ausprägung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Arbeitnehmer</td>
+<td><code>01</code></td>
+<td><code>ARBEITNEHMER</code> beziehungsweise „Arbeitnehmer“</td>
+</tr>
+</tbody>
+</table>
+<p>Die Dokumentation nennt folgende Regeln:</p>
+<ul>
+<li>Leben-spezifische Konverter liegen unter
+<code>taa-leben-v246112-konverter/.../konverter/vb/leben</code>.</li>
+<li>Die Namenskonvention beschreibt links den VB-Datentyp und rechts den
+BiPRO-Datentyp.</li>
+<li>Alle benötigten Konverter werden zentral in
+<code>TAALebenConverter.java</code> registriert.</li>
+</ul>
+<p>Als beispielhafte Zuordnungen werden unter anderem
+<code>ARBEITNEHMER</code>, <code>AZUBI</code>, <code>BEAMTER</code>,
+<code>SELBSTSTAENDIGER</code>, <code>SOLDAT</code> und
+<code>STUDENT</code> auf BiPRO-Codes abgebildet.</p>
+<!-- ANM-CONVERTER -->
+<h2 id="converter-transformer-technisch">7.8 Converter, Transformer und technisches Mapping (Code-Sicht)</h2>
+<p>Die fachliche Beschreibung der Konverter lässt sich aus der Code-Sicht um
+drei klar getrennte Transformationsebenen ergänzen. Die Begriffe
+<em>Converter</em>, <em>Transformer</em> und <em>Mapping-Phase</em> bezeichnen
+dabei bewusst unterschiedliche Granularitäten.</p>
+<table>
+<thead><tr class="header"><th>Ebene</th><th>Granularität</th><th>Aufgabe</th></tr></thead>
+<tbody>
+<tr class="odd"><td>Converter</td><td>Einzelner Wert</td><td>Punktuelle Transformation von Enums und Beträgen (BiPRO ↔ ELSA)</td></tr>
+<tr class="even"><td>Transformer</td><td>Ganzes XML-Dokument</td><td>Strukturelle Transformation von Quell- in Ziel-Dokumente</td></tr>
+<tr class="odd"><td>Mapping-Phase</td><td>Prozessschritt</td><td>Prozessuale Verknüpfung von BiPRO-Strukturen mit der ELSA-Fachlogik</td></tr>
+</tbody>
+</table>
+
+<h3 id="converter-detail">Converter (<code>STConverter</code>, <code>OneToOneConverter</code>)</h3>
+<p>Converter übersetzen einfache Datentypen und Aufzählungen.
+<code>STConverter&lt;A,B&gt;</code> ist die wichtigste Basisklasse für
+BiPRO-Standard-Aufzählungen (ST-Enums): Sie mappt zwischen internem
+ELSA-Enum (Typ <code>A</code>) und BiPRO-Enum (Typ <code>B</code>) und arbeitet
+<strong>bidirektional</strong> über <code>convertForward</code>
+(ELSA → BiPRO) und <code>convertBackward</code> (BiPRO → ELSA). Die Zuordnung
+liegt in internen Maps; für einfache 1:1-Abbildungen existiert
+<code>OneToOneSTConverter</code>. Für nahezu alle BiPRO-Datentypen gibt es
+spezialisierte Converter, etwa <code>DoubleToDezimalzahlConverter</code> oder
+<code>TBooleanToJaNeinConverter</code>.</p>
+<p>Diese Code-Sicht präzisiert die in 7.7 genannte Namenskonvention: Die in
+<code>TAALebenConverter.java</code> registrierten Klassen sind konkrete
+Ausprägungen dieser Converter-Basistypen.</p>
+
+<h3 id="transformer-detail">Transformer (<code>MessageTransformerFactory</code>)</h3>
+<p>Transformer arbeiten auf ganzen Nachrichten statt auf Einzelwerten.
+<code>MessageTransformerFactory</code> ist ein Interface zur Transformation von
+XML-Quell-Dokumenten (<code>Source</code>) in Ziel-Dokumente
+(<code>Result</code>). Eingesetzt wird dies vor allem im Logging-Umfeld und bei
+der Vorbereitung von SOAP-Nachrichten, etwa zum Maskieren oder Umformatieren.
+Technisch basiert dies auf dem JAXP-<code>Transformer</code>-Framework
+(XSLT oder Identitäts-Transformation).</p>
+<blockquote>
+<p><strong>Abgrenzung zur Begriffsbereinigung in 7.3:</strong> Dass hier
+JAXP/XSLT zum Einsatz kommt, steht nicht im Widerspruch zur Feststellung, dass
+die fachlichen <em>Mapping-Regeln</em> kein XSLT sind. XSLT wird auf der Ebene
+der <em>technischen Nachrichten-Transformation</em> verwendet (z. B. Logging,
+Identitäts-Transformation), während das fachliche Feld-Mapping über das
+XML-Regel-DSL und XPath läuft. Beide Ebenen sind sauber zu trennen.</p>
+</blockquote>
+
+<h3 id="mapping-logik-xpath">Mapping-Logik (<code>ElsaXPathProcessor</code>, <code>MappingPhase</code>)</h3>
+<p>Den gezielten Zugriff auf das ELSA-Modell leistet
+<code>ElsaXPathProcessor&lt;R&gt;</code>, eine ELSA-spezifische Erweiterung des
+Standard-XPath-Prozessors. Über <code>hasValue(path)</code> prüft er, ob ein
+Wert im Modell (Klasse <code>Wert</code>) aktiv und belegt ist — XPath-Zugriff
+berücksichtigt hier also ELSA-Zustände wie „belegt/aktiv". Die
+<code>MappingPhase</code> nutzt die Regeln, um Datenfelder massenhaft zu
+synchronisieren, ohne jedes Feld manuell im Code zuzuweisen.
+<code>MeldungConverter</code> schließlich wandelt interne ELSA-Meldungen und
+Hinweise in BiPRO-konforme <code>Meldung</code>-Objekte um.</p>
+<!-- /ANM-CONVERTER -->
+<h1 id="tests-und-qualitätssicherung">8. Tests und
+Qualitätssicherung</h1>
+<h2 id="teststrategie">8.1 Teststrategie</h2>
+<p>Die älteren Importer-, Exporter- und getrennten Mappingtests sind
+nach Dokumentationsstand vorhanden, werden jedoch nicht mehr als
+primäres Muster für neue Entwicklungen genutzt. Für neue Änderungen
+werden <strong>Roundtrip-Tests</strong> verwendet.</p>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Testtyp</th>
+<th>Zweck</th>
+<th>Einordnung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Importer-Tests</td>
+<td>Allgemein XML -&gt; Modell</td>
+<td>Früher Ansatz, nicht primär weiterentwickelt</td>
+</tr>
+<tr class="even">
+<td>Exporter-/Ausgabe-Tests</td>
+<td>Allgemein Modell -&gt; XML</td>
+<td>Früher Ansatz, nicht primär weiterentwickelt</td>
+</tr>
+<tr class="odd">
+<td>Mapping-Eingabe-/Ausgabe-Tests</td>
+<td>Richtungsbezogene Mapping-Prüfung</td>
+<td>Historisch vorhanden</td>
+</tr>
+<tr class="even">
+<td>Roundtrip-Tests (<code>...IT</code>)</td>
+<td>BiPRO -&gt; Modell -&gt; BiPRO mit fachlichen Assertions</td>
+<td>Aktueller Standard für neue Mappingänderungen</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pfade-und-testressourcen">8.2 Pfade und Testressourcen</h2>
+<table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Artefakt</th>
+<th>Genannter Pfad / Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Roundtrip-Testklassen</td>
+<td><code>bipro-taa/taa-leben-v246112-service/src/test/java/de/vb/bipro/taa/vbl/v246112/mapping/roundtrip</code></td>
+</tr>
+<tr class="even">
+<td>Tarifbezogene Tests</td>
+<td>beispielsweise
+<code>.../produkt/rente/fgr/FGRRoundtripIT.java</code> und
+<code>.../produkt/rente/ir/IRRoundtripIT.java</code></td>
+</tr>
+<tr class="odd">
+<td>Beispielrequests</td>
+<td><code>bipro-taa/taa-leben-v246112-service/src/test/resources/eingabe</code></td>
+</tr>
+<tr class="even">
+<td>Produktspezifische Requests</td>
+<td><code>.../eingabe/produkt</code></td>
+</tr>
+<tr class="odd">
+<td>Erzeugte Testergebnisse</td>
+<td><code>taa-leben-v246112-service/target/testdata/roundtrip</code></td>
+</tr>
+<tr class="even">
+<td>XPath-Konstanten</td>
+<td><code>TAALebenRoundtripPfade.java</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="inhalt-einer-roundtrip-prüfung">8.3 Inhalt einer
+Roundtrip-Prüfung</h2>
+<p>Eine neue Mappingänderung sollte mindestens nachweisen:</p>
+<ol type="1">
+<li>Ein valider Beispielrequest enthält das neue Feld beziehungsweise
+den relevanten Kontext.</li>
+<li>Das Eingabe-Mapping schreibt den Wert an die erwartete Stelle des
+internen Modells.</li>
+<li>Das Ausgabe-Mapping erzeugt die erforderliche XML-Struktur und
+liefert den Wert zurück.</li>
+<li>Werte-Konvertierungen funktionieren in beiden benötigten
+Richtungen.</li>
+<li>Die erwartete BiPRO-Response beziehungsweise relevante
+XPath-Ausprägung stimmt.</li>
+<li>Bei Dokumentanforderung werden gegebenenfalls erzeugte PDF-Artefakte
+überprüft.</li>
+</ol>
+<h2 id="datum-und-versicherungsbeginn-in-tests">8.4 Datum und
+Versicherungsbeginn in Tests</h2>
+<p>Die Ausgangsdokumentation beschreibt einen Mechanismus, der den
+Versicherungsbeginn beim Testlauf automatisch auf den ersten Tag des
+Folgemonats setzt. Bei neuen Tarifen kann dies zu künstlichen
+Testfehlern führen, wenn der Tarif zu diesem Zeitpunkt noch nicht
+verkaufbar ist.</p>
+<p>Für solche Fälle ist in der konkreten Roundtrip-Testklasse ein
+zulässiges Datum in der Initialisierung festzulegen, beispielsweise in
+<code>initClass()</code>. Diese Ausnahme muss im Testcode begründet
+werden, damit sie später nicht als unbeabsichtigte Abweichung
+interpretiert wird.</p>
+<h2 id="tests-für-schema--und-encoding-risiken">8.5 Tests für Schema-
+und Encoding-Risiken</h2>
+<p>Zusätzlich zu fachlichen Mappingtests sollten aus der konsolidierten
+Sicht folgende Testklassen explizit vorhanden oder geprüft werden:</p>
+<ul>
+<li>Validierungsfehler bei falscher Reihenfolge in
+<code>xsd:sequence</code>;</li>
+<li>fehlende beziehungsweise falsche <code>xsi:type</code>-Angaben bei
+Erweiterungen und abstrakten Typen;</li>
+<li>Trennung VBL-/DOL-spezifischer Produktdefinitionen;</li>
+<li>Sonderzeichen-, Umlaut- und Encoding-Szenarien bis zur
+PDF-Ausgabe;</li>
+<li>Prozesskettenfälle für <code>getQuote</code>, <code>getOffer</code>,
+<code>getOrder</code>, <code>setOrder</code> und
+<code>setOrderQualified</code>;</li>
+<li>Authentifizierungsfehler für Einreichungsoperationen.</li>
+</ul>
+<h1 id="datenhaltung-externe-services-und-monitoring">9. Datenhaltung,
+externe Services und Monitoring</h1>
+<h2 id="externe-systeme-und-datenquellen">9.1 Externe Systeme und
+Datenquellen</h2>
+<table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>System / Speicher</th>
+<th>Typ</th>
+<th>Rolle im betrachteten Kontext</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>iam-api-security-contexts</code></td>
+<td>REST-Service über Traefik</td>
+<td>Prüfung beziehungsweise Beschaffung eines Security Contexts</td>
+<td>Im Request-Trace beobachtet</td>
+</tr>
+<tr class="even">
+<td><code>iam_api_prod</code></td>
+<td>Datenbank / Axon Event-Store</td>
+<td>Persistenzbezug des IAM-Kontexts</td>
+<td>In Voranalyse aus Trace abgeleitet</td>
+</tr>
+<tr class="odd">
+<td><code>rechenkern-ws-prod</code></td>
+<td>REST-Service</td>
+<td>Berechnung über <code>POST /api/rechner/quote</code></td>
+<td>Im Request-Trace beobachtet</td>
+</tr>
+<tr class="even">
+<td><code>avb</code></td>
+<td>eingebettete Derby-DB, read-only</td>
+<td>Tabellen-/Berechnungsbezug, genannt etwa <code>TabArt</code>,
+<code>TabKen</code>, <code>TabImpl</code>, <code>TabDrSt</code>,
+<code>qryDruckstueck</code></td>
+<td>Aus Laufzeitanalyse; fachliche Bedeutung im Detail prüfen</td>
+</tr>
+<tr class="odd">
+<td><code>elsa2db</code></td>
+<td>eingebettete Derby-DB, read-only</td>
+<td>ELSA-/Stammdatenbezug</td>
+<td>Aus Laufzeitanalyse</td>
+</tr>
+<tr class="even">
+<td><code>AVIS.*</code></td>
+<td>Datenbank-/Schema-Bezug</td>
+<td><code>PBEW</code> und <code>PVDF</code> im Umfeld von
+<code>ExportJava</code> / Abgleich</td>
+<td>Verwendungszweck präzisieren</td>
+</tr>
+<tr class="odd">
+<td><code>tarifrechner_prod</code></td>
+<td>SQL-Server-Datenbank im Monitoringkontext</td>
+<td>Protokollierung in <code>tarifrechnerLeben</code></td>
+<td>Im Trace und in früheren Auswertungen relevant</td>
+</tr>
+<tr class="even">
+<td>E-Antrag-Service</td>
+<td>Serviceintegration</td>
+<td>PDF-Einreichung bei Einreichungsoperationen</td>
+<td>Aus Modul-/Prozessdokumentation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reporting-tabelle-tarifrechnerleben">9.2 Reporting-Tabelle
+<code>tarifrechnerLeben</code></h2>
+<p>Aus den bereits bearbeiteten SQL-/Grafana-Kontexten ist die Tabelle
+<code>dbo.tarifrechnerLeben</code> in <code>Tarifrechner_Prod</code> für
+betriebliche Auswertungen relevant. Genannte beziehungsweise verwendete
+Felder umfassen unter anderem:</p>
+<table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feld / Feldgruppe</th>
+<th>Nutzen in Analyse und Diagnose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>zeitpunkt</code></td>
+<td>Zeitliche Auswertung und Dashboard-Zeitraumfilter</td>
+</tr>
+<tr class="even">
+<td><code>duration</code>, <code>time_calculation</code></td>
+<td>Laufzeit- und Performancebetrachtung</td>
+</tr>
+<tr class="odd">
+<td><code>correlation_trace_id</code></td>
+<td>Korrelation zu Traces und Einzelfallanalyse</td>
+</tr>
+<tr class="even">
+<td><code>bipro_operation</code></td>
+<td>Differenzierung nach <code>getQuote</code>, <code>getOffer</code>,
+<code>getOrder</code>, <code>setOrder</code>,
+<code>setOrderQualified</code></td>
+</tr>
+<tr class="odd">
+<td><code>bipro_consumerid</code></td>
+<td>Zuordnung zu Konsumenten/Partnern</td>
+</tr>
+<tr class="even">
+<td><code>produkt</code></td>
+<td>Auswertung nach Tarif/Produkt, gegebenenfalls mit Lookup auf
+Produktnamen</td>
+</tr>
+<tr class="odd">
+<td><code>httpMethod</code>, <code>httpPath</code>,
+<code>appHost</code>, <code>phase</code></td>
+<td>Technischer Aufrufkontext und Umgebungs-/Phasenanalyse</td>
+</tr>
+<tr class="even">
+<td><code>eantrag_vnr</code></td>
+<td>Identifikation tatsächlich eingereichter E-Anträge in Verbindung mit
+Einreichungsoperationen</td>
+</tr>
+</tbody>
+</table>
+<p>Für operative Kennzahlen wurde bereits folgender fachlicher Ansatz
+verwendet:</p>
+<ul>
+<li>Quote-/Angebotsvorgänge werden über Operationen wie
+<code>getQuote</code>, <code>getOffer</code> und <code>getOrder</code>
+gruppiert.</li>
+<li>E-Anträge werden über <code>setOrder</code> beziehungsweise
+<code>setOrderQualified</code> in Verbindung mit einer vorhandenen
+<code>eantrag_vnr</code> bestimmt.</li>
+<li>Eine sinnvolle Konversionskennzahl ist die Anzahl E-Anträge je 1.000
+Quote-/Angebotsvorgänge.</li>
+</ul>
+<p><strong>Prüfbedarf:</strong> Für eine verbindliche
+Betriebsdokumentation sind das aktuelle Tabellenschema, die Bedeutung
+einzelner Phasen-/Dauerfelder und die Konsumenten-/Produkt-Lookups zu
+dokumentieren.</p>
+<!-- ANM-WSVERSION -->
+<h2 id="versionsabfrage-wsversion">9.2.1 Technische Versionsabfrage (<code>/wsversion</code>)</h2>
+<p>Neben den fachlichen BiPRO-Operationen existiert eine rein technische
+Schnittstelle zur Versionsabfrage. Sie ist für Betrieb und Diagnose nützlich,
+um die ausgelieferte Stände eindeutig zu bestimmen.</p>
+<table>
+<thead><tr class="header"><th>Aspekt</th><th>Wert</th></tr></thead>
+<tbody>
+<tr class="odd"><td>Klasse (Code-Beleg)</td><td><code>de.vb.ws.wsversion.WsVersionServlet</code></td></tr>
+<tr class="even"><td>URL-Pattern</td><td><code>/wsversion</code></td></tr>
+<tr class="odd"><td>Antwortformat</td><td>JSON</td></tr>
+<tr class="even"><td>Inhalt</td><td>Maven-Version und Webservice-Version</td></tr>
+</tbody>
+</table>
+<p>Damit lässt sich bei einer Fehleranalyse als erster Schritt die konkret
+laufende Version verifizieren, bevor Verhalten gegen einen bestimmten
+Dokumentations- oder Code-Stand bewertet wird.</p>
+<!-- /ANM-WSVERSION -->
+<h2 id="monitoring--und-diagnosekette">9.3 Monitoring- und
+Diagnosekette</h2>
+<p>Für eine Fehler- oder Performanceanalyse sollte der Diagnoseweg
+systematisch sein:</p>
+<ol type="1">
+<li>Über <code>correlation_trace_id</code>, Zeitstempel oder
+Partnerkontext einen Request in Reporting/Grafana identifizieren.</li>
+<li>Die Operation und das Produkt bestimmen.</li>
+<li>Die APM-/Kibana-Tracekette auf Phasendauern und externe Aufrufe
+prüfen.</li>
+<li>Bei langer Security-Phase den IAM-/Traefik-Pfad untersuchen.</li>
+<li>Bei langer Berechnung den Rechenkern und die zugehörigen
+Datenquellen prüfen.</li>
+<li>Bei Validierungs- oder Responseproblemen XSD, Mapping und
+Exportphasen prüfen.</li>
+<li>Bei Einreichungsproblemen den E-Antrag-Service, Authentifizierung
+und Dokumenttransfer prüfen.</li>
+</ol>
+<h1 id="security--und-authentifizierungskontext">10. Security- und
+Authentifizierungskontext</h1>
+<h2 id="zwei-beobachtete-beziehungsweise-dokumentierte-authentifizierungsaspekte">10.1
+Zwei beobachtete beziehungsweise dokumentierte
+Authentifizierungsaspekte</h2>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspekt</th>
+<th>Beschreibung</th>
+<th>Einordnung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>STS-Token</td>
+<td>Die Ausgangsdokumentation verlangt Partnerauthentifizierung für
+<code>setOrder</code> und <code>setOrderQualified</code>, weil
+Vertragsdaten eingereicht werden.</td>
+<td>Fachlich nachvollziehbar und dokumentiert</td>
+</tr>
+<tr class="even">
+<td><code>SecurityContextAuthentication</code> / IAM</td>
+<td>Der analysierte Request zeigt einen Aufruf zu
+<code>iam-api-security-contexts</code> über Traefik auch im
+Berechnungs-/Angebotskontext.</td>
+<td>Laufzeitbeobachtung, Verhältnis zu STS noch offen</td>
+</tr>
+</tbody>
+</table>
+<!-- ANM-AUTH -->
+<h2 id="authentifizierung-code-sicht">10.1.1 Authentifizierung in der Code-Sicht</h2>
+<p>Die im Trace beobachtete <code>SecurityContextAuthentication</code> lässt
+sich anhand des Quellcodes konkreten Bausteinen zuordnen. Das schließt einen
+Teil der unter 10.2 genannten offenen Punkte, ohne das Verhältnis zum
+STS-Token abschließend zu klären.</p>
+<table>
+<thead><tr class="header"><th>Element (Code-Beleg)</th><th>Funktion</th></tr></thead>
+<tbody>
+<tr class="odd"><td><code>AuthenticationPhase</code> (über <code>AuthenticationPhaseFactory</code>)</td><td>Realisiert die Authentifizierung als eigene Phase in der Pipeline</td></tr>
+<tr class="even"><td><code>SecurityContextData</code> in <code>AngebotserstellungLebenWeb</code></td><td>Auswertung des Sicherheitskontexts im Angebots-/Berechnungspfad</td></tr>
+<tr class="odd"><td>SCT (Security Context Token)</td><td>Wird aus dem SOAP-Header extrahiert und in das <code>LebenWSDTO</code> übernommen (<code>getSct()</code>)</td></tr>
+</tbody>
+</table>
+<p>Damit ist belegt, dass der Sicherheitskontext nicht erst bei der
+Einreichung, sondern bereits im Angebots-/Berechnungsfluss als eigene Phase
+ausgewertet und über das DTO durchgereicht wird. Das deckt sich mit der
+Trace-Beobachtung und stützt die Einordnung, dass
+<code>SecurityContextAuthentication</code> und das fachlich beschriebene
+STS-Token zwei getrennt zu betrachtende Mechanismen sind.</p>
+<!-- /ANM-AUTH -->
+<h2 id="offene-zuordnung">10.2 Offene Zuordnung</h2>
+<p>Es muss geklärt werden, ob beide Mechanismen unterschiedliche Ebenen
+adressieren, beispielsweise:</p>
+<ul>
+<li>Service- oder Nutzerkontext für jeden Request gegenüber
+Partnerlegitimation für die Einreichung;</li>
+<li>Validierung eines vorgelagerten Service Tokens gegenüber fachlichem
+STS-Token;</li>
+<li>unterschiedliche Anforderungen je Umgebung oder Operationstyp.</li>
+</ul>
+<p>Bis zu dieser Klärung sollten Entwickler keine Annahme treffen, dass
+<code>getQuote</code>/<code>getOffer</code> vollständig ohne
+Security-Kontext ausgeführt werden oder dass STS die einzige relevante
+Authentifizierungskomponente darstellt.</p>
+<h1 id="dokumenten--e-antrags--und-identifikationsbezug">11.
+Dokumenten-, E-Antrags- und Identifikationsbezug</h1>
+<h2 id="dokumentenfluss">11.1 Dokumentenfluss</h2>
+<p><code>getOffer</code> ist nach Ausgangsdokumentation typischerweise
+mit einem PDF beziehungsweise Versorgungsvorschlag verbunden;
+<code>getFile</code> kann Dateien nachladen. Bei <code>setOrder</code>
+wird ein PDF in den E-Antragsbereich übermittelt; die Dokumentation
+beschreibt hierbei eine manuelle Prüfung und nur geringe
+XML-Datenmengen. <code>setOrderQualified</code> soll darüber hinaus
+Konsistenz und Vollständigkeit zwischen PDF und XML prüfen.</p>
+<h2 id="frühere-integrationsfragestellung-eid-dokumente">11.2 Frühere
+Integrationsfragestellung: eID-Dokumente</h2>
+<p>In vorherigem fachlich-technischem Kontext wurde die Einbindung von
+Identifikationsdokumenten, insbesondere eID-Protokollen, thematisiert.
+Genannt wurden mögliche Dokumentklassifikationen wie
+<code>DOC_LEGITIMATION</code> oder <code>DOC_IDENTIFIKATION</code>, ein
+Dokumentname nach dem Muster
+<code>eID-Personalausweis_[Antragsnummer].pdf</code> sowie die Frage, ob
+ein spezifischer Dokumenttyp wie <code>AN29e</code> eingeführt werden
+sollte.</p>
+<p>Diese Informationen sind für den E-Antrags- und Dokumentenfluss
+potenziell relevant, sind in der hier vorliegenden
+Onboarding-Dokumentation jedoch nicht abschließend belegt. Für eine
+produktive Dokumentation ist zu klären:</p>
+<ul>
+<li>an welcher Operation (<code>getOrder</code>,
+<code>getOrderQualified</code>, <code>setOrder</code> oder Folgeprozess)
+das Identifikationsdokument technisch übertragen wird;</li>
+<li>wie Dokumentart, Dateiname und Validierungsregeln verbindlich
+definiert sind;</li>
+<li>ob es eine aktuelle Partner-/E-Antrag-Spezifikation dazu gibt.</li>
+</ul>
+<h1 id="konkrete-entwickleranleitungen">12. Konkrete
+Entwickleranleitungen</h1>
+<h2 id="anleitung-a-neues-extern-befüllbares-attribut-implementieren">12.1
+Anleitung A: Neues extern befüllbares Attribut implementieren</h2>
+<h3 id="ziel">Ziel</h3>
+<p>Ein neues fachliches Attribut soll in einem BiPRO-Request akzeptiert,
+im internen VB-/ELSA-Modell verarbeitet und - sofern fachlich
+erforderlich - in der Response ausgegeben werden.</p>
+<h3 id="vorgehensschritte">Vorgehensschritte</h3>
+<table>
+<colgroup>
+<col style="width: 40%"/>
+<col style="width: 30%"/>
+<col style="width: 30%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Schritt</th>
+<th>Tätigkeit</th>
+<th>Ergebnis / Prüfkriterium</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Fachliche Verortung bestimmen: Antrag, Verkaufsprodukt, Produkt oder
+Elementarprodukt? Marke VBL/DOL oder gemeinsam?</td>
+<td>Der richtige Erweiterungspunkt und die richtige XSD sind
+festgelegt.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Interne Modellklasse identifizieren oder ergänzen
+(<code>elsa-model-kern</code>, <code>Ep*</code>-Klassen)</td>
+<td>Attribut ist im korrekten Modellobjekt vorhanden.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Externe Befüllbarkeit über <code>@Property</code> und Kardinalität
+korrekt definieren</td>
+<td>Modell unterstützt das Feld entsprechend der fachlichen
+Optionalität.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Passende XSD ergänzen: <code>vb-leben-1.12.xsd</code> bei
+gemeinsamem Leben-Feld, sonst <code>vb-vbl-1.12.xsd</code> oder
+<code>vb-dol-1.12.xsd</code></td>
+<td>XML mit neuem Feld ist schema-valide; markenfremde Ausprägung bleibt
+ausgeschlossen.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Projekt <code>taa-leben-v246112-schnittstelle</code> bauen und
+generierte Java-Strukturen prüfen</td>
+<td>Generierte <code>CT_*</code>-/Datenmodell-Klassen enthalten die
+erwartete Ergänzung.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Eingabe-Mapping im Service-Modul ergänzen</td>
+<td>Requestwert gelangt in das interne Modell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Falls notwendig Konverter entwickeln und in
+<code>TAALebenConverter.java</code> registrieren</td>
+<td>Codes und Werte werden korrekt übersetzt.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Ausgabe-Mapping ergänzen, sofern der Wert in Response oder
+Angebotsausgabe erscheinen soll</td>
+<td>Response enthält Wert an schema-konformer Stelle.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Validierten Beispielrequest erstellen beziehungsweise erweitern</td>
+<td>Testressource bildet den realistischen Fachfall ab.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td>Roundtrip-Test ergänzen und Assertions/XPath-Prüfungen
+implementieren</td>
+<td>Ein- und Ausgabe sind automatisch abgesichert.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">11</td>
+<td>Bei Berechnungswirkung einen fachlichen Berechnungstest
+beziehungsweise Rechenkernbezug prüfen</td>
+<td>Nicht nur Mapping, sondern fachliches Ergebnis ist plausibel.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">12</td>
+<td>Dokumentation, Postman-Beispiel und gegebenenfalls Online-Doku
+aktualisieren</td>
+<td>Schnittstellenkonsumenten können das neue Feld verwenden.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fehlervermeidung">Fehlervermeidung</h3>
+<ul>
+<li>Nicht nur die XSD ändern: Ohne Mapping bleibt der Wert
+wirkungslos.</li>
+<li>Nicht nur Eingabe-Mapping ändern: Bei zurückzugebenden Werten fehlt
+sonst die Response-Abbildung.</li>
+<li>Konverter nicht lediglich erstellen, sondern zentral
+registrieren.</li>
+<li>Bei Erweiterungen die XML-Reihenfolge und den konkreten
+<code>xsi:type</code> prüfen.</li>
+<li>Gemeinsame Leben-Felder nicht irrtümlich nur in einer Marken-XSD
+definieren.</li>
+</ul>
+<h2 id="anleitung-b-neuen-konverter-erstellen">12.2 Anleitung B: Neuen
+Konverter erstellen</h2>
+<h3 id="anlass">Anlass</h3>
+<p>Ein BiPRO-Wert ist nicht direkt identisch mit der Ausprägung im
+VB-Modell, zum Beispiel Code <code>01</code> gegenüber Enum-/Fachwert
+<code>ARBEITNEHMER</code>.</p>
+<h3 id="vorgehen">Vorgehen</h3>
+<ol type="1">
+<li>Fachliche Wertebereiche auf beiden Seiten vollständig erfassen.</li>
+<li>Bestehende Konverter im Modul
+<code>taa-leben-v246112-konverter</code> nach vergleichbarem Muster
+suchen.</li>
+<li>Neue Converter-Klasse nach vorhandener Namenskonvention
+implementieren.</li>
+<li>Für alle zulässigen Werte Abbildungen und Verhalten bei unbekannten
+Werten festlegen.</li>
+<li>Converter in <code>TAALebenConverter.java</code> registrieren.</li>
+<li>Roundtrip-Test für mindestens Normalfall, Randwert und ungültige
+beziehungsweise unbekannte Ausprägung ergänzen.</li>
+<li>Prüfen, ob Ausgabe- und Eingaberichtung symmetrisch sein müssen oder
+ob fachlich unterschiedliche Regeln gelten.</li>
+</ol>
+<h2 id="anleitung-c-roundtrip-test-für-eine-mappingänderung-anlegen">12.3
+Anleitung C: Roundtrip-Test für eine Mappingänderung anlegen</h2>
+<h3 id="vorgehen-1">Vorgehen</h3>
+<ol type="1">
+<li>Geeignete vorhandene Testklasse im fachlichen Bereich
+identifizieren, beispielsweise zur passenden Rente oder
+Zusatzversicherung.</li>
+<li>Einen validen Request in <code>src/test/resources/eingabe</code>
+beziehungsweise im produktspezifischen Unterordner anlegen.</li>
+<li>Platzhalter und Standardwerte korrekt verwenden, insbesondere
+BiPRO-Version, Geburtsdatum und Versicherungsbeginn.</li>
+<li>Testmethode nach bestehendem <code>...IT</code>-Muster
+ergänzen.</li>
+<li>XPath-Konstanten aus <code>TAALebenRoundtripPfade.java</code>
+wiederverwenden oder gezielt ergänzen.</li>
+<li>Assertion für den neuen Wert und gegebenenfalls für die umgebende
+Erweiterungsstruktur implementieren.</li>
+<li>Test ausführen und erzeugte Request-/Response-Artefakte unter
+<code>target/testdata/roundtrip</code> prüfen.</li>
+<li>Bei PDF-/Dokumentenanforderung die resultierenden Dateien
+kontrollieren.</li>
+<li>Bei einem neu einzuführenden Tarif gegebenenfalls das Datum des
+Versicherungsbeginns in <code>initClass()</code> fachlich valide
+setzen.</li>
+</ol>
+<h2 id="anleitung-d-schema-validierungsfehler-im-xml-analysieren">12.4
+Anleitung D: Schema-Validierungsfehler im XML analysieren</h2>
+<h3 id="symptome">Symptome</h3>
+<ul>
+<li>Request wird vor fachlicher Berechnung abgewiesen.</li>
+<li>Fehler verweist auf unerwartetes Element, falsche Reihenfolge oder
+unzulässigen Typ.</li>
+</ul>
+<h3 id="prüfschritte">Prüfschritte</h3>
+<ol type="1">
+<li>Operation und zugehöriges Schema bestimmen, beispielsweise
+<code>tarif:getOrder</code>.</li>
+<li>Den übergeordneten ComplexType in der zuständigen XSD suchen.</li>
+<li>In dessen <code>xsd:sequence</code> zulässige Kinder und Reihenfolge
+prüfen.</li>
+<li>Für <code>basis:Erweiterung</code> den im XML angegebenen
+<code>xsi:type</code> identifizieren.</li>
+<li>Den konkreten <code>CT_*Erweiterung</code>-Typ in
+<code>vb-leben</code>, <code>vb-vbl</code> oder <code>vb-dol</code>
+suchen.</li>
+<li>Optionalität und Mehrfachvorkommen über <code>minOccurs</code> und
+<code>maxOccurs</code> prüfen.</li>
+<li>Mit einem validen Beispielrequest aus den Testressourcen
+vergleichen.</li>
+<li>Erst nach bestandener Schemavalidierung Mapping- oder
+Berechnungsfehler untersuchen.</li>
+</ol>
+<h2 id="anleitung-e-request-laufzeit-und-produktionsfehler-diagnostizieren">12.5
+Anleitung E: Request-Laufzeit und Produktionsfehler diagnostizieren</h2>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Befund</th>
+<th>Zuerst prüfen</th>
+<th>Danach prüfen</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Request wird gar nicht angenommen</td>
+<td>SOAP-Endpunkt, Namespace, WSDL/XSD-Version, technische
+Erreichbarkeit</td>
+<td>XML-/Schemafehler, Authentifizierung</td>
+</tr>
+<tr class="even">
+<td>Validierungsfehler</td>
+<td>XSD, Reihenfolge, <code>xsi:type</code>, VB-Erweiterung</td>
+<td>Mapping nur nach bestandener Validierung</td>
+</tr>
+<tr class="odd">
+<td>Wert fehlt in Berechnung</td>
+<td>Eingabe-Mapping, Converter-Registrierung, internes Modell</td>
+<td>Rechenkern-/Fachregeln</td>
+</tr>
+<tr class="even">
+<td>Wert fehlt in Response</td>
+<td>Ausgabe-Mapping, Erzeugung der Erweiterungsstruktur</td>
+<td>Serialisierung / Response-Validierung</td>
+</tr>
+<tr class="odd">
+<td>Hohe Laufzeit im Security-Abschnitt</td>
+<td>Traefik-/IAM-Aufruf, Security Context</td>
+<td>Token-/Partnerkontext, externe Latenz</td>
+</tr>
+<tr class="even">
+<td>Hohe Laufzeit in Berechnung</td>
+<td>Rechenkern-Trace und DB-/Tabellenzugriff</td>
+<td>Produkt-/Tarifkonstellation</td>
+</tr>
+<tr class="odd">
+<td>Fehler bei E-Antrag</td>
+<td>STS-Token, PDF-Client, Dokumentanforderungen</td>
+<td>E-Antrag-Service und Dokumentklassifikation</td>
+</tr>
+<tr class="even">
+<td>Analyse eines Einzelfalls</td>
+<td><code>correlation_trace_id</code>, <code>bipro_operation</code>,
+Zeitstempel</td>
+<td>APM-Trace, Reportingdaten, Logs</td>
+</tr>
+</tbody>
+</table>
+<h2 id="anleitung-f-dokumentation-technisch-aktualisieren">12.6
+Anleitung F: Dokumentation technisch aktualisieren</h2>
+<p>Für eine nachhaltige Dokumentationspflege sollten statische und
+dynamische Quellen gemeinsam genutzt werden:</p>
+<ol type="1">
+<li>WSDL/XSD, Mapping-Regeln, Modellklassen und Test-Assets über den
+vorhandenen <code>DocGenerator</code> oder ein Nachfolgewerkzeug
+extrahieren.</li>
+<li>Mermaid-Diagramme der Komponenten- und Sequenzsicht
+versionskontrolliert mitführen.</li>
+<li>Real beobachtete Abläufe und Laufzeitwerte aus APM/Trace nur als
+datierte Beispiele dokumentieren.</li>
+<li>Diskrepanzen zwischen Doku, Branch, Runtime und produktiver
+Konfiguration als Prüfpunkt führen, nicht stillschweigend
+angleichen.</li>
+<li>Mit jedem Schnittstellenrelease eine Änderungsübersicht für Partner
+sowie eine interne Entwickler-Delta-Dokumentation aktualisieren.</li>
+</ol>
+<h1 id="setup--und-entwicklungsumgebung-gesicherte-basis-und-prüfbedarf">13.
+Setup- und Entwicklungsumgebung: gesicherte Basis und Prüfbedarf</h1>
+<h2 id="dokumentierter-einstieg">13.1 Dokumentierter Einstieg</h2>
+<p>Die Ausgangsdokumentation nennt als grundlegenden Build-Schritt:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a aria-hidden="true" href="#cb13-1" tabindex="-1"></a><span class="bu">cd</span> mono-elsa</span>
+<span id="cb13-2"><a aria-hidden="true" href="#cb13-2" tabindex="-1"></a><span class="ex">mvn</span> clean install</span></code></pre></div>
+<p>Sie nennt außerdem die Generierung einer Dokumentation über:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a aria-hidden="true" href="#cb14-1" tabindex="-1"></a><span class="bu">cd</span> mono-elsa</span>
+<span id="cb14-2"><a aria-hidden="true" href="#cb14-2" tabindex="-1"></a><span class="ex">mvn</span> exec:java <span class="at">-Dexec.mainClass</span><span class="op">=</span><span class="st">"de.vb.quality.DocGenerator"</span></span></code></pre></div>
+<p>Das Ergebnis soll im Verzeichnis <code>generated</code> liegen.</p>
+<h2 id="nicht-unbesehen-zu-übernehmender-startbefehl">13.2 Nicht
+unbesehen zu übernehmender Startbefehl</h2>
+<p>Als lokaler Start wird im alten Dokument
+<code>mvn spring-boot:run</code> angegeben. In den ergänzenden
+Laufzeitinformationen wurde der Webservice dagegen als
+SOAP/JAX-WS-Anwendung in Jetty, unter anderem über
+<code>jetty-maven-plugin</code> und Port 8082, beschrieben. Zudem wurden
+unterschiedliche Java-Stände genannt.</p>
+<p><strong>Vor einer verbindlichen Setup-Anleitung müssen daher
+ermittelt werden:</strong></p>
+<ul>
+<li>Welche Module werden für den VBL- beziehungsweise DOL-Webservice
+tatsächlich deployt?</li>
+<li>Welches Maven-Profil beziehungsweise Plugin startet die lokale
+Webanwendung?</li>
+<li>Welche Java-Version gilt für den aktuell relevanten Branch und die
+Zielumgebung?</li>
+<li>Wird lokal Jetty, ein externer Tomcat oder eine andere Runtime
+verwendet?</li>
+<li>Welche Konfigurationsdateien beziehungsweise Serviceendpunkte werden
+für Rechenkern, IAM und E-Antrag benötigt?</li>
+</ul>
+<h2 id="bekannte-endpunkt--und-umgebungsreferenzen">13.3 Bekannte
+Endpunkt- und Umgebungsreferenzen</h2>
+<p>Aus bisherigen technischen Arbeiten wurden folgende Referenzen
+genannt; sie sind als Arbeits- und Prüfgrundlage aufzunehmen, nicht ohne
+Prüfung als dauerhaft gültige Produktionsangaben:</p>
+<table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Umgebung / Zweck</th>
+<th>Referenz</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>VBL WSDL / zuvor verwendete URL</td>
+<td><code>https://vbnet3.volkswohl-bund.de/vbl/ws/taa/2026-01/bipro/VBLService_2.4.6.1.12?wsdl</code></td>
+</tr>
+<tr class="even">
+<td>XSD-Abrufprinzip</td>
+<td>Service-URL mit Queryparameter wie <code>?xsd=1</code> und weiteren
+importierten XSDs</td>
+</tr>
+<tr class="odd">
+<td>DEV-/Test-Servleteintrag für Versionsinformation</td>
+<td><code>https://vsl-ws-vbl-b.appsitn.ad.volkswohl-bund.de/vbl/ws/taa/2026-06/wsversion</code></td>
+</tr>
+</tbody>
+</table>
+<p>Der Endpunkt <code>wsversion</code> wurde als Servlet-Endpunkt
+beschrieben, über den die Maven-Version der Anwendung abrufbar ist. Ob
+dieser Endpunkt in Produktion verfügbar sein soll oder absichtlich nicht
+exponiert wird, ist offen.</p>
+<h1 id="dokumentations--und-veröffentlichungskonzept">14.
+Dokumentations- und Veröffentlichungskonzept</h1>
+<h2 id="bestehende-dokumentationsbausteine">14.1 Bestehende
+Dokumentationsbausteine</h2>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Baustein</th>
+<th>Nutzen</th>
+<th>Weiterentwicklung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Onboarding-Dokument</td>
+<td>Grundlagen und Entwicklerwissen</td>
+<td>Konsolidieren, veraltete Angaben markieren oder ersetzen</td>
+</tr>
+<tr class="even">
+<td>BiPRO-/VU-Postman-Dokumentation</td>
+<td>Konsumentennahe Requestbeispiele</td>
+<td>Mit Releaseänderungen synchronisieren</td>
+</tr>
+<tr class="odd">
+<td>WSDL/XSD</td>
+<td>Formale Schnittstellenwahrheit</td>
+<td>Versioniert als Primärquelle behandeln</td>
+</tr>
+<tr class="even">
+<td>Mapping-/Konverter-Code</td>
+<td>Tatsächliche Feldverarbeitung</td>
+<td>Automatisch referenzierbar dokumentieren</td>
+</tr>
+<tr class="odd">
+<td>Roundtrip-Tests</td>
+<td>Valide, ausführbare Beispiele</td>
+<td>Als lebende Beispielbibliothek nutzen</td>
+</tr>
+<tr class="even">
+<td><code>DocGenerator</code></td>
+<td>Statische technische Dokumentation</td>
+<td>Mit Mermaid-/Trace-/Monitoring-Sichten kombinieren</td>
+</tr>
+<tr class="odd">
+<td>APM-/Kibana-Traces</td>
+<td>Dynamische Ablauf- und Performancebeispiele</td>
+<td>Nur datiert und mit Operation/Umgebung dokumentieren</td>
+</tr>
+</tbody>
+</table>
+<h2 id="struktur-der-html-online-dokumentation">14.2 Struktur der
+HTML-Online-Dokumentation</h2>
+<p>Die zusätzlich erzeugte HTML-Version dieser Dokumentation verwendet
+Mermaid.js für technische Diagramme. Für eine dauerhafte
+Veröffentlichung ist folgende Struktur geeignet:</p>
+<ul>
+<li>eine Einstiegsseite mit Management- und Architekturüberblick;</li>
+<li>ein Kapitel für Operationen und Prozessketten;</li>
+<li>ein Kapitel für XSD/Namespaces/Mapping;</li>
+<li>ein Entwicklerleitfaden mit Schrittabfolgen und Fehlerdiagnose;</li>
+<li>ein Kapitel für Betrieb/Monitoring;</li>
+<li>ein sichtbarer Bereich „Prüfstatus und offene Punkte“;</li>
+<li>versionsbezogene Änderungsstände je Release.</li>
+</ul>
+<h2 id="automatisierbare-ergänzungen">14.3 Automatisierbare
+Ergänzungen</h2>
+<p>Der vorhandene Doku-Generator sollte nicht ersetzt, sondern um
+folgende Sichten erweitert oder ergänzt werden:</p>
+<ul>
+<li>Extraktion von XSD-Erweiterungstypen und erlaubten Feldern;</li>
+<li>Verlinkung von Modellattributen, Mappingregel, Converter und
+zugehörigem Roundtrip-Test;</li>
+<li>Anzeige der Abdeckung: Attribut in XSD vorhanden, Eingabe-Mapping
+vorhanden, Ausgabe-Mapping vorhanden, Test vorhanden;</li>
+<li>Mermaid-Generierung für Prozess- und Modulabhängigkeiten;</li>
+<li>Release-Differenzbericht zwischen zwei Schnittstellenständen;</li>
+<li>optionale Verknüpfung zu Monitoring-/Trace-Beispielen ohne
+produktive Kundendaten.</li>
+</ul>
+<h1 id="quellenübergreifende-erkenntnisse">15. Quellenübergreifende
+Erkenntnisse</h1>
+<h2 id="gesicherte-kernaussagen">15.1 Gesicherte Kernaussagen</h2>
+<ol type="1">
+<li>Die Schnittstelle basiert auf BiPRO RClassic 2.4.6 und verwendet
+VB-spezifische Erweiterungen.</li>
+<li>VBL und DOL sind zwei Marken mit eigener Service-/Produkt-XSD auf
+gemeinsamer Leben-Basis.</li>
+<li><code>getQuote</code>, <code>getOffer</code>, <code>getOrder</code>,
+<code>setOrder</code> und <code>setOrderQualified</code> bilden die
+fachlich zentralen TAA-Operationen.</li>
+<li>Die technische Verarbeitung ist phasenorientiert und verbindet
+SOAP-Eingang, Validierung, Mapping, Berechnung, Export und
+Reporting.</li>
+<li>Die XSD regelt Validität und Struktur; fachliche Verarbeitung
+erfolgt über Mapping und gegebenenfalls Konverter.</li>
+<li>Neue Entwicklungen sind über Roundtrip-Tests abzusichern.</li>
+<li>Der beobachtete Systemablauf enthält externe Abhängigkeiten zu
+IAM/Security-Context, Rechenkern und Reporting-Datenbank.</li>
+</ol>
+<h2 id="wesentliche-zusammenhänge-die-in-einzelartikeln-leicht-verloren-gehen">15.2
+Wesentliche Zusammenhänge, die in Einzelartikeln leicht verloren
+gehen</h2>
+<table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Einzelthema</th>
+<th>Zusammenhang</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>VU-Erweiterung</td>
+<td>Muss fachlich verortet, in XSD zugelassen, in Mapping umgesetzt und
+getestet werden.</td>
+</tr>
+<tr class="even">
+<td>Operation und Phasen</td>
+<td>Dieselbe Pipeline kann je Operation unterschiedliche fachliche
+Relevanz entfalten; E-Antragslogik ist besonders bei Einreichung
+relevant.</td>
+</tr>
+<tr class="odd">
+<td>Produkt/XSD und Marke</td>
+<td>Gemeinsame Lebenänderungen gehören in <code>vb-leben</code>;
+Produkt-/Markenunterschiede müssen getrennt bleiben.</td>
+</tr>
+<tr class="even">
+<td>Trace und Quellcode</td>
+<td>Die <code>*.durchlaufe</code>-Spans lassen sich über
+<code>anfrage.report(PHASE, name)</code> auf Phasen im Code
+zurückführen.</td>
+</tr>
+<tr class="odd">
+<td>Monitoring und Fehleranalyse</td>
+<td>Ein Request kann vom Reportingdatensatz über Trace bis zu
+Mapping-/Servicekomponenten verfolgt werden.</td>
+</tr>
+<tr class="even">
+<td>Statische und dynamische Dokumentation</td>
+<td>XSD/Mapping/Test erklären das Soll; Trace/Monitoring zeigt das
+tatsächlich beobachtete Verhalten.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="kritische-anmerkungen-fehlende-informationen-und-klärungsbedarf">16.
+Kritische Anmerkungen, fehlende Informationen und Klärungsbedarf</h1>
+<h2 id="kritische-diskrepanzen">16.1 Kritische Diskrepanzen</h2>
+<table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Thema</th>
+<th>Vorliegende Aussagen</th>
+<th>Risiko</th>
+<th>Notwendige Klärung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Java-Version</td>
+<td>Doku: JDK 11 oder höher; Laufzeitanalyse: Java 8; späterer
+Entwicklungsstand: JDK 21</td>
+<td>Entwickler verwenden falsches JDK; Build- oder Runtimefehler</td>
+<td>Pro Branch/Deploymentziel verbindliche JDK-Version aus CI und
+Runtime dokumentieren</td>
+</tr>
+<tr class="even">
+<td>Start-/Laufzeitmodell</td>
+<td>Doku nennt <code>spring-boot:run</code>; Laufzeitinformationen
+nennen Jetty/JAX-WS/klassischen Kontext</td>
+<td>Onboarding scheitert; falsche Debuggingannahmen</td>
+<td>Lokale Startanleitung mit tatsächlich funktionierendem Kommando und
+Profil erstellen</td>
+</tr>
+<tr class="odd">
+<td>Mappingbegriff</td>
+<td>Doku bezeichnet Regeln teilweise als XSL; Beispiele zeigen eigenes
+XML-Regel-DSL/JXPath</td>
+<td>Fehlersuche in falschen Artefakten</td>
+<td>Terminologie bereinigen und technische Engine dokumentieren</td>
+</tr>
+<tr class="even">
+<td>Versionen / Pfade</td>
+<td>Teilweise Schreibvarianten bei <code>v246112</code>,
+<code>v246113</code>, WSDL-/XSD-Namen</td>
+<td>Falsche Verweise und nicht reproduzierbare Schritte</td>
+<td>Aktuellen Branch als Quelle verwenden; veraltete Beispiele
+markieren</td>
+</tr>
+<tr class="odd">
+<td>Authentifizierung</td>
+<td>STS für Einreichung beschrieben; IAM-Security-Context im
+berechnungsnahen Trace sichtbar</td>
+<td>Unvollständiges Security-/Fehlerbild</td>
+<td>Authentifizierungsmatrix pro Operation und Umgebung erstellen</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fehlende-oder-noch-nicht-belastbar-bestätigte-technische-informationen">16.2
+Fehlende oder noch nicht belastbar bestätigte technische
+Informationen</h2>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Offener Punkt</th>
+<th>Warum er wichtig ist</th>
+<th>Empfohlene Quelle zur Klärung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Exakter aktueller Deployment-Stack des VBL-/DOL-Webservice</td>
+<td>Setup, Betrieb und Fehlerdiagnose</td>
+<td>Deployments, Maven-POMs, Runtime-Logs, Plattformkonfiguration</td>
+</tr>
+<tr class="even">
+<td>Verbindliche URL- und Versionsmatrix für DEV/TEST/PROD</td>
+<td>Konsumentenanbindung und Regressionstests</td>
+<td>Umgebungsdokumentation / veröffentlichte
+Schnittstellenankündigung</td>
+</tr>
+<tr class="odd">
+<td>Operationstyp des gezeigten 751-ms-Traces</td>
+<td>Interpretation der Phasendauern</td>
+<td>Trace-Metadaten, <code>bipro_operation</code> in Reportingdaten</td>
+</tr>
+<tr class="even">
+<td>Fachliche Bedeutung von <code>avb</code>, <code>elsa2db</code> und
+<code>AVIS.*</code> im Ablauf</td>
+<td>Datenabhängigkeiten und Fehlerursachen</td>
+<td>Codepfade, DB-Dokumentation, Laufzeitlogs</td>
+</tr>
+<tr class="odd">
+<td>Vollständiges Schema von <code>tarifrechnerLeben</code> und
+Lookup-Tabellen</td>
+<td>Verlässliche Dashboards und Reportingkennzahlen</td>
+<td>Datenbank-DDL beziehungsweise geprüfte SQL-Abfragen</td>
+</tr>
+<tr class="even">
+<td>Dokument-/eID-Übertragung im E-Antrag</td>
+<td>Partnerintegration und Dokumentvalidierung</td>
+<td>E-Antrag-/BiPRO-Spezifikation, konkrete Integrationsfälle</td>
+</tr>
+<tr class="odd">
+<td>Aktuelle Encoding- und PDF-Font-Einschränkungen</td>
+<td>Vermeidung von Produktionsfehlern bei Personendaten</td>
+<td>Tests mit Sonderzeichen, aktuelle PDF-Engine/Druckstückdienst</td>
+</tr>
+<tr class="even">
+<td>Status des bestehenden DocGenerators</td>
+<td>Automatisierbare Online-Dokumentation</td>
+<td>Quellcode, Build und generierte Ausgabe</td>
+</tr>
+</tbody>
+</table>
+<h2 id="technische-risiken">16.3 Technische Risiken</h2>
+<ol type="1">
+<li><strong>Dokumentationsdrift:</strong> Eine historisch gewachsene
+Doku ohne Statuskennzeichnung kann funktionierende, aber veraltete
+Setup- oder Implementierungsschritte weitertragen.</li>
+<li><strong>Schema-ohne-Logik-Fehler:</strong> Ein neues Feld wird
+schema-valide eingeführt, aber nicht gemappt oder nicht in der Response
+zurückgegeben.</li>
+<li><strong>Markenvermischung:</strong> Gemeinsame und markenspezifische
+Produktdefinitionen werden in der falschen XSD gepflegt.</li>
+<li><strong>Unzureichende Prozesskettenprüfung:</strong>
+Einzeloperationen funktionieren, aber die reale Partnerjourney scheitert
+an Übergängen, Dokumenten oder Authentifizierung.</li>
+<li><strong>Nicht nachvollziehbare Performanceprobleme:</strong> Ohne
+konsistente Korrelation zwischen Reporting, Trace und Operation werden
+Latenzen nicht zielgerichtet analysiert.</li>
+<li><strong>Encoding-/Dokumentenrisiko:</strong> Fachlich zulässige
+Texte können in nachgelagerten Systemen oder PDFs fehlerhaft verarbeitet
+werden.</li>
+</ol>
+<h2 id="priorisierte-maßnahmen">16.4 Priorisierte Maßnahmen</h2>
+<table>
+<colgroup>
+<col style="width: 40%"/>
+<col style="width: 30%"/>
+<col style="width: 30%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Priorität</th>
+<th>Maßnahme</th>
+<th>Ziel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Aktuelle Build-/Runtime-/Java-Matrix pro Webservice und Umgebung
+ermitteln und dokumentieren</td>
+<td>Onboarding und Betrieb belastbar machen</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Authentifizierungsmatrix pro Operation erstellen: STS, Security
+Context, Service Token, Fehlerbilder</td>
+<td>Security- und Integrationstransparenz</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Aktuelle WSDL-/XSD-/Versionsmatrix sowie veröffentlichte Endpunkte
+konsolidieren</td>
+<td>Konsumentensicherheit und Regressionstestbasis</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Entwickler-Definition-of-Done für neue Attribute/Produkte festlegen:
+Modell, XSD, Input, Output, Converter, Test, Dokumentation</td>
+<td>Verhindert unvollständige Implementierungen</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Reporting- und Trace-Korrelation formal beschreiben</td>
+<td>Schnellere Diagnose und belastbare Performanceauswertung</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>DocGenerator/Online-Doku um Abdeckungs- und Mermaid-Sichten
+erweitern</td>
+<td>Dauerhaft pflegbare technische Dokumentation</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Encoding- und Dokumentenfälle automatisiert testen</td>
+<td>Reduktion fachlicher Produktionsfehler</td>
+</tr>
+</tbody>
+</table>
+<h1 id="anhang">17. Anhang</h1>
+<h2 id="kompakte-checkliste-änderung-an-einem-feld">17.1 Kompakte
+Checkliste: Änderung an einem Feld</h2>
+<table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Prüfung</th>
+<th>Erledigt</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fachliche Position im Schema bestimmt (Antrag, Verkaufsprodukt,
+Produkt, Elementarprodukt)</td>
+<td>☐</td>
+</tr>
+<tr class="even">
+<td>Gemeinsame oder markenspezifische XSD ausgewählt</td>
+<td>☐</td>
+</tr>
+<tr class="odd">
+<td>Modellattribut einschließlich <code>@Property</code>
+geprüft/ergänzt</td>
+<td>☐</td>
+</tr>
+<tr class="even">
+<td>XSD geändert und generierte Klassen geprüft</td>
+<td>☐</td>
+</tr>
+<tr class="odd">
+<td>Eingabe-Mapping implementiert</td>
+<td>☐</td>
+</tr>
+<tr class="even">
+<td>Ausgabe-Mapping implementiert, sofern erforderlich</td>
+<td>☐</td>
+</tr>
+<tr class="odd">
+<td>Konverter erstellt und registriert, sofern erforderlich</td>
+<td>☐</td>
+</tr>
+<tr class="even">
+<td>Valider Request als Testressource erstellt</td>
+<td>☐</td>
+</tr>
+<tr class="odd">
+<td>Roundtrip-Test und Assertions ergänzt</td>
+<td>☐</td>
+</tr>
+<tr class="even">
+<td>Sonderzeichen/Encoding/PDF-Auswirkungen geprüft, sofern
+relevant</td>
+<td>☐</td>
+</tr>
+<tr class="odd">
+<td>Partner-/Postman-/Online-Dokumentation aktualisiert</td>
+<td>☐</td>
+</tr>
+</tbody>
+</table>
+<h2 id="kompakte-checkliste-fehleranalyse">17.2 Kompakte Checkliste:
+Fehleranalyse</h2>
+<table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Frage</th>
+<th>Ergebnis / Referenz</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Welche Operation und Version war betroffen?</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Welche Umgebung und welcher Service-Endpunkt waren betroffen?</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Gibt es <code>correlation_trace_id</code>, Zeitstempel und
+<code>bipro_consumerid</code>?</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Scheitert der Request bereits in der Validierung?</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Ist die Erweiterung im richtigen XSD und mit korrekter Reihenfolge
+vorhanden?</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Ist das Eingabe-Mapping vorhanden und wird der Wert ins Modell
+geschrieben?</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Ist ein Konverter erforderlich und registriert?</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Erfolgt eine externe Berechnung und ist deren Antwort
+fehlerfrei?</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Ist das Ausgabe-Mapping vollständig?</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Betrifft der Fehler IAM/STS/E-Antrag/Dokumenttransfer?</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Ist der Fall durch Roundtrip- oder Integrationstest
+reproduzierbar?</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="abkürzungen-und-begriffe">17.3 Abkürzungen und Begriffe</h2>
+<table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Begriff</th>
+<th>Bedeutung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>BiPRO</td>
+<td>Brancheninstitut Prozessoptimierung; Standardisierung von Prozessen
+und Datenmodellen in der Versicherungsbranche</td>
+</tr>
+<tr class="even">
+<td>TAA</td>
+<td>Tarifierung, Angebot, Antrag</td>
+</tr>
+<tr class="odd">
+<td>VU-Erweiterung</td>
+<td>Versicherungsunternehmensspezifische Erweiterung des
+standardisierten Schemas</td>
+</tr>
+<tr class="even">
+<td>VBL</td>
+<td>Volkswohl Bund Leben</td>
+</tr>
+<tr class="odd">
+<td>DOL</td>
+<td>Die Dortmunder</td>
+</tr>
+<tr class="even">
+<td>ELSA</td>
+<td>Internes Modell-/Verarbeitungsumfeld der betrachteten
+Leben-Anwendung</td>
+</tr>
+<tr class="odd">
+<td>XSD</td>
+<td>XML Schema Definition; definiert zulässige XML-Strukturen und
+Datentypen</td>
+</tr>
+<tr class="even">
+<td>WSDL</td>
+<td>Web Services Description Language; beschreibt SOAP-Operationen und
+Bindungen</td>
+</tr>
+<tr class="odd">
+<td>Mapping</td>
+<td>Übersetzung zwischen BiPRO-XML und internem Modell beziehungsweise
+zurück</td>
+</tr>
+<tr class="even">
+<td>Converter / Konverter</td>
+<td>Programmatische Umsetzung nicht direkt kompatibler Werte oder
+Datentypen</td>
+</tr>
+<tr class="odd">
+<td>Roundtrip-Test</td>
+<td>Test, der XML über internes Modell wieder in XML überführt und
+Ergebnisse prüft</td>
+</tr>
+<tr class="even">
+<td>STS-Token</td>
+<td>In der Dokumentation beschriebene Authentifizierung für
+Einreichungsoperationen</td>
+</tr>
+<tr class="odd">
+<td>Security Context</td>
+<td>Im Trace sichtbarer IAM-bezogener Sicherheitskontext</td>
+</tr>
+<!-- ABBR-ANM-DONE -->
+<tr class="odd">
+<td>SCT / Security Context Token</td>
+<td>Aus dem SOAP-Header extrahiertes Token; wird in das <code>LebenWSDTO</code> übernommen (Code-Beleg)</td>
+</tr>
+<tr class="even">
+<td>DTO</td>
+<td>Data Transfer Object; hier die Kette <code>PhasenDTO</code> → <code>BiPRODTO</code> → <code>LebenDTO</code> → <code>LebenWSDTO</code></td>
+</tr>
+<tr class="odd">
+<td>JAX-WS Provider</td>
+<td><code>javax.xml.ws.Provider&lt;SOAPMessage&gt;</code>; generisches Service-Modell mit einer <code>invoke</code>-Methode</td>
+</tr>
+<tr class="even">
+<td>ST-Enum</td>
+<td>BiPRO-Standard-Aufzählung; über <code>STConverter</code> bidirektional auf ELSA-Enums gemappt</td>
+</tr>
+<tr class="even">
+<td>APM</td>
+<td>Application Performance Monitoring; Ablauf-/Laufzeitanalyse über
+Traces</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dokumentationshinweis">17.4 Dokumentationshinweis</h2>
+<p>Diese Fassung integriert zusätzlich Code-Anmerkungen (Vergleich Dokumentation gegen Quellcode) in den Kapiteln 4, 6, 7, 9 und 10. Die dort als „Belegt (Quellcode)" gekennzeichneten Aussagen stützen sich auf konkrete Klassen und Schnittstellen der Codebasis.</p>
+<p>Diese Fassung ist eine konsolidierte technische Arbeitsdokumentation
+auf Basis der bereitgestellten Artefakte und früher genannten
+technischen Informationen. Sie unterscheidet ausdrücklich zwischen
+belegtem Stand, abgeleiteten Zusammenhängen und offenen Prüfaufgaben.
+Für verbindliche Produktiv-, Security- oder Integrationsentscheidungen
+sind die aktuellen Quellcode-, Schnittstellen-, Deployment- und
+Betriebsinformationen zu verifizieren.</p>
+</article>
+<footer class="pagefooter">BiPRO TAA Leben WebService - Konsolidierte technische Dokumentation - 01.06.2026</footer>
+</main>
+</div>
+</body>
+</html>

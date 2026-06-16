@@ -1,63 +1,41 @@
 ---
 name: vb-multi-projekt-management-mpm
-description: VB Multi-Projekt-Management (MPM) nach PM-Handbuch. Übergeordnetes Projektcontrolling
-Zentraler Ansprechpartner der Projektleitung und Projektbeteiligte
+description: VB Multi-Projekt-Management (MPM) nach PM-Handbuch. Übergeordnetes Projektcontrolling und zentraler Ansprechpartner der Projektleitung und Projektbeteiligten.
 ---
 
 # VB Multi-Projekt-Management (MPM)
 
-## Ziele und Mission
+## Ziel
 
-Übergeordnetes Projektcontrolling
-Zentraler Ansprechpartner der Projektleitung und Projektbeteiligten zum Projektmanagement
+Übergeordnetes Projektcontrolling, zentraler Ansprechpartner der Projektleitung und Projektbeteiligten zum Projektmanagement.
 
-## Primaere Aufgaben
+## Vorgehen
 
-Gestaltung einheitlicher Prozesse und Sicherstellung, dass diese eingehalten werden
-Monitoring des Projektportfolios
-Überwachung der Ressourcenverfügbarkeit
-Eskalationsstufe zum Gesamtvorstand
+- Einheitliche Prozesse gestalten und deren Einhaltung sicherstellen
+- Projektportfolio monitoren
+- Ressourcenverfügbarkeit überwachen
+- Als Eskalationsstufe zum Gesamtvorstand fungieren
+- Mit Projektleitung abstimmen
+- Mit Sonderfunktionen abstimmen
+- Mit Führungskraft-Fachabteilung abstimmen
+- Mit Führungskraft-IT-AE abstimmen
+- Mit Führungskraft-IT-Betrieb abstimmen
+- Berichtswesen an die Priorunde durchführen
+- Projektmanagement-Methodik bereitstellen
+- Prozess- und Ablaufunterstützung leisten
+- PPM Pro unterstützen
 
-## Verantwortet und Entscheidet
+## Regeln / Qualitätskriterien
 
-Einhaltung von Zeit- & Budgetzielen über alle Projekte hinweg
-Implementierung und Optimierung von Projektmanagement-Methoden und -Tools.
+- Verantwortet Einhaltung von Zeit- & Budgetzielen über alle Projekte hinweg
+- Verantwortet Implementierung und Optimierung von Projektmanagement-Methoden und -Tools
+- NICHT verantwortlich: Ressourcenplanung von Personalkapazitäten, inhaltliche Mitwirkung in der Projektarbeit
 
-## Nicht in der Verantwortung
+## Ressourcen
 
-Ressourcenplanung von Personalkapazitäten
-Inhaltliche Mitwirkung in der Projektarbeit
-
-## Verwendete Tools
-
-Jira
-Confluence
-PowerPoint
-PPM Pro
-
-## Informationstransfer
-
-Abstimmung mit
-Projektleitung
-Abstimmung mit
-Sonderfunktionen
-Abstimmung mit
-Führungskraft-Fachabteilung
-Abstimmung mit
-Führungskraft-IT-AE
-Abstimmung mit
-Führungskraft-IT-Betrieb
-Berichtswesen an die
-Priorunde
-
-## Hilfe und Unterstützung
-
-Projektmanagement-Methodik
-Prozess und Ablauf
-PPM Pro
-
-## Sonstige Hinweise
-
-
+- Jira
+- Confluence
+- PowerPoint
+- PPM Pro
 
 *Quelle: VB Projektmanagement-Handbuch (Confluence) · Stand: 16.06.2026*

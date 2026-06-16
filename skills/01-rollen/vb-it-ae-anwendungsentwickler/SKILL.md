@@ -1,57 +1,43 @@
 ---
 name: vb-it-ae-anwendungsentwickler
-description: VB IT-AE Anwendungsentwickler nach PM-Handbuch. Umsetzung des technischen Fachkonzepts unter Berücksichtigung der IT-Strategie und Programmierrichtl
+description: VB IT-AE Anwendungsentwickler nach PM-Handbuch. Umsetzung des technischen Fachkonzepts unter Berücksichtigung der IT-Strategie und Programmierrichtlinie.
 ---
 
 # VB IT-AE Anwendungsentwickler
 
-## Ziele und Mission
+## Ziel
+Umsetzung des technischen Fachkonzepts unter Berücksichtigung der IT-Strategie und Programmierrichtlinie.
 
-Umsetzung des technischen Fachkonzepts unter Berücksichtigung der IT-Strategie und Programmierrichtline.
+## Vorgehen
+- Bei der Erstellung des technischen Fachkonzepts beraten.
+- Technisches Fachkonzept umsetzen.
+- Komponenten- und Komponentenintegrationstests entwerfen und durchführen.
+- Qualitätssicherung des Source Codes.
+- Code-Reviews durchführen.
+- Statische Code-Analysen und Abdeckungsanalysen durchführen.
 
-## Primaere Aufgaben
+### Verantwortlichkeiten
+- Verantwortet die korrekte Umsetzung der Anforderung.
+- Verantwortet die Codequalität nach den Maßstäben der Programmierrichtlinie.
 
-Beratung bei der Erstellung des technischen Fachkonzepts
-Umsetzung des technischen Fachkonzepts
-Komponenten- und Komponentenintegrationstests entwerfen und durchführen
-Qualitätssicherung des Source Codes
-Code-Reviews durchführen
-Statische Code-Analysen und Abdeckungsanalysen durchführen
+### Abstimmungswege
+- Technisches Consulting in Gesprächsrunden.
+- Abstimmung der IT-Architektur mit dem IT-AE Architekten.
+- Abstimmung der automatischen Tests mit dem IT-AE Testautomatisierer.
+- Abstimmung mit dem Fachbereich.
+- Eskalation problematischer Themen an den IT-AE Koordinator.
 
-## Verantwortet und Entscheidet
+## Regeln / Qualitätskriterien
+- Implementierung ohne Anforderungen ist nicht erlaubt.
+- Erstellung von fachlichen Tests liegt nicht in der Verantwortung.
 
-Verantwortet die korrekte Umsetzung der Anforderung
-Verantwortet die Codequalität nach den Maßstäben der Programmierrichtlinie.
+### Tools
+- Jira, Confluence.
+- In der Programmierrichtlinie festgelegte Entwicklungswerkzeuge.
 
-## Nicht in der Verantwortung
-
-Implementierung ohne Anforderungen
-Erstellung von fachlichen Tests
-
-## Verwendete Tools
-
-Jira
-Confluence
-In der Programmierrichtlinie festgelegt Entwicklungswerkzeuge
-
-## Informationstransfer
-
-Technisches Consulting in Gesprächsrunden
-Abstimmung der IT-Architektur mit dem
-IT-AE Architekt
-en
-Abstimmung der automatischen Tests mit dem
-IT-AE Testautomatisierer
-Abstimmung mit dem Fachbereich
-Eskalation der problematischen Themen an den
-IT-AE Koordinator
-
-## Hilfe und Unterstützung
-
-
-
-## Sonstige Hinweise
-
-
+## Ressourcen
+- vb-it-ae-architekt
+- vb-it-ae-testautomatisierer
+- vb-it-ae-koordinator
 
 *Quelle: VB Projektmanagement-Handbuch (Confluence) · Stand: 16.06.2026*

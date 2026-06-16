@@ -5,50 +5,34 @@ description: VB Tester IT-Betrieb nach PM-Handbuch. Führt die IT-Betrieb nahen 
 
 # VB Tester IT-Betrieb
 
-## Ziele und Mission
+## Ziel
 
 Führt die IT-Betrieb nahen Tests durch.
 
-## Primaere Aufgaben
+## Vorgehen
 
-Mitwirkung an der Erstellung von Testkonzepten und Testplanungen
-Nicht funktionale Anforderungen und Spezifikation im Hinblick auf Klarheit, Vollständigkeit, Widerspruchsfreiheit und Testbarkeit reviewen
-Nicht funktionale Anforderungen analysieren und Testaufgaben daraus ableiten
-Testverfahren entwerfen und dokumentieren, technische Tests implementieren
-Testumgebungen im Hinblick auf Einsatzbereitschaft prüfen und abnehmen
-Tests ausführen und Testausführung sowie Testergebnisse dokumentieren
-Testergebnisse analysieren und Fehler melden
-Fehlerkorrekturen nachtesten
-Testergebnisse bewerten und auf der Grundlage der Bewertung Beiträge zu Freigabeempfehlungen liefern
-Beiträge zur betrieblichen Abnahme liefern
-Unterstützung im Inzident-Management
+- An der Erstellung von Testkonzepten und Testplanungen mitwirken
+- Nicht funktionale Anforderungen und Spezifikation im Hinblick auf Klarheit, Vollständigkeit, Widerspruchsfreiheit und Testbarkeit reviewen
+- Nicht funktionale Anforderungen analysieren und Testaufgaben daraus ableiten
+- Testverfahren entwerfen und dokumentieren, technische Tests implementieren
+- Testumgebungen im Hinblick auf Einsatzbereitschaft prüfen und abnehmen
+- Tests ausführen und Testausführung sowie Testergebnisse dokumentieren
+- Testergebnisse analysieren und Fehler melden
+- Fehlerkorrekturen nachtesten
+- Testergebnisse bewerten und auf der Grundlage der Bewertung Beiträge zu Freigabeempfehlungen liefern
+- Beiträge zur betrieblichen Abnahme liefern
+- Unterstützung im Inzident-Management leisten
+- Mit dem IT-Betrieb Koordinator abstimmen
+- Mit dem Testmanager abstimmen
 
-## Verantwortet und Entscheidet
+## Regeln / Qualitätskriterien
 
-Sicherstellen der Qualität
-Bericht und Dokumentation von Abweichungen
+- Sicherstellen der Qualität
+- Bericht und Dokumentation von Abweichungen
+- NICHT verantwortlich: Erstellung von fachlichen Tests
 
-## Nicht in der Verantwortung
+## Ressourcen
 
-Erstellung von fachlichen Tests
-
-## Verwendete Tools
-
-
-
-## Informationstransfer
-
-Abstimmung mit dem
-IT-Betrieb Koordinator
-Abstimmung mit dem
-Testmanager
-
-## Hilfe und Unterstützung
-
-
-
-## Sonstige Hinweise
-
-
+- Keine
 
 *Quelle: VB Projektmanagement-Handbuch (Confluence) · Stand: 16.06.2026*

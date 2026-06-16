@@ -1,59 +1,35 @@
-# vb-api-design
+---
+name: vb-api-design
+description: Unterstützt bei API-Design, Naming, Versionierung, Fehlerbehandlung und Konsistenz.
+---
 
-## Zweck
+# VB API-Design
 
-Unterstützt bei: API-Design, Naming, Versionierung, Fehlerbehandlung und Konsistenz.
+## Ziel
 
-## Wann verwenden?
+Unterstützt bei: API-Design, Naming, Versionierung, Fehlerbehandlung und Konsistenz. Verwenden bei technischen Aufgaben im jeweiligen Themenbereich.
 
-Verwenden bei technischen Aufgaben im jeweiligen Themenbereich.
+## Vorgehen
 
-## Typische Eingaben
+- Technischen Kontext klären
+- Ziel und Nicht-Ziel bestimmen
+- Relevante Standards prüfen
+- Lösung oder Review strukturiert ausarbeiten
+- Risiken, Tests und Dokumentation berücksichtigen
+- Offene Fragen markieren
 
-- technische Aufgabe
-- Kontext
-- vorhandene Artefakte
-- gewünschtes Ergebnis
-- bekannte Randbedingungen
+## Regeln / Qualitätskriterien
 
-## Vorgehensmodell
+- Bekannte VB-Standards berücksichtigen
+- Technische Annahmen sichtbar machen
+- Nicht belegte Details nicht als Standard ausgeben
+- Keine verbindlichen Entscheidungen treffen
+- Keine nicht belegten Standards erfinden
+- Fehlende Informationen als offene Fragen markieren
 
-1. technischen Kontext klären.
-2. Ziel und Nicht-Ziel bestimmen.
-3. relevante Standards prüfen.
-4. Lösung oder Review strukturiert ausarbeiten.
-5. Risiken, Tests und Dokumentation berücksichtigen.
-6. offene Fragen markieren.
-
-## Typische Ausgaben
-
-- technischer Entwurf
-- Reviewhinweise
-- Checkliste
-- Risiken
-- offene Fragen
-
-## Qualitätskriterien
-
-- bekannte VB-Standards berücksichtigen
-- technische Annahmen sichtbar machen
-- nicht belegte Details nicht als Standard ausgeben
-
-## Grenzen / Nicht-Aufgaben
-
-- keine verbindlichen Entscheidungen treffen
-- keine nicht belegten Standards erfinden
-- fehlende Informationen als offene Fragen markieren
-
-## Übergaben an andere Skills
+## Ressourcen
 
 - Standards: vb-technologiestandards
 - Architektur: vb-architekturprozess
 - Umsetzung: vb-it-ae-entwickler
 - Review: vb-code-review
-
-## Beispielprompts
-
-```text
-Bitte unterstütze mich mit diesem Skill und frage zuerst die fehlenden Informationen ab.
-```

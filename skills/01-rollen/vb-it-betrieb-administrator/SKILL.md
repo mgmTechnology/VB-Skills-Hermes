@@ -5,63 +5,45 @@ description: VB IT-Betrieb Administrator nach PM-Handbuch. Umsetzung des technis
 
 # VB IT-Betrieb Administrator
 
-## Ziele und Mission
-
+## Ziel
 Umsetzung des technischen Fachkonzepts unter Berücksichtigung der IT-Strategie.
 
-## Primaere Aufgaben
+## Vorgehen
+- Bei der Erstellung des technischen Fachkonzepts beraten.
+- Technisches Fachkonzept umsetzen.
 
-Beratung bei der Erstellung des technischen Fachkonzepts
-Umsetzung des technischen Fachkonzepts
-IT-Server/Cloud Infrastruktur / IT-Netzwerk&Security
-Bereitstellung von Serversystemen / Infrastrukturkomponenten
-Bereitstellung von Netzwerk und -sicherheitssystemen
-IT-AD/Exchange/Anwendungsmanagement&Datenbanken
-Installation / Einrichtung von Anwendungen auf Serversystemen
-Erstellung der Datenbanken
-Umsetzung des Berechtigungskonzepts anhand von Sicherheitsgruppen
+### IT-Server/Cloud Infrastruktur / IT-Netzwerk & Security
+- Bereitstellung von Serversystemen / Infrastrukturkomponenten.
+- Bereitstellung von Netzwerk und -sicherheitssystemen.
 
-## Verantwortet und Entscheidet
+### IT-AD/Exchange/Anwendungsmanagement & Datenbanken
+- Installation / Einrichtung von Anwendungen auf Serversystemen.
+- Erstellung der Datenbanken.
+- Umsetzung des Berechtigungskonzepts anhand von Sicherheitsgruppen.
 
-Verantwortet die korrekte Umsetzung der Datenbank-Anforderung
+### Verantwortlichkeiten
+- Verantwortet die korrekte Umsetzung der Datenbank-Anforderung.
 
-## Nicht in der Verantwortung
+### Abstimmungswege
+- Technisches Consulting in Gesprächsrunden.
+- Abstimmung mit IT-AE Architekten.
+- Abstimmung mit IT-Betrieb Client Service.
+- Abstimmung mit IT-Betrieb Produktion.
+- Abstimmung mit IT-Betrieb Change Manager.
+- Ggf. Abstimmung der automatischen Tests mit Tester IT-Betrieb.
+- Eskalation problematischer Themen an IT-Betrieb Koordinator.
 
-Implementierung ohne Anforderungen
-Erstellung von fachlichen Tests
+## Regeln / Qualitätskriterien
+- Implementierung ohne Anforderungen ist nicht erlaubt.
+- Erstellung von fachlichen Tests liegt nicht in der Verantwortung.
+- IT-Betrieb.
 
-## Verwendete Tools
+### Tools
+- Jira, Confluence.
+- Datenbankwerkzeuge, Systemverwaltung, Remoteverwaltung, Activeroles / ZBBV.
 
-Jira
-Confluence
-Datenbankwerkzeuge
-Systemverwaltung
-Remoteverwaltung
-Activeroles / ZBBV
-
-## Informationstransfer
-
-Technisches Consulting in Gesprächsrunden
-Abstimmung mit
-IT-AE Architekt
-en
-Abstimmung mit
-IT-Betrieb Client Service
-Abstimmung mit
-IT-Betrieb Produktion
-Abstimmung mit
-IT-Betrieb Change Manager
-ggf. Abstimmung der automatischen Tests mit dem
-Tester IT-Betrieb
-Eskalation der problematischen Themen an den
-IT-Betrieb Koordinator
-
-## Hilfe und Unterstützung
-
-
-
-## Sonstige Hinweise
-
-IT-Betrieb
+## Ressourcen
+- vb-it-ae-architekt
+- vb-it-betrieb-change-manager
 
 *Quelle: VB Projektmanagement-Handbuch (Confluence) · Stand: 16.06.2026*

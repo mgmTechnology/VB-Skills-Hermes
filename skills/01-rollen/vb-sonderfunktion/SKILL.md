@@ -1,51 +1,36 @@
 ---
 name: vb-sonderfunktion
-description: VB Sonderfunktion nach PM-Handbuch. Sicherstellung der sonderfunktionsrelevanten Anforderungen (bspw. zum Datenschutz, Informationssiche
+description: VB Sonderfunktion nach PM-Handbuch. Sicherstellung der sonderfunktionsrelevanten Anforderungen (z.B. Datenschutz, Informationssicherheit).
 ---
 
 # VB Sonderfunktion
 
-## Ziele und Mission
+## Ziel
 
-Sicherstellung der sonderfunktionsrelevanten Anforderungen (bspw. zum Datenschutz, Informationssicherheit etc.)
+Sicherstellung der sonderfunktionsrelevanten Anforderungen (bspw. zum Datenschutz, Informationssicherheit etc.).
 
-## Primaere Aufgaben
+## Vorgehen
 
-Prüfen von Projektideen, Change Requests und Projektabschlüssen
-Bereitstellung von sonderfunktionsrelevanten Informationen und Hilfestellungen
-Teilnahme und Sicherstellung der Vertretungsregelung im "Kick-Off-Sonderfunktionen"
-Unterstützung
+- Projektideen, Change Requests und Projektabschlüsse prüfen
+- Sonderfunktionsrelevante Informationen und Hilfestellungen bereitstellen
+- Teilnahme und Sicherstellung der Vertretungsregelung im "Kick-Off-Sonderfunktionen"
+- Unterstützung leisten
+- Mit Projektleitung abstimmen
+- Mit Multi-Projekt-Management abstimmen
+- Erste Rückfragen im "Kick-Off-Sonderfunktionen" klären
 
-## Verantwortet und Entscheidet
+## Regeln / Qualitätskriterien
 
-Zur Kenntnisnahme von Projektideen
-Genehmigung von Projektvorlagen & Projektabschlüssen
+- Zur Kenntnisnahme von Projektideen
+- Genehmigung von Projektvorlagen & Projektabschlüssen
+- NICHT verantwortlich: Entscheidungsgrundlage erstellen (Kick-Off-Sonderfunktionen), inhaltliche Mitwirkung in Projekten
+- Die bedarfsgerechte Involvierung erfolgt nach Vorstellung des Projektvorhabens durch die Projektleitung
 
-## Nicht in der Verantwortung
+## Ressourcen
 
-Entscheidungsgrundlage erstellen (Kick-Off-Sonderfunktionen)
-Inhaltliche Mitwirkung in Projekten
-
-## Verwendete Tools
-
-Jira
-Confluence
-PowerPoint
-PPM Pro
-
-## Informationstransfer
-
-Abstimmung mit
-Projektleitung
-Abstimmung mit
-Multi-Projekt-Management
-
-## Hilfe und Unterstützung
-
-Klärung erster Rückfragen im "Kick-Off-Sonderfunktionen"
-
-## Sonstige Hinweise
-
-Die bedarfsgerechte Involvierung erfolgt nach Vorstellung des Projektvorhaben durch die Projektleitung
+- Jira
+- Confluence
+- PowerPoint
+- PPM Pro
 
 *Quelle: VB Projektmanagement-Handbuch (Confluence) · Stand: 16.06.2026*

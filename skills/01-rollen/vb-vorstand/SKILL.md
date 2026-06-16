@@ -1,58 +1,34 @@
 ---
 name: vb-vorstand
-description: VB Vorstand nach PM-Handbuch. Sicherstellen, dass das Projektportfolio auf die Unternehmensstrategie abgestimmt ist
-ggf. Impulsgeb
+description: VB Vorstand nach PM-Handbuch. Sicherstellen, dass das Projektportfolio auf die Unternehmensstrategie abgestimmt ist.
 ---
 
 # VB Vorstand
 
-## Ziele und Mission
+## Ziel
 
-Sicherstellen, dass das Projektportfolio auf die Unternehmensstrategie abgestimmt ist
-ggf. Impulsgeber für Projekte / Projektideen
+Sicherstellen, dass das Projektportfolio auf die Unternehmensstrategie abgestimmt ist. Ggf. Impulsgeber für Projekte / Projektideen.
 
-## Primaere Aufgaben
+## Vorgehen
 
-Entscheidungsfindung in letzter Instanz
-Sicherstellung der Priorisierung, Überwachung und Steuerung des Projektportfolios seines Ressorts
-Teilnahme an
-Priorunde
+- Entscheidungsfindung in letzter Instanz betreiben
+- Priorisierung, Überwachung und Steuerung des Projektportfolios seines Ressorts sicherstellen
+- An Priorunde teilnehmen
+- Konfliktsituationen auflösen
+- An Lenkungsausschüssen teilnehmen
+- Mit F1ern abstimmen
+- Mit Führungskraft-Fachabteilung abstimmen
+- Mit Führungskraft-IT-AE abstimmen
+- Mit Führungskraft-IT-Betrieb abstimmen
+- Mit MPM abstimmen
+- Mit Projektleitung abstimmen
 
-## Verantwortet und Entscheidet
+## Regeln / Qualitätskriterien
 
-Auflösen von Konfliktsituationen
-Teilnahme an
-Lenkungssauschüssen
+- Sicherstellen, dass das Projektportfolio auf die Unternehmensstrategie abgestimmt ist
 
-## Nicht in der Verantwortung
+## Ressourcen
 
-
-
-## Verwendete Tools
-
-PowerPoint
-
-## Informationstransfer
-
-Abstimmung mit
-F1er
-Abstimmung mit
-Führungskraft-Fachabteilung
-Abstimmung mit
-Führungskraft-IT-AE
-Abstimmung mit
-Führungskraft-IT-Betrieb
-Abstimmung mit
-MPM
-Abstimmung mit
-Projektleitung
-
-## Hilfe und Unterstützung
-
-
-
-## Sonstige Hinweise
-
-
+- PowerPoint
 
 *Quelle: VB Projektmanagement-Handbuch (Confluence) · Stand: 16.06.2026*

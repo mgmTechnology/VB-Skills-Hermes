@@ -5,77 +5,53 @@ description: VB-Projektleitung nach PM-Handbuch. Aufgaben, Verantwortungen, Tool
 
 # VB Projektleitung
 
-## Ziele und Mission
+## Ziel
 
 Verantwortet den erfolgreichen Projektabschluss, vertritt die Projektinteressen im Haus, sorgt für transparente Kommunikation und fördert die Motivation innerhalb des Projektteams.
 
-## Primäre Aufgaben
+## Vorgehen
 
 ### Projektinitiierung
-- Aufnahme des ersten Projektimpulses: Sinnhaftigkeit hinterfragen, Zieldefinition, Gestaltung der Projektidee
-- Ansprech- und Sparringspartner bei organisatorischen und projektspezifischen Fragen (schon ab Projektidee)
+- Ersten Projektimpuls aufnehmen: Sinnhaftigkeit hinterfragen, Zieldefinition, Gestaltung der Projektidee
+- Als Ansprech- und Sparringspartner bei organisatorischen und projektspezifischen Fragen fungieren (schon ab Projektidee)
 
 ### Projektplanung
-- Erstellung Projektplan: Ziele, Zwischenziele, Terminplan, Budgetrahmen, Ressourcen
-- Zugehen auf die betroffenen Abteilungen zur Erstellung eines Projektteams
-- Sicherstellung, dass alle relevanten Abteilungen rechtzeitig eingebunden werden
+- Projektplan erstellen: Ziele, Zwischenziele, Terminplan, Budgetrahmen, Ressourcen
+- Auf die betroffenen Abteilungen zugehen zur Erstellung eines Projektteams
+- Sicherstellen, dass alle relevanten Abteilungen rechtzeitig eingebunden werden
 
 ### Projektdurchführung und Steuerung
-- Steuerung des Projektes (insbesondere Zeitplanung, Budget und Ressourcen)
+- Projekt steuern (insbesondere Zeitplanung, Budget und Ressourcen)
 - Regelmäßige Abstimmung mit Auftraggebern, Fachbereichen, Koordinatoren und anderen Beteiligten
-- Sicherstellung einer transparenten Kommunikation
+- Transparente Kommunikation sicherstellen
 - Reporting über Projektstatus, Überblick über Abhängigkeiten und Eskalation von Problemen
-- Delegation von Aufgaben an Projektmitglieder
+- Aufgaben an Projektmitglieder delegieren
 - Motivation und Konfliktmanagement innerhalb des Teams
-- Förderung der Zusammenarbeit und Problemlösung
-- Change-Management
+- Zusammenarbeit und Problemlösung fördern
+- Change-Management betreiben
+- Regelmäßige Abstimmung mit dem gesamten Projektteam, Lenkungsausschuss/Stakeholdern, betroffenen Führungskräften und externen Mitarbeitern
 
 ### Projektabschluss
-- Sicherstellung der Übergabe an Produktion/Betrieb
-- Unterstützung bei Schulungen oder Einführung neuer Prozesse/Systeme
+- Übergabe an Produktion/Betrieb sicherstellen
+- Bei Schulungen oder Einführung neuer Prozesse/Systeme unterstützen
 - Lessons Learned organisieren
 
-## Verantwortet und Entscheidet
+## Regeln / Qualitätskriterien
 
-| Thema | Beschreibung |
-|---|---|
-| Steuerung des Projektes | Zeit, Budget, Ressourcen |
-| Fortschritt des Projektes | Status, Meilensteine, Abhängigkeiten |
-| Change-Management | Änderungen bewerten und steuern |
-| Delegation | Aufgabenverteilung an Projektmitglieder |
-
-## Nicht in der Verantwortung
-
-- Fachliche Vorgaben (liegen bei Fachbereich)
-- Umsetzung (liegt bei IT-AE Entwickler/Architekt)
-
-## Verwendete Tools
-
-- **Jira** — Aufgabenverfolgung, Status, Abhängigkeiten
-- **Confluence** — Dokumentation, Projektwissen
-- **PPM Pro** — Portfolio- und Projektmanagement
-
-## Kommunikation und Schnittstellen
-
-| Schnittstelle | Inhalt |
-|---|---|
-| Gesamtes Projektteam | Regelmäßige Abstimmung |
-| Lenkungsausschuss / Stakeholder | Statusberichte, Eskalation, Freigaben |
-| Betroffene Führungskräfte | Ressourcen, Prioritäten, Konflikte |
-| Externe Mitarbeiter | Einbindung, Steuerung |
-
-## Hilfe und Unterstützung
-
-- Behält Themen und Abhängigkeiten im Blick und eskaliert bei Bedarf
-- Ansprechpartner für organisatorische und projektspezifische Fragen
-
-## Sonstige Hinweise
-
+- Verantwortet Steuerung des Projektes: Zeit, Budget, Ressourcen
+- Verantwortet Fortschritt des Projektes: Status, Meilensteine, Abhängigkeiten
+- Verantwortet Change-Management: Änderungen bewerten und steuern
+- Verantwortet Delegation: Aufgabenverteilung an Projektmitglieder
+- NICHT verantwortlich: Fachliche Vorgaben (liegen bei Fachbereich), Umsetzung (liegt bei IT-AE Entwickler/Architekt)
 - Bei Fachbereichsprojekten oft in Personalunion mit Fachbereichskoordinator
-- Diese Definition gilt ebenfalls für die Rolle der Teilprojektleitung
+- Definition gilt ebenfalls für die Rolle der Teilprojektleitung
+- Behält Themen und Abhängigkeiten im Blick und eskaliert bei Bedarf
 
-## Einordnung in VB-Skill-Plattform
+## Ressourcen
 
-Verwandte Skills: vb-projekt-initialisierung (Projektstart), vb-fachbereichskoordinator (Personalunion), vb-lenkungsausschuss-vorbereitung (Statusberichte), vb-senior-pm (Portfolio), vb-jira-experte (Tool)
+- Jira — Aufgabenverfolgung, Status, Abhängigkeiten
+- Confluence — Dokumentation, Projektwissen
+- PPM Pro — Portfolio- und Projektmanagement
+- Verwandte Skills: vb-projekt-initialisierung, vb-fachbereichskoordinator, vb-lenkungsausschuss-vorbereitung, vb-senior-pm, vb-jira-experte
 
 *Quelle: VB Projektmanagement-Handbuch (Confluence) · Stand: 16.06.2026*

@@ -1,50 +1,31 @@
 ---
 name: vb-it-betrieb-change-manager
-description: VB IT-Betrieb Change Manager nach PM-Handbuch. Autorisiert / dokumentiert sämtliche Änderungen an der IT-Infrastruktur und ihrer Komponenten.
+description: VB IT-Betrieb Change Manager nach PM-Handbuch. Autorisiert und dokumentiert sämtliche Änderungen an der IT-Infrastruktur und ihrer Komponenten.
 ---
 
 # VB IT-Betrieb Change Manager
 
-## Ziele und Mission
+## Ziel
+Autorisiert und dokumentiert sämtliche Änderungen an der IT-Infrastruktur und ihrer Komponenten.
 
-Autorisiert / dokumentiert sämtliche Änderungen an der IT-Infrastruktur und ihrer Komponenten.
+## Vorgehen
+- Störende Auswirkungen auf den IT-Betrieb bewerten.
+- Änderungen an Infrastruktur und Komponenten freigeben.
+- Ggf. Einbindung des CAB (Change Advisory Board).
 
-## Primaere Aufgaben
+### Verantwortlichkeiten
+- Verantwortet die Beschreibung der Änderungen.
 
-Bewertet störende Auswirkungen auf den IT-Betrieb
-Gibt Änderungen an Infrastruktur und Komponenten frei
-ggf. Einbindung des CAB (Change Advisory Board)
+### Abstimmungswege
+- Technisches Consulting in Gesprächsrunden.
+- Abstimmung mit Projektleitung, IT-AE-/IT-Betrieb Koordinator.
+- Eskalation problematischer Themen an IT-Betrieb Koordinator.
 
-## Verantwortet und Entscheidet
+## Regeln / Qualitätskriterien
+### Tools
+- Jira, Confluence, CAB.
 
-Beschreibung der Änderungen
-
-## Nicht in der Verantwortung
-
-Jira
-Confluence
-CAB
-
-## Verwendete Tools
-
-Technisches Consulting in Gesprächsrunden
-Abstimmung mit Projektleitung,
-IT-AE-
-/
-IT-Betrieb Koordinator
-Eskalation der problematischen Themen an den
-IT-Betrieb Koordinator
-
-## Informationstransfer
-
-
-
-## Hilfe und Unterstützung
-
-
-
-## Sonstige Hinweise
-
-
+## Ressourcen
+- Keine
 
 *Quelle: VB Projektmanagement-Handbuch (Confluence) · Stand: 16.06.2026*

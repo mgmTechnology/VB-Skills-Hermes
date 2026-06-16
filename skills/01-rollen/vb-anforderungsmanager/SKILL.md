@@ -5,69 +5,49 @@ description: VB Anforderungsmanager nach PM-Handbuch. Anforderungsermittlung, Do
 
 # VB Anforderungsmanager
 
-## Ziele und Mission
+## Ziel
+Anforderungen ermitteln, analysieren, dokumentieren, validieren und priorisieren. Schafft die Grundlage für Aufwandsschätzung und Tests, minimiert kostspielige Änderungen in späteren Projektphasen.
 
-Anforderungen ermitteln, analysieren, dokumentieren, validieren und priorisieren. Schafft die Grundlage fuer Aufwandsschaetzung und Tests, minimiert kostspielige Aenderungen in spaeteren Projektphasen.
-
-## Primaere Aufgaben
-
-- Anforderungen der Fachexperten und Stakeholder an das System verstehen und aufbereiten
-- Komplexitaet des Systems fruehzeitig erfassen
-- Grundlage fuer die Aufwandsschaetzung liefern
-- Kostspielige Aenderungen in spaeteren Projektphasen minimieren
-- Voraussetzungen fuer Tests schaffen
-- Aenderungen an Anforderungen beruecksichtigen
-
-## Verantwortet und Entscheidet
-
-| Thema | Beschreibung |
-|---|---|
-| Machbarkeit und Prioritaet | Bewertung und Reihung der Anforderungen |
-| Kommunikation von Aenderungen | Transparente Weitergabe an alle Beteiligten |
-| Art und Detaillierungsgrad | der Anforderungsdokumentation |
-| Konsistenz | der Anforderungsdokumentation |
-| Abnahmekriterien | Definition messbarer Kriterien |
-
-## Nicht in der Verantwortung
-
-- **Technische Umsetzung vorgeben** — Was, aber nicht wie
-- **Testmanagement** — liegt bei Testmanager
-- **Projektmanagement** — liegt bei Projektleitung
-
-## Methoden und Werkzeuge
-
-### Verwendete Tools
-- **Jira** — Anforderungen als User Stories/Issues
-- **Confluence** — Anforderungsdokumentation
-- **Satzschablonen** — User Stories, Acceptance Criteria
-- **Modellierungssprachen** — UML, BPMN fuer Prozessmodellierung
+## Vorgehen
+- Anforderungen der Fachexperten und Stakeholder an das System verstehen und aufbereiten.
+- Komplexität des Systems frühzeitig erfassen.
+- Grundlage für die Aufwandsschätzung liefern.
+- Kostspielige Änderungen in späteren Projektphasen minimieren.
+- Voraussetzungen für Tests schaffen.
+- Änderungen an Anforderungen berücksichtigen.
 
 ### Ermittlungsmethoden
-- Interviews mit Stakeholdern
-- Frageboegen
-- Feldbeobachtung
-- Workshops und Brainstorming
-- Systemarchaeologie (bestehende Systeme analysieren)
-- Wiederverwendung vorhandener Anforderungen
+- Interviews mit Stakeholdern, Fragebögen, Feldbeobachtung.
+- Workshops und Brainstorming.
+- Systemarchäologie (bestehende Systeme analysieren).
+- Wiederverwendung vorhandener Anforderungen.
 
-## Kommunikation und Schnittstellen
+### Verantwortlichkeiten
+- Bewertung und Reihung der Anforderungen (Machbarkeit und Priorität).
+- Transparente Kommunikation von Änderungen an alle Beteiligten.
+- Art und Detaillierungsgrad der Anforderungsdokumentation.
+- Konsistenz der Anforderungsdokumentation.
+- Definition messbarer Abnahmekriterien.
 
-| Schnittstelle | Inhalt |
-|---|---|
-| Fachexperten | Enge Abstimmung in der Umsetzung |
-| IT-AE | Uebergabe priorisierter Anforderungen |
-| Stakeholder | Validierung und Abnahme |
+## Regeln / Qualitätskriterien
+- Technische Umsetzung nicht vorgeben — Was, aber nicht Wie.
+- Testmanagement liegt bei Testmanager.
+- Projektmanagement liegt bei Projektleitung.
+- Enge Abstimmung mit Fachexperten in der Umsetzung.
+- Übergabe priorisierter Anforderungen an IT-AE.
+- Stakeholder-Validierung und Abnahme.
 
-## Einordnung in VB-Skill-Plattform
+### Tools
+- Jira — Anforderungen als User Stories/Issues.
+- Confluence — Anforderungsdokumentation.
+- Satzschablonen — User Stories, Acceptance Criteria.
+- Modellierungssprachen — UML, BPMN für Prozessmodellierung.
 
-Verwandte Skills:
-
-| Skill | Schnittstelle |
-|---|---|
-| vb-fachexperte | Quelle der fachlichen Anforderungen |
-| vb-business-analyst | Fachliche Analyse und Aufbereitung |
-| vb-it-ae-entwickler | Umsetzung der Anforderungen |
-| vb-testmanager | Abnahmekriterien als Testbasis |
-| vb-projektleitung | Aufwandsschaetzung und Priorisierung |
+## Ressourcen
+- vb-fachexperte — Quelle der fachlichen Anforderungen
+- vb-business-analyst — Fachliche Analyse und Aufbereitung
+- vb-it-ae-entwickler — Umsetzung der Anforderungen
+- vb-testmanager — Abnahmekriterien als Testbasis
+- vb-projektleitung — Aufwandsschätzung und Priorisierung
 
 *Quelle: VB Projektmanagement-Handbuch (Confluence) · Stand: 16.06.2026*

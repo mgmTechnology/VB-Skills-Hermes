@@ -5,58 +5,34 @@ description: VB IT-Betrieb Produktion nach PM-Handbuch. Umsetzung des technische
 
 # VB IT-Betrieb Produktion
 
-## Ziele und Mission
+## Ziel
 
 Umsetzung des technischen Fachkonzepts unter Berücksichtigung der IT-Strategie.
 
-## Primaere Aufgaben
+## Vorgehen
 
-Beratung bei der Erstellung des technischen Fachkonzepts unter dem
-Aspekt der Batchverarbeitung und der Automatisierung
-Umsetzung des technischen Fachkonzepts
-Erstellung von automatisierten Abläufen für die jeweilige Anwendung
-inkl. Terminierung und Monitoring
+- Bei der Erstellung des technischen Fachkonzepts unter dem Aspekt der Batchverarbeitung und Automatisierung beraten
+- Technisches Fachkonzept umsetzen
+- Automatisierte Abläufe für die jeweilige Anwendung erstellen (inkl. Terminierung und Monitoring)
+- Technisches Consulting in Gesprächsrunden geben
+- Mit IT-AE Architekten abstimmen
+- Mit IT-Betrieb Client Service abstimmen
+- Mit IT-Betrieb Administrator abstimmen
+- Mit IT-Betrieb Change Manager abstimmen
+- Ggf. automatische Tests mit dem Tester IT-Betrieb abstimmen
+- Problematische Themen an den IT-Betrieb Koordinator eskalieren
 
-## Verantwortet und Entscheidet
+## Regeln / Qualitätskriterien
 
-Verantwortet die korrekte Umsetzung der Anforderung
+- Verantwortet die korrekte Umsetzung der Anforderung
+- NICHT verantwortlich: Implementierung ohne Anforderungen, Erstellung von fachlichen Tests
 
-## Nicht in der Verantwortung
+## Ressourcen
 
-Implementierung ohne Anforderungen
-Erstellung von fachlichen Tests
-
-## Verwendete Tools
-
-Jira
-Confluence
-Streamworks
-Gamma
-eigene Hilfsscripte
-
-## Informationstransfer
-
-Technisches Consulting in Gesprächsrunden
-Abstimmung mit
-IT-AE Architekt
-en
-Abstimmung mit
-IT-Betrieb Client Service
-Abstimmung mit
-IT-Betrieb Administrator
-Abstimmung mit
-IT-Betrieb Change Manager
-ggf. Abstimmung der automatischen Tests mit dem
-Tester IT-Betrieb
-Eskalation der problematischen Themen an den
-IT-Betrieb Koordinator
-
-## Hilfe und Unterstützung
-
-
-
-## Sonstige Hinweise
-
-
+- Jira
+- Confluence
+- Streamworks
+- Gamma
+- eigene Hilfsscripte
 
 *Quelle: VB Projektmanagement-Handbuch (Confluence) · Stand: 16.06.2026*

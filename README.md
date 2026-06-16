@@ -74,6 +74,7 @@ IntelliJ neu starten. Fertig – Junie liest `.junie/rules.md` und alle Skills d
 ```bash
 cp -r C:/Dev/Github/VB\ Lotse/.junie C:/Dev/Github/DEIN-PROJEKT/
 cp -r C:/Dev/Github/VB\ Lotse/skills C:/Dev/Github/DEIN-PROJEKT/
+cp -r C:/Dev/Github/VB\ Lotse/docs/referenzen C:/Dev/Github/DEIN-PROJEKT/docs/
 ```
 
 #### Test-Prompt
@@ -182,6 +183,31 @@ Fuer alle gilt das gleiche Prinzip: `skills/01-rollen/vb-lotse/SKILL.md` als Ein
 
 ---
 
+## Umgang mit Referenzen (BiPRO-Doku, Release-Regeln, Kalender)
+
+Einige Skills nutzen **Referenzdokumente** unter `docs/referenzen/Webservices-Strategie/`:
+- `BiPRO_TAA_Leben_Gesamtdokumentation_v3.html` (136 KB)
+- `BiPRO_TAA_Leben_Einarbeitungsplan.html` (51 KB)
+- `release-java-anwendungen-vsl-finalisierung.md` (12 KB)
+- `release-planung-regeln.md` (2,8 KB)
+- `kalender-nrw-regeln.md` (2 KB)
+
+**Diese Dateien muessen je nach Werkzeug unterschiedlich behandelt werden:**
+
+| Werkzeug | Referenzen verfuegbar? | Was tun? |
+|---|---|---|
+| **Hermes** | ✅ Automatisch | Nichts – Referenzen werden bei `skill_view()` mitgeladen |
+| **Junie – Weg A** (Referenzieren) | ✅ Automatisch | Additional Context auf `C:\Dev\Github\VB Lotse\` → Referenzen sind da |
+| **Junie – Weg B** (Kopieren) | ❌ Muss kopiert werden | `cp -r docs/referenzen/` ins Projekt |
+| **Claude Code** | ✅ Wenn aus Repo gestartet | `cd C:\Dev\Github\VB Lotse && claude` – Referenzen liegen dann relativ |
+| **Claude Desktop** | ❌ Nur wenn Projekt-Pfad gesetzt | Project-Path auf Repo setzen (siehe oben) |
+| **ChatGPT / Gemini** | ❌ Im ZIP mitliefern | `docs/referenzen/` mit in das ZIP packen |
+
+**Faustregel:** Wenn du das Repo referenzierst (empfohlen), sind Referenzen automatisch da.
+Wenn du kopierst (standalone), `docs/referenzen/` mitkopieren.
+
+---
+
 ## Verzeichnisstruktur
 
 ```
@@ -205,6 +231,15 @@ C:\Dev\Github\VB Lotse\
 │   └── HTML/
 │       ├── Projektmanagement/      (Rollenbeschreibung, Prozesse...)
 │       └── Architektur/            (Randbedingungen, arc42...)
+│
+├── docs/referenzen/Webservices-Strategie/
+│   ├── BiPRO_TAA_Leben_Gesamtdokumentation_v3.html
+│   ├── BiPRO_TAA_Leben_Einarbeitungsplan.html
+│   ├── GRUPPENSTECKBRIEF.md
+│   ├── kalender-nrw-regeln.md
+│   ├── REFERENZEN.md
+│   ├── release-java-anwendungen-vsl-finalisierung.md
+│   └── release-planung-regeln.md
 │
 ├── skills/                      ← 77 VB-Fachskills
 │   ├── 00-prozess/  13 Skills  (vb-analyse, vb-test, vb-review...)

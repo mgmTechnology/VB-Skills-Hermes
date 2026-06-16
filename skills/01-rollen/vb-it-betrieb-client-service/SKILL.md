@@ -5,59 +5,38 @@ description: VB IT-Betrieb Client Service nach PM-Handbuch. Umsetzung des techni
 
 # VB IT-Betrieb Client Service
 
-## Ziele und Mission
-
+## Ziel
 Umsetzung des technischen Fachkonzepts unter Berücksichtigung der IT-Strategie.
 
-## Primaere Aufgaben
+## Vorgehen
+- Bei der Erstellung des technischen Fachkonzepts beraten.
+- Technisches Fachkonzept umsetzen.
+- Softwarepaketierung.
+- Test Clientsoftware.
 
-Beratung bei der Erstellung des technischen Fachkonzepts
-Umsetzung des technischen Fachkonzepts
-Softwarepaketierung
-Test Clientsoftware
+### Verantwortlichkeiten
+- Verantwortet die korrekte Umsetzung der Anforderung.
 
-## Verantwortet und Entscheidet
+### Abstimmungswege
+- Technisches Consulting in Gesprächsrunden.
+- Abstimmung mit IT-AE Architekten.
+- Abstimmung mit IT-Betrieb Datenbankadministrator.
+- Abstimmung mit IT-Betrieb Produktion.
+- Abstimmung mit IT-Betrieb Anwendungsmanagement.
+- Abstimmung mit IT-Betrieb Infrastruktur.
+- Abstimmung mit IT-Betrieb Change Manager.
+- Ggf. Abstimmung der automatischen Tests mit Tester IT-Betrieb.
+- Eskalation problematischer Themen an IT-Betrieb Koordinator.
 
-Verantwortet die korrekte Umsetzung der Anforderung
+## Regeln / Qualitätskriterien
+- Implementierung ohne Anforderungen ist nicht erlaubt.
+- Erstellung von fachlichen Tests liegt nicht in der Verantwortung.
 
-## Nicht in der Verantwortung
+### Tools
+- Jira, Confluence, Softwareverteilung.
 
-Implementierung ohne Anforderungen
-Erstellung von fachlichen Tests
-
-## Verwendete Tools
-
-Jira
-Confluence
-Softwareverteilung
-
-## Informationstransfer
-
-Technisches Consulting in Gesprächsrunden
-Abstimmung mit
-IT-AE Architekt
-en
-Abstimmung mit
-IT-Betrieb Datenbankandministrator
-Abstimmung mit
-IT-Betrieb Produktion
-Abstimmung mit
-IT-Betrieb Anwendungsmanagement
-Abstimmung mit
-IT-Betrieb Infrastruktur
-Abstimmung mit
-IT-Betrieb Change Manager
-ggf. Abstimmung der automatischen Tests mit dem
-Tester IT-Betrieb
-Eskalation der problematischen Themen an den
-IT-Betrieb Koordinator
-
-## Hilfe und Unterstützung
-
-
-
-## Sonstige Hinweise
-
-
+## Ressourcen
+- vb-it-ae-architekt
+- vb-it-betrieb-change-manager
 
 *Quelle: VB Projektmanagement-Handbuch (Confluence) · Stand: 16.06.2026*

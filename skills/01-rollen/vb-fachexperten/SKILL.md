@@ -5,55 +5,35 @@ description: VB Fachexperten nach PM-Handbuch. Fachwissen einbringen und fachlic
 
 # VB Fachexperten
 
-## Ziele und Mission
-
+## Ziel
 Fachwissen einbringen und fachliche Sinnhaftigkeit des Projektvorhabens sicherstellen.
 
-## Primaere Aufgaben
+## Vorgehen
+- Als Ansprechpartner bei fachlichen Fragen fungieren (schon ab Projektidee).
+- Spezifisches Wissen zu Prozessen, Produkten und/oder regulatorischen Anforderungen einbringen (Personen aus dem Tagesgeschäft).
+- Expertenwissen zum IST im laufenden Betrieb: ggf. Beschreibung/Dokumentation.
+- Durch Erfahrung Ideengeber für Verbesserungen im PLAN sein.
+- Bekannte Abhängigkeiten und Fallstricke rund um die Fachlichkeit benennen.
+- Als Sparringspartner beim PLAN agieren.
+- Ggf. Schulung anderer Teammitglieder zu relevanten Themen.
 
-Ansprechpartner bei fachlichen Fragen (schon ab Projektidee)
-In der Regel Personen, die sich im Tagesgeschäft mit dem/einem Themenkomplex des Projektes beschäftigen und daher
-ihr spezifisches Wissen zu Prozessen, Produkten und/oder regulatorischen Anforderungen einbringen können.
-Experten für das IST im laufenden Betrieb: ggf. Beschreibung/Dokumentation.
-Durch die Erfahrung Ideengeber für Verbesserungen im PLAN.
-Bekannte Abhängigkeiten und Fallstricke rund um die Fachlichkeit benennen.
-Sparringspartner beim PLAN.
-ggf. Schulung anderer Teammitglieder zu relevanten Themen.
+### Verantwortlichkeiten
+- Verantwortet die Sinnhaftigkeit neuer fachlicher Anforderungen.
+- Sicherstellung inhaltlicher Qualität, Praxistauglichkeit und fachlicher Korrektheit.
 
-## Verantwortet und Entscheidet
+### Abstimmungswege
+- Abstimmung mit Projektleitung, Fachbereichs-Koordinator, Business Analyst, Anforderungsmanager, Fachtester.
 
-Die Sinnhaftigkeit neuer fachlicher Anforderungen.
-Sicherstellung inhaltliche Qualität, Praxistauglichkeit und fachliche Korrektheit.
+## Regeln / Qualitätskriterien
+- Organisation, Übersetzung in IT-Vorgaben und Umsetzung liegen nicht in der Verantwortung.
+- Enge Zusammenarbeit mit Fachbereichskoordinator, Business Analyst, Anforderungsmanager und Fachtestern — Überschneidung der Aufgaben möglich.
 
-## Nicht in der Verantwortung
+### Tools
+- Confluence.
 
-Organisation
-Übersetzung in IT-Vorgaben
-Umsetzung
-
-## Verwendete Tools
-
-Confluence
-
-## Informationstransfer
-
-Abstimmung mit der
-Projektleitung
-Abstimmung mit dem
-Fachbereichs-Koordinator
-Abstimmung mit dem
-Business Analysten
-Abstimmung mit dem
-Anforderungsmanager
-Abstimmung mit dem
-Fachtester
-
-## Hilfe und Unterstützung
-
-Enge Zusammenarbeit mit Fachbereichskoordinator, Business Analyst, Anforderungsmanager und Fachtestern: Überschneidung der Aufgaben möglich
-
-## Sonstige Hinweise
-
-
+## Ressourcen
+- vb-fachbereichs-koordinator
+- vb-business-analyst
+- vb-anforderungsmanager
 
 *Quelle: VB Projektmanagement-Handbuch (Confluence) · Stand: 16.06.2026*

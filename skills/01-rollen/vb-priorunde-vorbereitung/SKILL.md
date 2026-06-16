@@ -1,59 +1,35 @@
-# vb-priorunde-vorbereitung
+---
+name: vb-priorunde-vorbereitung
+description: Unterstützt die Rolle Priorunde-Vorbereitung bei der Vorbereitung von Priorisierungs- und Entscheidungsunterlagen für die Priorunde.
+---
 
-## Zweck
+# VB Priorunde-Vorbereitung
 
-Unterstützt die Rolle **Priorunde-Vorbereitung** bei: Vorbereitung von Priorisierungs- und Entscheidungsunterlagen für die Priorunde.
+## Ziel
 
-## Wann verwenden?
+Unterstützt die Rolle **Priorunde-Vorbereitung** bei: Vorbereitung von Priorisierungs- und Entscheidungsunterlagen für die Priorunde. Verwenden, wenn Aufgaben, Entscheidungen, Informationen oder Dokumentation aus Sicht der Rolle **Priorunde-Vorbereitung** strukturiert werden sollen.
 
-Verwenden, wenn Aufgaben, Entscheidungen, Informationen oder Dokumentation aus Sicht der Rolle **Priorunde-Vorbereitung** strukturiert werden sollen.
+## Vorgehen
 
-## Typische Eingaben
+- Rollenkontext klären
+- Ziel und erwartetes Ergebnis bestimmen
+- Aufgaben, Verantwortungen und Abgrenzungen beachten
+- Informationen, Abhängigkeiten und Unterstützungsbedarf sammeln
+- Ergebnis strukturiert ausarbeiten
+- Offene Fragen und Eskalationspunkte markieren
 
-- Rollen- oder Projektkontext
-- Ziel
-- vorhandene Informationen
-- gewünschtes Ergebnis
-- offene Fragen
-
-## Vorgehensmodell
-
-1. Rollenkontext klären.
-2. Ziel und erwartetes Ergebnis bestimmen.
-3. Aufgaben, Verantwortungen und Abgrenzungen beachten.
-4. Informationen, Abhängigkeiten und Unterstützungsbedarf sammeln.
-5. Ergebnis strukturiert ausarbeiten.
-6. offene Fragen und Eskalationspunkte markieren.
-
-## Typische Ausgaben
-
-- strukturierte Rollenunterstützung
-- Checkliste
-- offene Fragen
-- Risiken und Abhängigkeiten
-- Dokumentationsentwurf
-
-## Qualitätskriterien
+## Regeln / Qualitätskriterien
 
 - Rollenabgrenzung beachten
-- keine Verantwortung der Rolle verändern
-- keine Entscheidungen vorwegnehmen
-- offene Punkte sichtbar machen
+- Keine Verantwortung der Rolle verändern
+- Keine Entscheidungen vorwegnehmen
+- Offene Punkte sichtbar machen
+- Keine verbindlichen Entscheidungen treffen
+- Keine nicht belegten Standards erfinden
+- Fehlende Informationen als offene Fragen markieren
 
-## Grenzen / Nicht-Aufgaben
-
-- keine verbindlichen Entscheidungen treffen
-- keine nicht belegten Standards erfinden
-- fehlende Informationen als offene Fragen markieren
-
-## Übergaben an andere Skills
+## Ressourcen
 
 - Prozessklärung: vb-lotse
 - Dokumentation: vb-dokumentation
 - Review: vb-review
-
-## Beispielprompts
-
-```text
-Bitte unterstütze mich mit diesem Skill und frage zuerst die fehlenden Informationen ab.
-```

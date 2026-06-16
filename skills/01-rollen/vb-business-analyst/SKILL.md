@@ -1,68 +1,44 @@
 ---
 name: vb-business-analyst
-description: VB Business Analyst nach PM-Handbuch. Analyse der Geschäftsprozesse & detaillierte fachliche Konzepte erstellen.
+description: VB Business Analyst nach PM-Handbuch. Analyse der Geschäftsprozesse und detaillierte fachliche Konzepte erstellen.
 ---
 
 # VB Business Analyst
 
-## Ziele und Mission
+## Ziel
+Analyse der Geschäftsprozesse und Erstellung detaillierter fachlicher Konzepte.
 
-Analyse der Geschäftsprozesse & detaillierte fachliche Konzepte erstellen.
+## Vorgehen
+- Als Ansprechpartner bei fachlich-organisatorischen Fragen fungieren (schon ab Projektidee).
+- Geschäftsprozesse erfassen und modellieren (IST und PLAN).
+- Optimierungspotenziale identifizieren.
+- Fachexperten eng konsultieren zur Sicherstellung von inhaltlicher Qualität, Praxistauglichkeit und fachlicher Korrektheit.
+- Fachliche Anforderungen in fachlich-technische Konzepte übersetzen.
+- Fachkonzepte und Spezifikationen für Entwickler erstellen.
+- Bei der Auswahl geeigneter Systeme oder Softwarelösungen unterstützen.
+- Bei der Entscheidungsfindung unterstützen.
+- Themen und Abhängigkeiten im Blick behalten und bei Bedarf eskalieren.
+- Bei der Definition von Testfällen mitarbeiten.
+- Bei Schulungen oder der Einführung neuer Prozesse/Systeme unterstützen.
 
-## Primaere Aufgaben
+### Verantwortlichkeiten
+- Analysiert, dokumentiert und strukturiert Geschäftsanforderungen.
+- Stellt sicher, dass Lösungen die Bedürfnisse des Unternehmens erfüllen.
 
-Ansprechpartner bei fachlich-organisatorischen Fragen (schon ab Projektidee)
-Erfassen und modellieren der Geschäftsprozesse (IST und PLAN)
-Identifikation von Optimierungspotenzialen
-Enge Konsultation der Fachexperten zur Sicherstellung von
-inhaltlicher Qualität, Praxistauglichkeit und fachlicher Korrektheit
-Übersetzung von fachlichen Anforderungen in fachlich-technische Konzepte
-Erstellung von Fachkonzepten und Spezifikationen für Entwickler
-Unterstützung bei der Auswahl geeigneter Systeme oder Softwarelösungen
-Unterstützung bei der Entscheidungsfindung
-Behält Themen und Abhängigkeiten im Blick und eskaliert bei Bedarf
-Mitarbeit bei der Definition von Testfällen
-Unterstützung bei Schulungen oder der Einführung neuer Prozesse/Systeme
+### Abstimmungswege
+- Abstimmung mit Projektleitung, Fachbereichs-Koordinator, Business Analyst, Anforderungsmanager, Fachtester, Fachexperten, IT-AE-Koordinator, IT-Betrieb-Koordinator.
 
-## Verantwortet und Entscheidet
+## Regeln / Qualitätskriterien
+- IT-Konzept und Umsetzung liegen nicht in der Verantwortung.
+- Enge Zusammenarbeit mit Fachexperten, Business Analyst, Anforderungsmanager und Fachtestern — Überschneidung der Aufgaben möglich.
+- In der Praxis häufig in Personalunion mit Anforderungsmanager und Fachbereichskoordinator.
 
-Analysiert, dokumentiert und strukturiert Geschäftsanforderungen, um sicherzustellen, dass Lösungen die Bedürfnisse des Unternehmens erfüllen.
+### Tools
+- Jira, Confluence.
 
-## Nicht in der Verantwortung
-
-IT-Konzept
-Umsetzung
-
-## Verwendete Tools
-
-Jira
-Confluence
-
-## Informationstransfer
-
-Abstimmung mit der
-Projektleitung
-Abstimmung mit dem
-Fachbereichs-Koordinator
-Abstimmung mit dem
-Business Analysten
-Abstimmung mit dem
-Anforderungsmanager
-Abstimmung mit dem
-Fachtester
-Abstimmung mit den
-Fachexperten
-Abstimmung mit dem
-IT-AE-Koordinator
-Abstimmung mit dem
-IT-Betrieb-Koordinator
-
-## Hilfe und Unterstützung
-
-Enge Zusammenarbeit mit Fachexperten, Business Analyst, Anforderungsmanager und Fachtestern: Überschneidung der Aufgaben möglich
-
-## Sonstige Hinweise
-
-in der Praxis häufig in Personalunion mit Anforderungsmanager & Fachbereichskoordinator
+## Ressourcen
+- vb-fachbereichs-koordinator
+- vb-anforderungsmanager
+- vb-fachexperten
 
 *Quelle: VB Projektmanagement-Handbuch (Confluence) · Stand: 16.06.2026*

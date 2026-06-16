@@ -1,63 +1,39 @@
 ---
 name: vb-lenkungsausschuss-la
-description: VB Lenkungsausschuss (LA) nach PM-Handbuch. Sicherstellen des Projektfortschrittes von
-Großprojekten
+description: VB Lenkungsausschuss (LA) nach PM-Handbuch. Sicherstellen des Projektfortschrittes von Großprojekten.
 ---
 
 # VB Lenkungsausschuss (LA)
 
-## Ziele und Mission
+## Ziel
 
-Sicherstellen des Projektfortschrittes von
-Großprojekten
+Sicherstellen des Projektfortschrittes von Großprojekten.
 
-## Primaere Aufgaben
+## Vorgehen
 
-Entscheidungsfindung
-Überwachung und Steuerung des Projektes
+- Entscheidungsfindung betreiben
+- Projekt überwachen und steuern
+- Konfliktsituationen auflösen
+- Stetigen Projektfortschritt sicherstellen
+- Mit F1ern abstimmen
+- Mit Projektleitungen abstimmen
+- Mit IT-Betrieb Führungskraft abstimmen
+- Mit Führungskraft Fachabteilung abstimmen
+- Mit IT-AE Führungskraft abstimmen
+- Mit IT-AE Koordinator abstimmen
+- Mit IT-Betrieb Koordinator abstimmen
+- Mit Fachbereichs-Koordinator abstimmen
+- Mit Vorstand abstimmen
+- Mit externen Mitarbeitern abstimmen
 
-## Verantwortet und Entscheidet
+## Regeln / Qualitätskriterien
 
-Auflösen von Konfliktsituationen
-Sicherstellen des stetigen Projektfortschrittes
+- Ein LA ist projektbezogen, das gesamte Projektportfolio verantwortet und entscheidet die Priorunde
+- Der LA wird durch die Projektleitung vorbereitet und durchgeführt
 
-## Nicht in der Verantwortung
+## Ressourcen
 
-Ein LA ist projektbezogen, das gesamte Projektportfolio verantwortet und entscheidet die Priorunde
-
-## Verwendete Tools
-
-PowerPoint
-
-## Informationstransfer
-
-Abstimmung mit
-F1er
-Abstimmung mit
-Projektleitungen
-Abstimmung mit
-IT-Betrieb Führungskraft
-Abstimmung mit
-Führungskraft Fachabteilung
-Abstimmung mit
-IT-AE Führungskraft
-Abstimmung mit
-IT-AE Koordinator
-Abstimmung mit
-IT-Betrieb Koordinator
-Abstimmung mit
-Fachbereichs-Koordinator
-Abstimmung mit
-Vorstand
-Abstimmung mit
-Externe Mitarbeiter
-
-## Hilfe und Unterstützung
-
-Zuarbeit durch das gesamte Projektteam
-
-## Sonstige Hinweise
-
-Der LA wird durch die Projektleitung vorbereitet und durchgeführt
+- PowerPoint
+- Zuarbeit durch das gesamte Projektteam
 
 *Quelle: VB Projektmanagement-Handbuch (Confluence) · Stand: 16.06.2026*

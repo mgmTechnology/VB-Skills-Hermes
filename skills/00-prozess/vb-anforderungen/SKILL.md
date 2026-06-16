@@ -1,59 +1,35 @@
+---
+name: vb-anforderungen
+description: Prozess-Skill zur Strukturierung von Anforderungen unabhängig von der konkreten Rolle.
+---
+
 # vb-anforderungen
 
-## Zweck
+## Ziel
+Strukturierung von Anforderungen unabhängig von der konkreten Rolle. Verwenden, wenn aus Analyseergebnissen Anforderungen, User Stories oder Akzeptanzkriterien entstehen sollen.
 
-Prozess-Skill zur Strukturierung von Anforderungen unabhängig von der konkreten Rolle.
+Typische Eingaben: Analysebericht, Fachbeschreibung, Nutzerziel, betroffene Systeme, bekannte Randbedingungen.
 
-## Wann verwenden?
+## Vorgehen
+- Scope klären.
+- Anforderungen extrahieren.
+- Anforderungen gruppieren.
+- Priorisierung vorschlagen.
+- Akzeptanzkriterien formulieren.
+- Testbarkeit prüfen.
+- Offene Punkte kennzeichnen.
 
-Verwenden, wenn aus Analyseergebnissen Anforderungen, User Stories oder Akzeptanzkriterien entstehen sollen.
+Typische Ausgaben: Anforderungsliste, User Stories, Akzeptanzkriterien, Nicht-Scope, offene Fragen.
 
-## Typische Eingaben
+## Regeln / Qualitätskriterien
+- Anforderungen eindeutig und testbar.
+- Keine Implementierungsdetails als fachliche Anforderung ausgeben.
+- Abhängigkeiten sichtbar machen.
+- Keine verbindlichen Entscheidungen treffen.
+- Keine nicht belegten Standards erfinden.
+- Fehlende Informationen als offene Fragen markieren.
 
-- Analysebericht
-- Fachbeschreibung
-- Nutzerziel
-- betroffene Systeme
-- bekannte Randbedingungen
-
-## Vorgehensmodell
-
-1. Scope klären.
-2. Anforderungen extrahieren.
-3. Anforderungen gruppieren.
-4. Priorisierung vorschlagen.
-5. Akzeptanzkriterien formulieren.
-6. Testbarkeit prüfen.
-7. offene Punkte kennzeichnen.
-
-## Typische Ausgaben
-
-- Anforderungsliste
-- User Stories
-- Akzeptanzkriterien
-- Nicht-Scope
-- offene Fragen
-
-## Qualitätskriterien
-
-- Anforderungen eindeutig und testbar
-- keine Implementierungsdetails als fachliche Anforderung ausgeben
-- Abhängigkeiten sichtbar machen
-
-## Grenzen / Nicht-Aufgaben
-
-- keine verbindlichen Entscheidungen treffen
-- keine nicht belegten Standards erfinden
-- fehlende Informationen als offene Fragen markieren
-
-## Übergaben an andere Skills
-
-- bei unklarem Kontext: vb-lotse
-- bei Dokumentationsbedarf: vb-dokumentation
-- bei Reviewbedarf: vb-review oder vb-qualitaetspruefung
-
-## Beispielprompts
-
-```text
-Bitte unterstütze mich mit diesem Skill und frage zuerst die fehlenden Informationen ab.
-```
+## Ressourcen
+- Bei unklarem Kontext: vb-lotse
+- Bei Dokumentationsbedarf: vb-dokumentation
+- Bei Reviewbedarf: vb-review oder vb-qualitaetspruefung

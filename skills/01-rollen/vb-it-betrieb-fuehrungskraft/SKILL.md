@@ -5,52 +5,31 @@ description: VB IT-Betrieb Führungskraft nach PM-Handbuch. Emotionale Personalf
 
 # VB IT-Betrieb Führungskraft
 
-## Ziele und Mission
+## Ziel
 
-Emotionale Personalführung, Motivation und Mitarbeiterentwicklung
+Emotionale Personalführung, Motivation und Mitarbeiterentwicklung. Sicherstellung des effizienten Einsatzes der Ressourcen und Ausräumung von Hindernissen für das Team.
 
-## Primaere Aufgaben
+## Vorgehen
 
-Strategische Planung
-Kapazitätsplanung
-Konfliktlöser
+- Strategische Planung durchführen
+- Kapazitätsplanung erstellen und pflegen
+- Konflikte lösen und Teamhindernisse beseitigen
+- Mitarbeiterentwicklung vorantreiben
+- Abstimmung mit IT-Betrieb Koordinator bei der Planung und Durchführung von Projekten
+- Teilnahme an strategischen Austauschrunden (AWL-Koordinierung, Lenkungsausschuss, IT-Betrieb-/IT-Leiterrunde)
+- IT-Betrieb Führungskraft (F1er) bei Eskalationen einbinden
 
-## Verantwortet und Entscheidet
+## Regeln / Qualitätskriterien
 
-Verantwortet die
-Mitarbeiterentwicklung
-Verantwortet den e
-ffizienten Einsatz der Ressourcen
-Verantwortet die Ausräumung von Hindernissen für das Team
+- Verantwortet die Mitarbeiterentwicklung
+- Verantwortet den effizienten Einsatz der Ressourcen
+- Verantwortet die Ausräumung von Hindernissen für das Team
+- Keine operative Projektarbeit, sondern Führungsverantwortung
 
-## Nicht in der Verantwortung
+## Ressourcen
 
-
-
-## Verwendete Tools
-
-PPM Pro
-Jira
-Confluence
-
-## Informationstransfer
-
-IT-Betrieb Koordinator
-bei der Planung und Durchführung von Projekten
-Abstimmung in strategischen Austauschrunden
-(AWL-Koordinierung,
-Lenkungsausschuss
-, IT-Betrieb-/IT-Leiterrunde)
-IT-Betrieb
-F1er
-bei Eskalationen
-
-## Hilfe und Unterstützung
-
-
-
-## Sonstige Hinweise
-
-
+- PPM Pro
+- Jira
+- Confluence
 
 *Quelle: VB Projektmanagement-Handbuch (Confluence) · Stand: 16.06.2026*

@@ -1,56 +1,34 @@
+---
+name: vb-review
+description: Übergreifender Review-Skill für Dokumente, Konzepte, Anforderungen und Umsetzungsvorschläge.
+---
+
 # vb-review
 
-## Zweck
+## Ziel
+Übergreifender Review für Dokumente, Konzepte, Anforderungen und Umsetzungsvorschläge. Verwenden, wenn ein Ergebnis vor Weitergabe geprüft werden soll.
 
-Übergreifender Review-Skill für Dokumente, Konzepte, Anforderungen und Umsetzungsvorschläge.
+Typische Eingaben: zu prüfendes Artefakt, Zielgruppe, Prüfschwerpunkt, bekannte Standards.
 
-## Wann verwenden?
+## Vorgehen
+- Prüfgegenstand zusammenfassen.
+- Prüfkriterien festlegen.
+- Vollständigkeit prüfen.
+- Widersprüche und Lücken suchen.
+- Risiken bewerten.
+- Konkrete Verbesserungsvorschläge geben.
 
-Verwenden, wenn ein Ergebnis vor Weitergabe geprüft werden soll.
+Typische Ausgaben: Reviewbericht, Befundliste, Verbesserungsvorschläge, Freigabeempfehlung als Entwurf.
 
-## Typische Eingaben
+## Regeln / Qualitätskriterien
+- Konkrete Befunde statt allgemeiner Kritik.
+- Schweregrad benennen.
+- Offene Fragen markieren.
+- Keine verbindlichen Entscheidungen treffen.
+- Keine nicht belegten Standards erfinden.
+- Fehlende Informationen als offene Fragen markieren.
 
-- zu prüfendes Artefakt
-- Zielgruppe
-- Prüfschwerpunkt
-- bekannte Standards
-
-## Vorgehensmodell
-
-1. Prüfgegenstand zusammenfassen.
-2. Prüfkriterien festlegen.
-3. Vollständigkeit prüfen.
-4. Widersprüche und Lücken suchen.
-5. Risiken bewerten.
-6. konkrete Verbesserungsvorschläge geben.
-
-## Typische Ausgaben
-
-- Reviewbericht
-- Befundliste
-- Verbesserungsvorschläge
-- Freigabeempfehlung als Entwurf
-
-## Qualitätskriterien
-
-- konkrete Befunde statt allgemeiner Kritik
-- Schweregrad benennen
-- offene Fragen markieren
-
-## Grenzen / Nicht-Aufgaben
-
-- keine verbindlichen Entscheidungen treffen
-- keine nicht belegten Standards erfinden
-- fehlende Informationen als offene Fragen markieren
-
-## Übergaben an andere Skills
-
-- bei unklarem Kontext: vb-lotse
-- bei Dokumentationsbedarf: vb-dokumentation
-- bei Reviewbedarf: vb-review oder vb-qualitaetspruefung
-
-## Beispielprompts
-
-```text
-Bitte unterstütze mich mit diesem Skill und frage zuerst die fehlenden Informationen ab.
-```
+## Ressourcen
+- Bei unklarem Kontext: vb-lotse
+- Bei Dokumentationsbedarf: vb-dokumentation
+- Bei weiterem Reviewbedarf: vb-qualitaetspruefung

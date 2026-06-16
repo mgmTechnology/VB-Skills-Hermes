@@ -1,60 +1,34 @@
 ---
 name: vb-priorunde
-description: VB Priorunde nach PM-Handbuch. Priorisierung von Projekten und Ressourcen
-Genehmigungen erteilen (Projekt, Change Request)
+description: VB Priorunde nach PM-Handbuch. Priorisierung von Projekten und Ressourcen, Genehmigungen erteilen (Projekt, Change Request).
 ---
 
 # VB Priorunde
 
-## Ziele und Mission
+## Ziel
 
-Priorisierung von Projekten und Ressourcen
-Genehmigungen erteilen (Projekt, Change Request)
+Priorisierung von Projekten und Ressourcen. Genehmigungen erteilen (Projekt, Change Request).
 
-## Primaere Aufgaben
+## Vorgehen
 
-Entscheidungsfindung in letzter Instanz
-Genehmigung von
-Regulatorik-Projekten
-Projekten der Kategorie M, L, XL
-von Projektplanungen, die 50 PT übersteigen
+- Entscheidungsfindung in letzter Instanz betreiben
+- Regulatorik-Projekte genehmigen
+- Projekte der Kategorie M, L, XL genehmigen
+- Projektplanungen genehmigen, die 50 PT übersteigen
+- Konfliktsituationen auflösen
+- Projekte & Change Requests genehmigen
+- Informationen vom Multi-Projekt-Management (MPM) einholen
+- Entscheidungsfindung durch Gesamtvorstand durchführen
+- Situativ Informationsaustausch mit F1ern, Projektleitungen, MPM, IT-Betrieb Führungskraft, Führungskraft Fachabteilung, IT-AE Führungskraft, IT-AE Koordinator, IT-Betrieb Koordinator, Fachbereichs-Koordinator
 
-## Verantwortet und Entscheidet
+## Regeln / Qualitätskriterien
 
-Auflösen von Konfliktsituationen
-Genehmigung von Projekten & Change Requests
+- Die Priorunde ersetzt nicht einen Lenkungsausschuss
+- Die Priorunde wird durch das MPM vorbereitet und durchgeführt
+- Findet im Rahmen einer VoSi statt
 
-## Nicht in der Verantwortung
+## Ressourcen
 
-Die Priorunde ersetzt nicht einen Lenkungsausschuss
-
-## Verwendete Tools
-
-PowerPoint
-
-## Informationstransfer
-
-Zulieferung von Informationen durch
-Multi-Projekt-Management (MPM)
-Entscheidungsfindung durch Gesamt
-vorstand
-
-## Hilfe und Unterstützung
-
-Situativ: Informationsaustausch / Entscheidungsfindung mit
-F1er
-Projektleitungen
-Multi-Projekt-Management (MPM)
-IT-Betrieb Führungskraft
-Führungskraft Fachabteilung
-IT-AE Führungskraft
-IT-AE Koordinator
-IT-Betrieb Koordinator
-Fachbereichs-Koordinator
-
-## Sonstige Hinweise
-
-Die Priorunde wird durch das MPM vorbereitet und durchgeführt
-Findet im Rahmen einer VoSi statt
+- PowerPoint
 
 *Quelle: VB Projektmanagement-Handbuch (Confluence) · Stand: 16.06.2026*

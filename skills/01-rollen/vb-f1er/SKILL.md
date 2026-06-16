@@ -1,50 +1,28 @@
 ---
 name: vb-f1er
-description: VB F1er nach PM-Handbuch. Sicherstellen, dass die Projektvorhaben auf die Unternehmensstrategie abgestimmt sind
-ggf. Impulsgeb
+description: VB F1er nach PM-Handbuch. Sicherstellen, dass Projektvorhaben auf die Unternehmensstrategie abgestimmt sind, ggf. Impulsgeber für Projekte.
 ---
 
 # VB F1er
 
-## Ziele und Mission
+## Ziel
+Sicherstellen, dass die Projektvorhaben auf die Unternehmensstrategie abgestimmt sind. Ggf. Impulsgeber für Projekte/Projektideen.
 
-Sicherstellen, dass die Projektvorhaben auf die Unternehmensstrategie abgestimmt sind
-ggf. Impulsgeber für Projekte / Projektideen
+## Vorgehen
+- Projekte und deren Abschlüsse (Abschlussbericht) prüfen und genehmigen.
+- Entscheidungen in Konfliktsituationen treffen.
+- Projektfortschrittskontrolle seiner Ressort-Projekte durchführen.
+- An Lenkungsausschüssen und im Bedarfsfall an Priorunden teilnehmen.
+- Abstimmung mit Projektleitung und Bereichsverantwortlichen (GL, AL).
 
-## Primaere Aufgaben
+## Regeln / Qualitätskriterien
+- Genehmigung von Projekten und deren Abschlüssen.
+- Teilnahme an Lenkungsausschüssen.
 
-Prüfen und genehmigen von Projekten & deren Abschlüsse (Abschlussbericht)
-Treffen von Entscheidungen in Konfliktsituationen
-Projektfortschrittskontrolle seiner Ressort-Projekte
+### Tools
+- PPM Pro.
 
-## Verantwortet und Entscheidet
-
-Genehmigung von Projekten & deren Abschlüsse
-Konfliktsituationen
-Teilnahme an Lenkungsausschüssen und im Bedarfsfall an Priorunden
-
-## Nicht in der Verantwortung
-
-
-
-## Verwendete Tools
-
-PPM Pro
-
-## Informationstransfer
-
-Abstimmung mit
-Projektleitung
-Abstimmung mit Bereichsverantwortlichen (GL, AL)
-Teilnahme an
-Lenkungsausschuss (LA)
-
-## Hilfe und Unterstützung
-
-
-
-## Sonstige Hinweise
-
-
+## Ressourcen
+- Keine
 
 *Quelle: VB Projektmanagement-Handbuch (Confluence) · Stand: 16.06.2026*

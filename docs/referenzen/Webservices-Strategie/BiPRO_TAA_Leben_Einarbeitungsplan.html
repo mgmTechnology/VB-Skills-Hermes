@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Detaillierter Einarbeitungsplan (4–6 Wochen) für den BiPRO TAA Leben WebService, abgeleitet aus der technischen Gesamtdokumentation." name="description"/>
+<title>Einarbeitungsplan — BiPRO TAA Leben WebService</title>
+<style>
+:root{--bg:#f7f8fa;--paper:#fff;--ink:#182433;--muted:#5d6a78;--accent:#194d70;--accent2:#2d739c;--line:#d7dee5;--warn:#fff5db;--code:#f2f5f8;--sidebar:#152b3d;--ok:#e6f3ea;--okbd:#2e7d51}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.58 "Segoe UI",Arial,sans-serif}
+a{color:var(--accent2);text-decoration:none}a:hover{text-decoration:underline}
+.layout{display:grid;grid-template-columns:320px minmax(0,1fr);min-height:100vh}
+nav{position:sticky;top:0;height:100vh;overflow:auto;background:var(--sidebar);color:#e5edf3;padding:28px 22px}
+nav .brand{font-size:19px;font-weight:650;line-height:1.3;margin-bottom:6px;color:#fff}
+nav .meta{font-size:12px;color:#aac0d1;margin-bottom:24px}
+nav ul{list-style:none;padding:0;margin:0} nav li{margin:3px 0} nav li ul{padding-left:13px;margin:3px 0 9px;border-left:1px solid #365166}
+nav a{display:block;padding:4px 6px;color:#dae5ee;font-size:13px;line-height:1.32;border-radius:6px} nav a:hover{background:#243e52;text-decoration:none;color:#fff}
+main{min-width:0;padding:34px 5.5vw 70px} article{max-width:1100px;margin:0 auto;background:var(--paper);padding:54px 62px 74px;border:1px solid #e2e8ee;box-shadow:0 3px 18px rgba(25,45,58,.06)}
+header.hero{padding:0 0 32px;margin-bottom:32px;border-bottom:3px solid var(--accent)}
+h1.title{font-size:2.55rem;color:var(--accent);letter-spacing:-.03em;line-height:1.12;margin:0 0 12px}
+.subtitle{font-size:1.2rem;color:var(--muted);margin-bottom:16px} .docinfo{font-size:.9rem;color:var(--muted)}
+h1{font-size:2rem;line-height:1.22;color:var(--accent);margin-top:2.7rem;padding-top:.4rem;border-bottom:1px solid var(--line);padding-bottom:.36rem}
+h2{font-size:1.32rem;color:var(--accent2);margin-top:2rem;line-height:1.28}
+p{margin:.7rem 0 1rem}strong{font-weight:650}
+table{width:100%;border-collapse:collapse;margin:1.1rem 0 1.8rem;font-size:.94rem;display:block;overflow-x:auto}
+thead th{background:#eef4f7;color:#173e58;text-align:left;font-weight:650}th,td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;min-width:120px}
+tbody tr:nth-child(even){background:#fbfcfd}
+code{font-family:"Cascadia Code","Consolas",monospace;font-size:.91em;background:#f0f3f5;padding:.12rem .26rem;border-radius:3px}
+p.fokus{background:#f3f7fa;border-left:4px solid var(--accent2);padding:12px 18px;border-radius:0 6px 6px 0;color:#365064}
+p.lz{margin:.9rem 0 .2rem}
+ul.ziele{margin:.2rem 0 1rem} ul.ziele li{margin:.25rem 0}
+ol.aufgaben{margin:.2rem 0 1rem} ol.aufgaben li{margin:.4rem 0}
+p.refs{font-size:.86rem;margin:.4rem 0 1.4rem;color:var(--muted)}
+.refl{font-weight:650;color:#173e58;margin-right:4px}
+a.docref{display:inline-block;background:#eef4f7;border:1px solid #cfe0ea;color:#1b4a68;padding:2px 8px;margin:2px 4px 2px 0;border-radius:12px;font-size:.83rem;line-height:1.5}
+a.docref:hover{background:#dceaf2;text-decoration:none}
+.meilenstein{background:var(--ok);border:1px solid #b9dcc6;border-left:4px solid var(--okbd);padding:12px 18px;border-radius:0 6px 6px 0;margin:1.4rem 0 1rem}
+.lernkontrolle{background:#fffdf3;border:1px solid #ecdfa8;border-left:4px solid #d8b53a;padding:8px 18px 12px;border-radius:0 6px 6px 0;margin:1rem 0 2.2rem}
+.lernkontrolle ol{margin:.4rem 0}
+.footernote{font-size:.84rem;color:var(--muted);margin-top:2rem;border-top:1px solid var(--line);padding-top:1rem}
+@media(max-width:1000px){.layout{grid-template-columns:1fr}nav{position:static;height:auto}article{padding:30px 22px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<nav aria-label="Inhaltsverzeichnis">
+<div class="brand">Einarbeitungsplan</div>
+<div class="meta">BiPRO TAA Leben WebService<br/>4–6 Wochen · Stand 01.06.2026</div>
+<ul><li><a href="#leseanleitung">So ist der Plan aufgebaut</a><ul><li><a href="#laufend">Laufende Begleitung</a></li><li><a href="#ueberblick">Wochenüberblick</a></li></ul></li><li><a href="#woche-1">Woche 1 — Fachlich ankommen & lauffähig werden</a><ul><li><a href="#woche-1-tag-0">Tag 1 – Unternehmen, Marken, Big Picture</a></li><li><a href="#woche-1-tag-1">Tag 2 – BiPRO & TAA: die Operationen</a></li><li><a href="#woche-1-tag-2">Tag 3 – Schema-Denkweise & VU-Erweiterungen</a></li><li><a href="#woche-1-tag-3">Tag 4 – Setup (mit bewusster Stolperfalle)</a></li><li><a href="#woche-1-tag-4">Tag 5 – Erster eigener Request</a></li></ul></li><li><a href="#woche-2">Woche 2 — Den Fluss verstehen: Provider, Phasen, DTO</a><ul><li><a href="#woche-2-tag-0">Tag 6 – Das Provider-Modell (die zentrale Hürde)</a></li><li><a href="#woche-2-tag-1">Tag 7 – Die Phasenpipeline</a></li><li><a href="#woche-2-tag-2">Tag 8 – Einen echten Trace lesen</a></li><li><a href="#woche-2-tag-3">Tag 9 – Den Request live durchsteppen</a></li><li><a href="#woche-2-tag-4">Tag 10 – Architektur & Module einordnen</a></li></ul></li><li><a href="#woche-3">Woche 3 — Mapping & Transformation verstehen</a><ul><li><a href="#woche-3-tag-0">Tag 11 – Warum XSD allein nicht genügt</a></li><li><a href="#woche-3-tag-1">Tag 12 – Die drei Regeltypen</a></li><li><a href="#woche-3-tag-2">Tag 13 – Regeln & Regelsätze lesen</a></li><li><a href="#woche-3-tag-3">Tag 14 – Konverter & Transformationsebenen</a></li><li><a href="#woche-3-tag-4">Tag 15 – Das interne Modell & ein Roundtrip-Test</a></li></ul></li><li><a href="#woche-4">Woche 4 — Das Herzstück: ein Attribut end-to-end</a><ul><li><a href="#woche-4-tag-0">Tag 16 – Aufgabe verstehen & XSD erweitern</a></li><li><a href="#woche-4-tag-1">Tag 17 – Modellklasse & Eingabe-Mapping</a></li><li><a href="#woche-4-tag-2">Tag 18 – Ausgabe-Mapping & ggf. Konverter</a></li><li><a href="#woche-4-tag-3">Tag 19 – Roundtrip-Test schreiben</a></li><li><a href="#woche-4-tag-4">Tag 20 – Review, Aufräumen, Reflexion</a></li></ul></li><li><a href="#woche-5">Woche 5 — Diagnose, Tests & Datenhaltung</a><ul><li><a href="#woche-5-tag-0">Tag 21 – Fehleranalyse: Trace + Log kombiniert</a></li><li><a href="#woche-5-tag-1">Tag 22 – Schema-Validierungsfehler reproduzieren</a></li><li><a href="#woche-5-tag-2">Tag 23 – Teststrategie in der Breite</a></li><li><a href="#woche-5-tag-3">Tag 24 – Datenhaltung & externe Services</a></li><li><a href="#woche-5-tag-4">Tag 25 – Produktionsnahe Fehlerdiagnose</a></li></ul></li><li><a href="#woche-6">Woche 6 — Security, Betrieb & Konsolidierung</a><ul><li><a href="#woche-6-tag-0">Tag 26 – Security & Authentifizierung</a></li><li><a href="#woche-6-tag-1">Tag 27 – Einreichung & Dokumentenfluss</a></li><li><a href="#woche-6-tag-2">Tag 28 – Diskrepanzen & Risiken bewusst machen</a></li><li><a href="#woche-6-tag-3">Tag 29 – Abschlussaufgabe (Wissensnachweis)</a></li><li><a href="#woche-6-tag-4">Tag 30 – Walkthrough & Feedback</a></li></ul></li><li><a href="#anpassung">Verdichtung auf 4 Wochen</a></li><li><a href="#hinweise">Hinweise zur Nutzung</a></li></ul>
+</nav>
+<main><article>
+<header class="hero">
+<h1 class="title">Einarbeitungsplan</h1>
+<p class="subtitle">BiPRO TAA Leben WebService — strukturierte Einarbeitung über 4–6 Wochen</p>
+<p class="docinfo">Zielprofil: erfahrene Java-Entwicklung, neu im BiPRO-/Versicherungsumfeld · Ziel: breites, belastbares Verständnis aller Bereiche · Begleitend zur <a href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html">Technischen Gesamtdokumentation</a></p>
+</header>
+<h1 id="leseanleitung">So ist der Plan aufgebaut</h1>
+<p>Der Plan ist auf <strong>sechs Wochen</strong> ausgelegt und kann bei Vorkenntnissen
+auf vier verdichtet werden (siehe Hinweis am Ende). Er folgt bewusst <em>nicht</em> der
+Kapitelreihenfolge der Dokumentation, sondern einer Lernlogik: <strong>erst einen Request
+real erleben, dann verstehen, warum er so läuft, dann selbst eingreifen</strong>. Jeder Tag
+nennt Lernziele, konkrete Aufgaben und die passenden Doku-Kapitel als Verweis. Jede Woche
+schließt mit einem Meilenstein und einer kurzen Lernkontrolle.</p>
+<p>Die wichtigste didaktische Entscheidung: Die größte Einstiegshürde ist nicht fachlich,
+sondern strukturell — es gibt keine Methode <code>getOffer(...)</code>, sondern ein
+generisches <code>invoke</code> mit dahinterliegender Phasenkette. Der Plan adressiert das
+früh und gezielt, statt die Person darüber stolpern zu lassen.</p>
+<h2 id="laufend">Laufende Begleitung (alle Wochen)</h2>
+<table><thead><tr class="header"><th>Element</th><th>Beschreibung</th></tr></thead><tbody>
+<tr class="odd"><td><strong>Pate / Mentor</strong></td><td>Feste Ansprechperson für Fragen; tägliches kurzes Check-in in Woche 1, danach 2–3× pro Woche.</td></tr>
+<tr class="even"><td><strong>Notiz-Logbuch</strong></td><td>Die Person führt durchgehend ein Logbuch mit Stolpersteinen und offenen Fragen – Quelle für spätere Doku-Verbesserungen (Anleitung F).</td></tr>
+<tr class="odd"><td><strong>Doku als Leitlinie</strong></td><td>Die Gesamtdokumentation ist das primäre Nachschlagewerk; die Aussageklassen helfen einzuschätzen, was belastbar ist.</td></tr>
+<tr class="even"><td><strong>Reviews</strong></td><td>Jede Code-Änderung geht durch Review – auch die Übungsaufgaben.</td></tr>
+</tbody></table>
+<h2 id="ueberblick">Wochenüberblick</h2>
+<table><thead><tr class="header"><th>Woche</th><th>Schwerpunkt</th><th>Ergebnis</th></tr></thead><tbody>
+<tr class="odd"><td>Woche 1</td><td>Fachlich ankommen & lauffähig werden</td><td>Die Person kann den Service lokal starten, einen getQuote-Request absetzen und die Operationen fachlich einordnen. Sie kennt den Unterschied VBL/DOL und das Erweiterungsprinzip.</td></tr>
+<tr class="even"><td>Woche 2</td><td>Den Fluss verstehen: Provider, Phasen, DTO</td><td>Die Person kann den Weg eines Requests vom SOAP-Eingang bis zur Response erklären, kennt das Provider-/Phasen-/DTO-Modell und kann einen Trace lesen und einen Request im Debugger verfolgen.</td></tr>
+<tr class="odd"><td>Woche 3</td><td>Mapping & Transformation verstehen</td><td>Die Person kann bestehende Mapping-Regeln und Konverter lesen und erklären, kennt das interne Modell und versteht den Roundtrip-Test als Prüfprinzip.</td></tr>
+<tr class="even"><td>Woche 4</td><td>Das Herzstück: ein Attribut end-to-end</td><td>Die Person hat selbstständig (begleitet) ein Attribut durch die gesamte Kette gebracht und mit einem grünen Roundtrip-Test abgesichert. Das ist der Kern-Kompetenznachweis.</td></tr>
+<tr class="odd"><td>Woche 5</td><td>Diagnose, Tests & Datenhaltung</td><td>Die Person kann einen Validierungsfehler reproduzieren und beheben, eine Störung über Trace+Log eingrenzen, kennt die Teststrategie in der Breite und die Datenquellen des Systems.</td></tr>
+<tr class="even"><td>Woche 6</td><td>Security, Betrieb & Konsolidierung</td><td>Breites, belastbares Verständnis aller Bereiche: fachlich, Fluss, Mapping, Tests, Diagnose, Security/Betrieb. Die Person kann einen Request end-to-end erklären und hat eigenständig etwas beigetragen.</td></tr>
+</tbody></table>
+<h1 id="woche-1">Woche 1 — Fachlich ankommen & lauffähig werden</h1>
+<p class="fokus"><strong>Fokus.</strong> Diese Woche bewusst ohne Code-Lesen. Ziel ist ein fachliches Fundament (BiPRO/TAA) und eine lauffähige Umgebung. Die Person soll am Ende einen Request abschicken und die Antwort fachlich deuten können.</p>
+<h2 id="woche-1-tag-0">Tag 1 – Unternehmen, Marken, Big Picture</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Verstehen, was der WebService fachlich leistet (BiPRO-XML rein, Berechnung, BiPRO-XML raus).</li>
+<li>Den Unterschied VBL / DOL als zwei Marken auf einer Codebasis begreifen.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Kapitel 0 und 1 der Gesamtdokumentation lesen; in eigenen Worten notieren: Was macht der Service, und warum gibt es ihn?</li>
+<li>Das Aussageklassen-System (Belegt / Plausibel / Zu verifizieren / Diskrepanz / Empfehlung) verstehen – es ist für den ganzen Plan relevant, weil nicht jede Doku-Aussage gleich belastbar ist.</li>
+<li>Mit dem Onboarding-Paten klären: Zugänge (GitLab, Kibana/APM, Postman-Sammlung, ggf. Confluence), und wer fachlicher bzw. technischer Ansprechpartner ist.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#zusammenfassung-für-den-einstieg">1 · Zusammenfassung für den Einstieg</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#marken-und-schnittstellen">1.2 · Marken und Schnittstellen</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#aussageklassen">0.2 · Aussageklassen</a></p>
+<h2 id="woche-1-tag-1">Tag 2 – BiPRO & TAA: die Operationen</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Die fachlichen Operationen sicher unterscheiden können.</li>
+<li>Verstehen, welche Operationen im Alltag zählen und welche selten sind.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Kapitel 2 durcharbeiten: getQuote / getOffer / getOrder / setOrder / setOrderQualified – je einen Satz, wann man sie nutzt.</li>
+<li>Die typischen fachlichen Abläufe (Vergleicher, Angebot, Antrag) nachzeichnen und als kleine Skizze festhalten.</li>
+<li>Notieren, welche Operationen ein STS-Token brauchen und warum (Einreichung echter Vertragsdaten).</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#operationen-im-überblick">2.1 · Operationen im Überblick</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#typische-fachliche-abläufe">2.2 · Typische fachliche Abläufe</a></p>
+<h2 id="woche-1-tag-2">Tag 3 – Schema-Denkweise & VU-Erweiterungen</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Die Produkthierarchie Verkaufsprodukt → Produkt → Elementarprodukt verstehen.</li>
+<li>Begreifen, was VU-Erweiterungen sind und warum sie nötig sind.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Kapitel 5.1–5.3 lesen. Das Prinzip <code>&lt;basis:Erweiterung&gt;</code> + <code>xsi:type</code> in eigenen Worten erklären können.</li>
+<li>Die Namespace-Landkarte überfliegen – noch nicht auswendig, aber wissen, dass es sie gibt und wofür <code>vb-leben</code> / <code>vbl</code> stehen.</li>
+<li>Eine Stunde mit dem fachlichen Ansprechpartner: ein bis zwei reale Tarife ansehen lassen (z. B. eine Rente), um die Begriffe zu erden.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#standard-und-vu-erweiterung">5.1 · Standard und VU-Erweiterung</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#namespace-landkarte">5.3 · Namespace-Landkarte</a></p>
+<h2 id="woche-1-tag-3">Tag 4 – Setup (mit bewusster Stolperfalle)</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Repository bauen und den Service lokal starten.</li>
+<li>Die Setup-Diskrepanz aus erster Hand erleben statt später darüber zu stolpern.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Repo klonen und bauen. <strong>Wichtig:</strong> Die Doku nennt JDK 11 und <code>spring-boot:run</code>; real läuft der Service unter Java 8 in eingebettetem Jetty. Die verbindlichen Werte aus <code>pom.xml</code> / CI ableiten, nicht blind der Prosa folgen.</li>
+<li>Den Service lokal starten (Jetty, Port 8082) und den Kaltstart bewusst beobachten (~16 s: Spring-Context, Derby, KPG-Sätze).</li>
+<li>Die <code>/wsversion</code>-URL aufrufen und die zurückgegebene Maven-/WS-Version notieren – das ist später der erste Diagnoseschritt.</li>
+<li>Stolpersteine, die auftauchen, sofort als Notiz sammeln (Grundlage für eine spätere Doku-Korrektur).</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#setup--und-entwicklungsumgebung-gesicherte-basis-und-prüfbedarf">14 · Setup & Entwicklungsumgebung</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#nicht-unbesehen-zu-übernehmender-startbefehl">14.2 · Startbefehl: Prüfbedarf</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#versionsabfrage-wsversion">9.2.1 · Versionsabfrage /wsversion</a></p>
+<h2 id="woche-1-tag-4">Tag 5 – Erster eigener Request</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Einen getQuote-Request absetzen und die Response fachlich lesen.</li>
+<li>Den Bogen von Operation (Tag 2) zu echtem XML schlagen.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Aus der Postman-Sammlung einen getQuote-Request für einen einfachen Tarif abschicken; die wichtigsten Felder der Response benennen.</li>
+<li>Den zugehörigen Beispiel-Request aus den Test-Ressourcen (<code>src/test/resources/eingabe</code>) ansehen und mit dem Postman-Request vergleichen.</li>
+<li>Wochen-Reflexion (15 Min): Was ist klar, was noch nebelig? Drei offene Fragen formulieren.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#aufbau-eines-fachlichen-requests">5.4 · Aufbau eines fachlichen Requests</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#pfade-und-testressourcen">8.2 · Pfade und Testressourcen</a></p>
+<div class="meilenstein"><strong>Meilenstein Woche 1.</strong> Die Person kann den Service lokal starten, einen getQuote-Request absetzen und die Operationen fachlich einordnen. Sie kennt den Unterschied VBL/DOL und das Erweiterungsprinzip.</div>
+<div class="lernkontrolle"><p><strong>Lernkontrolle (Selbsttest):</strong></p><ol>
+<li>Erkläre den Unterschied zwischen getQuote, getOffer und getOrder in je einem Satz.</li>
+<li>Warum unterscheiden sich VBL und DOL technisch nur in den Produkten?</li>
+<li>Wo würdest du nachsehen, welche Java-Version und welcher Startmechanismus real gelten – und warum nicht in der Onboarding-Prosa?</li>
+<li>Was ist eine VU-Erweiterung, und über welches XML-Konstrukt wird sie eingebracht?</li>
+</ol></div>
+<h1 id="woche-2">Woche 2 — Den Fluss verstehen: Provider, Phasen, DTO</h1>
+<p class="fokus"><strong>Fokus.</strong> Jetzt der mentale Kern des Systems. Zuerst die größte Einstiegshürde auflösen (es gibt keine getOffer-Methode), dann den realen Request-Fluss entlang eines Traces und im Debugger nachvollziehen.</p>
+<h2 id="woche-2-tag-0">Tag 6 – Das Provider-Modell (die zentrale Hürde)</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Verstehen, warum es keine Methode getOffer(...) gibt.</li>
+<li>Den Einstiegspunkt invoke(SOAPMessage) und die Typ-Zuordnung über das DTO kennen.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Kapitel 4.3.1 lesen. Kernsatz verinnerlichen: ein generisches <code>invoke(SOAPMessage)</code> aus <code>Provider&lt;SOAPMessage&gt;</code>, Operation wird über <code>LebenWSDTO</code> / <code>BiPROLebenWebServiceKonstanten</code> bestimmt.</li>
+<li>Im Code <code>TarifrechnerService</code> öffnen und den Weg von <code>invoke</code> zur Phasensteuerung nachverfolgen (nicht jede Zeile – nur den Pfad).</li>
+<li>Das Klassenhierarchie-Diagramm der WebServices in der Doku ansehen und mit dem realen Code abgleichen.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#implementierungsmodell-jax-ws-provider">4.3.1 · Implementierungsmodell (Provider)</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#klassenhierarchie-webservices">Diagramm · Klassenhierarchie der WebServices</a></p>
+<h2 id="woche-2-tag-1">Tag 7 – Die Phasenpipeline</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Das Phasenkonzept verstehen: jede Phase mit verarbeite(Source), sequenziell.</li>
+<li>Die Brücke Trace ↔ Code begreifen: report(PHASE,name) erzeugt die *.durchlaufe-Spans.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Kapitel 4.3 (Phasenpipeline) und 4.3.2 (Phasen-Framework) lesen.</li>
+<li>Die Reihenfolge der Phasen in <code>TAALebenWebServiceTarifrechner</code> im Code finden und mit der Doku-Beschreibung vergleichen.</li>
+<li>Verstehen: <code>VorverarbeitungBiPRO</code> prüft Konformität, im positiven Fall endet ein Lauf mit <code>EAntragsprüfung</code>; <code>TAALebenEAntrag</code> trägt nur bei setOrder(Qualified) Logik.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#phasenpipeline-im-quellcode">4.3 · Phasenpipeline im Quellcode</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#phasen-framework-taa-v246-mapping">4.3.2 · Phasen-Framework</a></p>
+<h2 id="woche-2-tag-2">Tag 8 – Einen echten Trace lesen</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Einen Kibana-/APM-Trace Phase für Phase lesen können.</li>
+<li>Laufzeitanteile einschätzen (IAM, Import, Berechnung dominieren).</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>In Kibana den Trace eines eigenen Requests öffnen (oder den in der Doku beschriebenen warmen Request als Referenz nehmen).</li>
+<li>Jede sichtbare Phase einer Aufgabe zuordnen; die drei größten Zeitfresser benennen (Security ~107 ms, Import ~178 ms, Berechnung ~235 ms).</li>
+<li>Die zwei Transformationsgrenzen im Trace markieren: EingabeUnmarshallen (BiPRO→ELSA) und ExportXML (ELSA→BiPRO).</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#beobachtete-sequenz">4.1 · Beobachtete Sequenz</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#einordnung-des-trace-typs">4.4 · Einordnung des Trace-Typs</a></p>
+<h2 id="woche-2-tag-3">Tag 9 – Den Request live durchsteppen</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Einen Request im Debugger durch die Phasen verfolgen.</li>
+<li>Das DTO als Datendrehscheibe zwischen den Phasen erkennen.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>In IntelliJ einen Breakpoint in <code>invoke</code> und in einer frühen Phase setzen; einen getQuote-Request lokal abschicken und durchsteppen.</li>
+<li>Das DTO inspizieren: wo steckt das BiPRO-XML, wo das ELSA-<code>Angebot</code>? Die DTO-Hierarchie (PhasenDTO → BiPRODTO → LebenDTO → LebenWSDTO) in der Doku begleitend lesen.</li>
+<li>Beobachten, wie sich das DTO von Phase zu Phase füllt.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#dto-hierarchie">Diagramm · DTO-Hierarchie</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#request-verarbeitung-sequenz">Diagramm · Request-Verarbeitung im Provider-Modell</a></p>
+<h2 id="woche-2-tag-4">Tag 10 – Architektur & Module einordnen</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Die Schichten und die Modulstruktur von mono-elsa überblicken.</li>
+<li>Wissen, welches Modul wofür zuständig ist.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Kapitel 3 (Architekturschichten) und 6 (Modulstruktur) lesen.</li>
+<li>Für jedes der wichtigen Module einen Halbsatz notieren: schnittstelle / service / konverter / webservice + die Framework-Module taa-v246-mapping/-konverter.</li>
+<li>Wochen-Reflexion: den kompletten Weg eines getQuote in 6–8 Sätzen aufschreiben (Provider → Phasen → Mapping → Berechnung → Export).</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#architekturschichten-im-webservice">3.2 · Architekturschichten</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#module-des-bipro-adapters">6.2 · Module des BiPRO-Adapters</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#frameworkmodule-mapping-und-konverter">6.2.1 · Framework-Module</a></p>
+<div class="meilenstein"><strong>Meilenstein Woche 2.</strong> Die Person kann den Weg eines Requests vom SOAP-Eingang bis zur Response erklären, kennt das Provider-/Phasen-/DTO-Modell und kann einen Trace lesen und einen Request im Debugger verfolgen.</div>
+<div class="lernkontrolle"><p><strong>Lernkontrolle (Selbsttest):</strong></p><ol>
+<li>Warum führt der Weg von TarifrechnerService.invoke nicht zu einer Operationsmethode?</li>
+<li>Was erzeugt die *.durchlaufe-Spans im Trace, und wie hängt das mit dem Code zusammen?</li>
+<li>Welche drei Phasen verbrauchen typischerweise den größten Zeitanteil?</li>
+<li>Welche Rolle spielt das DTO zwischen den Phasen?</li>
+</ol></div>
+<h1 id="woche-3">Woche 3 — Mapping & Transformation verstehen</h1>
+<p class="fokus"><strong>Fokus.</strong> Das Herzstück der fachlichen Übersetzung: wie BiPRO-XML und ELSA-Modell aufeinander abgebildet werden. Diese Woche noch lesend/verstehend, das eigene Ändern folgt in Woche 4.</p>
+<h2 id="woche-3-tag-0">Tag 11 – Warum XSD allein nicht genügt</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Verstehen, dass XSD nur Validität schafft, aber keine Logik auslöst.</li>
+<li>Die Trennung Schema ↔ Mapping ↔ Konverter begreifen.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Kapitel 7 (Einleitung) und 7.1 lesen.</li>
+<li>In eigenen Worten erklären: Was passiert, wenn ein neues Attribut nur in der XSD steht, aber kein Mapping existiert? (Antwort: akzeptiert, aber wirkungslos.)</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#warum-xsd-allein-nicht-genügt">7.1 · Warum XSD allein nicht genügt</a></p>
+<h2 id="woche-3-tag-1">Tag 12 – Die drei Regeltypen</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Eingabe-, Ausgabe- und Ausgabe-Erfassungs-Regeln unterscheiden.</li>
+<li>Das Regelformat als eigenes DSL erkennen (kein XSLT!).</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Kapitel 7.2 und 7.3 lesen. Die begriffliche Bereinigung verinnerlichen: die Mapping-Regeln sind ein <code>&lt;r:regel&gt;</code>-DSL über JXPath, <strong>nicht</strong> XSLT.</li>
+<li>Im Code je eine Eingabe- und eine Ausgabe-Regeldatei öffnen und die Ordnerstruktur (ELSA-orientiert vs. BiPRO-orientiert) wiedererkennen.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#kategorien-der-mapping-regeln">7.2 · Kategorien der Mapping-Regeln</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#regelformat-und-begriffliche-bereinigung">7.3 · Regelformat & Begriffsbereinigung</a></p>
+<h2 id="woche-3-tag-2">Tag 13 – Regeln & Regelsätze lesen</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Eine einfache Regel und einen bedingten Regelsatz lesen können.</li>
+<li>Den Regelkontext (quellKontext/zielKontext) verstehen.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Kapitel 7.4 und 7.5 mit den Beispielen durcharbeiten (autoGarantieerhoehung; Ablaufgarantie-Regelsatz).</li>
+<li>Eine reale Regeldatei eines Tarifs nehmen und zeilenweise erklären, welches BiPRO-Feld auf welches ELSA-Feld geht.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#beispiel-einer-einfachen-eingaberegel">7.4 · Beispiel einer einfachen Eingaberegel</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#beispiel-eines-bedingten-regelsatzes">7.5 · Beispiel eines bedingten Regelsatzes</a></p>
+<h2 id="woche-3-tag-3">Tag 14 – Konverter & Transformationsebenen</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Die drei Ebenen Converter / Transformer / Mapping-Phase trennen können.</li>
+<li>Verstehen, wann ein eigener Konverter nötig ist.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Kapitel 7.7 und 7.8 lesen. Den Unterschied festhalten: Converter = Einzelwert, Transformer = ganzes XML-Dokument, Mapping-Phase = Prozessschritt.</li>
+<li><code>STConverter</code> / <code>OneToOneSTConverter</code> im Code ansehen; ein konkretes Beispiel (z. B. Stellung im Beruf: 01 ↔ ARBEITNEHMER) nachvollziehen.</li>
+<li>Sehen, wo alle Konverter zentral registriert werden (<code>TAALebenConverter.java</code>).</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#konverter">7.7 · Konverter</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#converter-transformer-technisch">7.8 · Converter/Transformer (Code-Sicht)</a></p>
+<h2 id="woche-3-tag-4">Tag 15 – Das interne Modell & ein Roundtrip-Test</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Die Ep-Klassen und @Property im internen Modell kennen.</li>
+<li>Einen bestehenden Roundtrip-Test lesen und ausführen.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Kapitel 6.3 lesen; eine <code>Ep…</code>-Klasse im Modell öffnen und die <code>@Property</code>-Deklarationen ansehen.</li>
+<li>Einen vorhandenen <code>…RoundtripIT</code>-Test öffnen, ausführen und das Prinzip BiPRO→Modell→BiPRO verstehen.</li>
+<li>Wochen-Reflexion: Skizziere für ein konkretes Feld den kompletten Mapping-Weg hin und zurück.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#internes-modell-elsa">6.3 · Internes Modell (elsa)</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#teststrategie">8.1 · Teststrategie</a></p>
+<div class="meilenstein"><strong>Meilenstein Woche 3.</strong> Die Person kann bestehende Mapping-Regeln und Konverter lesen und erklären, kennt das interne Modell und versteht den Roundtrip-Test als Prüfprinzip.</div>
+<div class="lernkontrolle"><p><strong>Lernkontrolle (Selbsttest):</strong></p><ol>
+<li>Was bewirkt eine XSD-Erweiterung allein – und was nicht?</li>
+<li>Sind die Mapping-Regeln XSLT? Begründe.</li>
+<li>Wann brauchst du einen eigenen Konverter, und wo wird er registriert?</li>
+<li>Was genau prüft ein Roundtrip-Test?</li>
+</ol></div>
+<h1 id="woche-4">Woche 4 — Das Herzstück: ein Attribut end-to-end</h1>
+<p class="fokus"><strong>Fokus.</strong> Der zentrale Kompetenznachweis. Die Person bringt – begleitet – ein neues, kleines Attribut vollständig durch die Kette: XSD → Eingabe-Mapping → Ausgabe-Mapping → ggf. Konverter → Roundtrip-Test. An einem realen, eng umrissenen Beispiel.</p>
+<h2 id="woche-4-tag-0">Tag 16 – Aufgabe verstehen & XSD erweitern</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Ein geeignetes Übungs-Attribut mit dem Paten festlegen.</li>
+<li>Die XSD an der richtigen Stelle erweitern.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Gemeinsam ein kleines, risikoarmes Attribut wählen (am besten ein optionales Flag an einem bekannten Tarif).</li>
+<li>Kapitel 16 (Anleitung A) als Schritt-für-Schritt-Leitfaden nehmen.</li>
+<li>Die passende XSD bestimmen: <code>vb-leben-1.12.xsd</code> wirkt auf DOL+VBL, markenspezifische XSD nur auf eine Marke. Erweiterung eintragen und neu bauen, sodass der Wert schema-valide gesendet werden kann.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#anleitung-a-neues-extern-befüllbares-attribut-implementieren">16 · Anleitung A: Attribut implementieren</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#reihenfolge-konkrete-typen-und-validierung">5.5 · Reihenfolge & Validierung</a></p>
+<h2 id="woche-4-tag-1">Tag 17 – Modellklasse & Eingabe-Mapping</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Das Attribut im internen Modell verankern (@Property).</li>
+<li>Die Eingabe-Regel schreiben (BiPRO → Modell).</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Im Modell das Ziel-Attribut anlegen/prüfen (<code>@Property</code>).</li>
+<li>Eine Eingabe-Regel ergänzen (<code>&lt;r:quelle&gt;</code> → <code>&lt;r:ziel&gt;</code>), passend zur Ordnerstruktur des Modells.</li>
+<li>Per Debugger verifizieren, dass der gesendete Wert nach EingabeUnmarshallen im DTO/Modell ankommt.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#kategorien-der-mapping-regeln">7.2 · Kategorien der Mapping-Regeln</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#beispiel-einer-einfachen-eingaberegel">7.4 · Beispiel einer Eingaberegel</a></p>
+<h2 id="woche-4-tag-2">Tag 18 – Ausgabe-Mapping & ggf. Konverter</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Die Ausgabe-Regel schreiben (Modell → BiPRO).</li>
+<li>Bei abweichenden Werten einen Konverter ergänzen und registrieren.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Ausgabe-Regel ergänzen, sodass der berechnete/gesetzte Wert in der Response erscheint.</li>
+<li>Falls BiPRO- und Modellwert sich unterscheiden: Konverter schreiben und in <code>TAALebenConverter</code> registrieren (Anleitung B).</li>
+<li>Response prüfen: Taucht das Feld jetzt korrekt auf?</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#anleitung-b-neuen-konverter-erstellen">16 · Anleitung B: Konverter erstellen</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#konverter">7.7 · Konverter</a></p>
+<h2 id="woche-4-tag-3">Tag 19 – Roundtrip-Test schreiben</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Einen Roundtrip-Test für die Änderung anlegen.</li>
+<li>Die Testmechanik (Versicherungsbeginn, Platzhalter) korrekt nutzen.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Einen validen Test-Request in den Ressourcen ablegen und einen fallspezifischen Test in der Tarif-Testklasse ergänzen (Anleitung C).</li>
+<li>Auf die Mechanik achten: Versicherungsbeginn wird auf den 1. des Folgemonats gesetzt; bei Bedarf in <code>initClass()</code> überschreiben.</li>
+<li>Test grün bekommen; die erzeugten Artefakte unter <code>target/testdata/roundtrip/</code> ansehen.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#anleitung-c-roundtrip-test-für-eine-mappingänderung-anlegen">16 · Anleitung C: Roundtrip-Test anlegen</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#datum-und-versicherungsbeginn-in-tests">8.4 · Datum & Versicherungsbeginn in Tests</a></p>
+<h2 id="woche-4-tag-4">Tag 20 – Review, Aufräumen, Reflexion</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Die Änderung sauber zur Review bringen.</li>
+<li>Den durchlaufenen Weg bewusst rekapitulieren.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Code-Review mit dem Paten; Branch/MR nach Team-Konvention.</li>
+<li>Checkliste „Änderung an einem Feld“ aus dem Anhang gegenprüfen – nichts vergessen?</li>
+<li>Wochen-Reflexion: An welcher Stelle war die Kette am unintuitivsten? Diese Notiz ist Gold für die nächste Doku-Verbesserung.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#kompakte-checkliste-änderung-an-einem-feld">Anhang · Checkliste: Änderung an einem Feld</a></p>
+<div class="meilenstein"><strong>Meilenstein Woche 4.</strong> Die Person hat selbstständig (begleitet) ein Attribut durch die gesamte Kette gebracht und mit einem grünen Roundtrip-Test abgesichert. Das ist der Kern-Kompetenznachweis.</div>
+<div class="lernkontrolle"><p><strong>Lernkontrolle (Selbsttest):</strong></p><ol>
+<li>Nenne die fünf Schritte, um ein neues Attribut end-to-end einzubinden.</li>
+<li>Welche XSD änderst du, wenn das Feld für DOL und VBL gelten soll?</li>
+<li>Warum reicht das Eingabe-Mapping nicht, damit der Wert in der Response erscheint?</li>
+<li>Wie stellst du in einem Test einen bestimmten Versicherungsbeginn sicher?</li>
+</ol></div>
+<h1 id="woche-5">Woche 5 — Diagnose, Tests & Datenhaltung</h1>
+<p class="fokus"><strong>Fokus.</strong> Vom Bauen zum Betreiben/Analysieren. Diese Woche dreht sich um Fehleranalyse, Validierungsfehler, Teststrategie in der Breite und die Datenquellen rund um den Service.</p>
+<h2 id="woche-5-tag-0">Tag 21 – Fehleranalyse: Trace + Log kombiniert</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Die Diagnosekette systematisch anwenden.</li>
+<li>Verstehen, wann Trace und wann Log die Antwort liefert.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Kapitel 9.3 (Diagnosekette) durcharbeiten.</li>
+<li>An einem (ggf. künstlich erzeugten) langsamen oder fehlerhaften Request den Weg gehen: Request identifizieren → Operation/Produkt → Trace-Phasen → externer Aufruf vs. interne Phase.</li>
+<li>Die Tracing-Lücke (VersionUtils: „Span context is not valid“) als bekannte Einschränkung zur Kenntnis nehmen.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#monitoring--und-diagnosekette">9.3 · Monitoring- und Diagnosekette</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#technische-risiken">16.3 · Technische Risiken</a></p>
+<h2 id="woche-5-tag-1">Tag 22 – Schema-Validierungsfehler reproduzieren</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Einen typischen Validierungsfehler erzeugen und lösen.</li>
+<li>Die Trennlinie Parsing-Fehler vs. Verarbeitungsfehler verstehen.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Anleitung D nutzen. Einen Request mit ungebundenem Namespace-Prefix bauen (z. B. ein <code>vb-leben:</code>-Element ohne Deklaration) und den <code>ElementPrefixUnbound</code>-Fehler reproduzieren.</li>
+<li>Beobachten, dass ein solcher Request gar nicht erst die *.durchlaufe-Phasen erreicht – Fehler liegt im SOAP-Parsing.</li>
+<li>Den Fehler beheben und gegenprüfen.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#anleitung-d-schema-validierungsfehler-im-xml-analysieren">16 · Anleitung D: Validierungsfehler analysieren</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#reihenfolge-konkrete-typen-und-validierung">5.5 · Reihenfolge & Validierung</a></p>
+<h2 id="woche-5-tag-2">Tag 23 – Teststrategie in der Breite</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Die Teststruktur des Projekts überblicken.</li>
+<li>Wissen, welche Tests gepflegt und welche nur noch historisch sind.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Kapitel 8 vollständig lesen. Roundtrip-Tests als aktuellen Standard einordnen; ältere importer/exporter-Tests als nicht weiterentwickelt erkennen.</li>
+<li>Die Schema-/Encoding-Risiken-Tests ansehen.</li>
+<li>Einen zweiten, fremden Roundtrip-Test eines anderen Tarifs lesen und nachvollziehen.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#teststrategie">8.1 · Teststrategie</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#tests-für-schema--und-encoding-risiken">8.5 · Tests für Schema-/Encoding-Risiken</a></p>
+<h2 id="woche-5-tag-3">Tag 24 – Datenhaltung & externe Services</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Die Datenquellen und externen Systeme kennen.</li>
+<li>Den Rechenkern-Aufruf als externe Servicegrenze verstehen.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Kapitel 9.1 lesen: Derby-DBs (avb, elsa2db, read-only im JAR), AVIS, tarifrechner_prod sowie die externen Services iam-api-security-contexts und rechenkern-ws-prod.</li>
+<li>Im Trace den Rechenkern-Aufruf (<code>POST /api/rechner/quote</code>) wiederfinden und seine Datenquellen (avb-Tabellen) zuordnen.</li>
+<li>Die Reporting-Tabelle <code>tarifrechnerLeben</code> als Abschluss-INSERT einordnen.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#externe-systeme-und-datenquellen">9.1 · Externe Systeme & Datenquellen</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#reporting-tabelle-tarifrechnerleben">9.2 · Reporting-Tabelle tarifrechnerLeben</a></p>
+<h2 id="woche-5-tag-4">Tag 25 – Produktionsnahe Fehlerdiagnose</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Eine realistische Störung end-to-end analysieren.</li>
+<li>Die gelernten Werkzeuge zusammenführen.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Anleitung E durchspielen: ausgehend von einem Symptom (lange Laufzeit oder Fehlermeldung) die Ursache über Trace, Log und Code eingrenzen.</li>
+<li>Die Anhang-Checkliste „Fehleranalyse“ anwenden.</li>
+<li>Wochen-Reflexion: ein kurzes eigenes „Runbook“ für die zwei häufigsten Fehlerklassen skizzieren.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#anleitung-e-request-laufzeit-und-produktionsfehler-diagnostizieren">16 · Anleitung E: Laufzeit-/Produktionsfehler</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#kompakte-checkliste-fehleranalyse">Anhang · Checkliste: Fehleranalyse</a></p>
+<div class="meilenstein"><strong>Meilenstein Woche 5.</strong> Die Person kann einen Validierungsfehler reproduzieren und beheben, eine Störung über Trace+Log eingrenzen, kennt die Teststrategie in der Breite und die Datenquellen des Systems.</div>
+<div class="lernkontrolle"><p><strong>Lernkontrolle (Selbsttest):</strong></p><ol>
+<li>Wie unterscheidest du einen SOAP-Parsing-Fehler von einem Verarbeitungsfehler?</li>
+<li>Welche Tests sind der aktuelle Standard, welche nur historisch?</li>
+<li>Welche Datenquellen liest der Rechenkern, und wie erkennst du den Aufruf im Trace?</li>
+<li>Beschreibe deine ersten drei Schritte bei einem langsamen Produktions-Request.</li>
+</ol></div>
+<h1 id="woche-6">Woche 6 — Security, Betrieb & Konsolidierung</h1>
+<p class="fokus"><strong>Fokus.</strong> Die letzten Bereiche (Security/Einreichung) und das Zusammenführen. Diese Woche enthält bewusst Puffer und endet mit einer Abschlussaufgabe, die zugleich Wissenslücken sichtbar macht.</p>
+<h2 id="woche-6-tag-0">Tag 26 – Security & Authentifizierung</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>STS-Token und SecurityContext als zwei Mechanismen unterscheiden.</li>
+<li>Den Authentifizierungspfad im Code verorten.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Kapitel 10 lesen, inkl. 10.1.1 (Code-Sicht: AuthenticationPhase, SecurityContextData, SCT aus dem SOAP-Header).</li>
+<li>Festhalten: STS-Token gehört fachlich zur Einreichung (setOrder), während die SecurityContextAuthentication bereits im Berechnungs-/Angebotsfluss auftritt.</li>
+<li>Die offene Zuordnung (Verhältnis beider Mechanismen) als bewusst offenen Punkt notieren – nicht raten.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#authentifizierung-code-sicht">10.1.1 · Authentifizierung (Code-Sicht)</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#offene-zuordnung">10.2 · Offene Zuordnung</a></p>
+<h2 id="woche-6-tag-1">Tag 27 – Einreichung & Dokumentenfluss</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Den E-Antrags-Pfad und die Rolle des PDF verstehen.</li>
+<li>setOrder vs. setOrderQualified abgrenzen.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Kapitel 11 lesen (Dokumenten-/E-Antrags-Bezug).</li>
+<li>Den <code>taa-v246112-eantrag-pdf-client</code> im Code lokalisieren.</li>
+<li>Den Unterschied klar machen: setOrder = PDF + minimal XML, manuelle Prüfung; setOrderQualified = PDF↔XML-Konsistenzprüfung.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#dokumentenfluss">11.1 · Dokumentenfluss</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#operationen-im-überblick">2.1 · Operationen (setOrder/setOrderQualified)</a></p>
+<h2 id="woche-6-tag-2">Tag 28 – Diskrepanzen & Risiken bewusst machen</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Die kritischen Diskrepanzen und offenen Punkte kennen.</li>
+<li>Einschätzen können, welchen Doku-Aussagen man trauen darf.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Kapitel 15 (gesicherte Kernaussagen) und 16 (Diskrepanzen, fehlende Infos, Risiken, Maßnahmen) durcharbeiten.</li>
+<li>Die in Woche 1–5 gesammelten eigenen Notizen mit den dort gelisteten Punkten abgleichen.</li>
+<li>Eine priorisierte Liste eigener offener Fragen erstellen.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#gesicherte-kernaussagen">15.1 · Gesicherte Kernaussagen</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#kritische-diskrepanzen">16.1 · Kritische Diskrepanzen</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#priorisierte-maßnahmen">16.4 · Priorisierte Maßnahmen</a></p>
+<h2 id="woche-6-tag-3">Tag 29 – Abschlussaufgabe (Wissensnachweis)</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Das Gelernte aktiv anwenden und Lücken sichtbar machen.</li>
+<li>Etwas Bleibendes für das Team hinterlassen.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Eine der beiden Varianten wählen: <strong>(a)</strong> eine kleine, reale Verbesserung umsetzen (z. B. ein weiteres Attribut oder ein fehlender Test) <em>oder</em> <strong>(b)</strong> einen Doku-Abschnitt korrigieren/ergänzen auf Basis der gesammelten Notizen (Anleitung F).</li>
+<li>Die Arbeit so dokumentieren, dass der nächste Onboardee davon profitiert.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#anleitung-f-dokumentation-technisch-aktualisieren">16 · Anleitung F: Dokumentation aktualisieren</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#automatisierbare-ergänzungen">13.3 · Automatisierbare Ergänzungen</a></p>
+<h2 id="woche-6-tag-4">Tag 30 – Walkthrough & Feedback</h2>
+<p class="lz"><strong>Lernziele:</strong></p><ul class="ziele">
+<li>Das Verständnis im Gespräch nachweisen.</li>
+<li>Den Plan für die nächste Person verbessern.</li>
+</ul>
+<p class="lz"><strong>Aufgaben:</strong></p><ol class="aufgaben">
+<li>Der Person einen 20–30-minütigen Walkthrough halten lassen: den Weg eines Requests end-to-end erklären, an einem echten Trace.</li>
+<li>Offene Fragen gemeinsam klären; verbleibende Punkte an die richtigen Ansprechpartner übergeben.</li>
+<li>Feedback-Runde: Was am Plan war hilfreich, was fehlte? Anpassungen notieren.</li>
+</ol>
+<p class="refs"><span class="refl">Doku:</span> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#kernprinzip-des-datenflusses">1.3 · Kernprinzip des Datenflusses</a> <a class="docref" href="BiPRO_TAA_Leben_Gesamtdokumentation_v3.html#beobachtete-sequenz">4.1 · Beobachtete Sequenz</a></p>
+<div class="meilenstein"><strong>Meilenstein Woche 6.</strong> Breites, belastbares Verständnis aller Bereiche: fachlich, Fluss, Mapping, Tests, Diagnose, Security/Betrieb. Die Person kann einen Request end-to-end erklären und hat eigenständig etwas beigetragen.</div>
+<div class="lernkontrolle"><p><strong>Lernkontrolle (Selbsttest):</strong></p><ol>
+<li>Worin unterscheiden sich STS-Token und SecurityContextAuthentication?</li>
+<li>Wann nutzt man setOrder, wann setOrderQualified?</li>
+<li>Nenne zwei dokumentierte Diskrepanzen, denen man nicht ungeprüft folgen sollte.</li>
+<li>Erkläre den kompletten Request-Fluss frei an einem Trace.</li>
+</ol></div>
+<h1 id="anpassung">Verdichtung auf 4 Wochen</h1>
+<p>Bei einschlägiger Vorerfahrung (z. B. bereits SOAP-/JAX-WS-Kenntnis oder BiPRO aus
+einem anderen Haus) lässt sich der Plan straffen, ohne die Breite zu verlieren:</p>
+<ul>
+<li><strong>Woche 1 + 2 zusammenziehen:</strong> Fachliche Grundlagen im Selbststudium
+(Kap. 2 und 5), Setup und Provider-/Phasen-Modell parallel. Spart ca. 3 Tage.</li>
+<li><strong>Woche 3 verkürzen:</strong> Mapping nur an je einem Eingabe-/Ausgabe-Beispiel
+statt mehreren. Spart ca. 1–2 Tage.</li>
+<li><strong>Woche 5 fokussieren:</strong> Diagnose und Validierungsfehler behalten,
+Datenhaltung im Schnelldurchlauf. Spart ca. 1 Tag.</li>
+</ul>
+<p>Das End-to-End-Attribut (Woche 4) und der Abschluss-Walkthrough sollten in jeder
+Variante erhalten bleiben — sie sind der eigentliche Kompetenznachweis.</p>
+<h1 id="hinweise">Hinweise zur Nutzung</h1>
+<ul>
+<li>Die Kapitelverweise verlinken auf <code>BiPRO_TAA_Leben_Gesamtdokumentation_v3.html</code>. Lege diese Datei in dasselbe
+Verzeichnis, dann sind die Verweise direkt anklickbar.</li>
+<li>Die genannten Tageszuschnitte sind Richtwerte. Wo eine Aufgabe länger braucht
+(häufig das End-to-End-Attribut), ist der Puffer in Woche 6 dafür gedacht.</li>
+<li>Das Logbuch der Stolpersteine ist kein Nebenprodukt: Es ist die beste Quelle, um die
+Onboarding-Doku iterativ zu verbessern (Anleitung F).</li>
+</ul>
+<p class="footernote">Abgeleitet aus der Technischen Gesamtdokumentation BiPRO TAA Leben WebService. Tageszuschnitte und Lernkontrollen sind Vorschläge und an Team-Realität anpassbar.</p>
+</article></main>
+</div>
+</body>
+</html>
