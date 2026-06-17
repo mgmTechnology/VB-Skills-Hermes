@@ -16,14 +16,20 @@ Quelle: interne Festlegung der Gruppe Webservices & Strategie
 ## Meilensteinregeln (Abstand und fester Wochentag)
 | Meilenstein | Regel (Abstand und Logik) | Fester Wochentag |
 |---|---|---|
-| Kick-off (optional) | ca. 98 Tage (14 Wochen) vor Go-Live | Donnerstag |
+| Kick-off (optional) | ca. 133 Tage (19 Wochen) vor Go-Live | Mittwoch |
 | Erste Fachkonzepte | ca. 89 Tage vor Go-Live | Freitag |
 | Letzte Einreichung | ca. 75 Tage vor Go-Live | Freitag |
+| Antrags-Einzelseiten an Vermarktung | 1 Woche nach Letzter Einreichung Fachkonzept | Freitag |
+| Antrags-PDFs an IT-AE | 2 Wochen nach Letzter Einreichung Fachkonzept | Freitag |
 | Letzte Änderungen | ca. 55 Tage vor Go-Live | Freitag |
 | Tech. Änderungsdoku | ca. 51 Tage vor Go-Live (Montag vor Beta-Version) | Montag |
 | Vorbereitung Beta | 1 Werktag vor Beta-Version | variabel |
 | Beta-Version | ca. 48 Tage vor Go-Live | Donnerstag |
 | Abschluss Programmierung | ca. 19 Tage vor Go-Live | variabel |
+| Beginn Feldtest | identisch mit Abschluss Programmierung | variabel |
+| Planung Deployment | 1 Woche nach Beginn Feldtest | Freitag |
+| Feldtest-Abschluss | am selben Tag wie Vorbereitung Finalisierung | Donnerstag |
+| MATHE Abschluss VLRE | am selben Tag wie Vorbereitung Finalisierung | Donnerstag |
 | Vorbereitung Finalisierung | 3 Werktage vor Beginn der Finalisierung | Donnerstag |
 | Freigabe an IT (Deadline) | am selben Tag wie Beginn der Finalisierung | Dienstag |
 | Finalisierung (Beginn) | ca. 8 Tage vor Go-Live | Dienstag |
@@ -39,14 +45,20 @@ Vollständiges Beispiel unter: `examples/Gruppen/Webservices-Strategie/beispiel-
 
 | Meilenstein | Datum | Phase |
 |---|---|---|
-| Kick-off (optional) | Do, 19.03.2026 | Planung |
+| Kick-off (optional) | Mi, 11.02.2026 | Planung |
 | Erste Einreichung Fachkonzept | Fr, 27.03.2026 | Planung |
 | Letzte Einreichung Fachkonzept | Fr, 10.04.2026 | Planung |
+| Antrags-Einzelseiten an Vermarktung | Fr, 17.04.2026 | Planung |
+| Antrags-PDFs an IT-AE | Fr, 24.04.2026 | Planung |
 | Letzte Änderungen Fachkonzept | Fr, 01.05.2026 | Planung |
 | Technische Änderungsdoku fertig | Mo, 04.05.2026 | Entwicklung |
 | Vorbereitung Beta | Do, 07.05.2026 | Entwicklung |
 | Beta-Version bereit | Do, 07.05.2026 | Beta & Tests |
 | Abschluss Programmierung | Fr, 05.06.2026 | Entwicklung |
+| Beginn Feldtest | Fr, 05.06.2026 | Entwicklung |
+| Planung Deployment | Fr, 12.06.2026 | Entwicklung |
+| Feldtest-Abschluss | Do, 11.06.2026 | Release-Woche |
+| MATHE Abschluss VLRE | Do, 11.06.2026 | Release-Woche |
 | Vorbereitung Finalisierung | Do, 11.06.2026 | Entwicklung |
 | Freigabe an IT (Deadline) | Di, 16.06.2026 | Release-Woche |
 | Finalisierung (Beginn) | Di, 16.06.2026 | Release-Woche |
