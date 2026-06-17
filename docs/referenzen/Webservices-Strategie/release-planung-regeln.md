@@ -68,3 +68,51 @@ Kritische Phasen im Beispiel:
 - Beta-Woche: Mo, 04.05.2026 bis Fr, 08.05.2026
 - Finalisierungs-Woche: Mo, 15.06.2026 bis Fr, 19.06.2026
 - Tag der Liveschaltung: Do, 25.06.2026
+
+## Verifiziertes Beispiel: Weihnachtsmann-Release (Go-Live Do, 17.12.2026)
+
+Dieses Beispiel wurde mit dem FB-Plan abgeglichen. Der FB-Plan hat Vorrang — Abweichungen von den
+reinen Referenzregeln sind dokumentiert.
+
+| Meilenstein | Datum | Tag | Quelle |
+|---|---|---|---|
+| Kick-off (optional) | Mi, 05.08.2026 | Mi | FB + Regel identisch |
+| Erste Einreichung Fachkonzept | Fr, 18.09.2026 | Fr | FB + Regel identisch |
+| Letzte Einreichung Fachkonzept | Do, 01.10.2026 | Do | FB (Regel: Fr, 02.10.) |
+| Antrags-Einzelseiten an Vermarktung | Fr, 09.10.2026 | Fr | FB + Regel identisch |
+| Antrags-PDFs an IT-AE | Fr, 16.10.2026 | Fr | FB + Regel identisch |
+| Letzte Änderungen / PDFs, AVBs, VV | Fr, 23.10.2026 | Fr | FB + Regel identisch |
+| Technische Änderungsdoku fertig | Mo, 26.10.2026 | Mo | Regel (nicht im FB-Plan) |
+| Beta-Version bereit | Mi, 28.10.2026 | Mi | FB (Regel: Do, 29.10.) |
+| Abschluss Programmierung / Beginn Feldtest | Fr, 27.11.2026 | Fr | FB + Regel identisch |
+| Planung Deployment | Fr, 04.12.2026 | Fr | FB + Regel identisch |
+| Feldtest-Abschluss / MATHE VLRE / Finalisierung | Di, 08.12.2026 (14:00) | Di | FB (Regel: Feldtest-Ende Do 03.12., Finalisierung Di 08.12.) |
+| Deployment VB ON, DOL, TAA-WS + Mail | Mi, 16.12.2026 | Mi | FB |
+| Liveschaltung | Do, 17.12.2026 | Do | FB + Regel identisch |
+
+Kritische Phasen:
+- Beta-Woche: Mo, 26.10.2026 bis Fr, 30.10.2026 (⚠️ NRW-Herbstferien)
+- Finalisierungs-Woche: Mo, 07.12.2026 bis Fr, 11.12.2026
+- Tag der Liveschaltung: Do, 17.12.2026 (1 Woche vor Weihnachten)
+
+## Umgang mit FB-Plan-Abweichungen
+
+Der FB-Plan (Schnittstelle Fachabteilungen, IT-AE und IT-Betrieb) ist der mit allen Stakeholdern
+abgestimmte Plan. Bei Abweichungen zwischen FB-Plan und Referenzregeln gilt:
+
+1. **FB-Plan hat Vorrang** — er ist das Ergebnis der Abstimmung zwischen Fachabteilung, Marketing,
+   IT-AE und IT-Betrieb.
+2. **Abweichungen dokumentieren**, nicht stillschweigend korrigieren.
+3. **Fehlende Meilensteine** aus den Referenzregeln ergänzen (z. B. Technische Änderungsdoku,
+   Urlaubssperren).
+4. **Risiken markieren**, die aus Abweichungen entstehen (z. B. kein Puffer zwischen Feldtest-Ende
+   und Finalisierung).
+
+### Bekannte, akzeptierte Abweichungsmuster
+
+| Muster | Referenzregel | FB-Plan | Akzeptiert weil |
+|---|---|---|---|
+| Letzte Einreichung | Freitag | Donnerstag | FB rechnet in Wochen vor BETA, nicht Tagen vor Go-Live |
+| Beta-Wochentag | Donnerstag | Mittwoch | 1 Tag früher, unkritisch |
+| Feldtest-Ende = Finalisierung | 3 Werktage Puffer | Gleicher Tag | FB kompaktiert die Schlussphase; Feldtest faktisch am Vortag abschließen |
+| Deployment-Tag | Go-Live = Mi/Do | Deployment Mi, Go-Live Do | Deployment ≠ Liveschaltung |

@@ -1,8 +1,9 @@
 ---
 name: vb-release-planning
+description: Erstellt aus einem Go-Live-Datum einen regelkonformen Release-Plan für Webservices & Strategie — Meilensteine, kritische Phasen, Kalenderrisiken. Gleicht bei Vorliegen eines FB-Plans ab und erstellt einen konsolidierten finalen Plan.
 gruppe: Webservices & Strategie
-status: Entwurf
-version: 0.3
+status: aktiv
+version: 0.4
 ---
 
 # vb-release-planning
@@ -40,6 +41,8 @@ Bereich: **IT-AE, Lebensversicherungen**
 - Feiertage, Brückentage und NRW-Ferien sollen in der Planung berücksichtigt werden.
 - Es soll geprüft werden, ob ein Release-Termin aus Kalender- oder Kapazitätssicht kritisch ist.
 - Bei kritischen Terminen sollen alternative Go-Live-Termine vorgeschlagen werden.
+- **Ein FB-Plan (Schnittstelle Fachabteilungen, IT-AE und IT-Betrieb) liegt vor und soll mit den Referenzregeln abgeglichen werden.**
+- **Ein finaler, konsolidierter Release-Plan soll erstellt werden (FB-Plan als Basis, ergänzt um Meilensteine und Urlaubssperren aus den Referenzregeln).**
 
 ## Wann nicht verwenden
 
@@ -137,6 +140,56 @@ Bitte liefere:
 7. falls nötig alternative Go-Live-Termine.
 ```
 
+## FB-Plan-Integration (verpflichtend, wenn FB-Plan vorliegt)
+
+Wenn ein FB-Plan („Schnittstelle Fachabteilungen, IT-AE und IT-Betrieb") vorliegt, wird dieser
+als **maßgebliche Quelle** behandelt. Die Referenzregeln dienen dann als Prüf- und Ergänzungsraster.
+
+### Vorrangregel
+
+**FB-Plan hat Vorrang.** Die Referenzregeln (Meilenstein-Wochentage, Abstände) werden gegen den
+FB-Plan geprüft, aber Abweichungen zugunsten des FB-Plans akzeptiert. Der FB-Plan ist das Ergebnis
+der Abstimmung zwischen Fachabteilung, Marketing, IT-AE und IT-Betrieb.
+
+### Abgleich durchführen
+
+1. **FB-Plan parsen**: Alle Termine und Aktionen aus dem FB-Plan extrahieren.
+2. **Referenz-Meilensteine berechnen**: Eigenständige Berechnung nach den Regeln (Schritt 4 im Vorgehen).
+3. **Side-by-Side-Vergleich**: Jeden Meilenstein beider Pläne gegenüberstellen:
+    - Identische Termine als `✅ IDENTISCH` markieren.
+    - FB-only Termine als `🔷 Nur FB` markieren.
+    - Regel-only Termine als `🔷 Nur Referenzregeln` markieren.
+    - Abweichungen mit Diff in Tagen und Begründung markieren.
+4. **Strukturelle Abweichungen identifizieren**: Insbesondere bei Feldtest-Abschluss und Finalisierung.
+5. **FB-Plan als Basis übernehmen**, Referenz-Meilensteine **ergänzen**.
+6. **Kritische Phasen + Urlaubssperren aus Referenzregeln hinzufügen**, auch wenn FB-Plan sie nicht explizit nennt.
+7. **Risiken aus Abweichungen markieren** (siehe bekannte Abweichungsmuster in der Referenz).
+
+### Bekannte Abweichungsmuster (nicht als Fehler behandeln)
+
+| Muster | Referenzregel | FB-Plan | Umgang |
+|---|---|---|---|
+| Letzte Einreichung | Freitag | Donnerstag | FB folgen, Abweichung dokumentieren |
+| Beta-Wochentag | Donnerstag | Mittwoch | FB folgen, 1 Tag Diff unkritisch |
+| Feldtest-Ende = Finalisierung | 3 Werktage Puffer | Gleicher Tag | FB folgen, Risiko „kein Puffer" markieren |
+| Deployment-Tag | Go-Live = Mi/Do | Deployment Mi, Go-Live Do | Beide Daten aufnehmen |
+
+### Ergänzungen (immer hinzufügen, auch wenn nicht im FB-Plan)
+
+Diese Meilensteine und Maßnahmen fehlen typischerweise im FB-Plan und werden aus den Referenzregeln ergänzt:
+
+1. **Technische Änderungsdoku fertig**: Montag der Beta-Woche.
+2. **Urlaubssperre Beta-Woche**: Montag bis Freitag der Beta-Woche.
+3. **Urlaubssperre Finalisierungs-Woche**: Montag bis Freitag der Woche vor Go-Live.
+
+### Empfehlung aussprechen
+
+Nach dem Abgleich eine klare Empfehlung formulieren:
+- Welche Abweichungen sind unkritisch und werden übernommen?
+- Welche Ergänzungen aus den Referenzregeln werden hinzugefügt?
+- Welche Risiken bleiben bestehen und wie werden sie behandelt?
+- Fazit: Plan ist gültig / gültig mit Risiken / nicht gültig.
+
 ## Benötigte Eingaben
 
 ### Pflichtangabe
@@ -154,6 +207,7 @@ Das Go-Live-Datum muss ein Mittwoch oder Donnerstag sein.
 - Sind bewegliche Ferientage bekannt?
 - Sollen bei Ferien- oder Feiertagskonflikten alternative Go-Live-Termine berechnet werden?
 - Soll ein textueller Zeitstrahl erzeugt werden?
+- **Liegt ein FB-Plan (Schnittstelle Fachabteilungen, IT-AE und IT-Betrieb) vor?** Wenn ja: FB-Plan-Integration durchführen (siehe Abschnitt FB-Plan-Integration).
 
 ## Standardannahmen
 
@@ -431,7 +485,8 @@ Prüfen:
 
 Wenn Kalenderdaten nicht geladen werden können:
 
-1. Fallbackquelle verwenden.
+1. Fallback: Web-Suche nach Kalenderdaten, dann `web_extract` zum Parsen.  
+   Bewährte Quellen und Schritt-für-Schritt-Anleitung: `references/kalenderdaten-fallback.md`
 2. Wenn keine Fallbackquelle verfügbar ist:
     - Release-Plan rechnerisch erstellen,
     - Kalenderprüfung als `offen` markieren,
@@ -462,7 +517,65 @@ Für NRW-Schulferien wird die offizielle Ferienordnung des Landes Nordrhein-West
 
 ## Erwarteter Output
 
-### 1. Zusammenfassung
+### Mit FB-Plan (vollständiger Abgleich)
+
+Wenn ein FB-Plan vorliegt, ist dies die vollständige Output-Struktur:
+
+#### 1. Ergebnisbewertung (Kompakt-Tabelle)
+
+| Kriterium | Status |
+|---|---|
+| Wochentag | ✅/❌ |
+| NRW-Feiertag am Go-Live | ✅/❌ |
+| NRW-Schulferien am Go-Live | ✅/⚠️ |
+| Beta-Woche | ✅/⚠️ |
+| Finalisierungs-Woche | ✅/⚠️ |
+| Besondere Risiken | … |
+
+**Gesamtbewertung**: GÜLTIG / GÜLTIG MIT RISIKEN / NICHT GÜLTIG
+
+#### 2. Side-by-Side-Vergleich (FB vs. Referenzregeln)
+
+Tabelle mit Spalten:
+
+| DATUM | TAG | FB-PLAN | MEIN PLAN (Referenzregeln) | STATUS | KALENDER |
+
+STATUS-Werte: `✅ IDENTISCH`, `🔷 Nur FB`, `🔷 Nur Referenzregeln`, `⚠️ Abweichung`, `🔴 STRUKTUR-UNTERSCHIED`
+
+Darunter: Strukturelle Abweichungen einzeln erläutern (Feldtest-Dauer, Finalisierungs-Puffer, Deployment vs. Go-Live).
+
+#### 3. Empfehlung
+
+Klare Aussage: was übernehmen, was ergänzen, was als Risiko markieren.
+
+#### 4. Finaler konsolidierter Plan
+
+| Datum | Tag | Meilenstein | Phase |
+|---|---|---|---|
+| … | … | … | … |
+
+Enthält:
+- Alle FB-Termine (unverändert),
+- ergänzte Referenz-Meilensteine (mit ⬅️ markiert),
+- Deployment-Tag UND Liveschaltung als separate Zeilen,
+- Urlaubssperren und kritische Phasen als separate Tabelle.
+
+#### 5. Kritische Phasen / Urlaubssperre
+
+| Phase | Zeitraum | Besonderheit |
+|---|---|---|
+| Beta-Woche | Mo … – Fr … | ⚠️ Ferien / ✅ |
+| Finalisierungs-Woche | Mo … – Fr … | ⚠️ / ✅ |
+
+#### 6. Risiken (kompakt)
+
+| # | Risiko | Kategorie | Auswirkung |
+|---|---|---|---|
+| 1 | … | 🔴/🟡/ℹ️ | … |
+
+### Ohne FB-Plan (nur Referenzregeln)
+
+#### 1. Zusammenfassung
 
 Enthält:
 
@@ -548,7 +661,17 @@ Enthält:
 
 ## Ausgabeformat
 
-Die Antwort soll klar strukturiert sein:
+Die Antwort soll klar strukturiert sein. Bei Vorliegen eines FB-Plans:
+
+1. Ergebnisbewertung (Kompakt-Tabelle)
+2. Side-by-Side-Vergleich (FB vs. Referenzregeln)
+3. Empfehlung
+4. Finaler konsolidierter Plan
+5. Kritische Phasen / Urlaubssperre
+6. Kalender- und Kapazitätsrisiken (kompakt)
+7. Offene Punkte / Rückfragen
+
+Ohne FB-Plan:
 
 1. Ergebnisbewertung
 2. Meilensteintabelle
@@ -658,6 +781,23 @@ Erwartung:
 - Kalenderprüfung der kritischen Phasen.
 - Prüfung, ob vorbereitende Termine auf oder um potenzielle Brückentage fallen.
 - Rückfrage, ob Brückentage als arbeitsfrei behandelt oder nur als Risiko markiert werden sollen.
+
+### FB-Plan-Abgleich (Weihnachtsmann-Release)
+
+Eingabe:
+
+```text
+Go-Live Donnerstag, 17.12.2026.
+FB-Plan liegt vor (Schnittstelle Fachabteilungen, IT-AE und IT-Betrieb).
+```
+
+Erwartung:
+
+- Side-by-Side-Vergleich mit FB-Plan (Referenz: `docs/referenzen/Webservices-Strategie/release-planung-regeln.md`, Beispiel Weihnachtsmann-Release).
+- Abweichungen identifizieren und bewerten: Letzte Einreichung (Do statt Fr), Beta (Mi statt Do), Feldtest-Ende = Finalisierung (kein Puffer), Deployment Mi / Go-Live Do.
+- FB-Plan als Basis übernehmen, Referenz-Meilensteine ergänzen (Technische Änderungsdoku, Urlaubssperren).
+- Risiken: Beta in Herbstferien, kein Puffer Feldtest→Finalisierung, Weihnachtsnähe.
+- Finaler konsolidierter Plan mit allen Terminen + Urlaubssperren.
 
 ## Pflege
 
